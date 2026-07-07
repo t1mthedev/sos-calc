@@ -1,4 +1,4 @@
-import { Grid, Stack, Typography, Accordion, AccordionSummary, AccordionDetails, Card, CardContent, Box } from '@mui/material';
+import { Grid, Stack, Typography, Accordion, AccordionSummary, AccordionDetails, Card, CardContent } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { UpgradeSelector } from './UpgradeSelector';
 import { UpgradeList } from './UpgradeList';
@@ -8,15 +8,14 @@ import { UpgradePathTable } from './UpgradePathTable';
 import { BonusesTable } from './BonusesTable';
 import { CrateConversion } from './CrateConversion';
 import { BundleConversion } from './BundleConversion';
-import { AppFooter } from './AppFooter';
 import { useCalculator } from '../hooks/useCalculator';
 
 export function CalculatorPage() {
   const { selectedCategoryId, selectedUpgrades, results, allItems, isCombinedBehemoth, behemothMk } = useCalculator();
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-      <Grid container spacing={3} sx={{ pt: 3, px: 3, flexGrow: 1 }}>
+    <>
+      <Grid container spacing={3}>
         <Grid size={{ xs: 12, md: 4 }}>
           <UpgradeSelector />
         </Grid>
@@ -84,9 +83,6 @@ export function CalculatorPage() {
           </Stack>
         </Grid>
       </Grid>
-      <Box sx={{ width: 1, px: 3, pb: 2, pt: 1 }}>
-        <AppFooter />
-      </Box>
-    </Box>
+    </>
   );
 }
