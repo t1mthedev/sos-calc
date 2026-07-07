@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-07-06",
+  "lastUpdated": "2026-07-07",
   "categories": [
     {
       "id": "behemoth-enhancement",
@@ -9400,6 +9400,5222 @@
                 }
               ],
               "benefit": "Hunter Health"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "behemoth-levels",
+      "name": "Behemoth Levels",
+      "items": [
+        {
+          "id": "mk-mk-iii",
+          "name": "MK III",
+          "maxLevel": 200,
+          "levels": [
+            {
+              "level": 1,
+              "costs": {},
+              "bonuses": [
+                {
+                  "type": "Infantry Attack/Defense, Rider Attack/Defense, Hunter Attack",
+                  "value": 1.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "costs": {
+                "Power Serum": 9
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 1.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 3,
+              "costs": {
+                "Power Serum": 11
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 2.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 4,
+              "costs": {
+                "Power Serum": 13
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 2.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 5,
+              "costs": {
+                "Power Serum": 15
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 2.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 6,
+              "costs": {
+                "Power Serum": 16
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 2.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 7,
+              "costs": {
+                "Power Serum": 17
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 2.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 8,
+              "costs": {
+                "Power Serum": 19
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 2.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 9,
+              "costs": {
+                "Power Serum": 20
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 4.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 10,
+              "costs": {
+                "Power Serum": 21
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 4.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 11,
+              "costs": {
+                "Power Serum": 22
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 4.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 12,
+              "costs": {
+                "Power Serum": 23
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 4.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 13,
+              "costs": {
+                "Power Serum": 24
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 4.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 14,
+              "costs": {
+                "Power Serum": 25
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 4.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 15,
+              "costs": {
+                "Power Serum": 26
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 5.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 16,
+              "costs": {
+                "Power Serum": 27
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 5.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 17,
+              "costs": {
+                "Power Serum": 27
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 5.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 18,
+              "costs": {
+                "Power Serum": 28
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 5.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 19,
+              "costs": {
+                "Power Serum": 29
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 5.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 20,
+              "costs": {
+                "Power Serum": 30
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 5.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 21,
+              "costs": {
+                "Power Serum": 31
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 7,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 22,
+              "costs": {
+                "Power Serum": 31
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 7,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 23,
+              "costs": {
+                "Power Serum": 32
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 7,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 24,
+              "costs": {
+                "Power Serum": 33
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 7,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 25,
+              "costs": {
+                "Power Serum": 33
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 7,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 26,
+              "costs": {
+                "Power Serum": 34
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 7,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 27,
+              "costs": {
+                "Power Serum": 35
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 8.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 28,
+              "costs": {
+                "Power Serum": 35
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 8.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 29,
+              "costs": {
+                "Power Serum": 36
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 8.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 30,
+              "costs": {
+                "Power Serum": 37
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 8.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 31,
+              "costs": {
+                "Power Serum": 37
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 8.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 32,
+              "costs": {
+                "Power Serum": 38
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 8.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 33,
+              "costs": {
+                "Power Serum": 38
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 9.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 34,
+              "costs": {
+                "Power Serum": 39
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 9.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 35,
+              "costs": {
+                "Power Serum": 39
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 9.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 36,
+              "costs": {
+                "Power Serum": 40
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 9.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 37,
+              "costs": {
+                "Power Serum": 41
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 9.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 38,
+              "costs": {
+                "Power Serum": 41
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 9.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 39,
+              "costs": {
+                "Power Serum": 42
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 11.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 40,
+              "costs": {
+                "Power Serum": 42
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 11.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 41,
+              "costs": {
+                "Power Serum": 43
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 11.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 42,
+              "costs": {
+                "Power Serum": 43
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 11.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 43,
+              "costs": {
+                "Power Serum": 44
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 11.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 44,
+              "costs": {
+                "Power Serum": 44
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 11.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 45,
+              "costs": {
+                "Power Serum": 45
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 12.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 46,
+              "costs": {
+                "Power Serum": 45
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 12.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 47,
+              "costs": {
+                "Power Serum": 46
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 12.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 48,
+              "costs": {
+                "Power Serum": 46
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 12.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 49,
+              "costs": {
+                "Power Serum": 47
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 12.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 50,
+              "costs": {
+                "Power Serum": 47
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 12.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 51,
+              "costs": {
+                "Power Serum": 48
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 14,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 52,
+              "costs": {
+                "Power Serum": 48
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 14,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 53,
+              "costs": {
+                "Power Serum": 49
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 14,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 54,
+              "costs": {
+                "Power Serum": 49
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 14,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 55,
+              "costs": {
+                "Power Serum": 49
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 14,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 56,
+              "costs": {
+                "Power Serum": 50
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 14,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 57,
+              "costs": {
+                "Power Serum": 50
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 15.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 58,
+              "costs": {
+                "Power Serum": 51
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 15.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 59,
+              "costs": {
+                "Power Serum": 51
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 15.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 60,
+              "costs": {
+                "Power Serum": 52
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 15.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 61,
+              "costs": {
+                "Power Serum": 52
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 15.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 62,
+              "costs": {
+                "Power Serum": 52
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 15.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 63,
+              "costs": {
+                "Power Serum": 53
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 16.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 64,
+              "costs": {
+                "Power Serum": 53
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 16.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 65,
+              "costs": {
+                "Power Serum": 54
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 16.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 66,
+              "costs": {
+                "Power Serum": 54
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 16.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 67,
+              "costs": {
+                "Power Serum": 55
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 16.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 68,
+              "costs": {
+                "Power Serum": 55
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 16.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 69,
+              "costs": {
+                "Power Serum": 55
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 18.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 70,
+              "costs": {
+                "Power Serum": 56
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 18.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 71,
+              "costs": {
+                "Power Serum": 56
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 18.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 72,
+              "costs": {
+                "Power Serum": 57
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 18.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 73,
+              "costs": {
+                "Power Serum": 57
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 18.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 74,
+              "costs": {
+                "Power Serum": 57
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 18.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 75,
+              "costs": {
+                "Power Serum": 58
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 19.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 76,
+              "costs": {
+                "Power Serum": 58
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 19.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 77,
+              "costs": {
+                "Power Serum": 58
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 19.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 78,
+              "costs": {
+                "Power Serum": 59
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 19.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 79,
+              "costs": {
+                "Power Serum": 59
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 19.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 80,
+              "costs": {
+                "Power Serum": 60
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 19.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 81,
+              "costs": {
+                "Power Serum": 60
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 21,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 82,
+              "costs": {
+                "Power Serum": 60
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 21,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 83,
+              "costs": {
+                "Power Serum": 61
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 21,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 84,
+              "costs": {
+                "Power Serum": 61
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 21,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 85,
+              "costs": {
+                "Power Serum": 61
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 21,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 86,
+              "costs": {
+                "Power Serum": 62
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 21,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 87,
+              "costs": {
+                "Power Serum": 62
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 22.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 88,
+              "costs": {
+                "Power Serum": 63
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 22.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 89,
+              "costs": {
+                "Power Serum": 63
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 22.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 90,
+              "costs": {
+                "Power Serum": 63
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 22.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 91,
+              "costs": {
+                "Power Serum": 64
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 22.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 92,
+              "costs": {
+                "Power Serum": 64
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 22.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 93,
+              "costs": {
+                "Power Serum": 64
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 23.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 94,
+              "costs": {
+                "Power Serum": 65
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 23.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 95,
+              "costs": {
+                "Power Serum": 65
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 23.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 96,
+              "costs": {
+                "Power Serum": 65
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 23.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 97,
+              "costs": {
+                "Power Serum": 66
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 23.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 98,
+              "costs": {
+                "Power Serum": 66
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 23.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 99,
+              "costs": {
+                "Power Serum": 66
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 25.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 100,
+              "costs": {
+                "Power Serum": 67
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 25.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 101,
+              "costs": {
+                "Power Serum": 67
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 25.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 102,
+              "costs": {
+                "Power Serum": 67
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 25.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 103,
+              "costs": {
+                "Power Serum": 68
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 25.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 104,
+              "costs": {
+                "Power Serum": 68
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 25.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 105,
+              "costs": {
+                "Power Serum": 68
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 26.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 106,
+              "costs": {
+                "Power Serum": 69
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 26.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 107,
+              "costs": {
+                "Power Serum": 69
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 26.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 108,
+              "costs": {
+                "Power Serum": 69
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 26.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 109,
+              "costs": {
+                "Power Serum": 70
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 26.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 110,
+              "costs": {
+                "Power Serum": 70
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 26.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 111,
+              "costs": {
+                "Power Serum": 70
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 28,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 112,
+              "costs": {
+                "Power Serum": 70
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 28,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 113,
+              "costs": {
+                "Power Serum": 71
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 28,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 114,
+              "costs": {
+                "Power Serum": 71
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 28,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 115,
+              "costs": {
+                "Power Serum": 71
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 28,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 116,
+              "costs": {
+                "Power Serum": 72
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 28,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 117,
+              "costs": {
+                "Power Serum": 72
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 29.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 118,
+              "costs": {
+                "Power Serum": 72
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 29.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 119,
+              "costs": {
+                "Power Serum": 73
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 29.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 120,
+              "costs": {
+                "Power Serum": 73
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 29.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 121,
+              "costs": {
+                "Power Serum": 73
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 29.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 122,
+              "costs": {
+                "Power Serum": 74
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 29.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 123,
+              "costs": {
+                "Power Serum": 74
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 30.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 124,
+              "costs": {
+                "Power Serum": 74
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 30.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 125,
+              "costs": {
+                "Power Serum": 74
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 30.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 126,
+              "costs": {
+                "Power Serum": 75
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 30.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 127,
+              "costs": {
+                "Power Serum": 75
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 30.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 128,
+              "costs": {
+                "Power Serum": 75
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 30.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 129,
+              "costs": {
+                "Power Serum": 76
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 32.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 130,
+              "costs": {
+                "Power Serum": 76
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 32.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 131,
+              "costs": {
+                "Power Serum": 76
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 32.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 132,
+              "costs": {
+                "Power Serum": 77
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 32.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 133,
+              "costs": {
+                "Power Serum": 77
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 32.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 134,
+              "costs": {
+                "Power Serum": 77
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 32.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 135,
+              "costs": {
+                "Power Serum": 77
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 33.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 136,
+              "costs": {
+                "Power Serum": 78
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 33.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 137,
+              "costs": {
+                "Power Serum": 78
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 33.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 138,
+              "costs": {
+                "Power Serum": 78
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 33.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 139,
+              "costs": {
+                "Power Serum": 79
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 33.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 140,
+              "costs": {
+                "Power Serum": 79
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 33.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 141,
+              "costs": {
+                "Power Serum": 79
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 35,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 142,
+              "costs": {
+                "Power Serum": 79
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 35,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 143,
+              "costs": {
+                "Power Serum": 80
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 35,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 144,
+              "costs": {
+                "Power Serum": 80
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 35,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 145,
+              "costs": {
+                "Power Serum": 80
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 35,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 146,
+              "costs": {
+                "Power Serum": 80
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 35,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 147,
+              "costs": {
+                "Power Serum": 81
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 36.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 148,
+              "costs": {
+                "Power Serum": 81
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 36.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 149,
+              "costs": {
+                "Power Serum": 81
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 36.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 150,
+              "costs": {
+                "Power Serum": 82
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 36.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 151,
+              "costs": {
+                "Power Serum": 82
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 36.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 152,
+              "costs": {
+                "Power Serum": 82
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 36.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 153,
+              "costs": {
+                "Power Serum": 82
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 37.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 154,
+              "costs": {
+                "Power Serum": 83
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 37.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 155,
+              "costs": {
+                "Power Serum": 83
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 37.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 156,
+              "costs": {
+                "Power Serum": 83
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 37.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 157,
+              "costs": {
+                "Power Serum": 83
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 37.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 158,
+              "costs": {
+                "Power Serum": 84
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 37.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 159,
+              "costs": {
+                "Power Serum": 84
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 39.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 160,
+              "costs": {
+                "Power Serum": 84
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 39.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 161,
+              "costs": {
+                "Power Serum": 84
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 39.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 162,
+              "costs": {
+                "Power Serum": 85
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 39.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 163,
+              "costs": {
+                "Power Serum": 85
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 39.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 164,
+              "costs": {
+                "Power Serum": 85
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 39.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 165,
+              "costs": {
+                "Power Serum": 86
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 40.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 166,
+              "costs": {
+                "Power Serum": 86
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 40.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 167,
+              "costs": {
+                "Power Serum": 86
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 40.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 168,
+              "costs": {
+                "Power Serum": 86
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 40.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 169,
+              "costs": {
+                "Power Serum": 87
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 40.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 170,
+              "costs": {
+                "Power Serum": 87
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 40.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 171,
+              "costs": {
+                "Power Serum": 87
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 42,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 172,
+              "costs": {
+                "Power Serum": 87
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 42,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 173,
+              "costs": {
+                "Power Serum": 88
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 42,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 174,
+              "costs": {
+                "Power Serum": 88
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 42,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 175,
+              "costs": {
+                "Power Serum": 88
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 42,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 176,
+              "costs": {
+                "Power Serum": 88
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 42,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 177,
+              "costs": {
+                "Power Serum": 89
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 43.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 178,
+              "costs": {
+                "Power Serum": 89
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 43.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 179,
+              "costs": {
+                "Power Serum": 89
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 43.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 180,
+              "costs": {
+                "Power Serum": 89
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 43.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 181,
+              "costs": {
+                "Power Serum": 90
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 43.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 182,
+              "costs": {
+                "Power Serum": 90
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 43.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 183,
+              "costs": {
+                "Power Serum": 90
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 44.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 184,
+              "costs": {
+                "Power Serum": 90
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 44.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 185,
+              "costs": {
+                "Power Serum": 91
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 44.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 186,
+              "costs": {
+                "Power Serum": 91
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 44.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 187,
+              "costs": {
+                "Power Serum": 91
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 44.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 188,
+              "costs": {
+                "Power Serum": 91
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 44.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 189,
+              "costs": {
+                "Power Serum": 92
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 46.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 190,
+              "costs": {
+                "Power Serum": 92
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 46.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 191,
+              "costs": {
+                "Power Serum": 92
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 46.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 192,
+              "costs": {
+                "Power Serum": 92
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 46.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 193,
+              "costs": {
+                "Power Serum": 92
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 46.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 194,
+              "costs": {
+                "Power Serum": 93
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 46.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 195,
+              "costs": {
+                "Power Serum": 93
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 47.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 196,
+              "costs": {
+                "Power Serum": 93
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 47.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 197,
+              "costs": {
+                "Power Serum": 93
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 47.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 198,
+              "costs": {
+                "Power Serum": 94
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 47.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 199,
+              "costs": {
+                "Power Serum": 94
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 47.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 200,
+              "costs": {
+                "Power Serum": 94
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 47.6,
+                  "unit": "%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mk-mk-iv",
+          "name": "MK IV",
+          "maxLevel": 200,
+          "levels": [
+            {
+              "level": 1,
+              "costs": {},
+              "bonuses": [
+                {
+                  "type": "Infantry AttacK/Defense, Rider Attack/Defense, Hunter Attack",
+                  "value": 1.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "costs": {
+                "Power Serum": 9
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 1.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 3,
+              "costs": {
+                "Power Serum": 11
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 2.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 4,
+              "costs": {
+                "Power Serum": 13
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 2.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 5,
+              "costs": {
+                "Power Serum": 15
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 2.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 6,
+              "costs": {
+                "Power Serum": 16
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 2.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 7,
+              "costs": {
+                "Power Serum": 17
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 2.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 8,
+              "costs": {
+                "Power Serum": 19
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 2.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 9,
+              "costs": {
+                "Power Serum": 20
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 4.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 10,
+              "costs": {
+                "Power Serum": 21
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 4.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 11,
+              "costs": {
+                "Power Serum": 22
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 4.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 12,
+              "costs": {
+                "Power Serum": 23
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 4.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 13,
+              "costs": {
+                "Power Serum": 24
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 4.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 14,
+              "costs": {
+                "Power Serum": 25
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 4.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 15,
+              "costs": {
+                "Power Serum": 26
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 5.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 16,
+              "costs": {
+                "Power Serum": 27
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 5.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 17,
+              "costs": {
+                "Power Serum": 27
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 5.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 18,
+              "costs": {
+                "Power Serum": 28
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 5.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 19,
+              "costs": {
+                "Power Serum": 29
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 5.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 20,
+              "costs": {
+                "Power Serum": 30
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 5.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 21,
+              "costs": {
+                "Power Serum": 31
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 7,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 22,
+              "costs": {
+                "Power Serum": 31
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 7,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 23,
+              "costs": {
+                "Power Serum": 32
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 7,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 24,
+              "costs": {
+                "Power Serum": 33
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 7,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 25,
+              "costs": {
+                "Power Serum": 33
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 7,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 26,
+              "costs": {
+                "Power Serum": 34
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 7,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 27,
+              "costs": {
+                "Power Serum": 35
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 8.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 28,
+              "costs": {
+                "Power Serum": 35
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 8.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 29,
+              "costs": {
+                "Power Serum": 36
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 8.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 30,
+              "costs": {
+                "Power Serum": 37
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 8.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 31,
+              "costs": {
+                "Power Serum": 37
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 8.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 32,
+              "costs": {
+                "Power Serum": 38
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 8.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 33,
+              "costs": {
+                "Power Serum": 38
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 9.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 34,
+              "costs": {
+                "Power Serum": 39
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 9.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 35,
+              "costs": {
+                "Power Serum": 39
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 9.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 36,
+              "costs": {
+                "Power Serum": 40
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 9.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 37,
+              "costs": {
+                "Power Serum": 41
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 9.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 38,
+              "costs": {
+                "Power Serum": 41
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 9.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 39,
+              "costs": {
+                "Power Serum": 42
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 11.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 40,
+              "costs": {
+                "Power Serum": 42
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 11.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 41,
+              "costs": {
+                "Power Serum": 43
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 11.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 42,
+              "costs": {
+                "Power Serum": 43
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 11.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 43,
+              "costs": {
+                "Power Serum": 44
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 11.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 44,
+              "costs": {
+                "Power Serum": 44
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 11.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 45,
+              "costs": {
+                "Power Serum": 45
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 12.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 46,
+              "costs": {
+                "Power Serum": 45
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 12.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 47,
+              "costs": {
+                "Power Serum": 46
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 12.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 48,
+              "costs": {
+                "Power Serum": 46
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 12.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 49,
+              "costs": {
+                "Power Serum": 47
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 12.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 50,
+              "costs": {
+                "Power Serum": 47
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 12.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 51,
+              "costs": {
+                "Power Serum": 48
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 14,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 52,
+              "costs": {
+                "Power Serum": 48
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 14,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 53,
+              "costs": {
+                "Power Serum": 49
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 14,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 54,
+              "costs": {
+                "Power Serum": 49
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 14,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 55,
+              "costs": {
+                "Power Serum": 49
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 14,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 56,
+              "costs": {
+                "Power Serum": 50
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 14,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 57,
+              "costs": {
+                "Power Serum": 50
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 15.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 58,
+              "costs": {
+                "Power Serum": 51
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 15.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 59,
+              "costs": {
+                "Power Serum": 51
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 15.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 60,
+              "costs": {
+                "Power Serum": 52
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 15.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 61,
+              "costs": {
+                "Power Serum": 52
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 15.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 62,
+              "costs": {
+                "Power Serum": 52
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 15.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 63,
+              "costs": {
+                "Power Serum": 53
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 16.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 64,
+              "costs": {
+                "Power Serum": 53
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 16.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 65,
+              "costs": {
+                "Power Serum": 54
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 16.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 66,
+              "costs": {
+                "Power Serum": 54
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 16.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 67,
+              "costs": {
+                "Power Serum": 55
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 16.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 68,
+              "costs": {
+                "Power Serum": 55
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 16.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 69,
+              "costs": {
+                "Power Serum": 55
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 18.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 70,
+              "costs": {
+                "Power Serum": 56
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 18.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 71,
+              "costs": {
+                "Power Serum": 56
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 18.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 72,
+              "costs": {
+                "Power Serum": 57
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 18.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 73,
+              "costs": {
+                "Power Serum": 57
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 18.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 74,
+              "costs": {
+                "Power Serum": 57
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 18.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 75,
+              "costs": {
+                "Power Serum": 58
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 19.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 76,
+              "costs": {
+                "Power Serum": 58
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 19.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 77,
+              "costs": {
+                "Power Serum": 58
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 19.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 78,
+              "costs": {
+                "Power Serum": 59
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 19.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 79,
+              "costs": {
+                "Power Serum": 59
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 19.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 80,
+              "costs": {
+                "Power Serum": 60
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 19.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 81,
+              "costs": {
+                "Power Serum": 60
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 21,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 82,
+              "costs": {
+                "Power Serum": 60
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 21,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 83,
+              "costs": {
+                "Power Serum": 61
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 21,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 84,
+              "costs": {
+                "Power Serum": 61
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 21,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 85,
+              "costs": {
+                "Power Serum": 61
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 21,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 86,
+              "costs": {
+                "Power Serum": 62
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 21,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 87,
+              "costs": {
+                "Power Serum": 62
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 22.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 88,
+              "costs": {
+                "Power Serum": 63
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 22.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 89,
+              "costs": {
+                "Power Serum": 63
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 22.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 90,
+              "costs": {
+                "Power Serum": 63
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 22.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 91,
+              "costs": {
+                "Power Serum": 64
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 22.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 92,
+              "costs": {
+                "Power Serum": 64
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 22.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 93,
+              "costs": {
+                "Power Serum": 64
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 23.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 94,
+              "costs": {
+                "Power Serum": 65
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 23.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 95,
+              "costs": {
+                "Power Serum": 65
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 23.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 96,
+              "costs": {
+                "Power Serum": 65
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 23.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 97,
+              "costs": {
+                "Power Serum": 66
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 23.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 98,
+              "costs": {
+                "Power Serum": 66
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 23.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 99,
+              "costs": {
+                "Power Serum": 66
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 25.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 100,
+              "costs": {
+                "Power Serum": 67
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 25.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 101,
+              "costs": {
+                "Power Serum": 67
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 25.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 102,
+              "costs": {
+                "Power Serum": 67
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 25.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 103,
+              "costs": {
+                "Power Serum": 68
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 25.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 104,
+              "costs": {
+                "Power Serum": 68
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 25.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 105,
+              "costs": {
+                "Power Serum": 68
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 26.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 106,
+              "costs": {
+                "Power Serum": 69
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 26.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 107,
+              "costs": {
+                "Power Serum": 69
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 26.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 108,
+              "costs": {
+                "Power Serum": 69
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 26.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 109,
+              "costs": {
+                "Power Serum": 70
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 26.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 110,
+              "costs": {
+                "Power Serum": 70
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 26.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 111,
+              "costs": {
+                "Power Serum": 70
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 28,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 112,
+              "costs": {
+                "Power Serum": 70
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 28,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 113,
+              "costs": {
+                "Power Serum": 71
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 28,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 114,
+              "costs": {
+                "Power Serum": 71
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 28,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 115,
+              "costs": {
+                "Power Serum": 71
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 28,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 116,
+              "costs": {
+                "Power Serum": 72
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 28,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 117,
+              "costs": {
+                "Power Serum": 72
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 29.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 118,
+              "costs": {
+                "Power Serum": 72
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 29.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 119,
+              "costs": {
+                "Power Serum": 73
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 29.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 120,
+              "costs": {
+                "Power Serum": 73
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 29.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 121,
+              "costs": {
+                "Power Serum": 73
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 29.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 122,
+              "costs": {
+                "Power Serum": 74
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 29.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 123,
+              "costs": {
+                "Power Serum": 74
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 30.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 124,
+              "costs": {
+                "Power Serum": 74
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 30.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 125,
+              "costs": {
+                "Power Serum": 74
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 30.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 126,
+              "costs": {
+                "Power Serum": 75
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 30.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 127,
+              "costs": {
+                "Power Serum": 75
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 30.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 128,
+              "costs": {
+                "Power Serum": 75
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 30.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 129,
+              "costs": {
+                "Power Serum": 76
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 32.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 130,
+              "costs": {
+                "Power Serum": 76
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 32.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 131,
+              "costs": {
+                "Power Serum": 76
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 32.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 132,
+              "costs": {
+                "Power Serum": 77
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 32.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 133,
+              "costs": {
+                "Power Serum": 77
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 32.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 134,
+              "costs": {
+                "Power Serum": 77
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 32.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 135,
+              "costs": {
+                "Power Serum": 77
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 33.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 136,
+              "costs": {
+                "Power Serum": 78
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 33.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 137,
+              "costs": {
+                "Power Serum": 78
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 33.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 138,
+              "costs": {
+                "Power Serum": 78
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 33.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 139,
+              "costs": {
+                "Power Serum": 79
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 33.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 140,
+              "costs": {
+                "Power Serum": 79
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 33.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 141,
+              "costs": {
+                "Power Serum": 79
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 35,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 142,
+              "costs": {
+                "Power Serum": 79
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 35,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 143,
+              "costs": {
+                "Power Serum": 80
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 35,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 144,
+              "costs": {
+                "Power Serum": 80
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 35,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 145,
+              "costs": {
+                "Power Serum": 80
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 35,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 146,
+              "costs": {
+                "Power Serum": 80
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 35,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 147,
+              "costs": {
+                "Power Serum": 81
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 36.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 148,
+              "costs": {
+                "Power Serum": 81
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 36.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 149,
+              "costs": {
+                "Power Serum": 81
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 36.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 150,
+              "costs": {
+                "Power Serum": 82
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 36.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 151,
+              "costs": {
+                "Power Serum": 82
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 36.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 152,
+              "costs": {
+                "Power Serum": 82
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 36.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 153,
+              "costs": {
+                "Power Serum": 82
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 37.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 154,
+              "costs": {
+                "Power Serum": 83
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 37.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 155,
+              "costs": {
+                "Power Serum": 83
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 37.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 156,
+              "costs": {
+                "Power Serum": 83
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 37.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 157,
+              "costs": {
+                "Power Serum": 83
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 37.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 158,
+              "costs": {
+                "Power Serum": 84
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 37.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 159,
+              "costs": {
+                "Power Serum": 84
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 39.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 160,
+              "costs": {
+                "Power Serum": 84
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 39.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 161,
+              "costs": {
+                "Power Serum": 84
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 39.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 162,
+              "costs": {
+                "Power Serum": 85
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 39.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 163,
+              "costs": {
+                "Power Serum": 85
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 39.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 164,
+              "costs": {
+                "Power Serum": 85
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 39.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 165,
+              "costs": {
+                "Power Serum": 86
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 40.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 166,
+              "costs": {
+                "Power Serum": 86
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 40.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 167,
+              "costs": {
+                "Power Serum": 86
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 40.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 168,
+              "costs": {
+                "Power Serum": 86
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 40.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 169,
+              "costs": {
+                "Power Serum": 87
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 40.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 170,
+              "costs": {
+                "Power Serum": 87
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 40.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 171,
+              "costs": {
+                "Power Serum": 87
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 42,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 172,
+              "costs": {
+                "Power Serum": 87
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 42,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 173,
+              "costs": {
+                "Power Serum": 88
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 42,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 174,
+              "costs": {
+                "Power Serum": 88
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 42,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 175,
+              "costs": {
+                "Power Serum": 88
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 42,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 176,
+              "costs": {
+                "Power Serum": 88
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 42,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 177,
+              "costs": {
+                "Power Serum": 89
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 43.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 178,
+              "costs": {
+                "Power Serum": 89
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 43.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 179,
+              "costs": {
+                "Power Serum": 89
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 43.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 180,
+              "costs": {
+                "Power Serum": 89
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 43.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 181,
+              "costs": {
+                "Power Serum": 90
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 43.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 182,
+              "costs": {
+                "Power Serum": 90
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 43.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 183,
+              "costs": {
+                "Power Serum": 90
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 44.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 184,
+              "costs": {
+                "Power Serum": 90
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 44.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 185,
+              "costs": {
+                "Power Serum": 91
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 44.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 186,
+              "costs": {
+                "Power Serum": 91
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 44.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 187,
+              "costs": {
+                "Power Serum": 91
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 44.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 188,
+              "costs": {
+                "Power Serum": 91
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 44.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 189,
+              "costs": {
+                "Power Serum": 92
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 46.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 190,
+              "costs": {
+                "Power Serum": 92
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 46.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 191,
+              "costs": {
+                "Power Serum": 92
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 46.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 192,
+              "costs": {
+                "Power Serum": 92
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 46.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 193,
+              "costs": {
+                "Power Serum": 92
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 46.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 194,
+              "costs": {
+                "Power Serum": 93
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 46.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 195,
+              "costs": {
+                "Power Serum": 93
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 47.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 196,
+              "costs": {
+                "Power Serum": 93
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 47.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 197,
+              "costs": {
+                "Power Serum": 93
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 47.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 198,
+              "costs": {
+                "Power Serum": 94
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 47.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 199,
+              "costs": {
+                "Power Serum": 94
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 47.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 200,
+              "costs": {
+                "Power Serum": 94
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 47.6,
+                  "unit": "%"
+                }
+              ]
             }
           ]
         }
