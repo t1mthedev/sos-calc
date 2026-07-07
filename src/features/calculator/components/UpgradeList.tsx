@@ -24,33 +24,36 @@ export function UpgradeList() {
         return (
           <Card key={sel.itemId} variant="outlined">
             <CardContent sx={{ py: 1.5, '&:last-child': { pb: 1.5 } }}>
-              <Stack direction="row" spacing={2} sx={{ alignItems: 'center' }}>
-                <Typography sx={{ minWidth: 180, fontWeight: 500 }}>{item.name}</Typography>
-
-                <Autocomplete
-                  options={item.levels}
-                  getOptionLabel={(o: UpgradeLevel) => o.name ?? `Lv ${o.level}`}
-                  value={fromValue}
-                  onChange={(_, v) => v && setUpgradeCurrent(sel.itemId, v.level)}
-                  isOptionEqualToValue={(o, v) => o.level === v.level}
-                  renderInput={params => <TextField {...params} label="From" size="small" sx={{ width: 180 }} />}
-                  size="small"
-                />
-                <Autocomplete
-                  options={toOptions}
-                  getOptionLabel={(o: UpgradeLevel) => o.name ?? `Lv ${o.level}`}
-                  value={toValue}
-                  onChange={(_, v) => v && setUpgradeTarget(sel.itemId, v.level)}
-                  isOptionEqualToValue={(o, v) => o.level === v.level}
-                  renderInput={params => <TextField {...params} label="To" size="small" sx={{ width: 180 }} />}
-                  size="small"
-                  disabled={!fromValue}
-                  sx={{ '&.Mui-disabled .MuiInputBase-root': { backgroundColor: 'action.hover', cursor: 'not-allowed' }, '&.Mui-disabled .MuiOutlinedInput-notchedOutline': { borderStyle: 'dashed', borderColor: 'text.disabled', borderWidth: 2 } }}
-                />
-
-                <IconButton size="small" color="error" onClick={() => removeUpgrade(sel.itemId)}>
-                  <DeleteIcon />
-                </IconButton>
+              <Stack spacing={1}>
+                <Stack direction="row" sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
+                  <Typography sx={{ fontWeight: 500 }}>{item.name}</Typography>
+                  <IconButton size="small" color="error" onClick={() => removeUpgrade(sel.itemId)}>
+                    <DeleteIcon />
+                  </IconButton>
+                </Stack>
+                <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
+                  <Autocomplete
+                    options={item.levels}
+                    getOptionLabel={(o: UpgradeLevel) => o.name ?? `Lv ${o.level}`}
+                    value={fromValue}
+                    onChange={(_, v) => v && setUpgradeCurrent(sel.itemId, v.level)}
+                    isOptionEqualToValue={(o, v) => o.level === v.level}
+                    renderInput={params => <TextField {...params} label="From" size="small" />}
+                    size="small"
+                    sx={{ flex: 1 }}
+                  />
+                  <Autocomplete
+                    options={toOptions}
+                    getOptionLabel={(o: UpgradeLevel) => o.name ?? `Lv ${o.level}`}
+                    value={toValue}
+                    onChange={(_, v) => v && setUpgradeTarget(sel.itemId, v.level)}
+                    isOptionEqualToValue={(o, v) => o.level === v.level}
+                    renderInput={params => <TextField {...params} label="To" size="small" />}
+                    size="small"
+                    disabled={!fromValue}
+                    sx={{ flex: 1, '&.Mui-disabled .MuiInputBase-root': { backgroundColor: 'action.hover', cursor: 'not-allowed' }, '&.Mui-disabled .MuiOutlinedInput-notchedOutline': { borderStyle: 'dashed', borderColor: 'text.disabled', borderWidth: 2 } }}
+                  />
+                </Stack>
               </Stack>
             </CardContent>
           </Card>
