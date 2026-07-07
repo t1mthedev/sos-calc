@@ -68,3 +68,6 @@ Converter maps Excel column short names to full material names:
 - `coating` → Antimatter Coating
 - `alloy` → Reinforced Alloy
 - `neuronal` → Neuronal Medium
+
+## Workflow
+- Before pushing any code to the remote repository, stop and ask for user approval first.
