@@ -27,7 +27,7 @@ The `main()` loop in `convert-excel.js` checks files in this order:
 4. `isBehemothFile()` — sheets match `/^MK\s+\S+$/` (NOT Skills)
 5. `isSpacecraftFile()` — capsules/aircraft sheets
 
-### Categories
+### Categories (internal — not all shown in dropdown)
 | Category | ID | Structure | Items |
 |---|---|---|---|
 | Formation System | `formation-system` | 3 groups | 20 items |
@@ -36,6 +36,14 @@ The `main()` loop in `convert-excel.js` checks files in this order:
 | Behemoth Levels | `behemoth-levels` | flat | 2 items (200 levels each) |
 | Spacecraft | `spacecraft` | 2 groups | 8 items |
 | Aircraft | `aircraft` | flat | 1 item (140 levels) |
+
+### Behemoth Page
+- The category dropdown shows "Behemoth" as a single entry (virtual category, id `__behemoth__`)
+- Three underlying categories (`behemoth-enhancement`, `behemoth-levels`, `behemoth-skills`) are hidden from the dropdown
+- When "Behemoth" is selected, the left panel shows a card-based flow: **MK type** (MK III / MK IV) → **section** (Enhancement / Levels / Skills) → filtered items list
+- `getBehemothItems(mk, section)` in `dataService.ts` returns only matching items
+- `BehemothSelector.tsx` renders the card flow (MK cards, section cards, add buttons)
+- Behemoth MK/section state is stored in `savedStates["__behemoth__"]` in localStorage
 
 ### Behemoth Skills
 - 9 skill trees: Laser Storm, Power Core I/II, Missile Interception (MK III); Frost Rend, Cryo Loadout I/II, Howl of Winter, Frozen Fortress (MK IV)
@@ -46,7 +54,7 @@ The `main()` loop in `convert-excel.js` checks files in this order:
 
 ### Crate System
 - `crates.json` uses `categoryIds: string[]` (not single `categoryId`) — a crate can belong to multiple categories
-- Behemoth MK III and MK IV crates appear under both `behemoth-enhancement` and `behemoth-skills`
+- Behemoth MK III and MK IV crates appear under all three behemoth category IDs
 - Crate Conversion UI shows a single crate picker (Autocomplete) — no automatic bundles table
 
 ### Bundle System

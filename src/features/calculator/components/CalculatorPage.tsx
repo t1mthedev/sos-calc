@@ -10,10 +10,9 @@ import { CrateConversion } from './CrateConversion';
 import { BundleConversion } from './BundleConversion';
 import { AppFooter } from './AppFooter';
 import { useCalculator } from '../hooks/useCalculator';
-import { getItemById } from '../../../services/dataService';
 
 export function CalculatorPage() {
-  const { selectedCategoryId, selectedUpgrades, results } = useCalculator();
+  const { selectedCategoryId, selectedUpgrades, results, allItems, isCombinedBehemoth, behemothMk } = useCalculator();
 
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
@@ -37,7 +36,16 @@ export function CalculatorPage() {
               </Card>
             ) : (
               <>
-                <UpgradeList />
+                {!isCombinedBehemoth && <UpgradeList />}
+                {isCombinedBehemoth && selectedUpgrades.length > 0 && (
+                  <Card variant="outlined" sx={{ py: 2, px: 2 }}>
+                    <Typography variant="body2" color="text.secondary">
+                      {behemothMk
+                        ? `Combined totals for ${behemothMk} — select a section to add or modify upgrades.`
+                        : `Combined totals for all Behemoths — select a type to add or modify upgrades.`}
+                    </Typography>
+                  </Card>
+                )}
                 {selectedUpgrades.length > 0 && results.size === 0 && (
                   <Typography color="text.secondary">
                     Set current and target levels to see results.
@@ -52,7 +60,7 @@ export function CalculatorPage() {
                       const itemId = sel.itemId;
                       if (!results.has(itemId)) return null;
                       const result = results.get(itemId)!;
-                      const item = getItemById(selectedCategoryId ?? '', itemId);
+                      const item = allItems.find(i => i.id === itemId);
                       const itemName = item?.name ?? itemId;
                       return (
                         <Accordion key={itemId}>

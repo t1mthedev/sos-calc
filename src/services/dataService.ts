@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import type { GameData, Category, Group, UpgradeItem, UpgradeLevel, Crate, Bundle } from '../types';
+import type { GameData, Category, Group, UpgradeItem, UpgradeLevel, Crate, Bundle, BehemothMk, BehemothSection } from '../types';
 import gameDataRaw from '../data/json/game-data.json';
 import cratesData from '../data/json/crates.json';
 import bundlesData from '../data/json/bundles.json';
@@ -106,6 +106,13 @@ export function getCrates(): Crate[] {
 }
 
 export function getCratesByCategory(categoryId: string): Crate[] {
+  if (categoryId === '__behemoth__') {
+    return loadCrates().filter(c =>
+      c.categoryIds.includes('behemoth-enhancement') ||
+      c.categoryIds.includes('behemoth-levels') ||
+      c.categoryIds.includes('behemoth-skills')
+    );
+  }
   return loadCrates().filter(c => c.categoryIds.includes(categoryId));
 }
 
@@ -129,9 +136,56 @@ export function getBundlesByCrateId(crateId: string): Bundle[] {
 }
 
 export function getBundlesByCategory(categoryId: string): Bundle[] {
-  const crates = loadCrates().filter(c => c.categoryIds.includes(categoryId));
+  const behemothIds = categoryId === '__behemoth__'
+    ? ['behemoth-enhancement', 'behemoth-levels', 'behemoth-skills']
+    : [categoryId];
+  const crates = loadCrates().filter(c => c.categoryIds.some(id => behemothIds.includes(id)));
   const crateIds = new Set(crates.map(c => c.id));
   return loadBundles().filter(b =>
-    b.categoryId === categoryId || b.contents.some(c => c.crateId && crateIds.has(c.crateId))
+    behemothIds.includes(b.categoryId ?? '') || b.contents.some(c => c.crateId && crateIds.has(c.crateId))
   );
+}
+
+const BEHEMOTH_CATEGORY_IDS: Record<BehemothSection, string> = {
+  enhancement: 'behemoth-enhancement',
+  levels: 'behemoth-levels',
+  skills: 'behemoth-skills',
+};
+
+export function getBehemothCategoryId(section: BehemothSection): string {
+  return BEHEMOTH_CATEGORY_IDS[section];
+}
+
+export function getBehemothItems(mk: BehemothMk, section: BehemothSection): { categoryId: string; items: UpgradeItem[] } {
+  const categoryId = BEHEMOTH_CATEGORY_IDS[section];
+  const cat = getCategoryById(categoryId);
+  if (!cat) return { categoryId, items: [] };
+
+  if (section === 'skills') {
+    const groups = cat.groups?.filter(g => g.mk === mk) ?? [];
+    return { categoryId, items: groups.flatMap(g => g.items) };
+  }
+
+  const all = cat.items ?? [];
+  const suffix = mk === 'MK III' ? 'mk-iii' : 'mk-iv';
+  const items = all.filter(item => item.id.endsWith(suffix));
+  return { categoryId, items };
+}
+
+const BEHEMOTH_SECTIONS: BehemothSection[] = ['enhancement', 'levels', 'skills'];
+
+export function getBehemothItemsForMk(mk: BehemothMk): { categoryId: string; items: UpgradeItem[] }[] {
+  return BEHEMOTH_SECTIONS.map(section => getBehemothItems(mk, section));
+}
+
+export function getAllBehemothItems(): { categoryId: string; items: UpgradeItem[] }[] {
+  return BEHEMOTH_SECTIONS.map(section => {
+    const categoryId = BEHEMOTH_CATEGORY_IDS[section];
+    const cat = getCategoryById(categoryId);
+    if (!cat) return { categoryId, items: [] };
+    if (section === 'skills') {
+      return { categoryId, items: (cat.groups ?? []).flatMap(g => g.items) };
+    }
+    return { categoryId, items: cat.items ?? [] };
+  });
 }
