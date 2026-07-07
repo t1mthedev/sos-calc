@@ -81,4 +81,5 @@ Converter maps Excel column short names to full material names:
 - Git is installed at `C:\Program Files\Git\bin\git.exe` — `git` is NOT in PATH in PowerShell, use the full path or `where.exe git` to find it.
 
 ## Workflow
+- Do NOT commit changes automatically — wait for the user to explicitly say "commit" before staging and committing.
 - Before pushing any code to the remote repository, stop and ask for user approval first.
