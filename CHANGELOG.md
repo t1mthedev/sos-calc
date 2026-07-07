@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.2.1-beta] - 2026-07-07
+### Added
+- Consolidated Behemoth categories into a single "Behemoth" entry with MK type and section card flow
+- Combined summary view showing totals across all MK types at the top level
+- Combined summary per MK showing totals across all sections
+
+### Changed
+- Hidden individual behemoth categories (Enhancement, Levels, Skills) from the dropdown
+
 ## [0.2.0-beta] - 2026-07-06
 ### Added
 - Behemoth Skills calculator: 9 skill trees for MK III and MK IV with all upgrade levels
