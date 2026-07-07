@@ -1,0 +1,63 @@
+{
+  "crates": [
+    {
+      "id": "behemoth-mk-iv-custom",
+      "name": "Behemoth MK IV Custom Crate",
+      "categoryIds": ["behemoth-enhancement", "behemoth-skills"],
+      "options": [
+        { "materialKey": "MK III Fragment", "materialName": "MK III Fragment", "amount": 2 },
+        { "materialKey": "MK IV Fragment", "materialName": "MK IV Fragment", "amount": 2 },
+        { "materialKey": "Power Serum", "materialName": "Power Serum", "amount": 15 },
+        { "materialKey": "Neuronal Medium", "materialName": "Neuronal Medium", "amount": 4 }
+      ]
+    },
+    {
+      "id": "behemoth-mk-iii-custom",
+      "name": "Behemoth MK III Custom Crate",
+      "categoryIds": ["behemoth-enhancement", "behemoth-skills"],
+      "options": [
+        { "materialKey": "MK III Fragment", "materialName": "MK III Fragment", "amount": 2 },
+        { "materialKey": "Power Serum", "materialName": "Power Serum", "amount": 15 },
+        { "materialKey": "Neuronal Medium", "materialName": "Neuronal Medium", "amount": 4 }
+      ]
+    },
+    {
+      "id": "spacecraft-research",
+      "name": "Spacecraft Research",
+      "categoryIds": ["spacecraft"],
+      "options": [
+        { "materialKey": "Crystallized Steel", "materialName": "Crystallized Steel", "amount": 20 },
+        { "materialKey": "Luminous Fiber", "materialName": "Luminous Fiber", "amount": 10 },
+        { "materialKey": "Optical Storage Boards", "materialName": "Optical Storage Boards", "amount": 2 }
+      ]
+    },
+    {
+      "id": "ac-04-thunderbold-custom",
+      "name": "AC 04 Thunderbold Custom Crate",
+      "categoryIds": ["aircraft"],
+      "options": [
+        { "materialKey": "Reinforced Alloy", "materialName": "Reinforced Alloy", "amount": 100 },
+        { "materialKey": "Antimatter Coating", "materialName": "Antimatter Coating", "amount": 30 },
+        { "materialKey": "Superconductive Rail", "materialName": "Superconductive Rail", "amount": 1 }
+      ]
+    },
+    {
+      "id": "enterprise-custom",
+      "name": "Enterprise Custom Crate",
+      "categoryIds": ["spacecraft"],
+      "options": [
+        { "materialKey": "Superconducting Coil", "materialName": "Superconducting Coil", "amount": 5 },
+        { "materialKey": "Nuclear Fuel Rod", "materialName": "Nuclear Fuel Rod", "amount": 1 }
+      ]
+    },
+    {
+      "id": "formation-system-custom",
+      "name": "Formation System Custom Crate",
+      "categoryIds": ["formation-system"],
+      "options": [
+        { "materialKey": "Tactical Analysis", "materialName": "Tactical Analysis", "amount": 1 },
+        { "materialKey": "Coordinated Operation", "materialName": "Coordinated Operation", "amount": 2 }
+      ]
+    }
+  ]
+}

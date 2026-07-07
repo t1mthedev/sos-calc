@@ -1,0 +1,46 @@
+{
+  "selectedCategoryId": "formation-system",
+  "selectedGroupName": "Plasma Engine",
+  "selectedUpgrades": [
+    {
+      "itemId": "diversified-air-force",
+      "currentLevel": 15,
+      "targetLevel": 20
+    },
+    {
+      "itemId": "long-range-expansion",
+      "currentLevel": 15,
+      "targetLevel": 20
+    },
+    {
+      "itemId": "assault-expansion",
+      "currentLevel": 15,
+      "targetLevel": 20
+    },
+    {
+      "itemId": "heroic-inspiration",
+      "currentLevel": 18,
+      "targetLevel": 20
+    },
+    {
+      "itemId": "firepower-enhancement",
+      "currentLevel": 15,
+      "targetLevel": 20
+    },
+    {
+      "itemId": "combat-command",
+      "currentLevel": 15,
+      "targetLevel": 20
+    },
+    {
+      "itemId": "air-defense",
+      "currentLevel": 15,
+      "targetLevel": 20
+    },
+    {
+      "itemId": "collective-airpower",
+      "currentLevel": 15,
+      "targetLevel": 20
+    }
+  ]
+}

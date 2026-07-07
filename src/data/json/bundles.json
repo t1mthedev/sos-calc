@@ -1,0 +1,38 @@
+{
+  "bundles": [
+    {
+      "id": "behemoth-refinement-mk-iv",
+      "name": "Behemoth Refinement (MK IV) Bundle",
+      "priceDiamonds": 99,
+      "contents": [
+        { "crateId": "behemoth-mk-iv-custom", "count": 11 }
+      ]
+    },
+    {
+      "id": "spacecraft-growth",
+      "name": "Spacecraft Growth Bundle",
+      "priceDiamonds": 99,
+      "contents": [
+        { "crateId": "spacecraft-research", "count": 5 }
+      ]
+    },
+    {
+      "id": "aircraft-growth",
+      "name": "Aircraft Growth Bundle",
+      "priceDiamonds": 99,
+      "contents": [
+        { "crateId": "ac-04-thunderbold-custom", "count": 2 }
+      ]
+    },
+    {
+      "id": "enterprise-development",
+      "name": "Enterprise Development Bundle",
+      "priceDiamonds": 299,
+      "categoryId": "spacecraft",
+      "contents": [
+        { "materialKey": "Superconducting Coil", "count": 15 },
+        { "materialKey": "Nuclear Fuel Rod", "count": 5 }
+      ]
+    }
+  ]
+}
