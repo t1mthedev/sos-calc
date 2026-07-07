@@ -20,6 +20,7 @@ const COST_KEY_MAP = {
   coating: 'Antimatter Coating',
   alloy: 'Reinforced Alloy',
   neuronal: 'Neuronal Medium',
+  'power serum': 'Power Serum',
 };
 
 function mapCostKey(shortKey) {
@@ -44,6 +45,16 @@ function isFormationFile(sheetNames) {
 
 function isBehemothFile(sheetNames) {
   return sheetNames.some(s => /^MK\s+\S+$/.test(s)) && !isBehemothSkillsFile(sheetNames);
+}
+
+function isBehemothLevelsFile(wb) {
+  const sheetNames = wb.SheetNames;
+  if (sheetNames.length > 2) return false;
+  if (!sheetNames.every(s => /^MK\s+(III|IV)$/.test(s))) return false;
+  const ws = wb.Sheets[sheetNames[0]];
+  const rows = XLSX.utils.sheet_to_json(ws, { header: 1, defval: '' });
+  if (!rows.length) return false;
+  return rows[0].some(h => String(h).toLowerCase().includes('powerserum'));
 }
 
 function isBehemothSkillsFile(sheetNames) {
@@ -281,6 +292,36 @@ function parseBehemothSkills(wb) {
   return groups;
 }
 
+function parseBehemothLevels(wb) {
+  const items = [];
+  for (const name of wb.SheetNames) {
+    if (!/^MK\s+(III|IV)$/.test(name)) continue;
+    const ws = wb.Sheets[name];
+    const rows = XLSX.utils.sheet_to_json(ws, { defval: '' });
+    if (!rows.length) continue;
+    const levels = rows.map(r => {
+      const bonuses = [];
+      const benefit = String(r.Benefit || '').trim();
+      const pct = parseFloat(r.BenefitPct) || 0;
+      if (benefit) bonuses.push({ type: benefit, value: pct, unit: '%' });
+      const entry = { level: parseInt(r.Level, 10), costs: {} };
+      const cost = parseNum(r.PowerSerum);
+      if (cost > 0) entry.costs[mapCostKey('power serum')] = cost;
+      if (bonuses.length) entry.bonuses = bonuses;
+      return entry;
+    });
+    if (levels.length) {
+      items.push({
+        id: 'mk-' + name.toLowerCase().replace(/\s+/g, '-'),
+        name,
+        maxLevel: levels.length,
+        levels,
+      });
+    }
+  }
+  return items;
+}
+
 function main() {
   ensureDir(JSON_DIR);
   const files = readdirSync(EXCEL_DIR).filter(f => f.endsWith('.xlsx'));
@@ -292,7 +333,13 @@ function main() {
   for (const file of files) {
     const wb = XLSX.readFile(join(EXCEL_DIR, file), { cellDates: true });
     const sheets = wb.SheetNames;
-    if (isBehemothSkillsFile(sheets)) {
+    if (isBehemothLevelsFile(wb)) {
+      categories.push({
+        id: 'behemoth-levels',
+        name: 'Behemoth Levels',
+        items: parseBehemothLevels(wb),
+      });
+    } else if (isBehemothSkillsFile(sheets)) {
       categories.push({
         id: 'behemoth-skills',
         name: 'Behemoth Skills',

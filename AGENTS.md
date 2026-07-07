@@ -6,6 +6,7 @@
 - `npm run lint` — oxlint
 - `node scripts/convert-excel.js` — rebuild game-data.json from Excel
 - `node scripts/scrape-behemoth-skills.mjs` — re-scrape wiki data
+- `node scripts/scrape-behemoth-levels.mjs` — re-scrape behemoth main level data
 
 ## Project Overview
 Upgrade cost calculator for State of Survival. Single-page React app, no backend. Data flows: Fandom wiki → scraper scripts → Excel files → `convert-excel.js` → `game-data.json` → Zod-validated → UI.
@@ -20,10 +21,11 @@ Upgrade cost calculator for State of Survival. Single-page React app, no backend
 
 ### Converter File Detection Order (critical!)
 The `main()` loop in `convert-excel.js` checks files in this order:
-1. `isBehemothSkillsFile()` — sheets match `/^MK\s+\S+\s+Skills$/`
-2. `isFormationFile()` — sheets include "Summary"
-3. `isBehemothFile()` — sheets match `/^MK\s+\S+$/` (NOT Skills)
-4. `isSpacecraftFile()` — capsules/aircraft sheets
+1. `isBehemothLevelsFile()` — checks for "PowerSerum" column in first sheet (level data)
+2. `isBehemothSkillsFile()` — sheets match `/^MK\s+\S+\s+Skills$/`
+3. `isFormationFile()` — sheets include "Summary"
+4. `isBehemothFile()` — sheets match `/^MK\s+\S+$/` (NOT Skills)
+5. `isSpacecraftFile()` — capsules/aircraft sheets
 
 ### Categories
 | Category | ID | Structure | Items |
@@ -31,6 +33,7 @@ The `main()` loop in `convert-excel.js` checks files in this order:
 | Formation System | `formation-system` | 3 groups | 20 items |
 | Behemoth Enhancement | `behemoth-enhancement` | flat | 2 items (98+131 levels) |
 | Behemoth Skills | `behemoth-skills` | 9 groups | 133 items (2020 levels) |
+| Behemoth Levels | `behemoth-levels` | flat | 2 items (200 levels each) |
 | Spacecraft | `spacecraft` | 2 groups | 8 items |
 | Aircraft | `aircraft` | flat | 1 item (140 levels) |
 

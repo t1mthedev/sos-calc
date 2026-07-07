@@ -3,7 +3,7 @@
     {
       "id": "behemoth-mk-iv-custom",
       "name": "Behemoth MK IV Custom Crate",
-      "categoryIds": ["behemoth-enhancement", "behemoth-skills"],
+      "categoryIds": ["behemoth-enhancement", "behemoth-skills", "behemoth-levels"],
       "options": [
         { "materialKey": "MK III Fragment", "materialName": "MK III Fragment", "amount": 2 },
         { "materialKey": "MK IV Fragment", "materialName": "MK IV Fragment", "amount": 2 },
@@ -14,7 +14,7 @@
     {
       "id": "behemoth-mk-iii-custom",
       "name": "Behemoth MK III Custom Crate",
-      "categoryIds": ["behemoth-enhancement", "behemoth-skills"],
+      "categoryIds": ["behemoth-enhancement", "behemoth-skills", "behemoth-levels"],
       "options": [
         { "materialKey": "MK III Fragment", "materialName": "MK III Fragment", "amount": 2 },
         { "materialKey": "Power Serum", "materialName": "Power Serum", "amount": 15 },
