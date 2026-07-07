@@ -3,9 +3,12 @@ import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
+import { mkdirSync } from 'fs';
+
 const DIST = join(__dirname, '..', 'dist');
 const SRC = join(__dirname, '..', 'public');
-const OUTPUT = join(DIST, 'calculator.html');
+const OUTPUT = join(__dirname, '..', 'offline', 'calculator.html');
+mkdirSync(join(__dirname, '..', 'offline'), { recursive: true });
 
 const htmlPath = join(DIST, 'index.html');
 if (!existsSync(htmlPath)) {

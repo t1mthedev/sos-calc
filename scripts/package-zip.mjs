@@ -7,9 +7,9 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const pkg = JSON.parse(readFileSync(join(__dirname, '..', 'package.json'), 'utf-8'));
 const version = pkg.version;
 
-const dist = join(__dirname, '..', 'dist');
-const html = join(dist, 'calculator.html');
-const zip = join(dist, `sos-calc-v${version}.zip`);
+const offlineDir = join(__dirname, '..', 'offline');
+const html = join(offlineDir, 'calculator.html');
+const zip = join(offlineDir, `sos-calc-v${version}.zip`);
 
 execSync(
   `powershell -NoProfile -Command "Compress-Archive -Path '${html}' -DestinationPath '${zip}' -Force"`,
