@@ -6,6 +6,7 @@ import {
 } from '@mui/material';
 import UploadIcon from '@mui/icons-material/Upload';
 import DownloadIcon from '@mui/icons-material/Download';
+import ImageIcon from '@mui/icons-material/Image';
 import type { BackpackData, Crate } from '../../../types';
 import { getAllMaterialKeys, getCrates } from '../../../services/dataService';
 
@@ -24,6 +25,21 @@ function loadFromStorage(): BackpackData {
     /* corrupted data, fall through */
   }
   return { materials: {}, crates: {} };
+}
+
+function MaterialIcon({ materialKey }: { materialKey: string }) {
+  const [failed, setFailed] = useState(false);
+  if (failed) return <ImageIcon sx={{ fontSize: 28, color: 'text.disabled' }} />;
+  return (
+    <img
+      src={`/materials/${encodeURIComponent(materialKey)}.jpg`}
+      alt={materialKey}
+      width={32}
+      height={35}
+      style={{ display: 'block' }}
+      onError={() => setFailed(true)}
+    />
+  );
 }
 
 export function BackpackPage() {
@@ -126,6 +142,7 @@ export function BackpackPage() {
               <Table size="small">
                 <TableHead>
                   <TableRow>
+                    <TableCell sx={{ width: 40 }}>Icon</TableCell>
                     <TableCell>Material</TableCell>
                     <TableCell align="right" sx={{ width: 160 }}>Quantity</TableCell>
                   </TableRow>
@@ -133,6 +150,7 @@ export function BackpackPage() {
                 <TableBody>
                   {materialKeys.map(key => (
                     <TableRow key={key}>
+                      <TableCell><MaterialIcon materialKey={key} /></TableCell>
                       <TableCell>{key}</TableCell>
                       <TableCell align="right">
                         <TextField
