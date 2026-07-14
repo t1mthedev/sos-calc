@@ -43,6 +43,22 @@ function MaterialIcon({ materialKey }: { materialKey: string }) {
   );
 }
 
+function CrateIcon({ crateName }: { crateName: string }) {
+  const [failed, setFailed] = useState<'webp' | 'jpg'>();
+  if (failed === 'jpg') return <ImageIcon sx={{ fontSize: 28, color: 'text.disabled' }} />;
+  const ext = failed === 'webp' ? 'jpg' : 'webp';
+  return (
+    <img
+      src={`/crates/${encodeURIComponent(crateName)}.${ext}`}
+      alt={crateName}
+      width={32}
+      height={35}
+      style={{ display: 'block' }}
+      onError={() => setFailed(ext as 'webp' | 'jpg')}
+    />
+  );
+}
+
 export function BackpackPage() {
   const [data, setData] = useState<BackpackData>(loadFromStorage);
   const [snackbar, setSnackbar] = useState<{ message: string; severity: 'success' | 'error' } | null>(null);
@@ -182,6 +198,7 @@ export function BackpackPage() {
               <Table size="small">
                 <TableHead>
                   <TableRow>
+                    <TableCell sx={{ width: 40 }}>Icon</TableCell>
                     <TableCell>Crate</TableCell>
                     <TableCell align="right" sx={{ width: 160 }}>Quantity</TableCell>
                   </TableRow>
@@ -189,6 +206,7 @@ export function BackpackPage() {
                 <TableBody>
                   {crates.map(crate => (
                     <TableRow key={crate.id}>
+                      <TableCell><CrateIcon crateName={crate.name} /></TableCell>
                       <TableCell>
                         {crate.name}
                         <Typography variant="caption" color="text.secondary" sx={{ mt: 0.5, lineHeight: 1.4, display: 'block' }}>
