@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.2-beta] - 2026-07-14
+### Added
+- Backpack page with material and crate inventory
+
 ## [0.2.1-beta] - 2026-07-07
 ### Added
 - Consolidated Behemoth categories into a single "Behemoth" entry with MK type and section card flow

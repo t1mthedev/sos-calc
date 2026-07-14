@@ -146,6 +146,29 @@ export function getBundlesByCategory(categoryId: string): Bundle[] {
   );
 }
 
+export function getAllMaterialKeys(): string[] {
+  const keys = new Set<string>();
+
+  for (const cat of getCategories()) {
+    const items = cat.items ?? cat.groups?.flatMap(g => g.items) ?? [];
+    for (const item of items) {
+      for (const level of item.levels) {
+        for (const key of Object.keys(level.costs)) {
+          keys.add(key);
+        }
+      }
+    }
+  }
+
+  for (const crate of loadCrates()) {
+    for (const opt of crate.options) {
+      keys.add(opt.materialKey);
+    }
+  }
+
+  return [...keys].sort();
+}
+
 const BEHEMOTH_CATEGORY_IDS: Record<BehemothSection, string> = {
   enhancement: 'behemoth-enhancement',
   levels: 'behemoth-levels',

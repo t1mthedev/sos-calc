@@ -44,3 +44,8 @@
 - [x] Document re-import workflow in README
 - [x] Graceful handling of unknown sheets/files in converter (skipped with warning)
 - [x] Warn on structural changes in Excel files
+
+## Backpack
+
+- [x] Backpack page with materials and crates inventory
+- [ ] Dashboard "have vs need" comparison — read `sos-calc-backpack` from localStorage, subtract backpack quantities from upgrade totals to show remaining needed

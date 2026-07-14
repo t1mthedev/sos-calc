@@ -84,3 +84,8 @@ export interface SelectedUpgrade {
 export type BehemothMk = 'MK III' | 'MK IV';
 
 export type BehemothSection = 'enhancement' | 'levels' | 'skills';
+
+export interface BackpackData {
+  materials: Record<string, number>;
+  crates: Record<string, number>;
+}
