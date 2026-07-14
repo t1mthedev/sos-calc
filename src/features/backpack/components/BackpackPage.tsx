@@ -10,6 +10,7 @@ import ImageIcon from '@mui/icons-material/Image';
 import type { BackpackData, Crate } from '../../../types';
 import { MaterialIcon } from '../../../components/MaterialIcon';
 import { getAllMaterialKeys, getCrates } from '../../../services/dataService';
+import { useDevMode } from '../../../hooks/useDevMode';
 
 const BACKPACK_KEY = 'sos-calc-backpack';
 
@@ -34,7 +35,7 @@ function CrateIcon({ crateName }: { crateName: string }) {
   const ext = failed === 'webp' ? 'jpg' : 'webp';
   return (
     <img
-      src={`/crates/${encodeURIComponent(crateName)}.${ext}`}
+      src={`${import.meta.env.BASE_URL}crates/${encodeURIComponent(crateName)}.${ext}`}
       alt={crateName}
       width={32}
       height={35}
@@ -48,7 +49,7 @@ export function BackpackPage() {
   const [data, setData] = useState<BackpackData>(loadFromStorage);
   const [snackbar, setSnackbar] = useState<{ message: string; severity: 'success' | 'error' } | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
-  const isDevMode = new URLSearchParams(window.location.search).get('mode') === 'dev';
+  const isDevMode = useDevMode();
 
   useEffect(() => {
     localStorage.setItem(BACKPACK_KEY, JSON.stringify(data));

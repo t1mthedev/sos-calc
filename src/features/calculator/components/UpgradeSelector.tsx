@@ -1,6 +1,6 @@
 import { useRef } from 'react';
-import { useSearchParams } from 'react-router-dom';
 import { FormControl, InputLabel, Select, MenuItem, Button, Stack, Typography, Divider, IconButton, Tooltip, Chip } from '@mui/material';
+import { useDevMode } from '../../../hooks/useDevMode';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { useCalculator } from '../hooks/useCalculator';
 import { BehemothSelector } from './BehemothSelector';
@@ -8,8 +8,7 @@ import { BehemothSelector } from './BehemothSelector';
 const BEHEMOTH_CAT_IDS = new Set(['behemoth-enhancement', 'behemoth-levels', 'behemoth-skills']);
 
 export function UpgradeSelector() {
-  const [searchParams] = useSearchParams();
-  const isDev = searchParams.get('mode') === 'dev';
+  const isDev = useDevMode();
   const inputRef = useRef<HTMLInputElement>(null);
   const { categories, selectedCategoryId, selectedCategory, selectedGroupName, groupItems, allItems,
     selectCategory, selectGroup, addUpgrade, selectedUpgrades, reset, hasSavedData, isBehemoth } = useCalculator();

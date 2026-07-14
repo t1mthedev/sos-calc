@@ -7,7 +7,7 @@ export function MaterialIcon({ materialKey }: { materialKey: string }) {
   const ext = failed === 'webp' ? 'jpg' : 'webp';
   return (
     <img
-      src={`/materials/${encodeURIComponent(materialKey)}.${ext}`}
+      src={`${import.meta.env.BASE_URL}materials/${encodeURIComponent(materialKey)}.${ext}`}
       alt={materialKey}
       width={32}
       height={35}
