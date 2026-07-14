@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, useCallback } from 'react';
+import { useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import {
   Card, CardContent, Typography, Table, TableBody, TableCell,
   TableContainer, TableHead, TableRow, Paper, Stack, Box,
@@ -71,6 +71,18 @@ export function BackpackPage() {
 
   const materialKeys = getAllMaterialKeys();
   const crates = getCrates();
+
+  const crateContributions = useMemo(() => {
+    const contributions: Record<string, number> = {};
+    for (const crate of crates) {
+      const count = data.crates[crate.id] ?? 0;
+      if (count === 0) continue;
+      for (const option of crate.options) {
+        contributions[option.materialKey] = (contributions[option.materialKey] ?? 0) + count * option.amount;
+      }
+    }
+    return contributions;
+  }, [data.crates, crates]);
 
   const handleMaterialChange = useCallback((key: string, raw: string) => {
     const num = Math.max(0, parseInt(raw, 10) || 0);
@@ -161,28 +173,40 @@ export function BackpackPage() {
                   <TableRow>
                     <TableCell sx={{ width: 40 }}>Icon</TableCell>
                     <TableCell>Material</TableCell>
-                    <TableCell align="right" sx={{ width: 160 }}>Quantity</TableCell>
+                    <TableCell sx={{ width: 220 }}>Quantity</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  {materialKeys.map(key => (
-                    <TableRow key={key}>
-                      <TableCell><MaterialIcon materialKey={key} /></TableCell>
-                      <TableCell>{key}</TableCell>
-                      <TableCell align="right">
-                        <TextField
-                          type="number"
-                          size="small"
-                          value={data.materials[key] ?? ''}
-                          onChange={e => handleMaterialChange(key, e.target.value)}
-                          slotProps={{
-                            htmlInput: { min: 0, style: { textAlign: 'right' } },
-                          }}
-                          sx={{ width: 120 }}
-                        />
-                      </TableCell>
-                    </TableRow>
-                  ))}
+                  {materialKeys.map(key => {
+                    const owned = data.materials[key] ?? 0;
+                    const fromCrates = crateContributions[key] ?? 0;
+                    const virtualTotal = owned + fromCrates;
+                    return (
+                      <TableRow key={key}>
+                        <TableCell><MaterialIcon materialKey={key} /></TableCell>
+                        <TableCell>{key}</TableCell>
+                        <TableCell>
+                          <Stack direction="column" spacing={0.5} sx={{ alignItems: 'flex-start' }}>
+                            <TextField
+                              type="number"
+                              size="small"
+                              value={data.materials[key] ?? ''}
+                              onChange={e => handleMaterialChange(key, e.target.value)}
+                              slotProps={{
+                                htmlInput: { min: 0, style: { textAlign: 'right' } },
+                              }}
+                              sx={{ width: '100%' }}
+                            />
+                            {fromCrates > 0 && (
+                              <Typography variant="caption" sx={{ color: 'text.secondary', whiteSpace: 'nowrap' }}>
+                                owned: {owned} · {virtualTotal} with crates
+                              </Typography>
+                            )}
+                          </Stack>
+                        </TableCell>
+                      </TableRow>
+                    );
+                  })}
                 </TableBody>
               </Table>
             </TableContainer>
@@ -200,14 +224,14 @@ export function BackpackPage() {
                   <TableRow>
                     <TableCell sx={{ width: 40 }}>Icon</TableCell>
                     <TableCell>Crate</TableCell>
-                    <TableCell align="right" sx={{ width: 160 }}>Quantity</TableCell>
+                    <TableCell align="right">Quantity</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
                   {crates.map(crate => (
                     <TableRow key={crate.id}>
                       <TableCell><CrateIcon crateName={crate.name} /></TableCell>
-                      <TableCell>
+                      <TableCell sx={{ whiteSpace: 'nowrap' }}>
                         {crate.name}
                         <Typography variant="caption" color="text.secondary" sx={{ mt: 0.5, lineHeight: 1.4, display: 'block' }}>
                           Each crate (choose one): {crateOptionsText(crate)}
