@@ -28,16 +28,17 @@ function loadFromStorage(): BackpackData {
 }
 
 function MaterialIcon({ materialKey }: { materialKey: string }) {
-  const [failed, setFailed] = useState(false);
-  if (failed) return <ImageIcon sx={{ fontSize: 28, color: 'text.disabled' }} />;
+  const [failed, setFailed] = useState<'webp' | 'jpg'>();
+  if (failed === 'jpg') return <ImageIcon sx={{ fontSize: 28, color: 'text.disabled' }} />;
+  const ext = failed === 'webp' ? 'jpg' : 'webp';
   return (
     <img
-      src={`/materials/${encodeURIComponent(materialKey)}.jpg`}
+      src={`/materials/${encodeURIComponent(materialKey)}.${ext}`}
       alt={materialKey}
       width={32}
       height={35}
       style={{ display: 'block' }}
-      onError={() => setFailed(true)}
+      onError={() => setFailed(ext as 'webp' | 'jpg')}
     />
   );
 }
