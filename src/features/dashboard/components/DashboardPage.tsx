@@ -1,9 +1,10 @@
 import { useMemo } from 'react';
 import { Card, CardContent, Typography, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Stack, Chip, Box } from '@mui/material';
 import InfoIcon from '@mui/icons-material/Info';
-import type { UpgradeItem, SelectedUpgrade } from '../../../types';
-import { getCategories } from '../../../services/dataService';
+import type { UpgradeItem, SelectedUpgrade, BackpackData } from '../../../types';
+import { getCategories, getCrates } from '../../../services/dataService';
 import { sumCosts } from '../../calculator/utils/calculator';
+import { MaterialIcon } from '../../../components/MaterialIcon';
 
 const MATERIAL_LABELS: Record<string, string> = {
   manuals: 'Tactical Analysis',
@@ -16,6 +17,20 @@ const MATERIAL_LABELS: Record<string, string> = {
 };
 
 const SORT_ORDER = ['manuals', 'boards', 'fiber', 'fuel', 'coating', 'alloy', 'neuronal'];
+const BACKPACK_KEY = 'sos-calc-backpack';
+
+function loadBackpack(): BackpackData {
+  try {
+    const raw = localStorage.getItem(BACKPACK_KEY);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (parsed && typeof parsed === 'object' && 'materials' in parsed && 'crates' in parsed) {
+        return parsed as BackpackData;
+      }
+    }
+  } catch { /* ignore */ }
+  return { materials: {}, crates: {} };
+}
 
 function buildItemLookup(): Map<string, UpgradeItem> {
   const map = new Map<string, UpgradeItem>();
@@ -78,6 +93,22 @@ function loadAggregatedCosts(): { totals: Record<string, number>; categories: Sa
 function DashboardPage() {
   const { totals, categories } = useMemo(() => loadAggregatedCosts(), []);
 
+  const backpack = useMemo(() => loadBackpack(), []);
+
+  const crates = useMemo(() => getCrates(), []);
+
+  const crateContributions = useMemo(() => {
+    const contributions: Record<string, number> = {};
+    for (const crate of crates) {
+      const count = backpack.crates[crate.id] ?? 0;
+      if (count === 0) continue;
+      for (const option of crate.options) {
+        contributions[option.materialKey] = (contributions[option.materialKey] ?? 0) + count * option.amount;
+      }
+    }
+    return contributions;
+  }, [backpack.crates, crates]);
+
   const sortedEntries = useMemo(() => {
     const entries = Object.entries(totals).filter(([_, v]) => v > 0);
     entries.sort((a, b) => {
@@ -89,6 +120,12 @@ function DashboardPage() {
   }, [totals]);
 
   const totalItems = categories.reduce((sum, c) => sum + c.upgradeCount, 0);
+
+  const crateEntries = useMemo(() => {
+    return crates
+      .map(c => ({ crate: c, count: backpack.crates[c.id] ?? 0 }))
+      .filter(({ count }) => count > 0);
+  }, [backpack.crates, crates]);
 
   return (
     <Stack spacing={3}>
@@ -124,20 +161,70 @@ function DashboardPage() {
               <Table size="small">
                 <TableHead>
                   <TableRow>
+                    <TableCell sx={{ width: 40 }}>Icon</TableCell>
                     <TableCell>Material</TableCell>
                     <TableCell align="right">Total</TableCell>
+                    <TableCell align="right">Have</TableCell>
+                    <TableCell align="right">Remaining</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  {sortedEntries.map(([key, val]) => (
-                    <TableRow key={key}>
-                      <TableCell>{MATERIAL_LABELS[key] ?? key}</TableCell>
-                      <TableCell align="right">{val.toLocaleString()}</TableCell>
-                    </TableRow>
-                  ))}
+                  {sortedEntries.map(([key, val]) => {
+                    const have = backpack.materials[key] ?? 0;
+                    const fromCrates = crateContributions[key] ?? 0;
+                    const remaining = Math.max(0, val - have);
+                    const remainingWithCrates = Math.max(0, val - have - fromCrates);
+                    return (
+                      <TableRow key={key}>
+                        <TableCell><MaterialIcon materialKey={key} /></TableCell>
+                        <TableCell>{MATERIAL_LABELS[key] ?? key}</TableCell>
+                        <TableCell align="right">{val.toLocaleString()}</TableCell>
+                        <TableCell align="right">
+                          {have > 0 ? (
+                            <>
+                              <Typography component="span" variant="body2">{have.toLocaleString()}</Typography>
+                              {fromCrates > 0 && (
+                                <Typography variant="caption" color="text.secondary" sx={{ display: 'block', whiteSpace: 'nowrap' }}>
+                                  {have + fromCrates} with crates
+                                </Typography>
+                              )}
+                            </>
+                          ) : fromCrates > 0 ? (
+                            <Typography variant="caption" color="text.secondary" sx={{ whiteSpace: 'nowrap' }}>
+                              {fromCrates} (crates)
+                            </Typography>
+                          ) : (
+                            <Typography variant="body2" color="text.disabled">0</Typography>
+                          )}
+                        </TableCell>
+                        <TableCell align="right">
+                          <Typography
+                            component="span"
+                            variant="body2"
+                            sx={{ fontWeight: 600, color: remaining === 0 ? 'success.main' : 'warning.main' }}
+                          >
+                            {remaining.toLocaleString()}
+                          </Typography>
+                          {fromCrates > 0 && remainingWithCrates < remaining && (
+                            <Typography variant="caption" sx={{ display: 'block', whiteSpace: 'nowrap', color: 'warning.light', fontStyle: 'italic' }}>
+                              {remainingWithCrates.toLocaleString()} with crates
+                            </Typography>
+                          )}
+                        </TableCell>
+                      </TableRow>
+                    );
+                  })}
                 </TableBody>
               </Table>
             </TableContainer>
+            <Box sx={{ mt: 1.5, display: 'flex', gap: 2, flexWrap: 'wrap' }}>
+              <Typography variant="caption" color="text.secondary">
+                <Typography component="span" sx={{ color: 'success.main', fontWeight: 600 }}>●</Typography> Fully covered
+              </Typography>
+              <Typography variant="caption" color="text.secondary">
+                <Typography component="span" sx={{ color: 'warning.main', fontWeight: 600 }}>●</Typography> Still needed
+              </Typography>
+            </Box>
           </CardContent>
         </Card>
       ) : (
@@ -147,6 +234,24 @@ function DashboardPage() {
             <Typography color="text.secondary">
               No saved upgrades yet. Go to the Calculator to add some.
             </Typography>
+          </CardContent>
+        </Card>
+      )}
+
+      {crateEntries.length > 0 && sortedEntries.length === 0 && (
+        <Card>
+          <CardContent>
+            <Typography variant="subtitle1" gutterBottom sx={{ fontWeight: 600 }}>
+              Backpack Crates
+            </Typography>
+            <Stack spacing={1}>
+              {crateEntries.map(({ crate, count }) => (
+                <Box key={crate.id} sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <Typography variant="body2">{crate.name}</Typography>
+                  <Typography variant="body2" sx={{ fontWeight: 600 }}>{count}</Typography>
+                </Box>
+              ))}
+            </Stack>
           </CardContent>
         </Card>
       )}

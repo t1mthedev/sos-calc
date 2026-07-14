@@ -48,4 +48,4 @@
 ## Backpack
 
 - [x] Backpack page with materials and crates inventory
-- [ ] Dashboard "have vs need" comparison — read `sos-calc-backpack` from localStorage, subtract backpack quantities from upgrade totals to show remaining needed
+- [x] Dashboard "have vs need" comparison — reads `sos-calc-backpack` from localStorage, displays Have and Remaining columns per material, shows crate contributions as grey captions, includes crate summary card when no upgrades exist

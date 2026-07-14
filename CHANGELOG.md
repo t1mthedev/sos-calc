@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.3.0-beta] - 2026-07-14
+### Added
+- Dashboard "have vs need" comparison with Have and Remaining columns that subtract backpack inventory from upgrade totals, with crate contribution estimates
+- Material icons in the Dashboard resources table
+
 ## [0.2.2-beta] - 2026-07-14
 ### Added
 - Backpack page with material and crate inventory

@@ -66,6 +66,7 @@ The `main()` loop in `convert-excel.js` checks files in this order:
 - App version in `package.json`, shown in footer
 - `CHANGELOG.md` uses Keep a Changelog format with user-facing language
 - "What's new" dialog reads latest changelog entry, stores seen version in localStorage
+- Changelog entries must be single-line bullets with brief user-facing descriptions of features or changes — the raw markdown is parsed by the dialog; multi-line wrapped bullets render as broken paragraphs
 
 ## Cost Key Mapping
 Converter maps Excel column short names to full material names:
