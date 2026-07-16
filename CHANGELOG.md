@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.3.1-beta] - 2026-07-16
+### Changed
+- Clear button now only clears the current category instead of all saved upgrades
+
 ## [0.3.0-beta] - 2026-07-14
 ### Added
 - Dashboard "have vs need" comparison with Have and Remaining columns that subtract backpack inventory from upgrade totals, with crate contribution estimates

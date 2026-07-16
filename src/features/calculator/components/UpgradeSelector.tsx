@@ -11,7 +11,7 @@ export function UpgradeSelector() {
   const isDev = useDevMode();
   const inputRef = useRef<HTMLInputElement>(null);
   const { categories, selectedCategoryId, selectedCategory, selectedGroupName, groupItems, allItems,
-    selectCategory, selectGroup, addUpgrade, selectedUpgrades, reset, hasSavedData, isBehemoth } = useCalculator();
+    selectCategory, selectGroup, addUpgrade, selectedUpgrades, reset, hasSavedData, hasCurrentData, clearCategory, isBehemoth } = useCalculator();
 
   const dropdownOptions = [
     { id: '__behemoth__', name: 'Behemoth' },
@@ -126,11 +126,11 @@ export function UpgradeSelector() {
 
       <Divider />
       <Stack spacing={1}>
-        {hasSavedData && <Tooltip title="Clear all saved upgrades and start fresh">
+        {hasCurrentData && <Tooltip title="Clear all upgrades in this category">
           <IconButton
             size="small"
             color="error"
-            onClick={() => { if (window.confirm('Clear all saved upgrades?')) reset(); }}
+            onClick={() => { if (window.confirm('Clear all upgrades in this category?')) clearCategory(); }}
             sx={{ alignSelf: 'flex-start' }}
           >
             <DeleteIcon fontSize="small" />
@@ -138,6 +138,11 @@ export function UpgradeSelector() {
         </Tooltip>}
         {isDev && (
           <>
+            {hasSavedData && <Button variant="outlined" size="small" color="error" onClick={() => {
+              if (window.confirm('This will permanently delete ALL saved upgrades across ALL categories. Are you sure?')) reset();
+            }}>
+              Clear All
+            </Button>}
             <Button variant="outlined" size="small" onClick={handleExport}>
               Export to JSON
             </Button>

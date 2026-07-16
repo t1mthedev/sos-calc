@@ -1,8 +1,10 @@
-import { AppBar, Tabs, Tab, Box, Container } from '@mui/material';
+import { AppBar, Tabs, Tab, Box, Container, Button } from '@mui/material';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import CalculateIcon from '@mui/icons-material/Calculate';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
+import LogoutIcon from '@mui/icons-material/Logout';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
+import { useDevMode } from '../hooks/useDevMode';
 import { AppFooter } from '../features/calculator/components/AppFooter';
 
 const NAV_ITEMS = [
@@ -14,12 +16,13 @@ const NAV_ITEMS = [
 export function Layout() {
   const location = useLocation();
   const navigate = useNavigate();
+  const isDev = useDevMode();
 
   const activeTab = NAV_ITEMS.findIndex(item => location.pathname.startsWith(item.path));
 
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-      <AppBar position="static" elevation={1}>
+      <AppBar position="static" elevation={1} sx={{ position: 'relative' }}>
         <Tabs
           value={activeTab >= 0 ? activeTab : 1}
           onChange={(_e, newValue) => navigate(NAV_ITEMS[newValue].path)}
@@ -31,6 +34,20 @@ export function Layout() {
             <Tab key={item.path} label={item.label} icon={item.icon} iconPosition="start" />
           ))}
         </Tabs>
+        {isDev && (
+          <Button
+            color="inherit"
+            size="small"
+            startIcon={<LogoutIcon />}
+            sx={{ position: 'absolute', right: 16, top: 0, bottom: 0, my: 'auto', height: 36 }}
+            onClick={() => {
+              localStorage.removeItem('sos-calc-dev-mode');
+              window.location.href = window.location.href.replace(/[?&]mode=dev/, '');
+            }}
+          >
+            Disable Dev Mode
+          </Button>
+        )}
       </AppBar>
 
       <Container maxWidth="xl" sx={{ flexGrow: 1, py: 3 }}>
