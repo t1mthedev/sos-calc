@@ -3,6 +3,7 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import CalculateIcon from '@mui/icons-material/Calculate';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import LogoutIcon from '@mui/icons-material/Logout';
+import { useEffect } from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { useDevMode } from '../hooks/useDevMode';
 import { AppFooter } from '../features/calculator/components/AppFooter';
@@ -17,6 +18,10 @@ export function Layout() {
   const location = useLocation();
   const navigate = useNavigate();
   const isDev = useDevMode();
+
+  useEffect(() => {
+    (window as any).gtag?.('event', 'page_view', { page_path: location.pathname + location.hash });
+  }, [location]);
 
   const activeTab = NAV_ITEMS.findIndex(item => location.pathname.startsWith(item.path));
 
