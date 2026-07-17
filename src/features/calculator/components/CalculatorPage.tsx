@@ -1,3 +1,5 @@
+import { useEffect, useMemo } from 'react';
+import { useParams } from 'react-router-dom';
 import { Grid, Stack, Typography, Accordion, AccordionSummary, AccordionDetails, Card, CardContent } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { UpgradeSelector } from './UpgradeSelector';
@@ -9,9 +11,50 @@ import { BonusesTable } from './BonusesTable';
 import { CrateConversion } from './CrateConversion';
 import { BundleConversion } from './BundleConversion';
 import { useCalculator } from '../hooks/useCalculator';
+import { resolveCategoryId, normalizeSlug, resolveBySlug, resolveMk, buildSlugLookup } from '../../../utils/slugs';
 
 export function CalculatorPage() {
-  const { selectedCategoryId, selectedUpgrades, results, allItems, isCombinedBehemoth, behemothMk } = useCalculator();
+  const { categorySlug, groupSlug, mkSlug, sectionSlug } = useParams();
+  const { dispatch, selectedCategoryId, selectedGroupName, selectedUpgrades, results, allItems, isCombinedBehemoth, behemothMk, behemothSection, categories } = useCalculator();
+
+  const groupLookup = useMemo(
+    () => buildSlugLookup(categories.flatMap(c => (c.groups ?? []).map(g => g.name))),
+    [categories],
+  );
+
+  useEffect(() => {
+    if (!categorySlug && !mkSlug) return;
+
+    if (mkSlug && sectionSlug) {
+      const mk = resolveMk(mkSlug);
+      const section = normalizeSlug(sectionSlug);
+      if (mk) {
+        if (selectedCategoryId === '__behemoth__' && behemothMk === mk && behemothSection === section) return;
+        dispatch({ type: 'HYDRATE_FROM_URL', categoryId: '__behemoth__', behemothMk: mk, behemothSection: section });
+        return;
+      }
+    }
+
+    if (categorySlug) {
+      const catId = resolveCategoryId(categorySlug);
+      if (!catId) return;
+      if (catId === '__behemoth__') {
+        if (groupSlug) {
+          const mk = resolveMk(groupSlug);
+          if (selectedCategoryId === '__behemoth__' && behemothMk === mk && !behemothSection) return;
+          dispatch({ type: 'HYDRATE_FROM_URL', categoryId: '__behemoth__', behemothMk: mk ?? undefined });
+        } else {
+          if (selectedCategoryId === '__behemoth__' && !behemothMk) return;
+          dispatch({ type: 'HYDRATE_FROM_URL', categoryId: '__behemoth__' });
+        }
+      } else {
+        if (selectedCategoryId === catId && selectedGroupName === undefined) return;
+        const groupName = groupSlug ? resolveBySlug(groupSlug, groupLookup) : undefined;
+        if (selectedCategoryId === catId && selectedGroupName === groupName) return;
+        dispatch({ type: 'HYDRATE_FROM_URL', categoryId: catId, groupName });
+      }
+    }
+  }, [categorySlug, groupSlug, mkSlug, sectionSlug, dispatch, groupLookup, selectedCategoryId, selectedGroupName, behemothMk, behemothSection]);
 
   return (
     <>

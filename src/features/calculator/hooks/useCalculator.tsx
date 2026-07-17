@@ -32,7 +32,8 @@ type Action =
   | { type: 'RESET' }
   | { type: 'CLEAR_CATEGORY' }
   | { type: 'SELECT_BEHEMOTH_MK'; mk: string }
-  | { type: 'SELECT_BEHEMOTH_SECTION'; section: string };
+  | { type: 'SELECT_BEHEMOTH_SECTION'; section: string }
+  | { type: 'HYDRATE_FROM_URL'; categoryId: string | null; groupName?: string; behemothMk?: string; behemothSection?: string };
 
 function flattenCatItems(cat: Category): UpgradeItem[] {
   if (cat.items) return cat.items;
@@ -233,6 +234,21 @@ function reducer(state: CalculatorState, action: Action): CalculatorState {
         behemothSection: state.activeCategoryId === BEHEMOTH_ENTRY ? null : state.behemothSection,
       };
     }
+    case 'HYDRATE_FROM_URL': {
+      const isBehemothEntry = action.categoryId === BEHEMOTH_ENTRY;
+      const prevSaved = state.savedStates;
+      const restored = action.categoryId && !isBehemothEntry ? prevSaved[action.categoryId] : undefined;
+      return {
+        ...state,
+        activeCategoryId: action.categoryId,
+        activeGroupName: action.groupName ?? restored?.selectedGroupName ?? null,
+        activeUpgrades: isBehemothEntry
+          ? (prevSaved[BEHEMOTH_ENTRY]?.selectedUpgrades ?? [])
+          : (restored?.selectedUpgrades ?? []),
+        behemothMk: isBehemothEntry ? (action.behemothMk ?? (prevSaved[BEHEMOTH_ENTRY] as any)?.behemothMk ?? null) : null,
+        behemothSection: isBehemothEntry ? (action.behemothSection ?? (prevSaved[BEHEMOTH_ENTRY] as any)?.behemothSection ?? null) : null,
+      };
+    }
     default:
       return state;
   }
@@ -380,8 +396,10 @@ export function useCalculator() {
   const clearCategory = useCallback(() => dispatch({ type: 'CLEAR_CATEGORY' }), [dispatch]);
   const selectBehemothMk = useCallback((mk: string) => dispatch({ type: 'SELECT_BEHEMOTH_MK', mk }), [dispatch]);
   const selectBehemothSection = useCallback((section: string) => dispatch({ type: 'SELECT_BEHEMOTH_SECTION', section }), [dispatch]);
+  const dispatchAction = dispatch;
 
   return useMemo(() => ({
+    dispatch: dispatchAction,
     selectedCategoryId: state.activeCategoryId,
     selectedGroupName: state.activeGroupName,
     selectedUpgrades: state.activeUpgrades,
@@ -412,5 +430,5 @@ export function useCalculator() {
   }  ), [state, selectedCategory, allItems, selectedGroup, groupItems, results, combinedCosts, hasSavedData,
       hasCurrentData, isBehemoth, isCombinedBehemoth, behemothCategoryId,
       selectCategory, selectGroup, addUpgrade, removeUpgrade, setUpgradeCurrent, setUpgradeTarget, reset,
-      clearCategory, selectBehemothMk, selectBehemothSection]);
+      clearCategory, selectBehemothMk, selectBehemothSection, dispatchAction]);
 }

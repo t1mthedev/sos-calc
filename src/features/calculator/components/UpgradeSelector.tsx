@@ -1,15 +1,18 @@
 import { useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { FormControl, InputLabel, Select, MenuItem, Button, Stack, Typography, Divider, IconButton, Tooltip, Chip } from '@mui/material';
 import { useDevMode } from '../../../hooks/useDevMode';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { useCalculator } from '../hooks/useCalculator';
 import { BehemothSelector } from './BehemothSelector';
+import { getCategorySlug, toSlug } from '../../../utils/slugs';
 
 const BEHEMOTH_CAT_IDS = new Set(['behemoth-enhancement', 'behemoth-levels', 'behemoth-skills']);
 
 export function UpgradeSelector() {
   const isDev = useDevMode();
   const inputRef = useRef<HTMLInputElement>(null);
+  const navigate = useNavigate();
   const { categories, selectedCategoryId, selectedCategory, selectedGroupName, groupItems, allItems,
     selectCategory, selectGroup, addUpgrade, selectedUpgrades, reset, hasSavedData, hasCurrentData, clearCategory, isBehemoth } = useCalculator();
 
@@ -18,6 +21,23 @@ export function UpgradeSelector() {
     ...categories.filter(c => !BEHEMOTH_CAT_IDS.has(c.id)),
   ];
 
+  const handleCategoryChange = (id: string) => {
+    selectCategory(id);
+    navigate(`/calculator/${getCategorySlug(id)}`);
+  };
+
+  const handleGroupChange = (name: string) => {
+    selectGroup(name);
+    const catSlug = selectedCategoryId ? getCategorySlug(selectedCategoryId) : '';
+    navigate(`/calculator/${catSlug}/${toSlug(name)}`);
+  };
+
+  const handleClearCategory = () => {
+    if (window.confirm('Clear all upgrades in this category?')) {
+      clearCategory();
+      navigate('/calculator');
+    }
+  };
 
   const handleExport = () => {
     const ls = localStorage.getItem('sos-calc-state');
@@ -70,7 +90,7 @@ export function UpgradeSelector() {
     <Stack spacing={2}>
       <FormControl fullWidth>
         <InputLabel>Category</InputLabel>
-        <Select value={isBehemoth ? '__behemoth__' : (selectedCategoryId ?? '')} label="Category" onChange={e => selectCategory(e.target.value)}>
+        <Select value={isBehemoth ? '__behemoth__' : (selectedCategoryId ?? '')} label="Category" onChange={e => handleCategoryChange(e.target.value)}>
           {dropdownOptions.map(opt => (
             <MenuItem key={opt.id} value={opt.id}>{opt.name}</MenuItem>
           ))}
@@ -84,7 +104,7 @@ export function UpgradeSelector() {
           {selectedCategory?.groups && (
             <FormControl fullWidth>
               <InputLabel>Group</InputLabel>
-              <Select value={selectedGroupName ?? ''} label="Group" onChange={e => selectGroup(e.target.value)}
+              <Select value={selectedGroupName ?? ''} label="Group" onChange={e => handleGroupChange(e.target.value)}
                 renderValue={v => {
                   const g = selectedCategory?.groups?.find(gr => gr.name === v);
                   return g?.mk ? <>{g.name} <Chip label={g.mk} size="small" variant="outlined" sx={{ ml: 1, fontSize: '0.7rem', height: 20 }} /></> : v;
@@ -130,7 +150,7 @@ export function UpgradeSelector() {
           <IconButton
             size="small"
             color="error"
-            onClick={() => { if (window.confirm('Clear all upgrades in this category?')) clearCategory(); }}
+            onClick={handleClearCategory}
             sx={{ alignSelf: 'flex-start' }}
           >
             <DeleteIcon fontSize="small" />

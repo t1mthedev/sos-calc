@@ -1,5 +1,8 @@
+import { useCallback } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Stack, Typography, Card, CardActionArea, CardContent, Chip, Button, Divider } from '@mui/material';
 import { useCalculator } from '../hooks/useCalculator';
+import { getMkSlug, getSectionSlug } from '../../../utils/slugs';
 
 type BehemothMkValue = 'MK III' | 'MK IV';
 
@@ -15,7 +18,28 @@ const SECTION_OPTIONS: { value: string; label: string; description: string }[] =
 ];
 
 export function BehemothSelector() {
+  const navigate = useNavigate();
   const { behemothMk, behemothSection, selectBehemothMk, selectBehemothSection, allItems, addUpgrade, selectedUpgrades } = useCalculator();
+
+  const handleSelectMk = useCallback((value: string) => {
+    selectBehemothMk(value);
+    navigate(`/calculator/behemoth/${getMkSlug(value)}`);
+  }, [selectBehemothMk, navigate]);
+
+  const handleDeleteMk = useCallback(() => {
+    selectBehemothMk('');
+    navigate('/calculator/behemoth');
+  }, [selectBehemothMk, navigate]);
+
+  const handleSelectSection = useCallback((value: string) => {
+    selectBehemothSection(value);
+    navigate(`/calculator/behemoth/${getMkSlug(behemothMk ?? '')}/${getSectionSlug(value)}`);
+  }, [selectBehemothSection, behemothMk, navigate]);
+
+  const handleDeleteSection = useCallback(() => {
+    selectBehemothSection('');
+    navigate(`/calculator/behemoth/${getMkSlug(behemothMk ?? '')}`);
+  }, [selectBehemothSection, behemothMk, navigate]);
 
   return (
     <Stack spacing={2}>
@@ -24,7 +48,7 @@ export function BehemothSelector() {
           <Typography variant="subtitle2" color="text.secondary">Select Behemoth type:</Typography>
           {MK_OPTIONS.map(opt => (
             <Card key={opt.value} variant="outlined" sx={{ cursor: 'pointer' }}>
-              <CardActionArea onClick={() => selectBehemothMk(opt.value)}>
+              <CardActionArea onClick={() => handleSelectMk(opt.value)}>
                 <CardContent>
                   <Typography sx={{ fontWeight: 600 }}>{opt.label}</Typography>
                   <Typography variant="body2" color="text.secondary">{opt.description}</Typography>
@@ -39,12 +63,12 @@ export function BehemothSelector() {
         <>
           <Stack direction="row" spacing={1} sx={{ alignItems: 'center' }}>
             <Typography variant="subtitle2" color="text.secondary">Behemoth:</Typography>
-            <Chip label={behemothMk} size="small" color="primary" onDelete={() => selectBehemothMk('')} />
+            <Chip label={behemothMk} size="small" color="primary" onDelete={handleDeleteMk} />
           </Stack>
           <Typography variant="subtitle2" color="text.secondary">Select section:</Typography>
           {SECTION_OPTIONS.map(opt => (
             <Card key={opt.value} variant="outlined" sx={{ cursor: 'pointer' }}>
-              <CardActionArea onClick={() => selectBehemothSection(opt.value)}>
+              <CardActionArea onClick={() => handleSelectSection(opt.value)}>
                 <CardContent>
                   <Typography sx={{ fontWeight: 600 }}>{opt.label}</Typography>
                   <Typography variant="body2" color="text.secondary">{opt.description}</Typography>
@@ -58,12 +82,12 @@ export function BehemothSelector() {
       {behemothMk && behemothSection && (
         <>
           <Stack direction="row" spacing={1} sx={{ alignItems: 'center', flexWrap: 'wrap' }}>
-            <Chip label={behemothMk} size="small" color="primary" onDelete={() => { selectBehemothMk(''); }} />
+            <Chip label={behemothMk} size="small" color="primary" onDelete={handleDeleteMk} />
             <Chip
               label={SECTION_OPTIONS.find(s => s.value === behemothSection)?.label ?? behemothSection}
               size="small"
               variant="outlined"
-              onDelete={() => selectBehemothSection('')}
+              onDelete={handleDeleteSection}
             />
           </Stack>
           <Divider />
