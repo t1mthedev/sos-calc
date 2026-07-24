@@ -1,8 +1,8 @@
 import { useMemo } from 'react';
 import { Card, CardContent, Typography, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Stack, Chip, Box } from '@mui/material';
 import InfoIcon from '@mui/icons-material/Info';
-import type { UpgradeItem, SelectedUpgrade, BackpackData } from '../../../types';
-import { getCategories, getCrates } from '../../../services/dataService';
+import type { UpgradeItem, SelectedUpgrade, BackpackData, BehemothMk } from '../../../types';
+import { getCategories, getCrates, getBehemothItemsForMk } from '../../../services/dataService';
 import { sumCosts } from '../../calculator/utils/calculator';
 import { MaterialIcon } from '../../../components/MaterialIcon';
 
@@ -17,6 +17,7 @@ const MATERIAL_LABELS: Record<string, string> = {
 };
 
 const SORT_ORDER = ['manuals', 'boards', 'fiber', 'fuel', 'coating', 'alloy', 'neuronal'];
+const BEHEMOTH_HIDDEN_IDS = new Set(['behemoth-enhancement', 'behemoth-levels', 'behemoth-skills']);
 const BACKPACK_KEY = 'sos-calc-backpack';
 
 function loadBackpack(): BackpackData {
@@ -65,16 +66,33 @@ function loadAggregatedCosts(): { totals: Record<string, number>; categories: Sa
     const totals: Record<string, number> = {};
     const categoriesInfo: SavedCategoryInfo[] = [];
 
+    const hasBehemothEntry = '__behemoth__' in savedStates;
+
     for (const [catId, state] of Object.entries(savedStates)) {
+      if (hasBehemothEntry && BEHEMOTH_HIDDEN_IDS.has(catId)) continue;
+
       const upgrades = state.selectedUpgrades ?? [];
       if (upgrades.length === 0) continue;
 
+      let filteredUpgrades = upgrades;
+      if (catId === '__behemoth__') {
+        const behemothMk = (state as Record<string, unknown>).behemothMk as string | undefined;
+        if (behemothMk) {
+          const validIds = new Set(
+            getBehemothItemsForMk(behemothMk as BehemothMk).flatMap(s => s.items.map(i => i.id))
+          );
+          filteredUpgrades = upgrades.filter(u => validIds.has(u.itemId));
+        }
+      }
+
+      if (filteredUpgrades.length === 0) continue;
+
       categoriesInfo.push({
         categoryName: catNameMap.get(catId) ?? catId,
-        upgradeCount: upgrades.length,
+        upgradeCount: filteredUpgrades.length,
       });
 
-      for (const upgrade of upgrades) {
+      for (const upgrade of filteredUpgrades) {
         const item = itemLookup.get(upgrade.itemId);
         if (!item) continue;
         const costs = sumCosts(item, upgrade.currentLevel, upgrade.targetLevel);
