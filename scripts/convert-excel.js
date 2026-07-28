@@ -21,6 +21,8 @@ const COST_KEY_MAP = {
   alloy: 'Reinforced Alloy',
   neuronal: 'Neuronal Medium',
   'power serum': 'Power Serum',
+  biobattery: 'Biobattery',
+  serum: 'Serum',
 };
 
 function mapCostKey(shortKey) {
@@ -253,6 +255,9 @@ function parseBehemothSkills(wb) {
     const ws = wb.Sheets[sheetName];
     const rows = XLSX.utils.sheet_to_json(ws, { defval: '' });
     if (!rows.length) continue;
+    const firstRow = rows[0];
+    const useBiobattery = firstRow && firstRow['Biobattery'] !== undefined;
+    const costColName = useBiobattery ? 'Biobattery' : 'Neuronal Medium';
     const treeMap = {};
     for (const row of rows) {
       const tree = String(row.Tree || '').trim();
@@ -260,10 +265,10 @@ function parseBehemothSkills(wb) {
       if (!tree || !skill) continue;
       if (!treeMap[tree]) treeMap[tree] = {};
       if (!treeMap[tree][skill]) treeMap[tree][skill] = [];
-      treeMap[tree][skill].push({ level: parseInt(row.Level, 10), benefit: row.Benefit, cost: parseNum(row['Neuronal Medium']) });
+      treeMap[tree][skill].push({ level: parseInt(row.Level, 10), benefit: row.Benefit, cost: parseNum(row[costColName]) });
     }
     const isMK0 = gen === 'MK 0';
-    const costKey = isMK0 ? 'Refined Fuel' : mapCostKey('neuronal');
+    const costKey = isMK0 ? 'Refined Fuel' : useBiobattery ? mapCostKey('biobattery') : mapCostKey('neuronal');
     for (const [treeName, skills] of Object.entries(treeMap)) {
       const items = [];
       for (const [skillName, rows] of Object.entries(skills)) {
@@ -308,7 +313,10 @@ function parseBehemothLevels(wb) {
       const entry = { level: parseInt(r.Level, 10), costs: {} };
       const cost = parseNum(r.PowerSerum);
       if (cost > 0) {
-        const costKey = name === 'MK 0' ? 'Upgrade Chip' : mapCostKey('power serum');
+        let costKey;
+        if (name === 'MK 0') costKey = 'Upgrade Chip';
+        else if (name === 'MK III' || name === 'MK IV') costKey = mapCostKey('power serum');
+        else costKey = mapCostKey('serum');
         entry.costs[costKey] = cost;
       }
       if (bonuses.length) entry.bonuses = bonuses;
