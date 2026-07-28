@@ -262,6 +262,8 @@ function parseBehemothSkills(wb) {
       if (!treeMap[tree][skill]) treeMap[tree][skill] = [];
       treeMap[tree][skill].push({ level: parseInt(row.Level, 10), benefit: row.Benefit, cost: parseNum(row['Neuronal Medium']) });
     }
+    const isMK0 = gen === 'MK 0';
+    const costKey = isMK0 ? 'Refined Fuel' : mapCostKey('neuronal');
     for (const [treeName, skills] of Object.entries(treeMap)) {
       const items = [];
       for (const [skillName, rows] of Object.entries(skills)) {
@@ -269,7 +271,7 @@ function parseBehemothSkills(wb) {
         for (const row of rows) {
           const gl = row.level;
           if (!merged[gl]) merged[gl] = { level: gl, costs: {}, bonuses: [], benefit: '' };
-          if (row.cost > 0) merged[gl].costs[mapCostKey('neuronal')] = (merged[gl].costs[mapCostKey('neuronal')] || 0) + row.cost;
+          if (row.cost > 0) merged[gl].costs[costKey] = (merged[gl].costs[costKey] || 0) + row.cost;
           const pct = parsePct(row.benefit);
           if (pct > 0) merged[gl].bonuses.push({ type: skillName, value: pct, unit: '%' });
           else merged[gl].benefit = row.benefit;
@@ -305,7 +307,10 @@ function parseBehemothLevels(wb) {
       if (benefit) bonuses.push({ type: benefit, value: pct, unit: '%' });
       const entry = { level: parseInt(r.Level, 10), costs: {} };
       const cost = parseNum(r.PowerSerum);
-      if (cost > 0) entry.costs[mapCostKey('power serum')] = cost;
+      if (cost > 0) {
+        const costKey = name === 'MK 0' ? 'Upgrade Chip' : mapCostKey('power serum');
+        entry.costs[costKey] = cost;
+      }
       if (bonuses.length) entry.bonuses = bonuses;
       return entry;
     });

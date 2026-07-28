@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-07-27",
+  "lastUpdated": "2026-07-28",
   "categories": [
     {
       "id": "behemoth-enhancement",
@@ -9404,213 +9404,6 @@
           ]
         },
         {
-          "id": "mk-0",
-          "name": "MK 0",
-          "maxLevel": 5,
-          "levels": [
-            {
-              "level": 1,
-              "name": "1",
-              "costs": {
-                "MK 0 Fragment": 15
-              },
-              "bonuses": [
-                {
-                  "type": "Infantry Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Infantry Health",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Rider Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Rider Health",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Hunter Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Hunter Health",
-                  "value": 1,
-                  "unit": "%"
-                }
-              ],
-              "benefit": "Level 1"
-            },
-            {
-              "level": 2,
-              "name": "2",
-              "costs": {
-                "MK 0 Fragment": 20
-              },
-              "bonuses": [
-                {
-                  "type": "Infantry Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Infantry Health",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Rider Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Rider Health",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Hunter Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Hunter Health",
-                  "value": 1,
-                  "unit": "%"
-                }
-              ],
-              "benefit": "Level 2"
-            },
-            {
-              "level": 3,
-              "name": "3",
-              "costs": {
-                "MK 0 Fragment": 25
-              },
-              "bonuses": [
-                {
-                  "type": "Infantry Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Infantry Health",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Rider Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Rider Health",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Hunter Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Hunter Health",
-                  "value": 1,
-                  "unit": "%"
-                }
-              ],
-              "benefit": "Level 3"
-            },
-            {
-              "level": 4,
-              "name": "4",
-              "costs": {
-                "MK 0 Fragment": 30
-              },
-              "bonuses": [
-                {
-                  "type": "Infantry Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Infantry Health",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Rider Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Rider Health",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Hunter Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Hunter Health",
-                  "value": 1,
-                  "unit": "%"
-                }
-              ],
-              "benefit": "Level 4"
-            },
-            {
-              "level": 5,
-              "name": "5",
-              "costs": {
-                "MK 0 Fragment": 35
-              },
-              "bonuses": [
-                {
-                  "type": "Infantry Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Infantry Health",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Rider Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Rider Health",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Hunter Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Hunter Health",
-                  "value": 1,
-                  "unit": "%"
-                }
-              ],
-              "benefit": "Level 5"
-            }
-          ]
-        },
-        {
           "id": "mk-i",
           "name": "MK I",
           "maxLevel": 5,
@@ -10230,6 +10023,2259 @@
               "benefit": "Level 5"
             }
           ]
+        },
+        {
+          "id": "mk-0",
+          "name": "MK 0",
+          "maxLevel": 65,
+          "levels": [
+            {
+              "level": 1,
+              "name": "Bane 1",
+              "costs": {
+                "MK 0 Fragment": 0
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 0.6,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Infantry Lethality",
+              "skillsUnlocked": [
+                "Construction Time"
+              ]
+            },
+            {
+              "level": 2,
+              "name": "Bane 2",
+              "costs": {
+                "MK 0 Fragment": 7
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 0.6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 0.6,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Infantry Health",
+              "skillsUnlocked": [
+                "Research Progress"
+              ]
+            },
+            {
+              "level": 3,
+              "name": "Bane 3",
+              "costs": {
+                "MK 0 Fragment": 9
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 0.6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 0.6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 0.6,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Rider Lethality",
+              "skillsUnlocked": [
+                "Speedy Training"
+              ]
+            },
+            {
+              "level": 4,
+              "name": "Bane 4",
+              "costs": {
+                "MK 0 Fragment": 10
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 0.6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 0.6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 0.6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 0.6,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Rider Health",
+              "skillsUnlocked": [
+                "Wood Gathering"
+              ]
+            },
+            {
+              "level": 5,
+              "name": "Bane 5",
+              "costs": {
+                "MK 0 Fragment": 11
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 0.6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 0.6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 0.6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 0.6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 0.6,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Hunter Lethality",
+              "skillsUnlocked": [
+                "Building Materials"
+              ]
+            },
+            {
+              "level": 6,
+              "name": "Bane 6",
+              "costs": {
+                "MK 0 Fragment": 13
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 0.6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 0.6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 0.6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 0.6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 0.6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 0.6,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Hunter Health"
+            },
+            {
+              "level": 7,
+              "name": "Bane 7",
+              "costs": {
+                "MK 0 Fragment": 14
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 0.6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 0.6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 0.6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 0.6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 0.6,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Infantry Lethality",
+              "skillsUnlocked": [
+                "Training Resources"
+              ]
+            },
+            {
+              "level": 8,
+              "name": "Bane 8",
+              "costs": {
+                "MK 0 Fragment": 15
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 0.6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 0.6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 0.6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 0.6,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Infantry Health"
+            },
+            {
+              "level": 9,
+              "name": "Bane 9",
+              "costs": {
+                "MK 0 Fragment": 16
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 0.6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 0.6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 0.6,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Rider Lethality",
+              "skillsUnlocked": [
+                "Metal Gathering"
+              ]
+            },
+            {
+              "level": 10,
+              "name": "Bane 10",
+              "costs": {
+                "MK 0 Fragment": 16
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 0.6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 0.6,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Rider Health",
+              "skillsUnlocked": [
+                "Gas Gathering"
+              ]
+            },
+            {
+              "level": 11,
+              "name": "Bane Ultra-Enhance",
+              "costs": {
+                "MK 0 Fragment": 17
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 0.6,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Hunter Lethality"
+            },
+            {
+              "level": 12,
+              "name": "Havoc I 1",
+              "costs": {
+                "MK 0 Fragment": 0
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1.2,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Hunter Lethality",
+              "skillsUnlocked": [
+                "Infantry Attack"
+              ]
+            },
+            {
+              "level": 13,
+              "name": "Havoc I 2",
+              "costs": {
+                "MK 0 Fragment": 18
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1.2,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Hunter Health",
+              "skillsUnlocked": [
+                "Rider Defense"
+              ]
+            },
+            {
+              "level": 14,
+              "name": "Havoc I 3",
+              "costs": {
+                "MK 0 Fragment": 19
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1.2,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Infantry Lethality",
+              "skillsUnlocked": [
+                "Hunter Defense"
+              ]
+            },
+            {
+              "level": 15,
+              "name": "Havoc I 4",
+              "costs": {
+                "MK 0 Fragment": 19
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1.2,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Infantry Health",
+              "skillsUnlocked": [
+                "Infantry Defense"
+              ]
+            },
+            {
+              "level": 16,
+              "name": "Havoc I 5",
+              "costs": {
+                "MK 0 Fragment": 20
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1.2,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Rider Lethality"
+            },
+            {
+              "level": 17,
+              "name": "Havoc I 6",
+              "costs": {
+                "MK 0 Fragment": 21
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1.2,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Rider Health",
+              "skillsUnlocked": [
+                "Rider Attack"
+              ]
+            },
+            {
+              "level": 18,
+              "name": "Havoc I 7",
+              "costs": {
+                "MK 0 Fragment": 21
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1.2,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Hunter Lethality"
+            },
+            {
+              "level": 19,
+              "name": "Havoc I 8",
+              "costs": {
+                "MK 0 Fragment": 22
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Hunter Health",
+              "skillsUnlocked": [
+                "Hunter Attack"
+              ]
+            },
+            {
+              "level": 20,
+              "name": "Havoc I 9",
+              "costs": {
+                "MK 0 Fragment": 23
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 2.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Infantry Lethality"
+            },
+            {
+              "level": 21,
+              "name": "Havoc I 10",
+              "costs": {
+                "MK 0 Fragment": 23
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 2.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 2.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Infantry Health",
+              "skillsUnlocked": [
+                "Infantry Lethality"
+              ]
+            },
+            {
+              "level": 22,
+              "name": "Havoc I Ultra-Enhance",
+              "costs": {
+                "MK 0 Fragment": 24
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 2.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 2.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 2.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1.8000000000000003,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Rider Lethality"
+            },
+            {
+              "level": 23,
+              "name": "Havoc II 1",
+              "costs": {
+                "MK 0 Fragment": 0
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Lethality",
+                  "value": 2.4,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Rider Lethality"
+            },
+            {
+              "level": 24,
+              "name": "Havoc II 2",
+              "costs": {
+                "MK 0 Fragment": 24
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Lethality",
+                  "value": 2.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 2.4,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Rider Health",
+              "skillsUnlocked": [
+                "Rider Health"
+              ]
+            },
+            {
+              "level": 25,
+              "name": "Havoc II 3",
+              "costs": {
+                "MK 0 Fragment": 25
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Lethality",
+                  "value": 2.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 2.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 2.4,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Hunter Lethality"
+            },
+            {
+              "level": 26,
+              "name": "Havoc II 4",
+              "costs": {
+                "MK 0 Fragment": 26
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Lethality",
+                  "value": 2.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 2.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 2.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 2.4,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Hunter Health",
+              "skillsUnlocked": [
+                "Hunter Health"
+              ]
+            },
+            {
+              "level": 27,
+              "name": "Havoc II 5",
+              "costs": {
+                "MK 0 Fragment": 26
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 3,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 2.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 2.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 2.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 2.4,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Infantry Lethality"
+            },
+            {
+              "level": 28,
+              "name": "Havoc II 6",
+              "costs": {
+                "MK 0 Fragment": 27
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 3,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 3,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 2.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 2.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 2.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 2.4,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Infantry Health",
+              "skillsUnlocked": [
+                "Infantry Health"
+              ]
+            },
+            {
+              "level": 29,
+              "name": "Havoc II 7",
+              "costs": {
+                "MK 0 Fragment": 27
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 3,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 3,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 3,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 2.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 2.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 2.4,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Rider Lethality"
+            },
+            {
+              "level": 30,
+              "name": "Havoc II 8",
+              "costs": {
+                "MK 0 Fragment": 28
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 3,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 3,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 3,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 3,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 2.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 2.4,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Rider Health",
+              "skillsUnlocked": [
+                "Rider Lethality"
+              ]
+            },
+            {
+              "level": 31,
+              "name": "Havoc II 9",
+              "costs": {
+                "MK 0 Fragment": 28
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 3,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 3,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 3,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 3,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 3,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 2.4,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Hunter Lethality"
+            },
+            {
+              "level": 32,
+              "name": "Havoc II 10",
+              "costs": {
+                "MK 0 Fragment": 29
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 3,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 3,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 3,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 3,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 3,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 3,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Hunter Health",
+              "skillsUnlocked": [
+                "Hunter Lethality"
+              ]
+            },
+            {
+              "level": 33,
+              "name": "Havoc II Ultra-Enhance",
+              "costs": {
+                "MK 0 Fragment": 29
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 3,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 3,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 3,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 3,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 3,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Infantry Lethality"
+            },
+            {
+              "level": 34,
+              "name": "Scourge I 1",
+              "costs": {
+                "MK 0 Fragment": 0
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Infantry Lethality",
+              "skillsUnlocked": [
+                "Active Strike"
+              ]
+            },
+            {
+              "level": 35,
+              "name": "Scourge I 2",
+              "costs": {
+                "MK 0 Fragment": 29
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Infantry Health"
+            },
+            {
+              "level": 36,
+              "name": "Scourge I 3",
+              "costs": {
+                "MK 0 Fragment": 30
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Rider Lethality"
+            },
+            {
+              "level": 37,
+              "name": "Scourge I 4",
+              "costs": {
+                "MK 0 Fragment": 30
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Rider Health",
+              "skillsUnlocked": [
+                "Troop Attack"
+              ]
+            },
+            {
+              "level": 38,
+              "name": "Scourge I 5",
+              "costs": {
+                "MK 0 Fragment": 31
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Hunter Lethality"
+            },
+            {
+              "level": 39,
+              "name": "Scourge I 6",
+              "costs": {
+                "MK 0 Fragment": 31
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Hunter Health"
+            },
+            {
+              "level": 40,
+              "name": "Scourge I 7",
+              "costs": {
+                "MK 0 Fragment": 32
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 4.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Infantry Lethality",
+              "skillsUnlocked": [
+                "Rally Attack"
+              ]
+            },
+            {
+              "level": 41,
+              "name": "Scourge I 8",
+              "costs": {
+                "MK 0 Fragment": 32
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 4.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 4.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Infantry Health"
+            },
+            {
+              "level": 42,
+              "name": "Scourge I 9",
+              "costs": {
+                "MK 0 Fragment": 33
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 4.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 4.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 4.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Rider Lethality"
+            },
+            {
+              "level": 43,
+              "name": "Scourge I 10",
+              "costs": {
+                "MK 0 Fragment": 33
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 4.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 4.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 4.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 4.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Rider Health",
+              "skillsUnlocked": [
+                "Troop Lethality"
+              ]
+            },
+            {
+              "level": 44,
+              "name": "Scourge I Ultra-Enhance",
+              "costs": {
+                "MK 0 Fragment": 33
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 4.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 4.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 4.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 4.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 4.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 3.6000000000000005,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Hunter Lethality"
+            },
+            {
+              "level": 45,
+              "name": "Scourge II 1",
+              "costs": {
+                "MK 0 Fragment": 0
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Lethality",
+                  "value": 4.2,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Hunter Lethality"
+            },
+            {
+              "level": 46,
+              "name": "Scourge II 2",
+              "costs": {
+                "MK 0 Fragment": 34
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Lethality",
+                  "value": 4.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 4.2,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Hunter Health"
+            },
+            {
+              "level": 47,
+              "name": "Scourge II 3",
+              "costs": {
+                "MK 0 Fragment": 34
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 4.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 4.2,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Infantry Lethality",
+              "skillsUnlocked": [
+                "Rally Lethality"
+              ]
+            },
+            {
+              "level": 48,
+              "name": "Scourge II 4",
+              "costs": {
+                "MK 0 Fragment": 35
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 4.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 4.2,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Infantry Health"
+            },
+            {
+              "level": 49,
+              "name": "Scourge II 5",
+              "costs": {
+                "MK 0 Fragment": 35
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 4.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 4.2,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Rider Lethality"
+            },
+            {
+              "level": 50,
+              "name": "Scourge II 6",
+              "costs": {
+                "MK 0 Fragment": 35
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 4.2,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 4.2,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Rider Health",
+              "skillsUnlocked": [
+                "Troop Defense"
+              ]
+            },
+            {
+              "level": 51,
+              "name": "Scourge II 7",
+              "costs": {
+                "MK 0 Fragment": 36
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 4.2,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Hunter Lethality"
+            },
+            {
+              "level": 52,
+              "name": "Scourge II 8",
+              "costs": {
+                "MK 0 Fragment": 36
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 4.8,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Hunter Health"
+            },
+            {
+              "level": 53,
+              "name": "Scourge II 9",
+              "costs": {
+                "MK 0 Fragment": 36
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 5.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 4.8,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Infantry Lethality",
+              "skillsUnlocked": [
+                "Rally Defense"
+              ]
+            },
+            {
+              "level": 54,
+              "name": "Scourge II 10",
+              "costs": {
+                "MK 0 Fragment": 37
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 5.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 5.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 4.8,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Infantry Health"
+            },
+            {
+              "level": 55,
+              "name": "Scourge II Ultra-Enhance",
+              "costs": {
+                "MK 0 Fragment": 37
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 5.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 5.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 5.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 4.8,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 4.8,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Rider Lethality"
+            },
+            {
+              "level": 56,
+              "name": "Scourge III 1",
+              "costs": {
+                "MK 0 Fragment": 0
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Lethality",
+                  "value": 5.4,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Rider Lethality"
+            },
+            {
+              "level": 57,
+              "name": "Scourge III 2",
+              "costs": {
+                "MK 0 Fragment": 38
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Lethality",
+                  "value": 5.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 5.4,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Rider Health",
+              "skillsUnlocked": [
+                "Troop Health"
+              ]
+            },
+            {
+              "level": 58,
+              "name": "Scourge III 3",
+              "costs": {
+                "MK 0 Fragment": 38
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Lethality",
+                  "value": 5.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 5.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 5.4,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Hunter Lethality"
+            },
+            {
+              "level": 59,
+              "name": "Scourge III 4",
+              "costs": {
+                "MK 0 Fragment": 38
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Lethality",
+                  "value": 5.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 5.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 5.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 5.4,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Hunter Health"
+            },
+            {
+              "level": 60,
+              "name": "Scourge III 5",
+              "costs": {
+                "MK 0 Fragment": 39
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 5.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 5.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 5.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 5.4,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Infantry Lethality",
+              "skillsUnlocked": [
+                "Rally Health"
+              ]
+            },
+            {
+              "level": 61,
+              "name": "Scourge III 6",
+              "costs": {
+                "MK 0 Fragment": 39
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 5.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 5.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 5.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 5.4,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Infantry Health"
+            },
+            {
+              "level": 62,
+              "name": "Scourge III 7",
+              "costs": {
+                "MK 0 Fragment": 39
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 5.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 5.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 5.4,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Rider Lethality",
+              "skillsUnlocked": [
+                "March Capacity"
+              ]
+            },
+            {
+              "level": 63,
+              "name": "Scourge III 8",
+              "costs": {
+                "MK 0 Fragment": 40
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 5.4,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 5.4,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Rider Health"
+            },
+            {
+              "level": 64,
+              "name": "Scourge III 9",
+              "costs": {
+                "MK 0 Fragment": 40
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 5.4,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Hunter Lethality",
+              "skillsUnlocked": [
+                "Rally Capacity"
+              ]
+            },
+            {
+              "level": 65,
+              "name": "Scourge III 10",
+              "costs": {
+                "MK 0 Fragment": 40
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 6,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 6,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Hunter Health",
+              "skillsUnlocked": [
+                "Adapt & Overcome"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -10256,7 +12302,7 @@
             {
               "level": 2,
               "costs": {
-                "Power Serum": 5
+                "Upgrade Chip": 5
               },
               "bonuses": [
                 {
@@ -10269,7 +12315,7 @@
             {
               "level": 3,
               "costs": {
-                "Power Serum": 6
+                "Upgrade Chip": 6
               },
               "bonuses": [
                 {
@@ -10282,7 +12328,7 @@
             {
               "level": 4,
               "costs": {
-                "Power Serum": 8
+                "Upgrade Chip": 8
               },
               "bonuses": [
                 {
@@ -10295,7 +12341,7 @@
             {
               "level": 5,
               "costs": {
-                "Power Serum": 8
+                "Upgrade Chip": 8
               },
               "bonuses": [
                 {
@@ -10308,7 +12354,7 @@
             {
               "level": 6,
               "costs": {
-                "Power Serum": 9
+                "Upgrade Chip": 9
               },
               "bonuses": [
                 {
@@ -10321,7 +12367,7 @@
             {
               "level": 7,
               "costs": {
-                "Power Serum": 10
+                "Upgrade Chip": 10
               },
               "bonuses": [
                 {
@@ -10334,7 +12380,7 @@
             {
               "level": 8,
               "costs": {
-                "Power Serum": 11
+                "Upgrade Chip": 11
               },
               "bonuses": [
                 {
@@ -10347,7 +12393,7 @@
             {
               "level": 9,
               "costs": {
-                "Power Serum": 11
+                "Upgrade Chip": 11
               },
               "bonuses": [
                 {
@@ -10360,7 +12406,7 @@
             {
               "level": 10,
               "costs": {
-                "Power Serum": 12
+                "Upgrade Chip": 12
               },
               "bonuses": [
                 {
@@ -10373,7 +12419,7 @@
             {
               "level": 11,
               "costs": {
-                "Power Serum": 13
+                "Upgrade Chip": 13
               },
               "bonuses": [
                 {
@@ -10386,7 +12432,7 @@
             {
               "level": 12,
               "costs": {
-                "Power Serum": 13
+                "Upgrade Chip": 13
               },
               "bonuses": [
                 {
@@ -10399,7 +12445,7 @@
             {
               "level": 13,
               "costs": {
-                "Power Serum": 14
+                "Upgrade Chip": 14
               },
               "bonuses": [
                 {
@@ -10412,7 +12458,7 @@
             {
               "level": 14,
               "costs": {
-                "Power Serum": 14
+                "Upgrade Chip": 14
               },
               "bonuses": [
                 {
@@ -10425,7 +12471,7 @@
             {
               "level": 15,
               "costs": {
-                "Power Serum": 15
+                "Upgrade Chip": 15
               },
               "bonuses": [
                 {
@@ -10438,7 +12484,7 @@
             {
               "level": 16,
               "costs": {
-                "Power Serum": 15
+                "Upgrade Chip": 15
               },
               "bonuses": [
                 {
@@ -10451,7 +12497,7 @@
             {
               "level": 17,
               "costs": {
-                "Power Serum": 16
+                "Upgrade Chip": 16
               },
               "bonuses": [
                 {
@@ -10464,7 +12510,7 @@
             {
               "level": 18,
               "costs": {
-                "Power Serum": 16
+                "Upgrade Chip": 16
               },
               "bonuses": [
                 {
@@ -10477,7 +12523,7 @@
             {
               "level": 19,
               "costs": {
-                "Power Serum": 17
+                "Upgrade Chip": 17
               },
               "bonuses": [
                 {
@@ -10490,7 +12536,7 @@
             {
               "level": 20,
               "costs": {
-                "Power Serum": 17
+                "Upgrade Chip": 17
               },
               "bonuses": [
                 {
@@ -10503,7 +12549,7 @@
             {
               "level": 21,
               "costs": {
-                "Power Serum": 17
+                "Upgrade Chip": 17
               },
               "bonuses": [
                 {
@@ -10516,7 +12562,7 @@
             {
               "level": 22,
               "costs": {
-                "Power Serum": 18
+                "Upgrade Chip": 18
               },
               "bonuses": [
                 {
@@ -10529,7 +12575,7 @@
             {
               "level": 23,
               "costs": {
-                "Power Serum": 18
+                "Upgrade Chip": 18
               },
               "bonuses": [
                 {
@@ -10542,7 +12588,7 @@
             {
               "level": 24,
               "costs": {
-                "Power Serum": 18
+                "Upgrade Chip": 18
               },
               "bonuses": [
                 {
@@ -10555,7 +12601,7 @@
             {
               "level": 25,
               "costs": {
-                "Power Serum": 19
+                "Upgrade Chip": 19
               },
               "bonuses": [
                 {
@@ -10568,7 +12614,7 @@
             {
               "level": 26,
               "costs": {
-                "Power Serum": 19
+                "Upgrade Chip": 19
               },
               "bonuses": [
                 {
@@ -10581,7 +12627,7 @@
             {
               "level": 27,
               "costs": {
-                "Power Serum": 20
+                "Upgrade Chip": 20
               },
               "bonuses": [
                 {
@@ -10594,7 +12640,7 @@
             {
               "level": 28,
               "costs": {
-                "Power Serum": 20
+                "Upgrade Chip": 20
               },
               "bonuses": [
                 {
@@ -10607,7 +12653,7 @@
             {
               "level": 29,
               "costs": {
-                "Power Serum": 21
+                "Upgrade Chip": 21
               },
               "bonuses": [
                 {
@@ -10620,7 +12666,7 @@
             {
               "level": 30,
               "costs": {
-                "Power Serum": 21
+                "Upgrade Chip": 21
               },
               "bonuses": [
                 {
@@ -10633,7 +12679,7 @@
             {
               "level": 31,
               "costs": {
-                "Power Serum": 21
+                "Upgrade Chip": 21
               },
               "bonuses": [
                 {
@@ -10646,7 +12692,7 @@
             {
               "level": 32,
               "costs": {
-                "Power Serum": 22
+                "Upgrade Chip": 22
               },
               "bonuses": [
                 {
@@ -10659,7 +12705,7 @@
             {
               "level": 33,
               "costs": {
-                "Power Serum": 22
+                "Upgrade Chip": 22
               },
               "bonuses": [
                 {
@@ -10672,7 +12718,7 @@
             {
               "level": 34,
               "costs": {
-                "Power Serum": 22
+                "Upgrade Chip": 22
               },
               "bonuses": [
                 {
@@ -10685,7 +12731,7 @@
             {
               "level": 35,
               "costs": {
-                "Power Serum": 23
+                "Upgrade Chip": 23
               },
               "bonuses": [
                 {
@@ -10698,7 +12744,7 @@
             {
               "level": 36,
               "costs": {
-                "Power Serum": 23
+                "Upgrade Chip": 23
               },
               "bonuses": [
                 {
@@ -10711,7 +12757,7 @@
             {
               "level": 37,
               "costs": {
-                "Power Serum": 23
+                "Upgrade Chip": 23
               },
               "bonuses": [
                 {
@@ -10724,7 +12770,7 @@
             {
               "level": 38,
               "costs": {
-                "Power Serum": 23
+                "Upgrade Chip": 23
               },
               "bonuses": [
                 {
@@ -10737,7 +12783,7 @@
             {
               "level": 39,
               "costs": {
-                "Power Serum": 24
+                "Upgrade Chip": 24
               },
               "bonuses": [
                 {
@@ -10750,7 +12796,7 @@
             {
               "level": 40,
               "costs": {
-                "Power Serum": 24
+                "Upgrade Chip": 24
               },
               "bonuses": [
                 {
@@ -10763,7 +12809,7 @@
             {
               "level": 41,
               "costs": {
-                "Power Serum": 24
+                "Upgrade Chip": 24
               },
               "bonuses": [
                 {
@@ -10776,7 +12822,7 @@
             {
               "level": 42,
               "costs": {
-                "Power Serum": 25
+                "Upgrade Chip": 25
               },
               "bonuses": [
                 {
@@ -10789,7 +12835,7 @@
             {
               "level": 43,
               "costs": {
-                "Power Serum": 25
+                "Upgrade Chip": 25
               },
               "bonuses": [
                 {
@@ -10802,7 +12848,7 @@
             {
               "level": 44,
               "costs": {
-                "Power Serum": 25
+                "Upgrade Chip": 25
               },
               "bonuses": [
                 {
@@ -10815,7 +12861,7 @@
             {
               "level": 45,
               "costs": {
-                "Power Serum": 26
+                "Upgrade Chip": 26
               },
               "bonuses": [
                 {
@@ -10828,7 +12874,7 @@
             {
               "level": 46,
               "costs": {
-                "Power Serum": 26
+                "Upgrade Chip": 26
               },
               "bonuses": [
                 {
@@ -10841,7 +12887,7 @@
             {
               "level": 47,
               "costs": {
-                "Power Serum": 26
+                "Upgrade Chip": 26
               },
               "bonuses": [
                 {
@@ -10854,7 +12900,7 @@
             {
               "level": 48,
               "costs": {
-                "Power Serum": 26
+                "Upgrade Chip": 26
               },
               "bonuses": [
                 {
@@ -10867,7 +12913,7 @@
             {
               "level": 49,
               "costs": {
-                "Power Serum": 27
+                "Upgrade Chip": 27
               },
               "bonuses": [
                 {
@@ -10880,7 +12926,7 @@
             {
               "level": 50,
               "costs": {
-                "Power Serum": 27
+                "Upgrade Chip": 27
               },
               "bonuses": [
                 {
@@ -10893,7 +12939,7 @@
             {
               "level": 51,
               "costs": {
-                "Power Serum": 27
+                "Upgrade Chip": 27
               },
               "bonuses": [
                 {
@@ -10906,7 +12952,7 @@
             {
               "level": 52,
               "costs": {
-                "Power Serum": 27
+                "Upgrade Chip": 27
               },
               "bonuses": [
                 {
@@ -10919,7 +12965,7 @@
             {
               "level": 53,
               "costs": {
-                "Power Serum": 28
+                "Upgrade Chip": 28
               },
               "bonuses": [
                 {
@@ -10932,7 +12978,7 @@
             {
               "level": 54,
               "costs": {
-                "Power Serum": 28
+                "Upgrade Chip": 28
               },
               "bonuses": [
                 {
@@ -10945,7 +12991,7 @@
             {
               "level": 55,
               "costs": {
-                "Power Serum": 28
+                "Upgrade Chip": 28
               },
               "bonuses": [
                 {
@@ -10958,7 +13004,7 @@
             {
               "level": 56,
               "costs": {
-                "Power Serum": 28
+                "Upgrade Chip": 28
               },
               "bonuses": [
                 {
@@ -10971,7 +13017,7 @@
             {
               "level": 57,
               "costs": {
-                "Power Serum": 29
+                "Upgrade Chip": 29
               },
               "bonuses": [
                 {
@@ -10984,7 +13030,7 @@
             {
               "level": 58,
               "costs": {
-                "Power Serum": 29
+                "Upgrade Chip": 29
               },
               "bonuses": [
                 {
@@ -10997,7 +13043,7 @@
             {
               "level": 59,
               "costs": {
-                "Power Serum": 29
+                "Upgrade Chip": 29
               },
               "bonuses": [
                 {
@@ -11010,7 +13056,7 @@
             {
               "level": 60,
               "costs": {
-                "Power Serum": 29
+                "Upgrade Chip": 29
               },
               "bonuses": [
                 {
@@ -11023,7 +13069,7 @@
             {
               "level": 61,
               "costs": {
-                "Power Serum": 30
+                "Upgrade Chip": 30
               },
               "bonuses": [
                 {
@@ -11036,7 +13082,7 @@
             {
               "level": 62,
               "costs": {
-                "Power Serum": 30
+                "Upgrade Chip": 30
               },
               "bonuses": [
                 {
@@ -11049,7 +13095,7 @@
             {
               "level": 63,
               "costs": {
-                "Power Serum": 30
+                "Upgrade Chip": 30
               },
               "bonuses": [
                 {
@@ -11062,7 +13108,7 @@
             {
               "level": 64,
               "costs": {
-                "Power Serum": 30
+                "Upgrade Chip": 30
               },
               "bonuses": [
                 {
@@ -11075,7 +13121,7 @@
             {
               "level": 65,
               "costs": {
-                "Power Serum": 31
+                "Upgrade Chip": 31
               },
               "bonuses": [
                 {
@@ -11088,7 +13134,7 @@
             {
               "level": 66,
               "costs": {
-                "Power Serum": 31
+                "Upgrade Chip": 31
               },
               "bonuses": [
                 {
@@ -11101,7 +13147,7 @@
             {
               "level": 67,
               "costs": {
-                "Power Serum": 31
+                "Upgrade Chip": 31
               },
               "bonuses": [
                 {
@@ -11114,7 +13160,7 @@
             {
               "level": 68,
               "costs": {
-                "Power Serum": 31
+                "Upgrade Chip": 31
               },
               "bonuses": [
                 {
@@ -11127,7 +13173,7 @@
             {
               "level": 69,
               "costs": {
-                "Power Serum": 32
+                "Upgrade Chip": 32
               },
               "bonuses": [
                 {
@@ -11140,7 +13186,7 @@
             {
               "level": 70,
               "costs": {
-                "Power Serum": 32
+                "Upgrade Chip": 32
               },
               "bonuses": [
                 {
@@ -11153,7 +13199,7 @@
             {
               "level": 71,
               "costs": {
-                "Power Serum": 32
+                "Upgrade Chip": 32
               },
               "bonuses": [
                 {
@@ -11166,7 +13212,7 @@
             {
               "level": 72,
               "costs": {
-                "Power Serum": 32
+                "Upgrade Chip": 32
               },
               "bonuses": [
                 {
@@ -11179,7 +13225,7 @@
             {
               "level": 73,
               "costs": {
-                "Power Serum": 32
+                "Upgrade Chip": 32
               },
               "bonuses": [
                 {
@@ -11192,7 +13238,7 @@
             {
               "level": 74,
               "costs": {
-                "Power Serum": 33
+                "Upgrade Chip": 33
               },
               "bonuses": [
                 {
@@ -11205,7 +13251,7 @@
             {
               "level": 75,
               "costs": {
-                "Power Serum": 33
+                "Upgrade Chip": 33
               },
               "bonuses": [
                 {
@@ -11218,7 +13264,7 @@
             {
               "level": 76,
               "costs": {
-                "Power Serum": 33
+                "Upgrade Chip": 33
               },
               "bonuses": [
                 {
@@ -11231,7 +13277,7 @@
             {
               "level": 77,
               "costs": {
-                "Power Serum": 33
+                "Upgrade Chip": 33
               },
               "bonuses": [
                 {
@@ -11244,7 +13290,7 @@
             {
               "level": 78,
               "costs": {
-                "Power Serum": 34
+                "Upgrade Chip": 34
               },
               "bonuses": [
                 {
@@ -11257,7 +13303,7 @@
             {
               "level": 79,
               "costs": {
-                "Power Serum": 34
+                "Upgrade Chip": 34
               },
               "bonuses": [
                 {
@@ -11270,7 +13316,7 @@
             {
               "level": 80,
               "costs": {
-                "Power Serum": 34
+                "Upgrade Chip": 34
               },
               "bonuses": [
                 {
@@ -11283,7 +13329,7 @@
             {
               "level": 81,
               "costs": {
-                "Power Serum": 34
+                "Upgrade Chip": 34
               },
               "bonuses": [
                 {
@@ -11296,7 +13342,7 @@
             {
               "level": 82,
               "costs": {
-                "Power Serum": 34
+                "Upgrade Chip": 34
               },
               "bonuses": [
                 {
@@ -11309,7 +13355,7 @@
             {
               "level": 83,
               "costs": {
-                "Power Serum": 35
+                "Upgrade Chip": 35
               },
               "bonuses": [
                 {
@@ -11322,7 +13368,7 @@
             {
               "level": 84,
               "costs": {
-                "Power Serum": 35
+                "Upgrade Chip": 35
               },
               "bonuses": [
                 {
@@ -11335,7 +13381,7 @@
             {
               "level": 85,
               "costs": {
-                "Power Serum": 35
+                "Upgrade Chip": 35
               },
               "bonuses": [
                 {
@@ -11348,7 +13394,7 @@
             {
               "level": 86,
               "costs": {
-                "Power Serum": 35
+                "Upgrade Chip": 35
               },
               "bonuses": [
                 {
@@ -11361,7 +13407,7 @@
             {
               "level": 87,
               "costs": {
-                "Power Serum": 35
+                "Upgrade Chip": 35
               },
               "bonuses": [
                 {
@@ -11374,7 +13420,7 @@
             {
               "level": 88,
               "costs": {
-                "Power Serum": 36
+                "Upgrade Chip": 36
               },
               "bonuses": [
                 {
@@ -11387,7 +13433,7 @@
             {
               "level": 89,
               "costs": {
-                "Power Serum": 36
+                "Upgrade Chip": 36
               },
               "bonuses": [
                 {
@@ -11400,7 +13446,7 @@
             {
               "level": 90,
               "costs": {
-                "Power Serum": 36
+                "Upgrade Chip": 36
               },
               "bonuses": [
                 {
@@ -11413,7 +13459,7 @@
             {
               "level": 91,
               "costs": {
-                "Power Serum": 36
+                "Upgrade Chip": 36
               },
               "bonuses": [
                 {
@@ -11426,7 +13472,7 @@
             {
               "level": 92,
               "costs": {
-                "Power Serum": 36
+                "Upgrade Chip": 36
               },
               "bonuses": [
                 {
@@ -11439,7 +13485,7 @@
             {
               "level": 93,
               "costs": {
-                "Power Serum": 37
+                "Upgrade Chip": 37
               },
               "bonuses": [
                 {
@@ -11452,7 +13498,7 @@
             {
               "level": 94,
               "costs": {
-                "Power Serum": 37
+                "Upgrade Chip": 37
               },
               "bonuses": [
                 {
@@ -11465,7 +13511,7 @@
             {
               "level": 95,
               "costs": {
-                "Power Serum": 37
+                "Upgrade Chip": 37
               },
               "bonuses": [
                 {
@@ -11478,7 +13524,7 @@
             {
               "level": 96,
               "costs": {
-                "Power Serum": 37
+                "Upgrade Chip": 37
               },
               "bonuses": [
                 {
@@ -11491,7 +13537,7 @@
             {
               "level": 97,
               "costs": {
-                "Power Serum": 37
+                "Upgrade Chip": 37
               },
               "bonuses": [
                 {
@@ -11504,7 +13550,7 @@
             {
               "level": 98,
               "costs": {
-                "Power Serum": 38
+                "Upgrade Chip": 38
               },
               "bonuses": [
                 {
@@ -11517,7 +13563,7 @@
             {
               "level": 99,
               "costs": {
-                "Power Serum": 38
+                "Upgrade Chip": 38
               },
               "bonuses": [
                 {
@@ -11530,7 +13576,7 @@
             {
               "level": 100,
               "costs": {
-                "Power Serum": 38
+                "Upgrade Chip": 38
               },
               "bonuses": [
                 {
@@ -16880,7 +18926,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 3
+                    "Refined Fuel": 3
                   },
                   "bonuses": [
                     {
@@ -16893,7 +18939,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 3
+                    "Refined Fuel": 3
                   },
                   "bonuses": [
                     {
@@ -16906,7 +18952,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 4
+                    "Refined Fuel": 4
                   },
                   "bonuses": [
                     {
@@ -16919,7 +18965,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 5
+                    "Refined Fuel": 5
                   },
                   "bonuses": [
                     {
@@ -16932,7 +18978,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 6
+                    "Refined Fuel": 6
                   },
                   "bonuses": [
                     {
@@ -16945,7 +18991,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 6
+                    "Refined Fuel": 6
                   },
                   "bonuses": [
                     {
@@ -16958,7 +19004,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 7
+                    "Refined Fuel": 7
                   },
                   "bonuses": [
                     {
@@ -16971,7 +19017,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 9
+                    "Refined Fuel": 9
                   },
                   "bonuses": [
                     {
@@ -16984,7 +19030,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 10
+                    "Refined Fuel": 10
                   },
                   "bonuses": [
                     {
@@ -17004,7 +19050,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 3
+                    "Refined Fuel": 3
                   },
                   "bonuses": [
                     {
@@ -17017,7 +19063,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 3
+                    "Refined Fuel": 3
                   },
                   "bonuses": [
                     {
@@ -17030,7 +19076,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 4
+                    "Refined Fuel": 4
                   },
                   "bonuses": [
                     {
@@ -17043,7 +19089,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 4
+                    "Refined Fuel": 4
                   },
                   "bonuses": [
                     {
@@ -17056,7 +19102,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 5
+                    "Refined Fuel": 5
                   },
                   "bonuses": [
                     {
@@ -17069,7 +19115,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 6
+                    "Refined Fuel": 6
                   },
                   "bonuses": [
                     {
@@ -17082,7 +19128,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 7
+                    "Refined Fuel": 7
                   },
                   "bonuses": [
                     {
@@ -17095,7 +19141,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 8
+                    "Refined Fuel": 8
                   },
                   "bonuses": [
                     {
@@ -17108,7 +19154,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 9
+                    "Refined Fuel": 9
                   },
                   "bonuses": [
                     {
@@ -17121,7 +19167,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 11
+                    "Refined Fuel": 11
                   },
                   "bonuses": [
                     {
@@ -17141,7 +19187,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 3
+                    "Refined Fuel": 3
                   },
                   "bonuses": [
                     {
@@ -17154,7 +19200,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 4
+                    "Refined Fuel": 4
                   },
                   "bonuses": [
                     {
@@ -17167,7 +19213,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 4
+                    "Refined Fuel": 4
                   },
                   "bonuses": [
                     {
@@ -17180,7 +19226,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 5
+                    "Refined Fuel": 5
                   },
                   "bonuses": [
                     {
@@ -17193,7 +19239,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 6
+                    "Refined Fuel": 6
                   },
                   "bonuses": [
                     {
@@ -17206,7 +19252,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 7
+                    "Refined Fuel": 7
                   },
                   "bonuses": [
                     {
@@ -17219,7 +19265,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 8
+                    "Refined Fuel": 8
                   },
                   "bonuses": [
                     {
@@ -17232,7 +19278,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 9
+                    "Refined Fuel": 9
                   },
                   "bonuses": [
                     {
@@ -17245,7 +19291,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 10
+                    "Refined Fuel": 10
                   },
                   "bonuses": [
                     {
@@ -17258,7 +19304,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 12
+                    "Refined Fuel": 12
                   },
                   "bonuses": [
                     {
@@ -17278,7 +19324,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 3
+                    "Refined Fuel": 3
                   },
                   "bonuses": [],
                   "benefit": "-0.2%"
@@ -17286,7 +19332,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 4
+                    "Refined Fuel": 4
                   },
                   "bonuses": [],
                   "benefit": "-0.4%"
@@ -17294,7 +19340,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 5
+                    "Refined Fuel": 5
                   },
                   "bonuses": [],
                   "benefit": "-0.6%"
@@ -17302,7 +19348,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 5
+                    "Refined Fuel": 5
                   },
                   "bonuses": [],
                   "benefit": "-0.8%"
@@ -17310,7 +19356,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 6
+                    "Refined Fuel": 6
                   },
                   "bonuses": [],
                   "benefit": "-1%"
@@ -17318,7 +19364,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 7
+                    "Refined Fuel": 7
                   },
                   "bonuses": [],
                   "benefit": "-1.2%"
@@ -17326,7 +19372,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 9
+                    "Refined Fuel": 9
                   },
                   "bonuses": [],
                   "benefit": "-1.4%"
@@ -17334,7 +19380,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 10
+                    "Refined Fuel": 10
                   },
                   "bonuses": [],
                   "benefit": "-1.6%"
@@ -17342,7 +19388,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 12
+                    "Refined Fuel": 12
                   },
                   "bonuses": [],
                   "benefit": "-1.8%"
@@ -17350,7 +19396,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 14
+                    "Refined Fuel": 14
                   },
                   "bonuses": [],
                   "benefit": "-2%"
@@ -17365,7 +19411,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 3
+                    "Refined Fuel": 3
                   },
                   "bonuses": [
                     {
@@ -17378,7 +19424,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 3
+                    "Refined Fuel": 3
                   },
                   "bonuses": [
                     {
@@ -17391,7 +19437,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 4
+                    "Refined Fuel": 4
                   },
                   "bonuses": [
                     {
@@ -17404,7 +19450,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 4
+                    "Refined Fuel": 4
                   },
                   "bonuses": [
                     {
@@ -17417,7 +19463,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 5
+                    "Refined Fuel": 5
                   },
                   "bonuses": [
                     {
@@ -17430,7 +19476,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 6
+                    "Refined Fuel": 6
                   },
                   "bonuses": [
                     {
@@ -17443,7 +19489,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 7
+                    "Refined Fuel": 7
                   },
                   "bonuses": [
                     {
@@ -17456,7 +19502,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 8
+                    "Refined Fuel": 8
                   },
                   "bonuses": [
                     {
@@ -17469,7 +19515,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 9
+                    "Refined Fuel": 9
                   },
                   "bonuses": [
                     {
@@ -17482,7 +19528,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 11
+                    "Refined Fuel": 11
                   },
                   "bonuses": [
                     {
@@ -17502,7 +19548,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 3
+                    "Refined Fuel": 3
                   },
                   "bonuses": [
                     {
@@ -17515,7 +19561,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 4
+                    "Refined Fuel": 4
                   },
                   "bonuses": [
                     {
@@ -17528,7 +19574,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 4
+                    "Refined Fuel": 4
                   },
                   "bonuses": [
                     {
@@ -17541,7 +19587,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 5
+                    "Refined Fuel": 5
                   },
                   "bonuses": [
                     {
@@ -17554,7 +19600,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 6
+                    "Refined Fuel": 6
                   },
                   "bonuses": [
                     {
@@ -17567,7 +19613,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 7
+                    "Refined Fuel": 7
                   },
                   "bonuses": [
                     {
@@ -17580,7 +19626,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 8
+                    "Refined Fuel": 8
                   },
                   "bonuses": [
                     {
@@ -17593,7 +19639,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 9
+                    "Refined Fuel": 9
                   },
                   "bonuses": [
                     {
@@ -17606,7 +19652,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 11
+                    "Refined Fuel": 11
                   },
                   "bonuses": [
                     {
@@ -17619,7 +19665,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 13
+                    "Refined Fuel": 13
                   },
                   "bonuses": [
                     {
@@ -17639,7 +19685,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 4
+                    "Refined Fuel": 4
                   },
                   "bonuses": [],
                   "benefit": "-0.1%"
@@ -17647,7 +19693,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 4
+                    "Refined Fuel": 4
                   },
                   "bonuses": [],
                   "benefit": "-0.2%"
@@ -17655,7 +19701,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 5
+                    "Refined Fuel": 5
                   },
                   "bonuses": [],
                   "benefit": "-0.3%"
@@ -17663,7 +19709,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 6
+                    "Refined Fuel": 6
                   },
                   "bonuses": [],
                   "benefit": "-0.4%"
@@ -17671,7 +19717,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 7
+                    "Refined Fuel": 7
                   },
                   "bonuses": [],
                   "benefit": "-0.5%"
@@ -17679,7 +19725,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 8
+                    "Refined Fuel": 8
                   },
                   "bonuses": [],
                   "benefit": "-0.6%"
@@ -17687,7 +19733,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 9
+                    "Refined Fuel": 9
                   },
                   "bonuses": [],
                   "benefit": "-0.7%"
@@ -17695,7 +19741,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 11
+                    "Refined Fuel": 11
                   },
                   "bonuses": [],
                   "benefit": "-0.8%"
@@ -17703,7 +19749,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 12
+                    "Refined Fuel": 12
                   },
                   "bonuses": [],
                   "benefit": "-0.9%"
@@ -17711,7 +19757,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 14
+                    "Refined Fuel": 14
                   },
                   "bonuses": [],
                   "benefit": "-10%"
@@ -17726,7 +19772,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 3
+                    "Refined Fuel": 3
                   },
                   "bonuses": [
                     {
@@ -17739,7 +19785,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 3
+                    "Refined Fuel": 3
                   },
                   "bonuses": [
                     {
@@ -17752,7 +19798,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 4
+                    "Refined Fuel": 4
                   },
                   "bonuses": [
                     {
@@ -17765,7 +19811,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 5
+                    "Refined Fuel": 5
                   },
                   "bonuses": [
                     {
@@ -17778,7 +19824,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 5
+                    "Refined Fuel": 5
                   },
                   "bonuses": [
                     {
@@ -17791,7 +19837,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 6
+                    "Refined Fuel": 6
                   },
                   "bonuses": [
                     {
@@ -17804,7 +19850,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 7
+                    "Refined Fuel": 7
                   },
                   "bonuses": [
                     {
@@ -17817,7 +19863,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 8
+                    "Refined Fuel": 8
                   },
                   "bonuses": [
                     {
@@ -17830,7 +19876,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 10
+                    "Refined Fuel": 10
                   },
                   "bonuses": [
                     {
@@ -17843,7 +19889,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 12
+                    "Refined Fuel": 12
                   },
                   "bonuses": [
                     {
@@ -17863,7 +19909,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 3
+                    "Refined Fuel": 3
                   },
                   "bonuses": [
                     {
@@ -17876,7 +19922,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 4
+                    "Refined Fuel": 4
                   },
                   "bonuses": [
                     {
@@ -17889,7 +19935,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 5
+                    "Refined Fuel": 5
                   },
                   "bonuses": [
                     {
@@ -17902,7 +19948,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 5
+                    "Refined Fuel": 5
                   },
                   "bonuses": [
                     {
@@ -17915,7 +19961,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 6
+                    "Refined Fuel": 6
                   },
                   "bonuses": [
                     {
@@ -17928,7 +19974,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 7
+                    "Refined Fuel": 7
                   },
                   "bonuses": [
                     {
@@ -17941,7 +19987,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 8
+                    "Refined Fuel": 8
                   },
                   "bonuses": [
                     {
@@ -17954,7 +20000,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 10
+                    "Refined Fuel": 10
                   },
                   "bonuses": [
                     {
@@ -17967,7 +20013,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 11
+                    "Refined Fuel": 11
                   },
                   "bonuses": [
                     {
@@ -17980,7 +20026,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 13
+                    "Refined Fuel": 13
                   },
                   "bonuses": [
                     {
@@ -18000,7 +20046,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 4
+                    "Refined Fuel": 4
                   },
                   "bonuses": [
                     {
@@ -18013,7 +20059,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 4
+                    "Refined Fuel": 4
                   },
                   "bonuses": [
                     {
@@ -18026,7 +20072,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 5
+                    "Refined Fuel": 5
                   },
                   "bonuses": [
                     {
@@ -18039,7 +20085,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 6
+                    "Refined Fuel": 6
                   },
                   "bonuses": [
                     {
@@ -18052,7 +20098,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 7
+                    "Refined Fuel": 7
                   },
                   "bonuses": [
                     {
@@ -18065,7 +20111,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 8
+                    "Refined Fuel": 8
                   },
                   "bonuses": [
                     {
@@ -18078,7 +20124,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 9
+                    "Refined Fuel": 9
                   },
                   "bonuses": [
                     {
@@ -18091,7 +20137,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 11
+                    "Refined Fuel": 11
                   },
                   "bonuses": [
                     {
@@ -18104,7 +20150,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 13
+                    "Refined Fuel": 13
                   },
                   "bonuses": [
                     {
@@ -18117,7 +20163,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 15
+                    "Refined Fuel": 15
                   },
                   "bonuses": [
                     {
@@ -18137,7 +20183,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 4
+                    "Refined Fuel": 4
                   },
                   "bonuses": [
                     {
@@ -18150,7 +20196,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 5
+                    "Refined Fuel": 5
                   },
                   "bonuses": [
                     {
@@ -18163,7 +20209,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 5
+                    "Refined Fuel": 5
                   },
                   "bonuses": [
                     {
@@ -18176,7 +20222,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 6
+                    "Refined Fuel": 6
                   },
                   "bonuses": [
                     {
@@ -18189,7 +20235,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 7
+                    "Refined Fuel": 7
                   },
                   "bonuses": [
                     {
@@ -18202,7 +20248,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 8
+                    "Refined Fuel": 8
                   },
                   "bonuses": [
                     {
@@ -18215,7 +20261,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 10
+                    "Refined Fuel": 10
                   },
                   "bonuses": [
                     {
@@ -18228,7 +20274,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 11
+                    "Refined Fuel": 11
                   },
                   "bonuses": [
                     {
@@ -18241,7 +20287,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 13
+                    "Refined Fuel": 13
                   },
                   "bonuses": [
                     {
@@ -18254,7 +20300,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 16
+                    "Refined Fuel": 16
                   },
                   "bonuses": [
                     {
@@ -18280,7 +20326,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 4
+                    "Refined Fuel": 4
                   },
                   "bonuses": [
                     {
@@ -18293,7 +20339,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 5
+                    "Refined Fuel": 5
                   },
                   "bonuses": [
                     {
@@ -18306,7 +20352,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 6
+                    "Refined Fuel": 6
                   },
                   "bonuses": [
                     {
@@ -18319,7 +20365,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 7
+                    "Refined Fuel": 7
                   },
                   "bonuses": [
                     {
@@ -18332,7 +20378,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 8
+                    "Refined Fuel": 8
                   },
                   "bonuses": [
                     {
@@ -18345,7 +20391,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 9
+                    "Refined Fuel": 9
                   },
                   "bonuses": [
                     {
@@ -18358,7 +20404,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 10
+                    "Refined Fuel": 10
                   },
                   "bonuses": [
                     {
@@ -18371,7 +20417,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 12
+                    "Refined Fuel": 12
                   },
                   "bonuses": [
                     {
@@ -18384,7 +20430,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 14
+                    "Refined Fuel": 14
                   },
                   "bonuses": [
                     {
@@ -18397,7 +20443,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 16
+                    "Refined Fuel": 16
                   },
                   "bonuses": [
                     {
@@ -18417,7 +20463,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 4
+                    "Refined Fuel": 4
                   },
                   "bonuses": [
                     {
@@ -18430,7 +20476,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 5
+                    "Refined Fuel": 5
                   },
                   "bonuses": [
                     {
@@ -18443,7 +20489,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 6
+                    "Refined Fuel": 6
                   },
                   "bonuses": [
                     {
@@ -18456,7 +20502,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 7
+                    "Refined Fuel": 7
                   },
                   "bonuses": [
                     {
@@ -18469,7 +20515,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 8
+                    "Refined Fuel": 8
                   },
                   "bonuses": [
                     {
@@ -18482,7 +20528,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 9
+                    "Refined Fuel": 9
                   },
                   "bonuses": [
                     {
@@ -18495,7 +20541,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 11
+                    "Refined Fuel": 11
                   },
                   "bonuses": [
                     {
@@ -18508,7 +20554,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 13
+                    "Refined Fuel": 13
                   },
                   "bonuses": [
                     {
@@ -18521,7 +20567,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 15
+                    "Refined Fuel": 15
                   },
                   "bonuses": [
                     {
@@ -18534,7 +20580,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 17
+                    "Refined Fuel": 17
                   },
                   "bonuses": [
                     {
@@ -18554,7 +20600,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 5
+                    "Refined Fuel": 5
                   },
                   "bonuses": [
                     {
@@ -18567,7 +20613,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 5
+                    "Refined Fuel": 5
                   },
                   "bonuses": [
                     {
@@ -18580,7 +20626,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 6
+                    "Refined Fuel": 6
                   },
                   "bonuses": [
                     {
@@ -18593,7 +20639,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 7
+                    "Refined Fuel": 7
                   },
                   "bonuses": [
                     {
@@ -18606,7 +20652,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 9
+                    "Refined Fuel": 9
                   },
                   "bonuses": [
                     {
@@ -18619,7 +20665,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 10
+                    "Refined Fuel": 10
                   },
                   "bonuses": [
                     {
@@ -18632,7 +20678,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 12
+                    "Refined Fuel": 12
                   },
                   "bonuses": [
                     {
@@ -18645,7 +20691,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 14
+                    "Refined Fuel": 14
                   },
                   "bonuses": [
                     {
@@ -18658,7 +20704,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 16
+                    "Refined Fuel": 16
                   },
                   "bonuses": [
                     {
@@ -18671,7 +20717,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 19
+                    "Refined Fuel": 19
                   },
                   "bonuses": [
                     {
@@ -18691,7 +20737,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 5
+                    "Refined Fuel": 5
                   },
                   "bonuses": [
                     {
@@ -18704,7 +20750,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 6
+                    "Refined Fuel": 6
                   },
                   "bonuses": [
                     {
@@ -18717,7 +20763,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 7
+                    "Refined Fuel": 7
                   },
                   "bonuses": [
                     {
@@ -18730,7 +20776,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 8
+                    "Refined Fuel": 8
                   },
                   "bonuses": [
                     {
@@ -18743,7 +20789,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 10
+                    "Refined Fuel": 10
                   },
                   "bonuses": [
                     {
@@ -18756,7 +20802,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 11
+                    "Refined Fuel": 11
                   },
                   "bonuses": [
                     {
@@ -18769,7 +20815,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 13
+                    "Refined Fuel": 13
                   },
                   "bonuses": [
                     {
@@ -18782,7 +20828,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 16
+                    "Refined Fuel": 16
                   },
                   "bonuses": [
                     {
@@ -18795,7 +20841,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 18
+                    "Refined Fuel": 18
                   },
                   "bonuses": [
                     {
@@ -18808,7 +20854,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 21
+                    "Refined Fuel": 21
                   },
                   "bonuses": [
                     {
@@ -18828,7 +20874,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 6
+                    "Refined Fuel": 6
                   },
                   "bonuses": [
                     {
@@ -18841,7 +20887,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 7
+                    "Refined Fuel": 7
                   },
                   "bonuses": [
                     {
@@ -18854,7 +20900,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 8
+                    "Refined Fuel": 8
                   },
                   "bonuses": [
                     {
@@ -18867,7 +20913,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 10
+                    "Refined Fuel": 10
                   },
                   "bonuses": [
                     {
@@ -18880,7 +20926,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 11
+                    "Refined Fuel": 11
                   },
                   "bonuses": [
                     {
@@ -18893,7 +20939,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 13
+                    "Refined Fuel": 13
                   },
                   "bonuses": [
                     {
@@ -18906,7 +20952,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 15
+                    "Refined Fuel": 15
                   },
                   "bonuses": [
                     {
@@ -18919,7 +20965,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 18
+                    "Refined Fuel": 18
                   },
                   "bonuses": [
                     {
@@ -18932,7 +20978,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 21
+                    "Refined Fuel": 21
                   },
                   "bonuses": [
                     {
@@ -18945,7 +20991,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 24
+                    "Refined Fuel": 24
                   },
                   "bonuses": [
                     {
@@ -18965,7 +21011,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 4
+                    "Refined Fuel": 4
                   },
                   "bonuses": [
                     {
@@ -18978,7 +21024,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 5
+                    "Refined Fuel": 5
                   },
                   "bonuses": [
                     {
@@ -18991,7 +21037,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 6
+                    "Refined Fuel": 6
                   },
                   "bonuses": [
                     {
@@ -19004,7 +21050,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 7
+                    "Refined Fuel": 7
                   },
                   "bonuses": [
                     {
@@ -19017,7 +21063,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 8
+                    "Refined Fuel": 8
                   },
                   "bonuses": [
                     {
@@ -19030,7 +21076,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 10
+                    "Refined Fuel": 10
                   },
                   "bonuses": [
                     {
@@ -19043,7 +21089,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 11
+                    "Refined Fuel": 11
                   },
                   "bonuses": [
                     {
@@ -19056,7 +21102,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 13
+                    "Refined Fuel": 13
                   },
                   "bonuses": [
                     {
@@ -19069,7 +21115,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 15
+                    "Refined Fuel": 15
                   },
                   "bonuses": [
                     {
@@ -19082,7 +21128,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 18
+                    "Refined Fuel": 18
                   },
                   "bonuses": [
                     {
@@ -19102,7 +21148,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 5
+                    "Refined Fuel": 5
                   },
                   "bonuses": [
                     {
@@ -19115,7 +21161,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 6
+                    "Refined Fuel": 6
                   },
                   "bonuses": [
                     {
@@ -19128,7 +21174,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 7
+                    "Refined Fuel": 7
                   },
                   "bonuses": [
                     {
@@ -19141,7 +21187,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 8
+                    "Refined Fuel": 8
                   },
                   "bonuses": [
                     {
@@ -19154,7 +21200,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 9
+                    "Refined Fuel": 9
                   },
                   "bonuses": [
                     {
@@ -19167,7 +21213,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 11
+                    "Refined Fuel": 11
                   },
                   "bonuses": [
                     {
@@ -19180,7 +21226,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 13
+                    "Refined Fuel": 13
                   },
                   "bonuses": [
                     {
@@ -19193,7 +21239,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 15
+                    "Refined Fuel": 15
                   },
                   "bonuses": [
                     {
@@ -19206,7 +21252,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 17
+                    "Refined Fuel": 17
                   },
                   "bonuses": [
                     {
@@ -19219,7 +21265,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 20
+                    "Refined Fuel": 20
                   },
                   "bonuses": [
                     {
@@ -19239,7 +21285,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 6
+                    "Refined Fuel": 6
                   },
                   "bonuses": [
                     {
@@ -19252,7 +21298,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 7
+                    "Refined Fuel": 7
                   },
                   "bonuses": [
                     {
@@ -19265,7 +21311,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 8
+                    "Refined Fuel": 8
                   },
                   "bonuses": [
                     {
@@ -19278,7 +21324,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 9
+                    "Refined Fuel": 9
                   },
                   "bonuses": [
                     {
@@ -19291,7 +21337,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 11
+                    "Refined Fuel": 11
                   },
                   "bonuses": [
                     {
@@ -19304,7 +21350,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 12
+                    "Refined Fuel": 12
                   },
                   "bonuses": [
                     {
@@ -19317,7 +21363,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 15
+                    "Refined Fuel": 15
                   },
                   "bonuses": [
                     {
@@ -19330,7 +21376,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 17
+                    "Refined Fuel": 17
                   },
                   "bonuses": [
                     {
@@ -19343,7 +21389,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 20
+                    "Refined Fuel": 20
                   },
                   "bonuses": [
                     {
@@ -19356,7 +21402,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 23
+                    "Refined Fuel": 23
                   },
                   "bonuses": [
                     {
@@ -19376,7 +21422,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 7
+                    "Refined Fuel": 7
                   },
                   "bonuses": [
                     {
@@ -19389,7 +21435,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 8
+                    "Refined Fuel": 8
                   },
                   "bonuses": [
                     {
@@ -19402,7 +21448,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 9
+                    "Refined Fuel": 9
                   },
                   "bonuses": [
                     {
@@ -19415,7 +21461,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 10
+                    "Refined Fuel": 10
                   },
                   "bonuses": [
                     {
@@ -19428,7 +21474,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 12
+                    "Refined Fuel": 12
                   },
                   "bonuses": [
                     {
@@ -19441,7 +21487,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 14
+                    "Refined Fuel": 14
                   },
                   "bonuses": [
                     {
@@ -19454,7 +21500,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 17
+                    "Refined Fuel": 17
                   },
                   "bonuses": [
                     {
@@ -19467,7 +21513,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 19
+                    "Refined Fuel": 19
                   },
                   "bonuses": [
                     {
@@ -19480,7 +21526,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 22
+                    "Refined Fuel": 22
                   },
                   "bonuses": [
                     {
@@ -19493,7 +21539,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 26
+                    "Refined Fuel": 26
                   },
                   "bonuses": [
                     {
@@ -19513,7 +21559,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 5
+                    "Refined Fuel": 5
                   },
                   "bonuses": [
                     {
@@ -19526,7 +21572,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 6
+                    "Refined Fuel": 6
                   },
                   "bonuses": [
                     {
@@ -19539,7 +21585,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 7
+                    "Refined Fuel": 7
                   },
                   "bonuses": [
                     {
@@ -19552,7 +21598,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 8
+                    "Refined Fuel": 8
                   },
                   "bonuses": [
                     {
@@ -19565,7 +21611,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 9
+                    "Refined Fuel": 9
                   },
                   "bonuses": [
                     {
@@ -19578,7 +21624,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 10
+                    "Refined Fuel": 10
                   },
                   "bonuses": [
                     {
@@ -19591,7 +21637,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 12
+                    "Refined Fuel": 12
                   },
                   "bonuses": [
                     {
@@ -19604,7 +21650,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 14
+                    "Refined Fuel": 14
                   },
                   "bonuses": [
                     {
@@ -19617,7 +21663,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 17
+                    "Refined Fuel": 17
                   },
                   "bonuses": [
                     {
@@ -19630,7 +21676,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 19
+                    "Refined Fuel": 19
                   },
                   "bonuses": [
                     {
@@ -19650,7 +21696,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 6
+                    "Refined Fuel": 6
                   },
                   "bonuses": [
                     {
@@ -19663,7 +21709,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 6
+                    "Refined Fuel": 6
                   },
                   "bonuses": [
                     {
@@ -19676,7 +21722,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 8
+                    "Refined Fuel": 8
                   },
                   "bonuses": [
                     {
@@ -19689,7 +21735,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 9
+                    "Refined Fuel": 9
                   },
                   "bonuses": [
                     {
@@ -19702,7 +21748,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 10
+                    "Refined Fuel": 10
                   },
                   "bonuses": [
                     {
@@ -19715,7 +21761,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 12
+                    "Refined Fuel": 12
                   },
                   "bonuses": [
                     {
@@ -19728,7 +21774,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 14
+                    "Refined Fuel": 14
                   },
                   "bonuses": [
                     {
@@ -19741,7 +21787,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 16
+                    "Refined Fuel": 16
                   },
                   "bonuses": [
                     {
@@ -19754,7 +21800,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 19
+                    "Refined Fuel": 19
                   },
                   "bonuses": [
                     {
@@ -19767,7 +21813,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 22
+                    "Refined Fuel": 22
                   },
                   "bonuses": [
                     {
@@ -19787,7 +21833,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 6
+                    "Refined Fuel": 6
                   },
                   "bonuses": [
                     {
@@ -19800,7 +21846,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 7
+                    "Refined Fuel": 7
                   },
                   "bonuses": [
                     {
@@ -19813,7 +21859,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 9
+                    "Refined Fuel": 9
                   },
                   "bonuses": [
                     {
@@ -19826,7 +21872,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 10
+                    "Refined Fuel": 10
                   },
                   "bonuses": [
                     {
@@ -19839,7 +21885,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 12
+                    "Refined Fuel": 12
                   },
                   "bonuses": [
                     {
@@ -19852,7 +21898,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 14
+                    "Refined Fuel": 14
                   },
                   "bonuses": [
                     {
@@ -19865,7 +21911,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 16
+                    "Refined Fuel": 16
                   },
                   "bonuses": [
                     {
@@ -19878,7 +21924,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 18
+                    "Refined Fuel": 18
                   },
                   "bonuses": [
                     {
@@ -19891,7 +21937,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 21
+                    "Refined Fuel": 21
                   },
                   "bonuses": [
                     {
@@ -19904,7 +21950,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 25
+                    "Refined Fuel": 25
                   },
                   "bonuses": [
                     {
@@ -19930,7 +21976,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 71
+                    "Refined Fuel": 71
                   },
                   "bonuses": [],
                   "benefit": "Every 10 turns, fires a missile that deals 70% damage to the enemy front row."
@@ -19938,7 +21984,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 24
+                    "Refined Fuel": 24
                   },
                   "bonuses": [],
                   "benefit": "Every 10 turns, fires a missile that deals 90% damage to the enemy front row."
@@ -19946,7 +21992,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 30
+                    "Refined Fuel": 30
                   },
                   "bonuses": [],
                   "benefit": "Every 10 turns, fires a missile that deals 115% damage to the enemy front row."
@@ -19954,7 +22000,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 36
+                    "Refined Fuel": 36
                   },
                   "bonuses": [],
                   "benefit": "Attack interval is reduced to 9."
@@ -19962,7 +22008,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 42
+                    "Refined Fuel": 42
                   },
                   "bonuses": [],
                   "benefit": "Every 9 turns, fires a missile that deals 135% damage to the enemy front row."
@@ -19970,7 +22016,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 48
+                    "Refined Fuel": 48
                   },
                   "bonuses": [],
                   "benefit": "The skill now targets all enemies."
@@ -19978,7 +22024,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 54
+                    "Refined Fuel": 54
                   },
                   "bonuses": [],
                   "benefit": "Every 9 turns, fires a missile that deals 160% damage to the enemy front row."
@@ -19986,7 +22032,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 60
+                    "Refined Fuel": 60
                   },
                   "bonuses": [],
                   "benefit": "Attack interval is reduced to 8."
@@ -19994,7 +22040,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 65
+                    "Refined Fuel": 65
                   },
                   "bonuses": [],
                   "benefit": "Every 8 turns, fires a missile that deals 180% damage to the enemy front row."
@@ -20002,7 +22048,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 71
+                    "Refined Fuel": 71
                   },
                   "bonuses": [],
                   "benefit": "The skill is now triggered at the start of battle."
@@ -20017,7 +22063,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 7
+                    "Refined Fuel": 7
                   },
                   "bonuses": [
                     {
@@ -20030,7 +22076,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 8
+                    "Refined Fuel": 8
                   },
                   "bonuses": [
                     {
@@ -20043,7 +22089,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 9
+                    "Refined Fuel": 9
                   },
                   "bonuses": [
                     {
@@ -20056,7 +22102,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 11
+                    "Refined Fuel": 11
                   },
                   "bonuses": [
                     {
@@ -20069,7 +22115,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 13
+                    "Refined Fuel": 13
                   },
                   "bonuses": [
                     {
@@ -20082,7 +22128,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 15
+                    "Refined Fuel": 15
                   },
                   "bonuses": [
                     {
@@ -20095,7 +22141,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 17
+                    "Refined Fuel": 17
                   },
                   "bonuses": [
                     {
@@ -20108,7 +22154,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 20
+                    "Refined Fuel": 20
                   },
                   "bonuses": [
                     {
@@ -20121,7 +22167,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 23
+                    "Refined Fuel": 23
                   },
                   "bonuses": [
                     {
@@ -20134,7 +22180,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 27
+                    "Refined Fuel": 27
                   },
                   "bonuses": [
                     {
@@ -20154,7 +22200,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 8
+                    "Refined Fuel": 8
                   },
                   "bonuses": [
                     {
@@ -20167,7 +22213,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 9
+                    "Refined Fuel": 9
                   },
                   "bonuses": [
                     {
@@ -20180,7 +22226,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 11
+                    "Refined Fuel": 11
                   },
                   "bonuses": [
                     {
@@ -20193,7 +22239,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 12
+                    "Refined Fuel": 12
                   },
                   "bonuses": [
                     {
@@ -20206,7 +22252,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 14
+                    "Refined Fuel": 14
                   },
                   "bonuses": [
                     {
@@ -20219,7 +22265,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 17
+                    "Refined Fuel": 17
                   },
                   "bonuses": [
                     {
@@ -20232,7 +22278,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 20
+                    "Refined Fuel": 20
                   },
                   "bonuses": [
                     {
@@ -20245,7 +22291,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 23
+                    "Refined Fuel": 23
                   },
                   "bonuses": [
                     {
@@ -20258,7 +22304,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 27
+                    "Refined Fuel": 27
                   },
                   "bonuses": [
                     {
@@ -20271,7 +22317,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 31
+                    "Refined Fuel": 31
                   },
                   "bonuses": [
                     {
@@ -20291,7 +22337,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 8
+                    "Refined Fuel": 8
                   },
                   "bonuses": [
                     {
@@ -20304,7 +22350,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 9
+                    "Refined Fuel": 9
                   },
                   "bonuses": [
                     {
@@ -20317,7 +22363,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 10
+                    "Refined Fuel": 10
                   },
                   "bonuses": [
                     {
@@ -20330,7 +22376,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 12
+                    "Refined Fuel": 12
                   },
                   "bonuses": [
                     {
@@ -20343,7 +22389,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 14
+                    "Refined Fuel": 14
                   },
                   "bonuses": [
                     {
@@ -20356,7 +22402,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 16
+                    "Refined Fuel": 16
                   },
                   "bonuses": [
                     {
@@ -20369,7 +22415,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 19
+                    "Refined Fuel": 19
                   },
                   "bonuses": [
                     {
@@ -20382,7 +22428,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 22
+                    "Refined Fuel": 22
                   },
                   "bonuses": [
                     {
@@ -20395,7 +22441,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 26
+                    "Refined Fuel": 26
                   },
                   "bonuses": [
                     {
@@ -20408,7 +22454,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 30
+                    "Refined Fuel": 30
                   },
                   "bonuses": [
                     {
@@ -20428,7 +22474,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 9
+                    "Refined Fuel": 9
                   },
                   "bonuses": [
                     {
@@ -20441,7 +22487,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 10
+                    "Refined Fuel": 10
                   },
                   "bonuses": [
                     {
@@ -20454,7 +22500,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 12
+                    "Refined Fuel": 12
                   },
                   "bonuses": [
                     {
@@ -20467,7 +22513,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 14
+                    "Refined Fuel": 14
                   },
                   "bonuses": [
                     {
@@ -20480,7 +22526,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 16
+                    "Refined Fuel": 16
                   },
                   "bonuses": [
                     {
@@ -20493,7 +22539,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 19
+                    "Refined Fuel": 19
                   },
                   "bonuses": [
                     {
@@ -20506,7 +22552,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 22
+                    "Refined Fuel": 22
                   },
                   "bonuses": [
                     {
@@ -20519,7 +22565,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 26
+                    "Refined Fuel": 26
                   },
                   "bonuses": [
                     {
@@ -20532,7 +22578,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 30
+                    "Refined Fuel": 30
                   },
                   "bonuses": [
                     {
@@ -20545,7 +22591,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 35
+                    "Refined Fuel": 35
                   },
                   "bonuses": [
                     {
@@ -20565,7 +22611,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 9
+                    "Refined Fuel": 9
                   },
                   "bonuses": [
                     {
@@ -20578,7 +22624,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 11
+                    "Refined Fuel": 11
                   },
                   "bonuses": [
                     {
@@ -20591,7 +22637,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 13
+                    "Refined Fuel": 13
                   },
                   "bonuses": [
                     {
@@ -20604,7 +22650,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 15
+                    "Refined Fuel": 15
                   },
                   "bonuses": [
                     {
@@ -20617,7 +22663,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 17
+                    "Refined Fuel": 17
                   },
                   "bonuses": [
                     {
@@ -20630,7 +22676,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 20
+                    "Refined Fuel": 20
                   },
                   "bonuses": [
                     {
@@ -20643,7 +22689,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 23
+                    "Refined Fuel": 23
                   },
                   "bonuses": [
                     {
@@ -20656,7 +22702,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 27
+                    "Refined Fuel": 27
                   },
                   "bonuses": [
                     {
@@ -20669,7 +22715,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 32
+                    "Refined Fuel": 32
                   },
                   "bonuses": [
                     {
@@ -20682,7 +22728,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 37
+                    "Refined Fuel": 37
                   },
                   "bonuses": [
                     {
@@ -20702,7 +22748,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 7
+                    "Refined Fuel": 7
                   },
                   "bonuses": [
                     {
@@ -20715,7 +22761,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 8
+                    "Refined Fuel": 8
                   },
                   "bonuses": [
                     {
@@ -20728,7 +22774,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 9
+                    "Refined Fuel": 9
                   },
                   "bonuses": [
                     {
@@ -20741,7 +22787,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 11
+                    "Refined Fuel": 11
                   },
                   "bonuses": [
                     {
@@ -20754,7 +22800,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 13
+                    "Refined Fuel": 13
                   },
                   "bonuses": [
                     {
@@ -20767,7 +22813,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 15
+                    "Refined Fuel": 15
                   },
                   "bonuses": [
                     {
@@ -20780,7 +22826,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 17
+                    "Refined Fuel": 17
                   },
                   "bonuses": [
                     {
@@ -20793,7 +22839,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 20
+                    "Refined Fuel": 20
                   },
                   "bonuses": [
                     {
@@ -20806,7 +22852,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 23
+                    "Refined Fuel": 23
                   },
                   "bonuses": [
                     {
@@ -20819,7 +22865,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 27
+                    "Refined Fuel": 27
                   },
                   "bonuses": [
                     {
@@ -20839,7 +22885,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 8
+                    "Refined Fuel": 8
                   },
                   "bonuses": [
                     {
@@ -20852,7 +22898,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 10
+                    "Refined Fuel": 10
                   },
                   "bonuses": [
                     {
@@ -20865,7 +22911,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 11
+                    "Refined Fuel": 11
                   },
                   "bonuses": [
                     {
@@ -20878,7 +22924,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 13
+                    "Refined Fuel": 13
                   },
                   "bonuses": [
                     {
@@ -20891,7 +22937,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 15
+                    "Refined Fuel": 15
                   },
                   "bonuses": [
                     {
@@ -20904,7 +22950,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 18
+                    "Refined Fuel": 18
                   },
                   "bonuses": [
                     {
@@ -20917,7 +22963,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 21
+                    "Refined Fuel": 21
                   },
                   "bonuses": [
                     {
@@ -20930,7 +22976,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 24
+                    "Refined Fuel": 24
                   },
                   "bonuses": [
                     {
@@ -20943,7 +22989,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 28
+                    "Refined Fuel": 28
                   },
                   "bonuses": [
                     {
@@ -20956,7 +23002,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 32
+                    "Refined Fuel": 32
                   },
                   "bonuses": [
                     {
@@ -20976,7 +23022,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 9
+                    "Refined Fuel": 9
                   },
                   "bonuses": [
                     {
@@ -20989,7 +23035,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 10
+                    "Refined Fuel": 10
                   },
                   "bonuses": [
                     {
@@ -21002,7 +23048,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 12
+                    "Refined Fuel": 12
                   },
                   "bonuses": [
                     {
@@ -21015,7 +23061,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 14
+                    "Refined Fuel": 14
                   },
                   "bonuses": [
                     {
@@ -21028,7 +23074,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 16
+                    "Refined Fuel": 16
                   },
                   "bonuses": [
                     {
@@ -21041,7 +23087,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 18
+                    "Refined Fuel": 18
                   },
                   "bonuses": [
                     {
@@ -21054,7 +23100,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 21
+                    "Refined Fuel": 21
                   },
                   "bonuses": [
                     {
@@ -21067,7 +23113,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 25
+                    "Refined Fuel": 25
                   },
                   "bonuses": [
                     {
@@ -21080,7 +23126,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 29
+                    "Refined Fuel": 29
                   },
                   "bonuses": [
                     {
@@ -21093,7 +23139,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 34
+                    "Refined Fuel": 34
                   },
                   "bonuses": [
                     {
@@ -21113,7 +23159,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 10
+                    "Refined Fuel": 10
                   },
                   "bonuses": [
                     {
@@ -21126,7 +23172,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 12
+                    "Refined Fuel": 12
                   },
                   "bonuses": [
                     {
@@ -21139,7 +23185,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 14
+                    "Refined Fuel": 14
                   },
                   "bonuses": [
                     {
@@ -21152,7 +23198,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 16
+                    "Refined Fuel": 16
                   },
                   "bonuses": [
                     {
@@ -21165,7 +23211,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 19
+                    "Refined Fuel": 19
                   },
                   "bonuses": [
                     {
@@ -21178,7 +23224,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 22
+                    "Refined Fuel": 22
                   },
                   "bonuses": [
                     {
@@ -21191,7 +23237,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 25
+                    "Refined Fuel": 25
                   },
                   "bonuses": [
                     {
@@ -21204,7 +23250,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 30
+                    "Refined Fuel": 30
                   },
                   "bonuses": [
                     {
@@ -21217,7 +23263,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 35
+                    "Refined Fuel": 35
                   },
                   "bonuses": [
                     {
@@ -21230,7 +23276,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 40
+                    "Refined Fuel": 40
                   },
                   "bonuses": [
                     {
@@ -21250,7 +23296,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 10
+                    "Refined Fuel": 10
                   },
                   "bonuses": [
                     {
@@ -21263,7 +23309,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 11
+                    "Refined Fuel": 11
                   },
                   "bonuses": [
                     {
@@ -21276,7 +23322,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 13
+                    "Refined Fuel": 13
                   },
                   "bonuses": [
                     {
@@ -21289,7 +23335,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 15
+                    "Refined Fuel": 15
                   },
                   "bonuses": [
                     {
@@ -21302,7 +23348,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 18
+                    "Refined Fuel": 18
                   },
                   "bonuses": [
                     {
@@ -21315,7 +23361,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 21
+                    "Refined Fuel": 21
                   },
                   "bonuses": [
                     {
@@ -21328,7 +23374,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 24
+                    "Refined Fuel": 24
                   },
                   "bonuses": [
                     {
@@ -21341,7 +23387,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 28
+                    "Refined Fuel": 28
                   },
                   "bonuses": [
                     {
@@ -21354,7 +23400,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 33
+                    "Refined Fuel": 33
                   },
                   "bonuses": [
                     {
@@ -21367,7 +23413,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 39
+                    "Refined Fuel": 39
                   },
                   "bonuses": [
                     {
@@ -21387,7 +23433,7 @@
                 {
                   "level": 1,
                   "costs": {
-                    "Neuronal Medium": 71
+                    "Refined Fuel": 71
                   },
                   "bonuses": [],
                   "benefit": "At the start of battle, applies a 550% shield to friendly Infantry."
@@ -21395,7 +23441,7 @@
                 {
                   "level": 2,
                   "costs": {
-                    "Neuronal Medium": 24
+                    "Refined Fuel": 24
                   },
                   "bonuses": [],
                   "benefit": "At the start of battle, applies a 750% shield to friendly Infantry."
@@ -21403,7 +23449,7 @@
                 {
                   "level": 3,
                   "costs": {
-                    "Neuronal Medium": 30
+                    "Refined Fuel": 30
                   },
                   "bonuses": [],
                   "benefit": "At the start of battle, applies a 1,000% shield to friendly Infantry."
@@ -21411,7 +23457,7 @@
                 {
                   "level": 4,
                   "costs": {
-                    "Neuronal Medium": 36
+                    "Refined Fuel": 36
                   },
                   "bonuses": [],
                   "benefit": "Shield protection is extended to include Riders."
@@ -21419,7 +23465,7 @@
                 {
                   "level": 5,
                   "costs": {
-                    "Neuronal Medium": 42
+                    "Refined Fuel": 42
                   },
                   "bonuses": [],
                   "benefit": "At the start of battle, applies a 1,200% shield to friendly Infantry and Riders."
@@ -21427,7 +23473,7 @@
                 {
                   "level": 6,
                   "costs": {
-                    "Neuronal Medium": 48
+                    "Refined Fuel": 48
                   },
                   "bonuses": [],
                   "benefit": "An additional 150% shield is applied on turn 11."
@@ -21435,7 +23481,7 @@
                 {
                   "level": 7,
                   "costs": {
-                    "Neuronal Medium": 54
+                    "Refined Fuel": 54
                   },
                   "bonuses": [],
                   "benefit": "On turns 1 and 11 applies a 1,200% and 450% shield respectively to Infantry and Riders."
@@ -21443,7 +23489,7 @@
                 {
                   "level": 8,
                   "costs": {
-                    "Neuronal Medium": 60
+                    "Refined Fuel": 60
                   },
                   "bonuses": [],
                   "benefit": "Shield protection is extended to include all allies."
@@ -21451,7 +23497,7 @@
                 {
                   "level": 9,
                   "costs": {
-                    "Neuronal Medium": 65
+                    "Refined Fuel": 65
                   },
                   "bonuses": [],
                   "benefit": "On turns 1 and 11 applies a 1,200% and 750% shield respectively to all allies."
@@ -21459,7 +23505,7 @@
                 {
                   "level": 10,
                   "costs": {
-                    "Neuronal Medium": 71
+                    "Refined Fuel": 71
                   },
                   "bonuses": [],
                   "benefit": "On turns 1, 11, and 21, applies a 1,200%, 750%, and 300% shield respectively to all allies."
