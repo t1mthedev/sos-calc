@@ -19,10 +19,23 @@ async function fetchHTML(page) {
   const strip = (s) => s.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&nbsp;/g, ' ').replace(/&lt;/g, '<').replace(/&gt;/g, '>').trim();
   const cost = (s) => parseInt(s.replace(/,/g, '')) || 0;
 
-  const html = await fetchHTML('Behemoth_MK_I');
-  const sIdx = html.indexOf('Behemoth Mk I Skills');
-  const eIdx = html.indexOf('<h2>', sIdx + 50);
-  const sec = html.substring(sIdx, eIdx !== -1 ? eIdx : html.length);
+  const mk = process.argv[2] || 'MK I';
+  const page = mk === 'MK I' ? 'Behemoth_MK_I' : 'Behemoth_MK_II';
+  const heading = mk === 'MK I' ? 'Behemoth Mk I Skills' : 'BEHEMOTH MK II SKILLS';
+  const sheetName = mk === 'MK I' ? 'MK I Skills' : 'MK II Skills';
+  console.log(`Scraping ${mk} skills from ${page}...`);
+  const html = await fetchHTML(page);
+  const headingId = mk === 'MK I' ? 'Behemoth_Mk_I_Skills' : 'BEHEMOTH_MK_II_SKILLS';
+  const searchStr = `<span class="mw-headline" id="${headingId}"`;
+  const sIdx = html.indexOf(searchStr);
+  if (sIdx === -1) { console.error(`Section "${heading}" not found`); process.exit(1); }
+  const nextHl = html.indexOf('<span class="mw-headline"', sIdx + searchStr.length);
+  const nextH2 = html.indexOf('<h2>', sIdx + searchStr.length);
+  let eIdx = html.length;
+  if (nextHl !== -1 && nextH2 !== -1) eIdx = Math.min(nextHl, nextH2);
+  else if (nextHl !== -1) eIdx = nextHl;
+  else if (nextH2 !== -1) eIdx = nextH2;
+  const sec = html.substring(sIdx, eIdx);
 
   const tables = [];
   const tableRe = /<table[^>]*>([\s\S]*?)<\/table>/g;
@@ -100,8 +113,8 @@ async function fetchHTML(page) {
     wb = XLSX.utils.book_new();
   }
 
-  // Remove existing MK I sheets (both old "MK I" and "MK I Skills")
-  for (const name of ['MK I', 'MK I Skills']) {
+  // Remove existing sheets for this MK only
+  for (const name of [mk, sheetName]) {
     if (wb.SheetNames.includes(name)) {
       const idx = wb.SheetNames.indexOf(name);
       wb.SheetNames.splice(idx, 1);
@@ -111,7 +124,7 @@ async function fetchHTML(page) {
 
   if (allRows.length) {
     const ws = XLSX.utils.json_to_sheet(allRows);
-    XLSX.utils.book_append_sheet(wb, ws, 'MK I Skills');
+    XLSX.utils.book_append_sheet(wb, ws, sheetName);
   }
 
   XLSX.writeFile(wb, skillsPath);

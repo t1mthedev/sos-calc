@@ -15,11 +15,17 @@ async function fetchHTML(page) {
   return data.parse.text['*'];
 }
 
-function extractAllTables(html, heading) {
-  const idx = html.indexOf(heading);
+function extractAllTables(html, heading, headingId) {
+  const searchStr = headingId ? `<span class="mw-headline" id="${headingId}"` : heading;
+  const idx = html.indexOf(searchStr);
   if (idx === -1) return [];
   const nextH2 = html.indexOf('<h2>', idx + 50);
-  const section = html.substring(idx, nextH2 !== -1 ? nextH2 : html.length);
+  const nextHl = html.indexOf('<span class="mw-headline"', idx + 50);
+  let end = html.length;
+  if (nextH2 !== -1 && nextHl !== -1) end = Math.min(nextH2, nextHl);
+  else if (nextH2 !== -1) end = nextH2;
+  else if (nextHl !== -1) end = nextHl;
+  const section = html.substring(idx, end);
   const tables = [];
   const tableRe = /<table[^>]*>([\s\S]*?)<\/table>/g;
   let m;
@@ -44,14 +50,15 @@ function parseLevelsTable(tableBody, mkLabel) {
     const levelStr = cells[0];
     const level = parseInt(levelStr, 10);
     if (isNaN(level) || level < 1) continue;
-    // MK I columns: Level, Points, Atk/Def, Dmg, HP, Skill, PowerSerum
+    // MK I: Level, Points, Atk/Def, Dmg, HP, Skill, PowerSerum (7 cols)
+    // MK II: Level, Points, Atk/Def, Dmg, HP, Skill, ?, Serum (8 cols)
     const pointsRaw = cells[1].replace(/,/g, '').trim();
     const points = parseInt(pointsRaw) || 0;
     const benefitAtk = cells[2] || '';
     const benefitDmg = cells[3] || '';
     const benefitHp = cells[4] || '';
-    const skill = cells[5] || '';
-    const costStr = cells[6] || '0';
+    const costCol = cells.length >= 8 ? 7 : 6;
+    const costStr = cells[costCol] || '0';
     const cost = parseInt(costStr.replace(/,/g, '')) || 0;
     // Combine benefit text
     const benefits = [benefitAtk, benefitDmg, benefitHp].filter(Boolean).join(', ');
@@ -73,7 +80,8 @@ async function main() {
   const heading = mk === 'MK I' ? 'Behemoth Mk I Levels' : 'BEHEMOTH MK II LEVELS';
   console.log(`Fetching ${page}...`);
   const html = await fetchHTML(page);
-  const tables = extractAllTables(html, heading);
+  const headingId = mk === 'MK I' ? 'Behemoth_Mk_I_Levels' : 'BEHEMOTH_MK_II_LEVELS';
+  const tables = extractAllTables(html, heading, headingId);
   console.log(`Found ${tables.length} level tables`);
   if (!tables.length) {
     console.warn('No tables found, exiting');

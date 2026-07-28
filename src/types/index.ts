@@ -81,7 +81,7 @@ export interface SelectedUpgrade {
   targetLevel: number;
 }
 
-export type BehemothMk = 'MK 0' | 'MK I' | 'MK II' | 'MK III' | 'MK IV' | 'MK V';
+export type BehemothMk = 'MK 0' | 'MK I' | 'MK II' | 'MK III' | 'MK IV';
 
 export type BehemothSection = 'enhancement' | 'levels' | 'skills';
 

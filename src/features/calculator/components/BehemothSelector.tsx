@@ -4,7 +4,7 @@ import { Stack, Typography, Card, CardActionArea, CardContent, Chip, Button, Div
 import { useCalculator } from '../hooks/useCalculator';
 import { getMkSlug, getSectionSlug } from '../../../utils/slugs';
 
-type BehemothMkValue = 'MK 0' | 'MK I' | 'MK II' | 'MK III' | 'MK IV' | 'MK V';
+type BehemothMkValue = 'MK 0' | 'MK I' | 'MK II' | 'MK III' | 'MK IV';
 
 const BEHEMOTH_GROUPS: { label: string; options: { value: BehemothMkValue; label: string; description: string }[] }[] = [
   {
@@ -12,7 +12,6 @@ const BEHEMOTH_GROUPS: { label: string; options: { value: BehemothMkValue; label
     options: [
       { value: 'MK I', label: 'MK I', description: 'Enhancement, levels, and skill trees for MK I' },
       { value: 'MK II', label: 'MK II', description: 'Enhancement, levels, and skill trees for MK II' },
-      { value: 'MK V', label: 'MK V', description: 'Enhancement, levels, and skill trees for MK V' },
     ],
   },
   {

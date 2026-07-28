@@ -17,11 +17,17 @@ async function fetchHTML(page) {
   return data.parse.text['*'];
 }
 
-function extractSection(html, heading) {
-  const idx = html.indexOf(heading);
+function extractSection(html, heading, headingId) {
+  const searchStr = headingId ? `<span class="mw-headline" id="${headingId}"` : heading;
+  const idx = html.indexOf(searchStr);
   if (idx === -1) throw new Error(`Section "${heading}" not found`);
   const nextH2 = html.indexOf('<h2>', idx + 50);
-  return html.substring(idx, nextH2 !== -1 ? nextH2 : html.length);
+  const nextHl = html.indexOf('<span class="mw-headline"', idx + 50);
+  let end = html.length;
+  if (nextH2 !== -1 && nextHl !== -1) end = Math.min(nextH2, nextHl);
+  else if (nextH2 !== -1) end = nextH2;
+  else if (nextHl !== -1) end = nextHl;
+  return html.substring(idx, end);
 }
 
 function parseEnhanceTables(section) {
@@ -32,7 +38,7 @@ function parseEnhanceTables(section) {
   return tables;
 }
 
-function parseTierRows(tableHtml) {
+function parseTierRows(tableHtml, mkLabel) {
   const rows = [];
   const rowRe = /<tr>([\s\S]*?)<\/tr>/g;
   let m;
@@ -47,15 +53,23 @@ function parseTierRows(tableHtml) {
     const level = cells[0];
     if (!level) continue;
     if (level === 'Level' || level === 'Enhancement' || level === 'Statistic') continue;
-    // MK I/II/V tables: Level, Cost1, Cost2, Cost3, Skill, Cost4
-    const cost1 = parseInt((cells[1] || '0').replace(/,/g, '')) || 0;
-    const cost2 = parseInt((cells[2] || '0').replace(/,/g, '')) || 0;
-    const cost3 = parseInt((cells[3] || '0').replace(/,/g, '')) || 0;
-    const skill = (cells[4] || '').replace(/^[-–—]+$/, '');
-    const cost4 = parseInt((cells[5] || '0').replace(/,/g, '')) || 0;
-    const totalCost = cost1 + cost2 + cost3 + cost4;
     const levelNum = parseInt(level);
     const name = isNaN(levelNum) ? level : String(levelNum);
+    let totalCost = 0;
+    let skill = '';
+    if (mkLabel === 'MK II') {
+      // MK II: Level, Atk/Def, Dmg, HP, Skill, Fragments
+      skill = (cells[4] || '').replace(/^[-–—]+$/, '');
+      totalCost = parseInt((cells[5] || '0').replace(/,/g, '')) || 0;
+    } else {
+      // MK I: Level, Cost1, Cost2, Cost3, Skill, Cost4
+      const cost1 = parseInt((cells[1] || '0').replace(/,/g, '')) || 0;
+      const cost2 = parseInt((cells[2] || '0').replace(/,/g, '')) || 0;
+      const cost3 = parseInt((cells[3] || '0').replace(/,/g, '')) || 0;
+      skill = (cells[4] || '').replace(/^[-–—]+$/, '');
+      const cost4 = parseInt((cells[5] || '0').replace(/,/g, '')) || 0;
+      totalCost = cost1 + cost2 + cost3 + cost4;
+    }
     rows.push({ level: levelNum, name, totalCost, skill });
   }
   return rows;
@@ -84,13 +98,14 @@ async function main() {
   console.log(`Fetching ${mk} wiki data...`);
   const pageName = mk === 'MK I' ? 'Behemoth_MK_I' : mk === 'MK II' ? 'Behemoth_MK_II' : `Behemoth_MK_${mk.replace(' ', '_')}`;
   const sectionHeading = mk === 'MK I' ? 'Behemoth Mk I Enhancements' : mk === 'MK II' ? 'BEHEMOTH MK II ENHANCEMENTS' : `BEHEMOTH MK ${mk.replace('MK ', '')} ENHANCEMENTS`;
+  const headingId = mk === 'MK I' ? 'Behemoth_Mk_I_Enhancements' : mk === 'MK II' ? 'BEHEMOTH_MK_II_ENHANCEMENTS' : `BEHEMOTH_MK_${mk.replace('MK ', '').toUpperCase()}_ENHANCEMENTS`;
   const html = await fetchHTML(pageName);
-  const section = extractSection(html, sectionHeading);
+  const section = extractSection(html, sectionHeading, headingId);
   const tables = parseEnhanceTables(section);
   console.log(`Found ${tables.length} tables`);
   const tiersData = [];
   for (let ti = 0; ti < TIER_NAMES.length && ti < tables.length; ti++) {
-    const data = parseTierRows(tables[ti]);
+    const data = parseTierRows(tables[ti], mk);
     console.log(`${TIER_NAMES[ti]}: ${data.length} rows`);
     tiersData.push(data);
   }
