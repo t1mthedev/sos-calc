@@ -34,10 +34,18 @@ export function resolveBySlug<T extends string>(slug: string, lookup: Map<string
 }
 
 const MK_SLUG_MAP = new Map([
+  ['mk-0', 'MK 0' as const],
+  ['mk 0', 'MK 0' as const],
+  ['mk-i', 'MK I' as const],
+  ['mk i', 'MK I' as const],
+  ['mk-ii', 'MK II' as const],
+  ['mk ii', 'MK II' as const],
   ['mk-iii', 'MK III' as const],
   ['mk iii', 'MK III' as const],
   ['mk-iv', 'MK IV' as const],
   ['mk iv', 'MK IV' as const],
+  ['mk-v', 'MK V' as const],
+  ['mk v', 'MK V' as const],
 ]);
 
 export function resolveMk(slug: string): string | undefined {

@@ -49,8 +49,7 @@ function isBehemothFile(sheetNames) {
 
 function isBehemothLevelsFile(wb) {
   const sheetNames = wb.SheetNames;
-  if (sheetNames.length > 2) return false;
-  if (!sheetNames.every(s => /^MK\s+(III|IV)$/.test(s))) return false;
+  if (!sheetNames.every(s => /^MK\s+\S+$/.test(s))) return false;
   const ws = wb.Sheets[sheetNames[0]];
   const rows = XLSX.utils.sheet_to_json(ws, { header: 1, defval: '' });
   if (!rows.length) return false;
@@ -295,7 +294,7 @@ function parseBehemothSkills(wb) {
 function parseBehemothLevels(wb) {
   const items = [];
   for (const name of wb.SheetNames) {
-    if (!/^MK\s+(III|IV)$/.test(name)) continue;
+    if (!/^MK\s+\S+$/.test(name)) continue;
     const ws = wb.Sheets[name];
     const rows = XLSX.utils.sheet_to_json(ws, { defval: '' });
     if (!rows.length) continue;

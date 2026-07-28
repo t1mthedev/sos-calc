@@ -45,26 +45,6 @@ function allItemsFromCategories(categories: Category[]): UpgradeItem[] {
   return categories.flatMap(c => flattenCatItems(c));
 }
 
-function getBehemothItemIdsForMk(categories: Category[], mk: string): Set<string> {
-  const ids = new Set<string>();
-  const suffix = mk === 'MK III' ? 'mk-iii' : 'mk-iv';
-  for (const cat of categories) {
-    if (cat.id === 'behemoth-enhancement' || cat.id === 'behemoth-levels') {
-      for (const item of (cat.items ?? [])) {
-        if (item.id.endsWith(suffix)) ids.add(item.id);
-      }
-    }
-    if (cat.id === 'behemoth-skills') {
-      for (const g of (cat.groups ?? [])) {
-        if (g.mk === mk) {
-          for (const item of g.items) ids.add(item.id);
-        }
-      }
-    }
-  }
-  return ids;
-}
-
 function createInitial(): CalculatorState {
   return {
     categories: getCategories(),
@@ -214,18 +194,6 @@ function reducer(state: CalculatorState, action: Action): CalculatorState {
     }
     case 'CLEAR_CATEGORY': {
       if (!state.activeCategoryId) return state;
-      if (state.activeCategoryId === BEHEMOTH_ENTRY && state.behemothMk) {
-        const keepIds = getBehemothItemIdsForMk(state.categories, state.behemothMk === 'MK III' ? 'MK IV' : 'MK III');
-        const filtered = state.activeUpgrades.filter(u => keepIds.has(u.itemId));
-        return {
-          ...state,
-          activeUpgrades: filtered,
-          savedStates: {
-            ...state.savedStates,
-            [BEHEMOTH_ENTRY]: { selectedGroupName: state.activeGroupName, selectedUpgrades: filtered },
-          },
-        };
-      }
       return {
         ...state,
         activeUpgrades: [],

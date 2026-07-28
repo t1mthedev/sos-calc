@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-07-07",
+  "lastUpdated": "2026-07-27",
   "categories": [
     {
       "id": "behemoth-enhancement",
@@ -9402,6 +9402,834 @@
               "benefit": "Hunter Health"
             }
           ]
+        },
+        {
+          "id": "mk-0",
+          "name": "MK 0",
+          "maxLevel": 5,
+          "levels": [
+            {
+              "level": 1,
+              "name": "1",
+              "costs": {
+                "MK 0 Fragment": 15
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Level 1"
+            },
+            {
+              "level": 2,
+              "name": "2",
+              "costs": {
+                "MK 0 Fragment": 20
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Level 2"
+            },
+            {
+              "level": 3,
+              "name": "3",
+              "costs": {
+                "MK 0 Fragment": 25
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Level 3"
+            },
+            {
+              "level": 4,
+              "name": "4",
+              "costs": {
+                "MK 0 Fragment": 30
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Level 4"
+            },
+            {
+              "level": 5,
+              "name": "5",
+              "costs": {
+                "MK 0 Fragment": 35
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Level 5"
+            }
+          ]
+        },
+        {
+          "id": "mk-i",
+          "name": "MK I",
+          "maxLevel": 5,
+          "levels": [
+            {
+              "level": 1,
+              "name": "1",
+              "costs": {
+                "MK I Fragment": 15
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Level 1"
+            },
+            {
+              "level": 2,
+              "name": "2",
+              "costs": {
+                "MK I Fragment": 20
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Level 2"
+            },
+            {
+              "level": 3,
+              "name": "3",
+              "costs": {
+                "MK I Fragment": 25
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Level 3"
+            },
+            {
+              "level": 4,
+              "name": "4",
+              "costs": {
+                "MK I Fragment": 30
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Level 4"
+            },
+            {
+              "level": 5,
+              "name": "5",
+              "costs": {
+                "MK I Fragment": 35
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Level 5"
+            }
+          ]
+        },
+        {
+          "id": "mk-ii",
+          "name": "MK II",
+          "maxLevel": 5,
+          "levels": [
+            {
+              "level": 1,
+              "name": "1",
+              "costs": {
+                "MK II Fragment": 15
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Level 1"
+            },
+            {
+              "level": 2,
+              "name": "2",
+              "costs": {
+                "MK II Fragment": 20
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Level 2"
+            },
+            {
+              "level": 3,
+              "name": "3",
+              "costs": {
+                "MK II Fragment": 25
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Level 3"
+            },
+            {
+              "level": 4,
+              "name": "4",
+              "costs": {
+                "MK II Fragment": 30
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Level 4"
+            },
+            {
+              "level": 5,
+              "name": "5",
+              "costs": {
+                "MK II Fragment": 35
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Level 5"
+            }
+          ]
+        },
+        {
+          "id": "mk-v",
+          "name": "MK V",
+          "maxLevel": 5,
+          "levels": [
+            {
+              "level": 1,
+              "name": "1",
+              "costs": {
+                "MK V Fragment": 15
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Level 1"
+            },
+            {
+              "level": 2,
+              "name": "2",
+              "costs": {
+                "MK V Fragment": 20
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Level 2"
+            },
+            {
+              "level": 3,
+              "name": "3",
+              "costs": {
+                "MK V Fragment": 25
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Level 3"
+            },
+            {
+              "level": 4,
+              "name": "4",
+              "costs": {
+                "MK V Fragment": 30
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Level 4"
+            },
+            {
+              "level": 5,
+              "name": "5",
+              "costs": {
+                "MK V Fragment": 35
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Infantry Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Rider Health",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Lethality",
+                  "value": 1,
+                  "unit": "%"
+                },
+                {
+                  "type": "Hunter Health",
+                  "value": 1,
+                  "unit": "%"
+                }
+              ],
+              "benefit": "Level 5"
+            }
+          ]
         }
       ]
     },
@@ -9409,6 +10237,1311 @@
       "id": "behemoth-levels",
       "name": "Behemoth Levels",
       "items": [
+        {
+          "id": "mk-mk-0",
+          "name": "MK 0",
+          "maxLevel": 100,
+          "levels": [
+            {
+              "level": 1,
+              "costs": {},
+              "bonuses": [
+                {
+                  "type": "Infantry Attack/Defense, Rider Attack",
+                  "value": 0.5,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "costs": {
+                "Power Serum": 5
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 0.5,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 3,
+              "costs": {
+                "Power Serum": 6
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 0.5,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 4,
+              "costs": {
+                "Power Serum": 8
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 0.5,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 5,
+              "costs": {
+                "Power Serum": 8
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 0.9,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 6,
+              "costs": {
+                "Power Serum": 9
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 0.9,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 7,
+              "costs": {
+                "Power Serum": 10
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 0.9,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 8,
+              "costs": {
+                "Power Serum": 11
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 0.9,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 9,
+              "costs": {
+                "Power Serum": 11
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 0.9,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 10,
+              "costs": {
+                "Power Serum": 12
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 0.9,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 11,
+              "costs": {
+                "Power Serum": 13
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 1.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 12,
+              "costs": {
+                "Power Serum": 13
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 1.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 13,
+              "costs": {
+                "Power Serum": 14
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 1.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 14,
+              "costs": {
+                "Power Serum": 14
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 1.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 15,
+              "costs": {
+                "Power Serum": 15
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 1.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 16,
+              "costs": {
+                "Power Serum": 15
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 1.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 17,
+              "costs": {
+                "Power Serum": 16
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 1.9,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 18,
+              "costs": {
+                "Power Serum": 16
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 1.9,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 19,
+              "costs": {
+                "Power Serum": 17
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 1.9,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 20,
+              "costs": {
+                "Power Serum": 17
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 1.9,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 21,
+              "costs": {
+                "Power Serum": 17
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 1.9,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 22,
+              "costs": {
+                "Power Serum": 18
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 1.9,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 23,
+              "costs": {
+                "Power Serum": 18
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 2.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 24,
+              "costs": {
+                "Power Serum": 18
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 2.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 25,
+              "costs": {
+                "Power Serum": 19
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 2.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 26,
+              "costs": {
+                "Power Serum": 19
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 2.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 27,
+              "costs": {
+                "Power Serum": 20
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 2.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 28,
+              "costs": {
+                "Power Serum": 20
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 2.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 29,
+              "costs": {
+                "Power Serum": 21
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 2.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 30,
+              "costs": {
+                "Power Serum": 21
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 2.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 31,
+              "costs": {
+                "Power Serum": 21
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 2.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 32,
+              "costs": {
+                "Power Serum": 22
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 2.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 33,
+              "costs": {
+                "Power Serum": 22
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 2.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 34,
+              "costs": {
+                "Power Serum": 22
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 2.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 35,
+              "costs": {
+                "Power Serum": 23
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 3.3,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 36,
+              "costs": {
+                "Power Serum": 23
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 3.3,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 37,
+              "costs": {
+                "Power Serum": 23
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 3.3,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 38,
+              "costs": {
+                "Power Serum": 23
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 3.3,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 39,
+              "costs": {
+                "Power Serum": 24
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 3.3,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 40,
+              "costs": {
+                "Power Serum": 24
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 3.3,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 41,
+              "costs": {
+                "Power Serum": 24
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 3.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 42,
+              "costs": {
+                "Power Serum": 25
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 3.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 43,
+              "costs": {
+                "Power Serum": 25
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 3.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 44,
+              "costs": {
+                "Power Serum": 25
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 3.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 45,
+              "costs": {
+                "Power Serum": 26
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 3.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 46,
+              "costs": {
+                "Power Serum": 26
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 3.8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 47,
+              "costs": {
+                "Power Serum": 26
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 4.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 48,
+              "costs": {
+                "Power Serum": 26
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 4.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 49,
+              "costs": {
+                "Power Serum": 27
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 4.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 50,
+              "costs": {
+                "Power Serum": 27
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 4.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 51,
+              "costs": {
+                "Power Serum": 27
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 4.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 52,
+              "costs": {
+                "Power Serum": 27
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 4.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 53,
+              "costs": {
+                "Power Serum": 28
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 4.7,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 54,
+              "costs": {
+                "Power Serum": 28
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 4.7,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 55,
+              "costs": {
+                "Power Serum": 28
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 4.7,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 56,
+              "costs": {
+                "Power Serum": 28
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 4.7,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 57,
+              "costs": {
+                "Power Serum": 29
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 4.7,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 58,
+              "costs": {
+                "Power Serum": 29
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 4.7,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 59,
+              "costs": {
+                "Power Serum": 29
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 5.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 60,
+              "costs": {
+                "Power Serum": 29
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 5.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 61,
+              "costs": {
+                "Power Serum": 30
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 5.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 62,
+              "costs": {
+                "Power Serum": 30
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 5.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 63,
+              "costs": {
+                "Power Serum": 30
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 5.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 64,
+              "costs": {
+                "Power Serum": 30
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 5.2,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 65,
+              "costs": {
+                "Power Serum": 31
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 5.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 66,
+              "costs": {
+                "Power Serum": 31
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 5.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 67,
+              "costs": {
+                "Power Serum": 31
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 5.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 68,
+              "costs": {
+                "Power Serum": 31
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 5.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 69,
+              "costs": {
+                "Power Serum": 32
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 5.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 70,
+              "costs": {
+                "Power Serum": 32
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 5.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 71,
+              "costs": {
+                "Power Serum": 32
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 6.1,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 72,
+              "costs": {
+                "Power Serum": 32
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 6.1,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 73,
+              "costs": {
+                "Power Serum": 32
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 6.1,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 74,
+              "costs": {
+                "Power Serum": 33
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 6.1,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 75,
+              "costs": {
+                "Power Serum": 33
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 6.1,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 76,
+              "costs": {
+                "Power Serum": 33
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 6.1,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 77,
+              "costs": {
+                "Power Serum": 33
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 6.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 78,
+              "costs": {
+                "Power Serum": 34
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 6.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 79,
+              "costs": {
+                "Power Serum": 34
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 6.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 80,
+              "costs": {
+                "Power Serum": 34
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 6.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 81,
+              "costs": {
+                "Power Serum": 34
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 6.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 82,
+              "costs": {
+                "Power Serum": 34
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 6.6,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 83,
+              "costs": {
+                "Power Serum": 35
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 7.1,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 84,
+              "costs": {
+                "Power Serum": 35
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 7.1,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 85,
+              "costs": {
+                "Power Serum": 35
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 7.1,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 86,
+              "costs": {
+                "Power Serum": 35
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 7.1,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 87,
+              "costs": {
+                "Power Serum": 35
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 7.1,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 88,
+              "costs": {
+                "Power Serum": 36
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 7.1,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 89,
+              "costs": {
+                "Power Serum": 36
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 7.5,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 90,
+              "costs": {
+                "Power Serum": 36
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 7.5,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 91,
+              "costs": {
+                "Power Serum": 36
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 7.5,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 92,
+              "costs": {
+                "Power Serum": 36
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 7.5,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 93,
+              "costs": {
+                "Power Serum": 37
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 7.5,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 94,
+              "costs": {
+                "Power Serum": 37
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 7.5,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 95,
+              "costs": {
+                "Power Serum": 37
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Attack",
+                  "value": 8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 96,
+              "costs": {
+                "Power Serum": 37
+              },
+              "bonuses": [
+                {
+                  "type": "Infantry Defense",
+                  "value": 8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 97,
+              "costs": {
+                "Power Serum": 37
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Attack",
+                  "value": 8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 98,
+              "costs": {
+                "Power Serum": 38
+              },
+              "bonuses": [
+                {
+                  "type": "Rider Defense",
+                  "value": 8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 99,
+              "costs": {
+                "Power Serum": 38
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Attack",
+                  "value": 8,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 100,
+              "costs": {
+                "Power Serum": 38
+              },
+              "bonuses": [
+                {
+                  "type": "Hunter Defense",
+                  "value": 8,
+                  "unit": "%"
+                }
+              ]
+            }
+          ]
+        },
         {
           "id": "mk-mk-iii",
           "name": "MK III",
@@ -14618,6 +16751,105 @@
               ]
             }
           ]
+        },
+        {
+          "id": "mk-mk-i",
+          "name": "MK I",
+          "maxLevel": 2,
+          "levels": [
+            {
+              "level": 1,
+              "costs": {
+                "Power Serum": 10
+              },
+              "bonuses": [
+                {
+                  "type": "Placeholder",
+                  "value": 1.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "costs": {
+                "Power Serum": 20
+              },
+              "bonuses": [
+                {
+                  "type": "Placeholder",
+                  "value": 1.4,
+                  "unit": "%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mk-mk-ii",
+          "name": "MK II",
+          "maxLevel": 2,
+          "levels": [
+            {
+              "level": 1,
+              "costs": {
+                "Power Serum": 10
+              },
+              "bonuses": [
+                {
+                  "type": "Placeholder",
+                  "value": 1.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "costs": {
+                "Power Serum": 20
+              },
+              "bonuses": [
+                {
+                  "type": "Placeholder",
+                  "value": 1.4,
+                  "unit": "%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mk-mk-v",
+          "name": "MK V",
+          "maxLevel": 2,
+          "levels": [
+            {
+              "level": 1,
+              "costs": {
+                "Power Serum": 10
+              },
+              "bonuses": [
+                {
+                  "type": "Placeholder",
+                  "value": 1.4,
+                  "unit": "%"
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "costs": {
+                "Power Serum": 20
+              },
+              "bonuses": [
+                {
+                  "type": "Placeholder",
+                  "value": 1.4,
+                  "unit": "%"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -14625,6 +16857,4617 @@
       "id": "behemoth-skills",
       "name": "Behemoth Skills",
       "groups": [
+        {
+          "name": "Construction Time",
+          "mk": "MK 0",
+          "items": [
+            {
+              "id": "construction-time-construction-time",
+              "name": "Construction Time",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {},
+                  "bonuses": [
+                    {
+                      "type": "Construction Time",
+                      "value": 1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 3
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Construction Time",
+                      "value": 2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 3
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Construction Time",
+                      "value": 3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Construction Time",
+                      "value": 4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 5
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Construction Time",
+                      "value": 5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Construction Time",
+                      "value": 6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Construction Time",
+                      "value": 7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 7
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Construction Time",
+                      "value": 8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Construction Time",
+                      "value": 9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Construction Time",
+                      "value": 10,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "construction-time-efficient-construction",
+              "name": "Efficient Construction",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 3
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Efficient Construction",
+                      "value": 0.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 3
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Efficient Construction",
+                      "value": 1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Efficient Construction",
+                      "value": 1.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Efficient Construction",
+                      "value": 2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 5
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Efficient Construction",
+                      "value": 2.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Efficient Construction",
+                      "value": 3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 7
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Efficient Construction",
+                      "value": 3.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Efficient Construction",
+                      "value": 4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Efficient Construction",
+                      "value": 4.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Efficient Construction",
+                      "value": 5,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "construction-time-research-progress",
+              "name": "Research Progress",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 3
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Research Progress",
+                      "value": 0.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Research Progress",
+                      "value": 0.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Research Progress",
+                      "value": 0.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 5
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Research Progress",
+                      "value": 1.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Research Progress",
+                      "value": 1.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 7
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Research Progress",
+                      "value": 1.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Research Progress",
+                      "value": 2.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Research Progress",
+                      "value": 2.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Research Progress",
+                      "value": 2.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 12
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Research Progress",
+                      "value": 3,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "construction-time-building-materials",
+              "name": "Building Materials",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 3
+                  },
+                  "bonuses": [],
+                  "benefit": "-0.2%"
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 4
+                  },
+                  "bonuses": [],
+                  "benefit": "-0.4%"
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 5
+                  },
+                  "bonuses": [],
+                  "benefit": "-0.6%"
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 5
+                  },
+                  "bonuses": [],
+                  "benefit": "-0.8%"
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 6
+                  },
+                  "bonuses": [],
+                  "benefit": "-1%"
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 7
+                  },
+                  "bonuses": [],
+                  "benefit": "-1.2%"
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 9
+                  },
+                  "bonuses": [],
+                  "benefit": "-1.4%"
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 10
+                  },
+                  "bonuses": [],
+                  "benefit": "-1.6%"
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 12
+                  },
+                  "bonuses": [],
+                  "benefit": "-1.8%"
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 14
+                  },
+                  "bonuses": [],
+                  "benefit": "-2%"
+                }
+              ]
+            },
+            {
+              "id": "construction-time-training-expansion",
+              "name": "Training Expansion",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 3
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Training Expansion",
+                      "value": 2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 3
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Training Expansion",
+                      "value": 4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Training Expansion",
+                      "value": 6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Training Expansion",
+                      "value": 8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 5
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Training Expansion",
+                      "value": 10,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Training Expansion",
+                      "value": 12,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 7
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Training Expansion",
+                      "value": 14,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Training Expansion",
+                      "value": 16,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Training Expansion",
+                      "value": 18,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Training Expansion",
+                      "value": 20,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "construction-time-speedy-training",
+              "name": "Speedy Training",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 3
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Speedy Training",
+                      "value": 1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Speedy Training",
+                      "value": 2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Speedy Training",
+                      "value": 3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 5
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Speedy Training",
+                      "value": 4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Speedy Training",
+                      "value": 5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 7
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Speedy Training",
+                      "value": 6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Speedy Training",
+                      "value": 7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Speedy Training",
+                      "value": 8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Speedy Training",
+                      "value": 9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 13
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Speedy Training",
+                      "value": 10,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "construction-time-training-resorces",
+              "name": "Training Resorces",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 4
+                  },
+                  "bonuses": [],
+                  "benefit": "-0.1%"
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 4
+                  },
+                  "bonuses": [],
+                  "benefit": "-0.2%"
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 5
+                  },
+                  "bonuses": [],
+                  "benefit": "-0.3%"
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 6
+                  },
+                  "bonuses": [],
+                  "benefit": "-0.4%"
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 7
+                  },
+                  "bonuses": [],
+                  "benefit": "-0.5%"
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 8
+                  },
+                  "bonuses": [],
+                  "benefit": "-0.6%"
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 9
+                  },
+                  "bonuses": [],
+                  "benefit": "-0.7%"
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 11
+                  },
+                  "bonuses": [],
+                  "benefit": "-0.8%"
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 12
+                  },
+                  "bonuses": [],
+                  "benefit": "-0.9%"
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 14
+                  },
+                  "bonuses": [],
+                  "benefit": "-10%"
+                }
+              ]
+            },
+            {
+              "id": "construction-time-food-gathering",
+              "name": "Food Gathering",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 3
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Food Gathering",
+                      "value": 2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 3
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Food Gathering",
+                      "value": 4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Food Gathering",
+                      "value": 6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 5
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Food Gathering",
+                      "value": 8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 5
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Food Gathering",
+                      "value": 10,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Food Gathering",
+                      "value": 12,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 7
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Food Gathering",
+                      "value": 14,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Food Gathering",
+                      "value": 16,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Food Gathering",
+                      "value": 18,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 12
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Food Gathering",
+                      "value": 20,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "construction-time-wood-gathering",
+              "name": "Wood Gathering",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 3
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Wood Gathering",
+                      "value": 2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Wood Gathering",
+                      "value": 4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 5
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Wood Gathering",
+                      "value": 6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 5
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Wood Gathering",
+                      "value": 8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Wood Gathering",
+                      "value": 10,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 7
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Wood Gathering",
+                      "value": 12,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Wood Gathering",
+                      "value": 14,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Wood Gathering",
+                      "value": 16,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Wood Gathering",
+                      "value": 18,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 13
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Wood Gathering",
+                      "value": 20,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "construction-time-metal-gathering",
+              "name": "Metal Gathering",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Metal Gathering",
+                      "value": 2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Metal Gathering",
+                      "value": 4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 5
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Metal Gathering",
+                      "value": 6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Metal Gathering",
+                      "value": 8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 7
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Metal Gathering",
+                      "value": 10,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Metal Gathering",
+                      "value": 12,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Metal Gathering",
+                      "value": 14,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Metal Gathering",
+                      "value": 16,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 13
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Metal Gathering",
+                      "value": 18,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 15
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Metal Gathering",
+                      "value": 20,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "construction-time-gas-gathering",
+              "name": "Gas Gathering",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Gas Gathering",
+                      "value": 2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 5
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Gas Gathering",
+                      "value": 4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 5
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Gas Gathering",
+                      "value": 6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Gas Gathering",
+                      "value": 8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 7
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Gas Gathering",
+                      "value": 10,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Gas Gathering",
+                      "value": 12,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Gas Gathering",
+                      "value": 14,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Gas Gathering",
+                      "value": 16,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 13
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Gas Gathering",
+                      "value": 18,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 16
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Gas Gathering",
+                      "value": 20,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Infantry Attack",
+          "mk": "MK 0",
+          "items": [
+            {
+              "id": "infantry-attack-infantry-attack",
+              "name": "Infantry Attack",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Attack",
+                      "value": 1.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 5
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Attack",
+                      "value": 3.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Attack",
+                      "value": 5.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 7
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Attack",
+                      "value": 7.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Attack",
+                      "value": 9.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Attack",
+                      "value": 11.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Attack",
+                      "value": 13.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 12
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Attack",
+                      "value": 15.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 14
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Attack",
+                      "value": 17.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 16
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Attack",
+                      "value": 19.2,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "infantry-attack-rider-defense",
+              "name": "Rider Defense",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Defense",
+                      "value": 1.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 5
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Defense",
+                      "value": 3.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Defense",
+                      "value": 5.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 7
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Defense",
+                      "value": 7.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Defense",
+                      "value": 9.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Defense",
+                      "value": 11.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Defense",
+                      "value": 13.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 13
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Defense",
+                      "value": 15.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 15
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Defense",
+                      "value": 17.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 17
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Defense",
+                      "value": 19.2,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "infantry-attack-infantry-defense",
+              "name": "Infantry Defense",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 5
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Defense",
+                      "value": 1.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 5
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Defense",
+                      "value": 3.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Defense",
+                      "value": 5.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 7
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Defense",
+                      "value": 7.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Defense",
+                      "value": 9.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Defense",
+                      "value": 11.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 12
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Defense",
+                      "value": 13.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 14
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Defense",
+                      "value": 15.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 16
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Defense",
+                      "value": 17.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 19
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Defense",
+                      "value": 19.2,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "infantry-attack-infantry-lethality",
+              "name": "Infantry Lethality",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 5
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Lethality",
+                      "value": 1.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Lethality",
+                      "value": 2.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 7
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Lethality",
+                      "value": 4.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Lethality",
+                      "value": 5.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Lethality",
+                      "value": 7.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Lethality",
+                      "value": 8.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 13
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Lethality",
+                      "value": 10.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 16
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Lethality",
+                      "value": 11.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 18
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Lethality",
+                      "value": 13,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 21
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Lethality",
+                      "value": 14.4,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "infantry-attack-infantry-health",
+              "name": "Infantry Health",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Health",
+                      "value": 1.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 7
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Health",
+                      "value": 2.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Health",
+                      "value": 4.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Health",
+                      "value": 5.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Health",
+                      "value": 7.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 13
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Health",
+                      "value": 8.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 15
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Health",
+                      "value": 10.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 18
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Health",
+                      "value": 11.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 21
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Health",
+                      "value": 13,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 24
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Health",
+                      "value": 14.4,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "infantry-attack-hunter-defense",
+              "name": "Hunter Defense",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Defense",
+                      "value": 1.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 5
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Defense",
+                      "value": 3.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Defense",
+                      "value": 5.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 7
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Defense",
+                      "value": 7.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Defense",
+                      "value": 9.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Defense",
+                      "value": 11.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Defense",
+                      "value": 13.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 13
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Defense",
+                      "value": 15.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 15
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Defense",
+                      "value": 17.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 18
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Defense",
+                      "value": 19.2,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "infantry-attack-hunter-attack",
+              "name": "Hunter Attack",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 5
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Attack",
+                      "value": 1.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Attack",
+                      "value": 3.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 7
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Attack",
+                      "value": 5.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Attack",
+                      "value": 7.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Attack",
+                      "value": 9.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Attack",
+                      "value": 11.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 13
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Attack",
+                      "value": 13.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 15
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Attack",
+                      "value": 15.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 17
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Attack",
+                      "value": 17.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 20
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Attack",
+                      "value": 19.2,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "infantry-attack-hunter-health",
+              "name": "Hunter Health",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Health",
+                      "value": 1.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 7
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Health",
+                      "value": 2.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Health",
+                      "value": 4.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Health",
+                      "value": 5.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Health",
+                      "value": 7.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 12
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Health",
+                      "value": 8.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 15
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Health",
+                      "value": 10.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 17
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Health",
+                      "value": 11.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 20
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Health",
+                      "value": 13,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 23
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Health",
+                      "value": 14.4,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "infantry-attack-hunter-lethality",
+              "name": "Hunter Lethality",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 7
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Lethality",
+                      "value": 1.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Lethality",
+                      "value": 2.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Lethality",
+                      "value": 4.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Lethality",
+                      "value": 5.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 12
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Lethality",
+                      "value": 7.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 14
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Lethality",
+                      "value": 8.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 17
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Lethality",
+                      "value": 10.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 19
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Lethality",
+                      "value": 11.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 22
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Lethality",
+                      "value": 13,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 26
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Hunter Lethality",
+                      "value": 14.4,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "infantry-attack-rider-attack",
+              "name": "Rider Attack",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 5
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Attack",
+                      "value": 1.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Attack",
+                      "value": 3.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 7
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Attack",
+                      "value": 5.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Attack",
+                      "value": 7.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Attack",
+                      "value": 9.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Attack",
+                      "value": 11.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 12
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Attack",
+                      "value": 13.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 14
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Attack",
+                      "value": 15.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 17
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Attack",
+                      "value": 17.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 19
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Attack",
+                      "value": 19.2,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "infantry-attack-rider-health",
+              "name": "Rider Health",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Health",
+                      "value": 1.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Health",
+                      "value": 2.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Health",
+                      "value": 4.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Health",
+                      "value": 5.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Health",
+                      "value": 7.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 12
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Health",
+                      "value": 8.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 14
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Health",
+                      "value": 10.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 16
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Health",
+                      "value": 11.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 19
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Health",
+                      "value": 13,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 22
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Health",
+                      "value": 14.4,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "infantry-attack-rider-lethality",
+              "name": "Rider Lethality",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Lethality",
+                      "value": 1.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 7
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Lethality",
+                      "value": 2.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Lethality",
+                      "value": 4.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Lethality",
+                      "value": 5.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 12
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Lethality",
+                      "value": 7.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 14
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Lethality",
+                      "value": 8.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 16
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Lethality",
+                      "value": 10.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 18
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Lethality",
+                      "value": 11.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 21
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Lethality",
+                      "value": 13,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 25
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rider Lethality",
+                      "value": 14.4,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Active Strike",
+          "mk": "MK 0",
+          "items": [
+            {
+              "id": "active-strike-active-strike",
+              "name": "Active Strike",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 71
+                  },
+                  "bonuses": [],
+                  "benefit": "Every 10 turns, fires a missile that deals 70% damage to the enemy front row."
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 24
+                  },
+                  "bonuses": [],
+                  "benefit": "Every 10 turns, fires a missile that deals 90% damage to the enemy front row."
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 30
+                  },
+                  "bonuses": [],
+                  "benefit": "Every 10 turns, fires a missile that deals 115% damage to the enemy front row."
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 36
+                  },
+                  "bonuses": [],
+                  "benefit": "Attack interval is reduced to 9."
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 42
+                  },
+                  "bonuses": [],
+                  "benefit": "Every 9 turns, fires a missile that deals 135% damage to the enemy front row."
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 48
+                  },
+                  "bonuses": [],
+                  "benefit": "The skill now targets all enemies."
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 54
+                  },
+                  "bonuses": [],
+                  "benefit": "Every 9 turns, fires a missile that deals 160% damage to the enemy front row."
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 60
+                  },
+                  "bonuses": [],
+                  "benefit": "Attack interval is reduced to 8."
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 65
+                  },
+                  "bonuses": [],
+                  "benefit": "Every 8 turns, fires a missile that deals 180% damage to the enemy front row."
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 71
+                  },
+                  "bonuses": [],
+                  "benefit": "The skill is now triggered at the start of battle."
+                }
+              ]
+            },
+            {
+              "id": "active-strike-troop-attack",
+              "name": "Troop Attack",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 7
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Attack",
+                      "value": 0.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Attack",
+                      "value": 1.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Attack",
+                      "value": 1.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Attack",
+                      "value": 2.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 13
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Attack",
+                      "value": 3.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 15
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Attack",
+                      "value": 3.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 17
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Attack",
+                      "value": 4.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 20
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Attack",
+                      "value": 5.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 23
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Attack",
+                      "value": 5.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 27
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Attack",
+                      "value": 6.4,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "active-strike-troop-defense",
+              "name": "Troop Defense",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Defense",
+                      "value": 0.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Defense",
+                      "value": 1.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Defense",
+                      "value": 1.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 12
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Defense",
+                      "value": 2.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 14
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Defense",
+                      "value": 3.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 17
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Defense",
+                      "value": 3.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 20
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Defense",
+                      "value": 4.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 23
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Defense",
+                      "value": 5.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 27
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Defense",
+                      "value": 5.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 31
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Defense",
+                      "value": 6.4,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "active-strike-troop-lethality",
+              "name": "Troop Lethality",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Lethality",
+                      "value": 0.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Lethality",
+                      "value": 1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Lethality",
+                      "value": 1.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 12
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Lethality",
+                      "value": 1.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 14
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Lethality",
+                      "value": 2.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 16
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Lethality",
+                      "value": 2.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 19
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Lethality",
+                      "value": 3.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 22
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Lethality",
+                      "value": 3.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 26
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Lethality",
+                      "value": 4.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 30
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Lethality",
+                      "value": 4.8,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "active-strike-troop-health",
+              "name": "Troop Health",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Health",
+                      "value": 0.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Health",
+                      "value": 1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 12
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Health",
+                      "value": 1.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 14
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Health",
+                      "value": 1.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 16
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Health",
+                      "value": 2.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 19
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Health",
+                      "value": 2.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 22
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Health",
+                      "value": 3.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 26
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Health",
+                      "value": 3.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 30
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Health",
+                      "value": 4.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 35
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Troop Health",
+                      "value": 4.8,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "active-strike-march-capacity",
+              "name": "March Capacity",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "March Capacity",
+                      "value": 70,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "March Capacity",
+                      "value": 140,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 13
+                  },
+                  "bonuses": [
+                    {
+                      "type": "March Capacity",
+                      "value": 210,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 15
+                  },
+                  "bonuses": [
+                    {
+                      "type": "March Capacity",
+                      "value": 280,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 17
+                  },
+                  "bonuses": [
+                    {
+                      "type": "March Capacity",
+                      "value": 350,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 20
+                  },
+                  "bonuses": [
+                    {
+                      "type": "March Capacity",
+                      "value": 420,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 23
+                  },
+                  "bonuses": [
+                    {
+                      "type": "March Capacity",
+                      "value": 490,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 27
+                  },
+                  "bonuses": [
+                    {
+                      "type": "March Capacity",
+                      "value": 560,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 32
+                  },
+                  "bonuses": [
+                    {
+                      "type": "March Capacity",
+                      "value": 630,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 37
+                  },
+                  "bonuses": [
+                    {
+                      "type": "March Capacity",
+                      "value": 700,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "active-strike-rally-attack",
+              "name": "Rally Attack",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 7
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Attack",
+                      "value": 0.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Attack",
+                      "value": 1.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Attack",
+                      "value": 1.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Attack",
+                      "value": 2.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 13
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Attack",
+                      "value": 3.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 15
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Attack",
+                      "value": 3.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 17
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Attack",
+                      "value": 4.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 20
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Attack",
+                      "value": 5.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 23
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Attack",
+                      "value": 5.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 27
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Attack",
+                      "value": 6.4,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "active-strike-rally-defense",
+              "name": "Rally Defense",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Defense",
+                      "value": 0.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Defense",
+                      "value": 1.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Defense",
+                      "value": 1.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 13
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Defense",
+                      "value": 2.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 15
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Defense",
+                      "value": 3.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 18
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Defense",
+                      "value": 3.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 21
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Defense",
+                      "value": 4.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 24
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Defense",
+                      "value": 5.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 28
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Defense",
+                      "value": 5.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 32
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Defense",
+                      "value": 6.4,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "active-strike-rally-lethality",
+              "name": "Rally Lethality",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Lethality",
+                      "value": 0.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Lethality",
+                      "value": 1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 12
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Lethality",
+                      "value": 1.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 14
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Lethality",
+                      "value": 1.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 16
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Lethality",
+                      "value": 2.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 18
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Lethality",
+                      "value": 2.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 21
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Lethality",
+                      "value": 3.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 25
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Lethality",
+                      "value": 3.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 29
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Lethality",
+                      "value": 4.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 34
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Lethality",
+                      "value": 4.8,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "active-strike-rally-health",
+              "name": "Rally Health",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Health",
+                      "value": 0.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 12
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Health",
+                      "value": 1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 14
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Health",
+                      "value": 1.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 16
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Health",
+                      "value": 1.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 19
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Health",
+                      "value": 2.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 22
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Health",
+                      "value": 2.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 25
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Health",
+                      "value": 3.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 30
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Health",
+                      "value": 3.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 35
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Health",
+                      "value": 4.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 40
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Health",
+                      "value": 4.8,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "active-strike-rally-capacity",
+              "name": "Rally Capacity",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Capacity",
+                      "value": 550,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Capacity",
+                      "value": 1.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 13
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Capacity",
+                      "value": 1.65,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 15
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Capacity",
+                      "value": 2.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 18
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Capacity",
+                      "value": 2.75,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 21
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Capacity",
+                      "value": 3.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 24
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Capacity",
+                      "value": 3.85,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 28
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Capacity",
+                      "value": 4.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 33
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Capacity",
+                      "value": 4.95,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 39
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Rally Capacity",
+                      "value": 5.5,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "active-strike-adapt-amp-overcome",
+              "name": "Adapt &amp; Overcome",
+              "maxLevel": 10,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 71
+                  },
+                  "bonuses": [],
+                  "benefit": "At the start of battle, applies a 550% shield to friendly Infantry."
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 24
+                  },
+                  "bonuses": [],
+                  "benefit": "At the start of battle, applies a 750% shield to friendly Infantry."
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 30
+                  },
+                  "bonuses": [],
+                  "benefit": "At the start of battle, applies a 1,000% shield to friendly Infantry."
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 36
+                  },
+                  "bonuses": [],
+                  "benefit": "Shield protection is extended to include Riders."
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 42
+                  },
+                  "bonuses": [],
+                  "benefit": "At the start of battle, applies a 1,200% shield to friendly Infantry and Riders."
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 48
+                  },
+                  "bonuses": [],
+                  "benefit": "An additional 150% shield is applied on turn 11."
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 54
+                  },
+                  "bonuses": [],
+                  "benefit": "On turns 1 and 11 applies a 1,200% and 450% shield respectively to Infantry and Riders."
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 60
+                  },
+                  "bonuses": [],
+                  "benefit": "Shield protection is extended to include all allies."
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 65
+                  },
+                  "bonuses": [],
+                  "benefit": "On turns 1 and 11 applies a 1,200% and 750% shield respectively to all allies."
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 71
+                  },
+                  "bonuses": [],
+                  "benefit": "On turns 1, 11, and 21, applies a 1,200%, 750%, and 300% shield respectively to all allies."
+                }
+              ]
+            }
+          ]
+        },
         {
           "name": "Laser Storm",
           "mk": "MK III",
@@ -39385,6 +46228,114 @@
                   },
                   "bonuses": [],
                   "benefit": "For the first 10 turns, all friendly squads' damage dealt is increased by 1% each turn. The bonus remains active after turn 10 but no longer increases."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tree 1",
+          "mk": "MK I",
+          "items": [
+            {
+              "id": "tree-1-skill-1",
+              "name": "Skill 1",
+              "maxLevel": 1,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 10
+                  },
+                  "bonuses": [],
+                  "benefit": "Placeholder benefit"
+                }
+              ]
+            },
+            {
+              "id": "tree-1-skill-2",
+              "name": "Skill 2",
+              "maxLevel": 1,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 15
+                  },
+                  "bonuses": [],
+                  "benefit": "Placeholder benefit"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tree 1",
+          "mk": "MK II",
+          "items": [
+            {
+              "id": "tree-1-skill-1",
+              "name": "Skill 1",
+              "maxLevel": 1,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 10
+                  },
+                  "bonuses": [],
+                  "benefit": "Placeholder benefit"
+                }
+              ]
+            },
+            {
+              "id": "tree-1-skill-2",
+              "name": "Skill 2",
+              "maxLevel": 1,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 15
+                  },
+                  "bonuses": [],
+                  "benefit": "Placeholder benefit"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tree 1",
+          "mk": "MK V",
+          "items": [
+            {
+              "id": "tree-1-skill-1",
+              "name": "Skill 1",
+              "maxLevel": 1,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 10
+                  },
+                  "bonuses": [],
+                  "benefit": "Placeholder benefit"
+                }
+              ]
+            },
+            {
+              "id": "tree-1-skill-2",
+              "name": "Skill 2",
+              "maxLevel": 1,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 15
+                  },
+                  "bonuses": [],
+                  "benefit": "Placeholder benefit"
                 }
               ]
             }

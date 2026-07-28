@@ -179,6 +179,15 @@ export function getBehemothCategoryId(section: BehemothSection): string {
   return BEHEMOTH_CATEGORY_IDS[section];
 }
 
+const MK_SUFFIX_MAP: Record<string, string> = {
+  'MK 0': 'mk-0',
+  'MK I': 'mk-i',
+  'MK II': 'mk-ii',
+  'MK III': 'mk-iii',
+  'MK IV': 'mk-iv',
+  'MK V': 'mk-v',
+};
+
 export function getBehemothItems(mk: BehemothMk, section: BehemothSection): { categoryId: string; items: UpgradeItem[] } {
   const categoryId = BEHEMOTH_CATEGORY_IDS[section];
   const cat = getCategoryById(categoryId);
@@ -190,7 +199,8 @@ export function getBehemothItems(mk: BehemothMk, section: BehemothSection): { ca
   }
 
   const all = cat.items ?? [];
-  const suffix = mk === 'MK III' ? 'mk-iii' : 'mk-iv';
+  const suffix = MK_SUFFIX_MAP[mk];
+  if (!suffix) return { categoryId, items: [] };
   const items = all.filter(item => item.id.endsWith(suffix));
   return { categoryId, items };
 }
