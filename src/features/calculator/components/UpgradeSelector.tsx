@@ -4,22 +4,16 @@ import { FormControl, InputLabel, Select, MenuItem, Button, Stack, Typography, D
 import { useDevMode } from '../../../hooks/useDevMode';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { useCalculator } from '../hooks/useCalculator';
-import { BehemothSelector } from './BehemothSelector';
 import { getCategorySlug, toSlug } from '../../../utils/slugs';
-
-const BEHEMOTH_CAT_IDS = new Set(['behemoth-enhancement', 'behemoth-levels', 'behemoth-skills']);
 
 export function UpgradeSelector() {
   const isDev = useDevMode();
   const inputRef = useRef<HTMLInputElement>(null);
   const navigate = useNavigate();
   const { categories, selectedCategoryId, selectedCategory, selectedGroupName, groupItems, allItems,
-    selectCategory, selectGroup, addUpgrade, selectedUpgrades, reset, hasSavedData, hasCurrentData, clearCategory, isBehemoth } = useCalculator();
+    selectCategory, selectGroup, addUpgrade, selectedUpgrades, reset, hasSavedData, hasCurrentData, clearCategory } = useCalculator();
 
-  const dropdownOptions = [
-    { id: '__behemoth__', name: 'Behemoth' },
-    ...categories.filter(c => !BEHEMOTH_CAT_IDS.has(c.id)),
-  ];
+  const dropdownOptions = categories;
 
   const handleCategoryChange = (id: string) => {
     selectCategory(id);
@@ -90,18 +84,14 @@ export function UpgradeSelector() {
     <Stack spacing={2}>
       <FormControl fullWidth>
         <InputLabel>Category</InputLabel>
-        <Select value={isBehemoth ? '__behemoth__' : (selectedCategoryId ?? '')} label="Category" onChange={e => handleCategoryChange(e.target.value)}>
+        <Select value={selectedCategoryId ?? ''} label="Category" onChange={e => handleCategoryChange(e.target.value)}>
           {dropdownOptions.map(opt => (
             <MenuItem key={opt.id} value={opt.id}>{opt.name}</MenuItem>
           ))}
         </Select>
       </FormControl>
 
-      {isBehemoth ? (
-        <BehemothSelector />
-      ) : (
-        <>
-          {selectedCategory?.groups && (
+      {selectedCategory?.groups && (
             <FormControl fullWidth>
               <InputLabel>Group</InputLabel>
               <Select value={selectedGroupName ?? ''} label="Group" onChange={e => handleGroupChange(e.target.value)}
@@ -141,8 +131,6 @@ export function UpgradeSelector() {
               })}
             </Stack>
           )}
-        </>
-      )}
 
       <Divider />
       <Stack spacing={1}>

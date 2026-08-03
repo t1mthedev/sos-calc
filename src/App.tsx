@@ -1,6 +1,8 @@
 import { ThemeProvider, createTheme, CssBaseline } from '@mui/material';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { CalculatorPage } from './features/calculator/components/CalculatorPage';
+import { CalculatorLandingPage } from './features/calculator/components/CalculatorLandingPage';
+import { BehemothPage } from './features/calculator/components/BehemothPage';
 import { DashboardPage } from './features/dashboard/components/DashboardPage';
 import { BackpackPage } from './features/backpack/components/BackpackPage';
 import { Layout } from './components/Layout';
@@ -20,8 +22,10 @@ function App() {
             <Route element={<Layout />}>
               <Route path="/" element={<Navigate to="/dashboard" replace />} />
               <Route path="/dashboard" element={<DashboardPage />} />
-              <Route path="/calculator" element={<CalculatorPage />} />
-              <Route path="/calculator/behemoth/:mkSlug/:sectionSlug" element={<CalculatorPage />} />
+              <Route path="/calculator" element={<CalculatorLandingPage />} />
+              <Route path="/calculator/behemoth" element={<BehemothPage />} />
+              <Route path="/calculator/behemoth/:mkSlug" element={<BehemothPage />} />
+              <Route path="/calculator/behemoth/:mkSlug/:sectionSlug" element={<BehemothPage />} />
               <Route path="/calculator/:categorySlug" element={<CalculatorPage />} />
               <Route path="/calculator/:categorySlug/:groupSlug" element={<CalculatorPage />} />
               <Route path="/backpack" element={<BackpackPage />} />

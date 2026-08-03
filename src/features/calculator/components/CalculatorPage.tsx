@@ -11,11 +11,11 @@ import { BonusesTable } from './BonusesTable';
 import { CrateConversion } from './CrateConversion';
 import { BundleConversion } from './BundleConversion';
 import { useCalculator } from '../hooks/useCalculator';
-import { resolveCategoryId, normalizeSlug, resolveBySlug, resolveMk, buildSlugLookup } from '../../../utils/slugs';
+import { resolveCategoryId, resolveBySlug, buildSlugLookup } from '../../../utils/slugs';
 
 export function CalculatorPage() {
-  const { categorySlug, groupSlug, mkSlug, sectionSlug } = useParams();
-  const { dispatch, selectedCategoryId, selectedGroupName, selectedUpgrades, results, allItems, isCombinedBehemoth, behemothMk, behemothSection, categories } = useCalculator();
+  const { categorySlug, groupSlug } = useParams();
+  const { dispatch, selectedCategoryId, selectedGroupName, selectedUpgrades, results, allItems, categories } = useCalculator();
 
   const groupLookup = useMemo(
     () => buildSlugLookup(categories.flatMap(c => (c.groups ?? []).map(g => g.name))),
@@ -23,38 +23,14 @@ export function CalculatorPage() {
   );
 
   useEffect(() => {
-    if (!categorySlug && !mkSlug) return;
-
-    if (mkSlug && sectionSlug) {
-      const mk = resolveMk(mkSlug);
-      const section = normalizeSlug(sectionSlug);
-      if (mk) {
-        if (selectedCategoryId === '__behemoth__' && behemothMk === mk && behemothSection === section) return;
-        dispatch({ type: 'HYDRATE_FROM_URL', categoryId: '__behemoth__', behemothMk: mk, behemothSection: section });
-        return;
-      }
-    }
-
-    if (categorySlug) {
-      const catId = resolveCategoryId(categorySlug);
-      if (!catId) return;
-      if (catId === '__behemoth__') {
-        if (groupSlug) {
-          const mk = resolveMk(groupSlug);
-          if (selectedCategoryId === '__behemoth__' && behemothMk === mk && !behemothSection) return;
-          dispatch({ type: 'HYDRATE_FROM_URL', categoryId: '__behemoth__', behemothMk: mk ?? undefined });
-        } else {
-          if (selectedCategoryId === '__behemoth__' && !behemothMk) return;
-          dispatch({ type: 'HYDRATE_FROM_URL', categoryId: '__behemoth__' });
-        }
-      } else {
-        if (selectedCategoryId === catId && selectedGroupName === undefined) return;
-        const groupName = groupSlug ? resolveBySlug(groupSlug, groupLookup) : undefined;
-        if (selectedCategoryId === catId && selectedGroupName === groupName) return;
-        dispatch({ type: 'HYDRATE_FROM_URL', categoryId: catId, groupName });
-      }
-    }
-  }, [categorySlug, groupSlug, mkSlug, sectionSlug, dispatch, groupLookup, selectedCategoryId, selectedGroupName, behemothMk, behemothSection]);
+    if (!categorySlug) return;
+    const catId = resolveCategoryId(categorySlug);
+    if (!catId) return;
+    if (selectedCategoryId === catId && selectedGroupName === undefined) return;
+    const groupName = groupSlug ? resolveBySlug(groupSlug, groupLookup) : undefined;
+    if (selectedCategoryId === catId && selectedGroupName === groupName) return;
+    dispatch({ type: 'HYDRATE_FROM_URL', categoryId: catId, groupName });
+  }, [categorySlug, groupSlug, dispatch, groupLookup, selectedCategoryId, selectedGroupName]);
 
   return (
     <>
@@ -78,16 +54,7 @@ export function CalculatorPage() {
               </Card>
             ) : (
               <>
-                {!isCombinedBehemoth && <UpgradeList />}
-                {isCombinedBehemoth && selectedUpgrades.length > 0 && (
-                  <Card variant="outlined" sx={{ py: 2, px: 2 }}>
-                    <Typography variant="body2" color="text.secondary">
-                      {behemothMk
-                        ? `Combined totals for ${behemothMk} — select a section to add or modify upgrades.`
-                        : `Combined totals for all Behemoths — select a type to add or modify upgrades.`}
-                    </Typography>
-                  </Card>
-                )}
+                <UpgradeList />
                 {selectedUpgrades.length > 0 && results.size === 0 && (
                   <Typography color="text.secondary">
                     Set current and target levels to see results.

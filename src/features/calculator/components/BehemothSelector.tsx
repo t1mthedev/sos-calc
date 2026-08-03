@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Stack, Typography, Card, CardActionArea, CardContent, Chip, Button, Divider, Box } from '@mui/material';
+import { Stack, Typography, Card, CardActionArea, CardContent, Button, Divider, Box, Breadcrumbs, Link } from '@mui/material';
 import { useCalculator } from '../hooks/useCalculator';
 import { getMkSlug, getSectionSlug } from '../../../utils/slugs';
 
@@ -39,19 +39,9 @@ export function BehemothSelector() {
     navigate(`/calculator/behemoth/${getMkSlug(value)}`);
   }, [selectBehemothMk, navigate]);
 
-  const handleDeleteMk = useCallback(() => {
-    selectBehemothMk('');
-    navigate('/calculator/behemoth');
-  }, [selectBehemothMk, navigate]);
-
   const handleSelectSection = useCallback((value: string) => {
     selectBehemothSection(value);
     navigate(`/calculator/behemoth/${getMkSlug(behemothMk ?? '')}/${getSectionSlug(value)}`);
-  }, [selectBehemothSection, behemothMk, navigate]);
-
-  const handleDeleteSection = useCallback(() => {
-    selectBehemothSection('');
-    navigate(`/calculator/behemoth/${getMkSlug(behemothMk ?? '')}`);
   }, [selectBehemothSection, behemothMk, navigate]);
 
   return (
@@ -81,10 +71,11 @@ export function BehemothSelector() {
 
       {behemothMk && !behemothSection && (
         <>
-          <Stack direction="row" spacing={1} sx={{ alignItems: 'center' }}>
-            <Typography variant="subtitle2" color="text.secondary">Behemoth:</Typography>
-            <Chip label={behemothMk} size="small" color="primary" onDelete={handleDeleteMk} />
-          </Stack>
+          <Breadcrumbs>
+            <Link component="button" underline="hover" onClick={() => navigate('/calculator')}>Calculator</Link>
+            <Link component="button" underline="hover" onClick={() => navigate('/calculator/behemoth')}>Behemoth</Link>
+            <Typography color="text.primary">{behemothMk}</Typography>
+          </Breadcrumbs>
           <Typography variant="subtitle2" color="text.secondary">Select section:</Typography>
           {SECTION_OPTIONS.map(opt => (
             <Card key={opt.value} variant="outlined" sx={{ cursor: 'pointer' }}>
@@ -101,15 +92,12 @@ export function BehemothSelector() {
 
       {behemothMk && behemothSection && (
         <>
-          <Stack direction="row" spacing={1} sx={{ alignItems: 'center', flexWrap: 'wrap' }}>
-            <Chip label={behemothMk} size="small" color="primary" onDelete={handleDeleteMk} />
-            <Chip
-              label={SECTION_OPTIONS.find(s => s.value === behemothSection)?.label ?? behemothSection}
-              size="small"
-              variant="outlined"
-              onDelete={handleDeleteSection}
-            />
-          </Stack>
+          <Breadcrumbs>
+            <Link component="button" underline="hover" onClick={() => navigate('/calculator')}>Calculator</Link>
+            <Link component="button" underline="hover" onClick={() => navigate('/calculator/behemoth')}>Behemoth</Link>
+            <Link component="button" underline="hover" onClick={() => navigate(`/calculator/behemoth/${getMkSlug(behemothMk)}`)}>{behemothMk}</Link>
+            <Typography color="text.primary">{SECTION_OPTIONS.find(s => s.value === behemothSection)?.label ?? behemothSection}</Typography>
+          </Breadcrumbs>
           <Divider />
           {allItems.length > 0 && (
             <Stack spacing={1}>

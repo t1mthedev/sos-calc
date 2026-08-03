@@ -1,0 +1,89 @@
+import { useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { Grid, Stack, Typography, Accordion, AccordionSummary, AccordionDetails, Card, Box, IconButton } from '@mui/material';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { BehemothSelector } from './BehemothSelector';
+import { UpgradeList } from './UpgradeList';
+import { ResourcesTable } from './ResourcesTable';
+import { UpgradePathTable } from './UpgradePathTable';
+import { BonusesTable } from './BonusesTable';
+import { CrateConversion } from './CrateConversion';
+import { BundleConversion } from './BundleConversion';
+import { useCalculator } from '../hooks/useCalculator';
+import { normalizeSlug, resolveMk } from '../../../utils/slugs';
+
+export function BehemothPage() {
+  const { mkSlug, sectionSlug } = useParams();
+  const navigate = useNavigate();
+  const { dispatch, selectedCategoryId, selectedUpgrades, results, allItems, behemothMk, behemothSection } = useCalculator();
+
+  useEffect(() => {
+    const mk = mkSlug ? (resolveMk(mkSlug) ?? null) : null;
+    const section = sectionSlug ? normalizeSlug(sectionSlug) : null;
+    if (mkSlug && !mk) return;
+    if (selectedCategoryId === '__behemoth__' && behemothMk === mk && behemothSection === section) return;
+    dispatch({ type: 'SYNC_BEHEMOTH', mk, section });
+  }, [mkSlug, sectionSlug, dispatch, selectedCategoryId, behemothMk, behemothSection]);
+
+  const isDetail = mkSlug != null;
+
+  if (!isDetail) {
+    return (
+      <Card variant="outlined" sx={{ p: 3 }}>
+        <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 2 }}>
+          <IconButton size="small" onClick={() => navigate('/calculator')}>
+            <ArrowBackIcon fontSize="small" />
+          </IconButton>
+          <Typography variant="h5">Behemoth</Typography>
+        </Box>
+        <BehemothSelector />
+      </Card>
+    );
+  }
+
+  return (
+    <Grid container spacing={3}>
+      <Grid size={{ xs: 12, md: 4 }}>
+        <BehemothSelector />
+      </Grid>
+      <Grid size={{ xs: 12, md: 8 }}>
+        <Stack spacing={3}>
+          {behemothMk && behemothSection && <UpgradeList />}
+          {selectedUpgrades.length > 0 && results.size === 0 && (
+            <Typography color="text.secondary">
+              Set current and target levels to see results.
+            </Typography>
+          )}
+          {results.size > 0 && (
+            <>
+              <CrateConversion />
+              <BundleConversion />
+              {selectedUpgrades.map(sel => {
+                const itemId = sel.itemId;
+                if (!results.has(itemId)) return null;
+                const result = results.get(itemId)!;
+                const item = allItems.find(i => i.id === itemId);
+                const itemName = item?.name ?? itemId;
+                return (
+                  <Accordion key={itemId}>
+                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                      <Typography>{itemName} · {result.upgradesCount} upgrade{result.upgradesCount !== 1 ? 's' : ''}</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <Stack spacing={2}>
+                        <BonusesTable itemId={itemId} />
+                        <ResourcesTable itemId={itemId} />
+                        <UpgradePathTable itemId={itemId} />
+                      </Stack>
+                    </AccordionDetails>
+                  </Accordion>
+                );
+              })}
+            </>
+          )}
+        </Stack>
+      </Grid>
+    </Grid>
+  );
+}

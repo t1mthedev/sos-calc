@@ -33,7 +33,8 @@ type Action =
   | { type: 'CLEAR_CATEGORY' }
   | { type: 'SELECT_BEHEMOTH_MK'; mk: string }
   | { type: 'SELECT_BEHEMOTH_SECTION'; section: string }
-  | { type: 'HYDRATE_FROM_URL'; categoryId: string | null; groupName?: string; behemothMk?: string; behemothSection?: string };
+  | { type: 'SYNC_BEHEMOTH'; mk: string | null; section: string | null }
+  | { type: 'HYDRATE_FROM_URL'; categoryId: string | null; groupName?: string };
 
 function flattenCatItems(cat: Category): UpgradeItem[] {
   if (cat.items) return cat.items;
@@ -117,6 +118,16 @@ function reducer(state: CalculatorState, action: Action): CalculatorState {
     case 'SELECT_BEHEMOTH_SECTION': {
       const next = { ...state, behemothSection: action.section };
       return saveCurrent(next);
+    }
+    case 'SYNC_BEHEMOTH': {
+      return {
+        ...state,
+        activeCategoryId: BEHEMOTH_ENTRY,
+        activeGroupName: null,
+        activeUpgrades: state.savedStates[BEHEMOTH_ENTRY]?.selectedUpgrades ?? [],
+        behemothMk: action.mk,
+        behemothSection: action.section,
+      };
     }
     case 'ADD_UPGRADE': {
       if (state.activeUpgrades.find(u => u.itemId === action.itemId)) return state;
@@ -203,18 +214,14 @@ function reducer(state: CalculatorState, action: Action): CalculatorState {
       };
     }
     case 'HYDRATE_FROM_URL': {
-      const isBehemothEntry = action.categoryId === BEHEMOTH_ENTRY;
-      const prevSaved = state.savedStates;
-      const restored = action.categoryId && !isBehemothEntry ? prevSaved[action.categoryId] : undefined;
+      const restored = action.categoryId ? state.savedStates[action.categoryId] : undefined;
       return {
         ...state,
         activeCategoryId: action.categoryId,
         activeGroupName: action.groupName ?? restored?.selectedGroupName ?? null,
-        activeUpgrades: isBehemothEntry
-          ? (prevSaved[BEHEMOTH_ENTRY]?.selectedUpgrades ?? [])
-          : (restored?.selectedUpgrades ?? []),
-        behemothMk: isBehemothEntry ? (action.behemothMk ?? (prevSaved[BEHEMOTH_ENTRY] as any)?.behemothMk ?? null) : null,
-        behemothSection: isBehemothEntry ? (action.behemothSection ?? (prevSaved[BEHEMOTH_ENTRY] as any)?.behemothSection ?? null) : null,
+        activeUpgrades: restored?.selectedUpgrades ?? [],
+        behemothMk: null,
+        behemothSection: null,
       };
     }
     default:
