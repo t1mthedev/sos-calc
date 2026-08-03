@@ -2,14 +2,15 @@ import { useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import {
   Card, CardContent, Typography, Table, TableBody, TableCell,
   TableContainer, TableHead, TableRow, Paper, Stack, Box,
-  TextField, Button, Alert, Snackbar,
+  TextField, Button, Alert, Snackbar, Accordion, AccordionSummary, AccordionDetails,
 } from '@mui/material';
 import UploadIcon from '@mui/icons-material/Upload';
 import DownloadIcon from '@mui/icons-material/Download';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ImageIcon from '@mui/icons-material/Image';
 import type { BackpackData, Crate } from '../../../types';
 import { MaterialIcon } from '../../../components/MaterialIcon';
-import { getAllMaterialKeys, getCrates } from '../../../services/dataService';
+import { getAllMaterialKeys, getCrates, getMaterialsByType } from '../../../services/dataService';
 import { useDevMode } from '../../../hooks/useDevMode';
 
 const BACKPACK_KEY = 'sos-calc-backpack';
@@ -29,13 +30,14 @@ function loadFromStorage(): BackpackData {
   return { materials: {}, crates: {} };
 }
 
-function CrateIcon({ crateName }: { crateName: string }) {
+function CrateIcon({ crateName, imageName }: { crateName: string; imageName?: string }) {
+  const imgName = imageName ?? crateName;
   const [failed, setFailed] = useState<'webp' | 'jpg'>();
   if (failed === 'jpg') return <ImageIcon sx={{ fontSize: 28, color: 'text.disabled' }} />;
   const ext = failed === 'webp' ? 'jpg' : 'webp';
   return (
     <img
-      src={`${import.meta.env.BASE_URL}crates/${encodeURIComponent(crateName)}.${ext}`}
+      src={`${import.meta.env.BASE_URL}crates/${encodeURIComponent(imgName)}.${ext}`}
       alt={crateName}
       width={32}
       height={35}
@@ -56,6 +58,7 @@ export function BackpackPage() {
   }, [data]);
 
   const materialKeys = getAllMaterialKeys();
+  const materialTypes = getMaterialsByType();
   const crates = getCrates();
 
   const crateContributions = useMemo(() => {
@@ -120,6 +123,52 @@ export function BackpackPage() {
   const crateOptionsText = (crate: Crate): string =>
     crate.options.map(o => `${o.amount}× ${o.materialName}`).join('  /  ');
 
+  const renderMaterialTable = (keys: string[]) => (
+    <TableContainer component={Paper} variant="outlined">
+      <Table size="small">
+        <TableHead>
+          <TableRow>
+            <TableCell sx={{ width: 40 }}>Icon</TableCell>
+            <TableCell>Material</TableCell>
+            <TableCell sx={{ width: 220 }}>Quantity</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {keys.map(key => {
+            const owned = data.materials[key] ?? 0;
+            const fromCrates = crateContributions[key] ?? 0;
+            const virtualTotal = owned + fromCrates;
+            return (
+              <TableRow key={key}>
+                <TableCell><MaterialIcon materialKey={key} /></TableCell>
+                <TableCell>{key}</TableCell>
+                <TableCell>
+                  <Stack direction="column" spacing={0.5} sx={{ alignItems: 'flex-start' }}>
+                    <TextField
+                      type="number"
+                      size="small"
+                      value={data.materials[key] ?? ''}
+                      onChange={e => handleMaterialChange(key, e.target.value)}
+                      slotProps={{
+                        htmlInput: { min: 0, style: { textAlign: 'right' } },
+                      }}
+                      sx={{ width: '100%' }}
+                    />
+                    {fromCrates > 0 && (
+                      <Typography variant="caption" sx={{ color: 'text.secondary', whiteSpace: 'nowrap' }}>
+                        owned: {owned} · {virtualTotal} with crates
+                      </Typography>
+                    )}
+                  </Stack>
+                </TableCell>
+              </TableRow>
+            );
+          })}
+        </TableBody>
+      </Table>
+    </TableContainer>
+  );
+
   const hasAny = materialKeys.some(k => (data.materials[k] ?? 0) > 0)
     || crates.some(c => (data.crates[c.id] ?? 0) > 0);
 
@@ -153,49 +202,20 @@ export function BackpackPage() {
             <Typography variant="subtitle1" sx={{ fontWeight: 600, mb: 2 }}>
               Materials ({materialKeys.length})
             </Typography>
-            <TableContainer component={Paper} variant="outlined">
-              <Table size="small">
-                <TableHead>
-                  <TableRow>
-                    <TableCell sx={{ width: 40 }}>Icon</TableCell>
-                    <TableCell>Material</TableCell>
-                    <TableCell sx={{ width: 220 }}>Quantity</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {materialKeys.map(key => {
-                    const owned = data.materials[key] ?? 0;
-                    const fromCrates = crateContributions[key] ?? 0;
-                    const virtualTotal = owned + fromCrates;
-                    return (
-                      <TableRow key={key}>
-                        <TableCell><MaterialIcon materialKey={key} /></TableCell>
-                        <TableCell>{key}</TableCell>
-                        <TableCell>
-                          <Stack direction="column" spacing={0.5} sx={{ alignItems: 'flex-start' }}>
-                            <TextField
-                              type="number"
-                              size="small"
-                              value={data.materials[key] ?? ''}
-                              onChange={e => handleMaterialChange(key, e.target.value)}
-                              slotProps={{
-                                htmlInput: { min: 0, style: { textAlign: 'right' } },
-                              }}
-                              sx={{ width: '100%' }}
-                            />
-                            {fromCrates > 0 && (
-                              <Typography variant="caption" sx={{ color: 'text.secondary', whiteSpace: 'nowrap' }}>
-                                owned: {owned} · {virtualTotal} with crates
-                              </Typography>
-                            )}
-                          </Stack>
-                        </TableCell>
-                      </TableRow>
-                    );
-                  })}
-                </TableBody>
-              </Table>
-            </TableContainer>
+            <Stack spacing={1}>
+              {materialTypes.filter(g => g.materialKeys.length > 0).map(group => (
+                <Accordion key={group.id}>
+                  <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Typography sx={{ fontWeight: 600 }}>
+                      {group.name} ({group.materialKeys.length})
+                    </Typography>
+                  </AccordionSummary>
+                  <AccordionDetails sx={{ p: 1 }}>
+                    {renderMaterialTable(group.materialKeys)}
+                  </AccordionDetails>
+                </Accordion>
+              ))}
+            </Stack>
           </CardContent>
         </Card>
 
@@ -216,7 +236,7 @@ export function BackpackPage() {
                 <TableBody>
                   {crates.map(crate => (
                     <TableRow key={crate.id}>
-                      <TableCell><CrateIcon crateName={crate.name} /></TableCell>
+                      <TableCell><CrateIcon crateName={crate.name} imageName={crate.imageName} /></TableCell>
                       <TableCell sx={{ whiteSpace: 'nowrap' }}>
                         {crate.name}
                         <Typography variant="caption" color="text.secondary" sx={{ mt: 0.5, lineHeight: 1.4, display: 'block' }}>

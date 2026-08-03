@@ -1,0 +1,4 @@
+/* Prevent horizontal layout jump when a vertical scrollbar appears/disappears */
+html {
+  scrollbar-gutter: stable;
+}

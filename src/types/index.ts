@@ -57,6 +57,7 @@ export interface CrateOption {
 export interface Crate {
   id: string;
   name: string;
+  imageName?: string;
   categoryIds: string[];
   options: CrateOption[];
 }

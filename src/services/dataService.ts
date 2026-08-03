@@ -169,6 +169,61 @@ export function getAllMaterialKeys(): string[] {
   return [...keys].sort();
 }
 
+const BEHEMOTH_TYPE_IDS = ['behemoth-enhancement', 'behemoth-levels', 'behemoth-skills'];
+
+const MATERIAL_TYPE_DEFS: { id: string; name: string; categoryIds: string[] }[] = [
+  { id: '__behemoth__', name: 'Behemoth', categoryIds: BEHEMOTH_TYPE_IDS },
+  { id: 'formation-system', name: 'Formation System', categoryIds: ['formation-system'] },
+  { id: 'spacecraft', name: 'Spacecraft', categoryIds: ['spacecraft'] },
+  { id: 'aircraft', name: 'Aircraft', categoryIds: ['aircraft'] },
+];
+
+export function getMaterialsByType(): { id: string; name: string; materialKeys: string[] }[] {
+  const mem = new Map<string, Set<string>>(MATERIAL_TYPE_DEFS.map(d => [d.id, new Set<string>()]));
+  const other = new Set<string>();
+
+  const assign = (materialKey: string, categoryIds: string[]): void => {
+    let matched = false;
+    for (const def of MATERIAL_TYPE_DEFS) {
+      if (categoryIds.some(id => def.categoryIds.includes(id))) {
+        mem.get(def.id)!.add(materialKey);
+        matched = true;
+      }
+    }
+    if (!matched) other.add(materialKey);
+  };
+
+  for (const cat of getCategories()) {
+    const categoryIds = [cat.id];
+    const items = cat.items ?? cat.groups?.flatMap(g => g.items) ?? [];
+    for (const item of items) {
+      for (const level of item.levels) {
+        for (const key of Object.keys(level.costs)) {
+          assign(key, categoryIds);
+        }
+      }
+    }
+  }
+
+  for (const crate of loadCrates()) {
+    for (const opt of crate.options) {
+      assign(opt.materialKey, crate.categoryIds);
+    }
+  }
+
+  const groups: { id: string; name: string; materialKeys: string[] }[] = MATERIAL_TYPE_DEFS.map(def => ({
+    id: def.id,
+    name: def.name,
+    materialKeys: [...mem.get(def.id)!].sort(),
+  }));
+
+  if (other.size > 0) {
+    groups.push({ id: '__other__', name: 'Other', materialKeys: [...other].sort() });
+  }
+
+  return groups;
+}
+
 const BEHEMOTH_CATEGORY_IDS: Record<BehemothSection, string> = {
   enhancement: 'behemoth-enhancement',
   levels: 'behemoth-levels',

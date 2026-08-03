@@ -22,6 +22,37 @@
       ]
     },
     {
+      "id": "behemoth-mk-i-custom",
+      "name": "Behemoth MK I Custom Crate",
+      "categoryIds": ["behemoth-enhancement", "behemoth-skills", "behemoth-levels"],
+      "options": [
+        { "materialKey": "MK I Fragment", "materialName": "MK I Fragment", "amount": 2 },
+        { "materialKey": "Serum", "materialName": "Serum", "amount": 16 },
+        { "materialKey": "Biobattery", "materialName": "Biobattery", "amount": 5 }
+      ]
+    },
+    {
+      "id": "behemoth-mk-ii-custom",
+      "name": "Behemoth MK II Custom Crate",
+      "categoryIds": ["behemoth-enhancement", "behemoth-skills", "behemoth-levels"],
+      "options": [
+        { "materialKey": "MK II Fragment", "materialName": "MK II Fragment", "amount": 2 },
+        { "materialKey": "Serum", "materialName": "Serum", "amount": 16 },
+        { "materialKey": "Biobattery", "materialName": "Biobattery", "amount": 5 }
+      ]
+    },
+    {
+      "id": "behemoth-custom",
+      "name": "Behemoth Custom Crate",
+      "categoryIds": ["behemoth-enhancement", "behemoth-skills", "behemoth-levels"],
+      "options": [
+        { "materialKey": "MK I Fragment", "materialName": "MK I Fragment", "amount": 2 },
+        { "materialKey": "MK II Fragment", "materialName": "MK II Fragment", "amount": 2 },
+        { "materialKey": "Serum", "materialName": "Serum", "amount": 16 },
+        { "materialKey": "Biobattery", "materialName": "Biobattery", "amount": 5 }
+      ]
+    },
+    {
       "id": "spacecraft-research",
       "name": "Spacecraft Research",
       "categoryIds": ["spacecraft"],
@@ -39,6 +70,32 @@
         { "materialKey": "Reinforced Alloy", "materialName": "Reinforced Alloy", "amount": 100 },
         { "materialKey": "Antimatter Coating", "materialName": "Antimatter Coating", "amount": 30 },
         { "materialKey": "Superconductive Rail", "materialName": "Superconductive Rail", "amount": 1 }
+      ]
+    },
+    {
+      "id": "aircraft-custom",
+      "name": "Aircraft Custom Crate",
+      "imageName": "AC 04 Thunderbold Custom Crate",
+      "categoryIds": ["aircraft"],
+      "options": [
+        { "materialKey": "Reinforced Alloy", "materialName": "Reinforced Alloy", "amount": 16 },
+        { "materialKey": "Antimatter Coating", "materialName": "Antimatter Coating", "amount": 5 }
+      ]
+    },
+    {
+      "id": "spacecraft-research-2",
+      "name": "Spacecraft Research",
+      "imageName": "Enterprise Custom Crate",
+      "categoryIds": ["spacecraft"],
+      "options": [
+        { "materialKey": "Fusion Cells", "materialName": "Fusion Cells", "amount": 100 },
+        { "materialKey": "Superconducting Coil", "materialName": "Superconducting Coil", "amount": 50 },
+        { "materialKey": "Nuclear Fuel Rod", "materialName": "Nuclear Fuel Rod", "amount": 10 },
+        { "materialKey": "Maglev Module", "materialName": "Maglev Module", "amount": 1 },
+        { "materialKey": "Crystallized Steel", "materialName": "Crystallized Steel", "amount": 100 },
+        { "materialKey": "Luminous Fiber", "materialName": "Luminous Fiber", "amount": 50 },
+        { "materialKey": "Optical Storage Boards", "materialName": "Optical Storage Boards", "amount": 10 },
+        { "materialKey": "Plasma Fuel", "materialName": "Plasma Fuel", "amount": 1 }
       ]
     },
     {
