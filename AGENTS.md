@@ -35,7 +35,7 @@ The `main()` loop in `convert-excel.js` checks files in this order:
 | Behemoth Skills | `behemoth-skills` | 9 groups | 133 items (2020 levels) |
 | Behemoth Levels | `behemoth-levels` | flat | 2 items (200 levels each) |
 | Spacecraft | `spacecraft` | 2 groups | 8 items |
-| Aircraft | `aircraft` | flat | 1 item (140 levels) |
+| Aircraft | `aircraft` | 3 groups | 3 items (AC04 + FA-1 Specter at 140 levels, Carrier at 35 levels) |
 
 ### Behemoth Page
 - The category dropdown shows "Behemoth" as a single entry (virtual category, id `__behemoth__`)

@@ -5,7 +5,8 @@ import { useCalculator } from '../hooks/useCalculator';
 import { toSlug } from '../../../utils/slugs';
 
 const AIRCRAFT_GROUPS = [
-  { label: 'Aircraft', description: 'Upgrade the Gen 1 aircraft (AC04)' },
+  { label: 'AC04', description: 'Upgrade the Gen 4 (AC04) aircraft' },
+  { label: 'FA-1 Specter', description: 'Upgrade the Gen 3 (FA-1 Specter) aircraft' },
   { label: 'Carrier', description: 'Upgrade the FHS Ark CV-1 Carrier' },
 ];
 

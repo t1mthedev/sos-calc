@@ -75,6 +75,10 @@ function isCarrierFile(sheetNames) {
   return sheetNames.some(n => String(n).toLowerCase().includes('carrier'));
 }
 
+function isFA1SpecterFile(sheetNames) {
+  return sheetNames.some(n => /FA-1\s*Specter/i.test(String(n)));
+}
+
 const FORMATION_GROUPS = [
   { name: 'Plasma Wings', offset: 0, count: 6 },
   { name: 'Plasma Fuselage', offset: 6, count: 7 },
@@ -373,6 +377,43 @@ function parseCarrier(wb) {
   return items;
 }
 
+function parseFA1Specter(wb) {
+  const items = [];
+  for (const name of wb.SheetNames) {
+    if (!/FA-1\s*Specter/i.test(name)) continue;
+    const ws = wb.Sheets[name];
+    const rows = XLSX.utils.sheet_to_json(ws, { header: 1, defval: '' });
+    if (rows.length < 2) continue;
+    const levels = [];
+    for (let i = 1; i < rows.length; i++) {
+      const row = rows[i];
+      const lvl = parseInt(row[0], 10);
+      if (!lvl) continue;
+      const healthLethality = parseNum(row[1]);
+      const alloy = parseNum(row[2]);
+      const stealth = parseNum(row[3]);
+      const costs = {};
+      if (alloy > 0) costs['Advanced Aluminum Alloy'] = alloy;
+      if (stealth > 0) costs['Stealth Coating'] = stealth;
+      const entry = {
+        level: lvl,
+        costs,
+        bonuses: healthLethality ? [{ type: 'Health/Lethality', value: healthLethality, unit: '%' }] : []
+      };
+      levels.push(entry);
+    }
+    if (levels.length) {
+      items.push({
+        id: 'fa-1-specter',
+        name: 'FA-1 Specter',
+        maxLevel: levels.length,
+        levels
+      });
+    }
+  }
+  return items;
+}
+
 function main() {
   ensureDir(JSON_DIR);
   const files = readdirSync(EXCEL_DIR).filter(f => f.endsWith('.xlsx'));
@@ -422,6 +463,8 @@ function main() {
         });
       }
       aircraftItems.push(...parseAircraft(wb));
+    } else if (isFA1SpecterFile(sheets)) {
+      aircraftItems.push(...parseFA1Specter(wb));
     } else if (isCarrierFile(sheets)) {
       carrierItems.push(...parseCarrier(wb));
     } else {
@@ -430,7 +473,24 @@ function main() {
   }
   if (aircraftItems.length || carrierItems.length) {
     const aircraftGroups = [];
-    if (aircraftItems.length) aircraftGroups.push({ name: 'Aircraft', items: aircraftItems });
+    if (aircraftItems.length) {
+      const aircraftOrder = ['ac04', 'fa-1-specter'];
+      aircraftItems.sort((a, b) => {
+        const ia = aircraftOrder.indexOf(a.id);
+        const ib = aircraftOrder.indexOf(b.id);
+        if (ia === -1 && ib === -1) return a.name.localeCompare(b.name);
+        if (ia === -1) return 1;
+        if (ib === -1) return -1;
+        return ia - ib;
+      });
+      for (const id of aircraftOrder) {
+        const items = aircraftItems.filter(i => i.id === id);
+        if (items.length) {
+          const name = id === 'ac04' ? 'AC04' : 'FA-1 Specter';
+          aircraftGroups.push({ name, items });
+        }
+      }
+    }
     if (carrierItems.length) aircraftGroups.push({ name: 'Carrier', items: carrierItems });
     categories.push({ id: 'aircraft', name: 'Aircraft', groups: aircraftGroups });
   }

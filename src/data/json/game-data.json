@@ -84008,7 +84008,7 @@
       "name": "Aircraft",
       "groups": [
         {
-          "name": "Aircraft",
+          "name": "AC04",
           "items": [
             {
               "id": "ac04",
@@ -86108,6 +86108,1975 @@
                     {
                       "type": "Health/Lethality",
                       "value": 257.2,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "FA-1 Specter",
+          "items": [
+            {
+              "id": "fa-1-specter",
+              "name": "FA-1 Specter",
+              "maxLevel": 140,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {},
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 12.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 2,
+                    "Stealth Coating": 2
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 14,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 2,
+                    "Stealth Coating": 2
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 15.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 2,
+                    "Stealth Coating": 2
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 17.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 2,
+                    "Stealth Coating": 2
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 19.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 2,
+                    "Stealth Coating": 2
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 20.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 2,
+                    "Stealth Coating": 2
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 22.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 2,
+                    "Stealth Coating": 2
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 24.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 2,
+                    "Stealth Coating": 2
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 25.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 2,
+                    "Stealth Coating": 2
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 27.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 11,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 2,
+                    "Stealth Coating": 2
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 29.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 12,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 3,
+                    "Stealth Coating": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 30.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 13,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 3,
+                    "Stealth Coating": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 32.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 14,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 3,
+                    "Stealth Coating": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 34.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 15,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 3,
+                    "Stealth Coating": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 35.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 16,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 3,
+                    "Stealth Coating": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 37.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 17,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 3,
+                    "Stealth Coating": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 39.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 18,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 3,
+                    "Stealth Coating": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 41,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 19,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 3,
+                    "Stealth Coating": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 42.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 20,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 3,
+                    "Stealth Coating": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 44.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 21,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 3,
+                    "Stealth Coating": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 46.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 22,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 4,
+                    "Stealth Coating": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 47.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 23,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 4,
+                    "Stealth Coating": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 49.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 24,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 4,
+                    "Stealth Coating": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 51.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 25,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 4,
+                    "Stealth Coating": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 52.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 26,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 4,
+                    "Stealth Coating": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 54.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 27,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 4,
+                    "Stealth Coating": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 56.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 28,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 4,
+                    "Stealth Coating": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 57.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 29,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 4,
+                    "Stealth Coating": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 59.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 30,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 4,
+                    "Stealth Coating": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 61.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 31,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 4,
+                    "Stealth Coating": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 62.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 32,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 5,
+                    "Stealth Coating": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 64.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 33,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 5,
+                    "Stealth Coating": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 66.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 34,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 5,
+                    "Stealth Coating": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 68,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 35,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 5,
+                    "Stealth Coating": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 69.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 36,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 5,
+                    "Stealth Coating": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 71.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 37,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 5,
+                    "Stealth Coating": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 73,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 38,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 5,
+                    "Stealth Coating": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 74.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 39,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 5,
+                    "Stealth Coating": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 76.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 40,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 5,
+                    "Stealth Coating": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 78.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 41,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 5,
+                    "Stealth Coating": 9
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 79.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 42,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 6,
+                    "Stealth Coating": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 81.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 43,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 6,
+                    "Stealth Coating": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 83.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 44,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 6,
+                    "Stealth Coating": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 84.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 45,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 6,
+                    "Stealth Coating": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 86.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 46,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 6,
+                    "Stealth Coating": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 88.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 47,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 6,
+                    "Stealth Coating": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 89.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 48,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 6,
+                    "Stealth Coating": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 91.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 49,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 6,
+                    "Stealth Coating": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 93.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 50,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 6,
+                    "Stealth Coating": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 95,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 51,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 6,
+                    "Stealth Coating": 11
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 96.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 52,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 8,
+                    "Stealth Coating": 13
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 98.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 53,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 8,
+                    "Stealth Coating": 13
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 100,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 54,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 8,
+                    "Stealth Coating": 13
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 101.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 55,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 8,
+                    "Stealth Coating": 13
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 103.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 56,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 8,
+                    "Stealth Coating": 13
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 105.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 57,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 8,
+                    "Stealth Coating": 13
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 106.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 58,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 8,
+                    "Stealth Coating": 13
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 108.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 59,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 8,
+                    "Stealth Coating": 13
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 110.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 60,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 8,
+                    "Stealth Coating": 13
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 111.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 61,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 8,
+                    "Stealth Coating": 13
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 113.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 62,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 9,
+                    "Stealth Coating": 17
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 115.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 63,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 9,
+                    "Stealth Coating": 17
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 116.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 64,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 9,
+                    "Stealth Coating": 17
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 118.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 65,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 9,
+                    "Stealth Coating": 17
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 120.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 66,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 9,
+                    "Stealth Coating": 17
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 122,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 67,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 9,
+                    "Stealth Coating": 17
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 123.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 68,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 9,
+                    "Stealth Coating": 17
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 125.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 69,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 9,
+                    "Stealth Coating": 17
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 127,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 70,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 9,
+                    "Stealth Coating": 17
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 128.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 71,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 9,
+                    "Stealth Coating": 17
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 130.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 72,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 10,
+                    "Stealth Coating": 23
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 132.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 73,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 10,
+                    "Stealth Coating": 23
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 133.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 74,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 10,
+                    "Stealth Coating": 23
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 135.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 75,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 10,
+                    "Stealth Coating": 23
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 137.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 76,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 10,
+                    "Stealth Coating": 23
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 138.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 77,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 10,
+                    "Stealth Coating": 23
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 140.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 78,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 10,
+                    "Stealth Coating": 23
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 142.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 79,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 10,
+                    "Stealth Coating": 23
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 143.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 80,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 10,
+                    "Stealth Coating": 23
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 145.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 81,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 10,
+                    "Stealth Coating": 23
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 147.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 82,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 11,
+                    "Stealth Coating": 32
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 148.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 83,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 11,
+                    "Stealth Coating": 32
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 150.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 84,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 11,
+                    "Stealth Coating": 32
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 152.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 85,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 11,
+                    "Stealth Coating": 32
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 154,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 86,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 11,
+                    "Stealth Coating": 32
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 155.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 87,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 11,
+                    "Stealth Coating": 32
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 157.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 88,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 11,
+                    "Stealth Coating": 32
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 159.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 89,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 11,
+                    "Stealth Coating": 32
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 160.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 90,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 11,
+                    "Stealth Coating": 32
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 162.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 91,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 11,
+                    "Stealth Coating": 32
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 164.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 92,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 13,
+                    "Stealth Coating": 41
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 165.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 93,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 13,
+                    "Stealth Coating": 41
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 167.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 94,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 13,
+                    "Stealth Coating": 41
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 169.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 95,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 13,
+                    "Stealth Coating": 41
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 170.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 96,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 13,
+                    "Stealth Coating": 41
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 172.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 97,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 13,
+                    "Stealth Coating": 41
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 174.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 98,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 13,
+                    "Stealth Coating": 41
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 175.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 99,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 13,
+                    "Stealth Coating": 41
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 177.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 100,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 13,
+                    "Stealth Coating": 41
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 179.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 101,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 13,
+                    "Stealth Coating": 41
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 181,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 102,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 17,
+                    "Stealth Coating": 53
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 182.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 103,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 17,
+                    "Stealth Coating": 53
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 184.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 104,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 17,
+                    "Stealth Coating": 53
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 186,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 105,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 17,
+                    "Stealth Coating": 53
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 187.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 106,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 17,
+                    "Stealth Coating": 53
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 189.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 107,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 17,
+                    "Stealth Coating": 53
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 191.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 108,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 17,
+                    "Stealth Coating": 53
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 192.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 109,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 17,
+                    "Stealth Coating": 53
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 194.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 110,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 17,
+                    "Stealth Coating": 53
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 196.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 111,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 17,
+                    "Stealth Coating": 53
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 197.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 112,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 22,
+                    "Stealth Coating": 65
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 199.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 113,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 22,
+                    "Stealth Coating": 61
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 201.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 114,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 22,
+                    "Stealth Coating": 61
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 202.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 115,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 22,
+                    "Stealth Coating": 61
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 204.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 116,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 22,
+                    "Stealth Coating": 61
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 206.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 117,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 22,
+                    "Stealth Coating": 61
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 208,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 118,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 22,
+                    "Stealth Coating": 61
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 209.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 119,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 22,
+                    "Stealth Coating": 61
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 211.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 120,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 22,
+                    "Stealth Coating": 61
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 213,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 121,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 22,
+                    "Stealth Coating": 61
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 214.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 122,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 27,
+                    "Stealth Coating": 82
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 216.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 123,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 27,
+                    "Stealth Coating": 79
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 218.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 124,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 27,
+                    "Stealth Coating": 79
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 219.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 125,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 27,
+                    "Stealth Coating": 79
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 221.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 126,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 27,
+                    "Stealth Coating": 79
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 223.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 127,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 27,
+                    "Stealth Coating": 79
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 224.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 128,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 27,
+                    "Stealth Coating": 79
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 226.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 129,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 27,
+                    "Stealth Coating": 79
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 228.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 130,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 27,
+                    "Stealth Coating": 79
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 229.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 131,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 27,
+                    "Stealth Coating": 79
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 231.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 132,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 36,
+                    "Stealth Coating": 106
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 233.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 133,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 36,
+                    "Stealth Coating": 102
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 234.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 134,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 36,
+                    "Stealth Coating": 102
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 236.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 135,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 36,
+                    "Stealth Coating": 102
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 238.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 136,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 36,
+                    "Stealth Coating": 102
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 240,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 137,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 36,
+                    "Stealth Coating": 102
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 241.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 138,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 36,
+                    "Stealth Coating": 102
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 243.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 139,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 36,
+                    "Stealth Coating": 102
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 245.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 140,
+                  "costs": {
+                    "Advanced Aluminum Alloy": 36,
+                    "Stealth Coating": 102
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 246.7,
                       "unit": "%"
                     }
                   ]

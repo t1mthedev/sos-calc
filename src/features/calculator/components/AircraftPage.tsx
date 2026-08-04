@@ -11,7 +11,7 @@ import { CrateConversion } from './CrateConversion';
 import { BundleConversion } from './BundleConversion';
 import { useCalculator } from '../hooks/useCalculator';
 import { resolveBySlug, buildSlugLookup } from '../../../utils/slugs';
-const AIRCRAFT_GROUP_NAMES = ['Aircraft', 'Carrier'];
+const AIRCRAFT_GROUP_NAMES = ['AC04', 'FA-1 Specter', 'Carrier'];
 
 export function AircraftPage() {
   const { typeSlug } = useParams();

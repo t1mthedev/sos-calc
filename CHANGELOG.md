@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.3.4-beta] - 2026-08-04
+### Added
+- FA-1 Specter (Gen 3) aircraft data
+### Changed
+- Split the Aircraft page into per-aircraft tiles (AC04 / FA-1 Specter / Carrier) and mark AC04 as Gen 4
+
 ## [0.3.3-beta] - 2026-08-03
 ### Added
 - Carrier data
