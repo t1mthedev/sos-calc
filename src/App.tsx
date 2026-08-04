@@ -4,6 +4,7 @@ import { CalculatorPage } from './features/calculator/components/CalculatorPage'
 import { CalculatorLandingPage } from './features/calculator/components/CalculatorLandingPage';
 import { BehemothPage } from './features/calculator/components/BehemothPage';
 import { SpacecraftPage } from './features/calculator/components/SpacecraftPage';
+import { AircraftPage } from './features/calculator/components/AircraftPage';
 import { DashboardPage } from './features/dashboard/components/DashboardPage';
 import { BackpackPage } from './features/backpack/components/BackpackPage';
 import { Layout } from './components/Layout';
@@ -29,6 +30,8 @@ function App() {
               <Route path="/calculator/behemoth/:mkSlug/:sectionSlug" element={<BehemothPage />} />
               <Route path="/calculator/spacecraft" element={<SpacecraftPage />} />
               <Route path="/calculator/spacecraft/:typeSlug" element={<SpacecraftPage />} />
+              <Route path="/calculator/aircraft" element={<AircraftPage />} />
+              <Route path="/calculator/aircraft/:typeSlug" element={<AircraftPage />} />
               <Route path="/calculator/:categorySlug" element={<CalculatorPage />} />
               <Route path="/calculator/:categorySlug/:groupSlug" element={<CalculatorPage />} />
               <Route path="/backpack" element={<BackpackPage />} />

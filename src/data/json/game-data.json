@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-07-28",
+  "lastUpdated": "2026-08-04",
   "categories": [
     {
       "id": "behemoth-enhancement",
@@ -84006,2106 +84006,2576 @@
     {
       "id": "aircraft",
       "name": "Aircraft",
-      "items": [
+      "groups": [
         {
-          "id": "ac04",
-          "name": "AC04",
-          "maxLevel": 140,
-          "levels": [
-            {
-              "level": 1,
-              "name": "1",
-              "costs": {},
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 12.9,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 2,
-              "name": "2",
-              "costs": {
-                "Antimatter Coating": 2,
-                "Reinforced Alloy": 4
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 14.6,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 3,
-              "name": "3",
-              "costs": {
-                "Antimatter Coating": 2,
-                "Reinforced Alloy": 4
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 16.400000000000002,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 4,
-              "name": "4",
-              "costs": {
-                "Antimatter Coating": 2,
-                "Reinforced Alloy": 4
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 18.099999999999998,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 5,
-              "name": "5",
-              "costs": {
-                "Antimatter Coating": 2,
-                "Reinforced Alloy": 4
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 19.900000000000002,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 6,
-              "name": "6",
-              "costs": {
-                "Antimatter Coating": 2,
-                "Reinforced Alloy": 4
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 21.7,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 7,
-              "name": "7",
-              "costs": {
-                "Antimatter Coating": 2,
-                "Reinforced Alloy": 4
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 23.400000000000002,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 8,
-              "name": "8",
-              "costs": {
-                "Antimatter Coating": 2,
-                "Reinforced Alloy": 4
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 25.2,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 9,
-              "name": "9",
-              "costs": {
-                "Antimatter Coating": 2,
-                "Reinforced Alloy": 4
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 26.900000000000002,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 10,
-              "name": "10",
-              "costs": {
-                "Antimatter Coating": 2,
-                "Reinforced Alloy": 4
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 28.7,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 11,
-              "name": "11",
-              "costs": {
-                "Antimatter Coating": 2,
-                "Reinforced Alloy": 4
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 30.4,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 12,
-              "name": "12",
-              "costs": {
-                "Antimatter Coating": 4,
-                "Reinforced Alloy": 8
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 32.2,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 13,
-              "name": "13",
-              "costs": {
-                "Antimatter Coating": 4,
-                "Reinforced Alloy": 8
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 34,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 14,
-              "name": "14",
-              "costs": {
-                "Antimatter Coating": 4,
-                "Reinforced Alloy": 8
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 35.699999999999996,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 15,
-              "name": "15",
-              "costs": {
-                "Antimatter Coating": 4,
-                "Reinforced Alloy": 8
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 37.5,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 16,
-              "name": "16",
-              "costs": {
-                "Antimatter Coating": 4,
-                "Reinforced Alloy": 8
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 39.2,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 17,
-              "name": "17",
-              "costs": {
-                "Antimatter Coating": 4,
-                "Reinforced Alloy": 8
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 41,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 18,
-              "name": "18",
-              "costs": {
-                "Antimatter Coating": 4,
-                "Reinforced Alloy": 8
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 42.8,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 19,
-              "name": "19",
-              "costs": {
-                "Antimatter Coating": 4,
-                "Reinforced Alloy": 8
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 44.5,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 20,
-              "name": "20",
-              "costs": {
-                "Antimatter Coating": 4,
-                "Reinforced Alloy": 8
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 46.300000000000004,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 21,
-              "name": "21",
-              "costs": {
-                "Antimatter Coating": 4,
-                "Reinforced Alloy": 8
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 48,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 22,
-              "name": "22",
-              "costs": {
-                "Antimatter Coating": 6,
-                "Reinforced Alloy": 12
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 49.8,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 23,
-              "name": "23",
-              "costs": {
-                "Antimatter Coating": 6,
-                "Reinforced Alloy": 12
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 51.5,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 24,
-              "name": "24",
-              "costs": {
-                "Antimatter Coating": 6,
-                "Reinforced Alloy": 12
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 53.300000000000004,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 25,
-              "name": "25",
-              "costs": {
-                "Antimatter Coating": 6,
-                "Reinforced Alloy": 12
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 55.1,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 26,
-              "name": "26",
-              "costs": {
-                "Antimatter Coating": 6,
-                "Reinforced Alloy": 12
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 56.8,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 27,
-              "name": "27",
-              "costs": {
-                "Antimatter Coating": 6,
-                "Reinforced Alloy": 12
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 58.599999999999994,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 28,
-              "name": "28",
-              "costs": {
-                "Antimatter Coating": 6,
-                "Reinforced Alloy": 12
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 60.3,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 29,
-              "name": "29",
-              "costs": {
-                "Antimatter Coating": 6,
-                "Reinforced Alloy": 12
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 62.1,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 30,
-              "name": "30",
-              "costs": {
-                "Antimatter Coating": 6,
-                "Reinforced Alloy": 12
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 63.800000000000004,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 31,
-              "name": "31",
-              "costs": {
-                "Antimatter Coating": 6,
-                "Reinforced Alloy": 12
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 65.60000000000001,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 32,
-              "name": "32",
-              "costs": {
-                "Antimatter Coating": 8,
-                "Reinforced Alloy": 18
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 67.4,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 33,
-              "name": "33",
-              "costs": {
-                "Antimatter Coating": 8,
-                "Reinforced Alloy": 18
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 69.1,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 34,
-              "name": "34",
-              "costs": {
-                "Antimatter Coating": 8,
-                "Reinforced Alloy": 18
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 70.89999999999999,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 35,
-              "name": "35",
-              "costs": {
-                "Antimatter Coating": 8,
-                "Reinforced Alloy": 18
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 72.6,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 36,
-              "name": "36",
-              "costs": {
-                "Antimatter Coating": 8,
-                "Reinforced Alloy": 18
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 74.4,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 37,
-              "name": "37",
-              "costs": {
-                "Antimatter Coating": 8,
-                "Reinforced Alloy": 18
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 76.2,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 38,
-              "name": "38",
-              "costs": {
-                "Antimatter Coating": 8,
-                "Reinforced Alloy": 18
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 77.9,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 39,
-              "name": "39",
-              "costs": {
-                "Antimatter Coating": 8,
-                "Reinforced Alloy": 18
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 79.7,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 40,
-              "name": "40",
-              "costs": {
-                "Antimatter Coating": 8,
-                "Reinforced Alloy": 18
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 81.39999999999999,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 41,
-              "name": "41",
-              "costs": {
-                "Antimatter Coating": 8,
-                "Reinforced Alloy": 18
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 83.2,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 42,
-              "name": "42",
-              "costs": {
-                "Antimatter Coating": 10,
-                "Reinforced Alloy": 24
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 84.89999999999999,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 43,
-              "name": "43",
-              "costs": {
-                "Antimatter Coating": 10,
-                "Reinforced Alloy": 24
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 86.7,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 44,
-              "name": "44",
-              "costs": {
-                "Antimatter Coating": 10,
-                "Reinforced Alloy": 24
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 88.5,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 45,
-              "name": "45",
-              "costs": {
-                "Antimatter Coating": 10,
-                "Reinforced Alloy": 24
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 90.2,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 46,
-              "name": "46",
-              "costs": {
-                "Antimatter Coating": 10,
-                "Reinforced Alloy": 24
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 92,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 47,
-              "name": "47",
-              "costs": {
-                "Antimatter Coating": 10,
-                "Reinforced Alloy": 24
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 93.7,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 48,
-              "name": "48",
-              "costs": {
-                "Antimatter Coating": 10,
-                "Reinforced Alloy": 24
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 95.5,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 49,
-              "name": "49",
-              "costs": {
-                "Antimatter Coating": 10,
-                "Reinforced Alloy": 24
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 97.3,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 50,
-              "name": "50",
-              "costs": {
-                "Antimatter Coating": 10,
-                "Reinforced Alloy": 24
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 99,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 51,
-              "name": "51",
-              "costs": {
-                "Antimatter Coating": 10,
-                "Reinforced Alloy": 24
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 100.8,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 52,
-              "name": "52",
-              "costs": {
-                "Antimatter Coating": 12,
-                "Reinforced Alloy": 30
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 102.49999999999999,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 53,
-              "name": "53",
-              "costs": {
-                "Antimatter Coating": 12,
-                "Reinforced Alloy": 30
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 104.3,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 54,
-              "name": "54",
-              "costs": {
-                "Antimatter Coating": 12,
-                "Reinforced Alloy": 30
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 106,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 55,
-              "name": "55",
-              "costs": {
-                "Antimatter Coating": 12,
-                "Reinforced Alloy": 30
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 107.80000000000001,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 56,
-              "name": "56",
-              "costs": {
-                "Antimatter Coating": 12,
-                "Reinforced Alloy": 30
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 109.60000000000001,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 57,
-              "name": "57",
-              "costs": {
-                "Antimatter Coating": 12,
-                "Reinforced Alloy": 30
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 111.3,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 58,
-              "name": "58",
-              "costs": {
-                "Antimatter Coating": 12,
-                "Reinforced Alloy": 30
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 113.1,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 59,
-              "name": "59",
-              "costs": {
-                "Antimatter Coating": 12,
-                "Reinforced Alloy": 30
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 114.8,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 60,
-              "name": "60",
-              "costs": {
-                "Antimatter Coating": 12,
-                "Reinforced Alloy": 30
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 116.6,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 61,
-              "name": "61",
-              "costs": {
-                "Antimatter Coating": 12,
-                "Reinforced Alloy": 30
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 118.30000000000001,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 62,
-              "name": "62",
-              "costs": {
-                "Antimatter Coating": 14,
-                "Reinforced Alloy": 40
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 120.10000000000001,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 63,
-              "name": "63",
-              "costs": {
-                "Antimatter Coating": 14,
-                "Reinforced Alloy": 40
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 121.9,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 64,
-              "name": "64",
-              "costs": {
-                "Antimatter Coating": 14,
-                "Reinforced Alloy": 40
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 123.6,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 65,
-              "name": "65",
-              "costs": {
-                "Antimatter Coating": 14,
-                "Reinforced Alloy": 40
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 125.4,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 66,
-              "name": "66",
-              "costs": {
-                "Antimatter Coating": 14,
-                "Reinforced Alloy": 40
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 127.1,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 67,
-              "name": "67",
-              "costs": {
-                "Antimatter Coating": 14,
-                "Reinforced Alloy": 40
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 128.9,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 68,
-              "name": "68",
-              "costs": {
-                "Antimatter Coating": 14,
-                "Reinforced Alloy": 40
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 130.7,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 69,
-              "name": "69",
-              "costs": {
-                "Antimatter Coating": 14,
-                "Reinforced Alloy": 40
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 132.4,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 70,
-              "name": "70",
-              "costs": {
-                "Antimatter Coating": 14,
-                "Reinforced Alloy": 40
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 134.20000000000002,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 71,
-              "name": "71",
-              "costs": {
-                "Antimatter Coating": 16,
-                "Reinforced Alloy": 50
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 135.9,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 72,
-              "name": "72",
-              "costs": {
-                "Antimatter Coating": 16,
-                "Reinforced Alloy": 50
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 137.7,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 73,
-              "name": "73",
-              "costs": {
-                "Antimatter Coating": 16,
-                "Reinforced Alloy": 50
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 139.39999999999998,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 74,
-              "name": "74",
-              "costs": {
-                "Antimatter Coating": 16,
-                "Reinforced Alloy": 50
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 141.2,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 75,
-              "name": "75",
-              "costs": {
-                "Antimatter Coating": 16,
-                "Reinforced Alloy": 50
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 143,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 76,
-              "name": "76",
-              "costs": {
-                "Antimatter Coating": 16,
-                "Reinforced Alloy": 50
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 144.70000000000002,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 77,
-              "name": "77",
-              "costs": {
-                "Antimatter Coating": 16,
-                "Reinforced Alloy": 50
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 146.5,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 78,
-              "name": "78",
-              "costs": {
-                "Antimatter Coating": 16,
-                "Reinforced Alloy": 50
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 148.2,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 79,
-              "name": "79",
-              "costs": {
-                "Antimatter Coating": 16,
-                "Reinforced Alloy": 50
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 150,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 80,
-              "name": "80",
-              "costs": {
-                "Antimatter Coating": 16,
-                "Reinforced Alloy": 50
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 151.8,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 81,
-              "name": "81",
-              "costs": {
-                "Antimatter Coating": 16,
-                "Reinforced Alloy": 50
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 153.5,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 82,
-              "name": "82",
-              "costs": {
-                "Antimatter Coating": 18,
-                "Reinforced Alloy": 60
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 155.29999999999998,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 83,
-              "name": "83",
-              "costs": {
-                "Antimatter Coating": 18,
-                "Reinforced Alloy": 60
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 157,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 84,
-              "name": "84",
-              "costs": {
-                "Antimatter Coating": 18,
-                "Reinforced Alloy": 60
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 158.8,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 85,
-              "name": "85",
-              "costs": {
-                "Antimatter Coating": 18,
-                "Reinforced Alloy": 60
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 160.5,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 86,
-              "name": "86",
-              "costs": {
-                "Antimatter Coating": 18,
-                "Reinforced Alloy": 60
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 162.3,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 87,
-              "name": "87",
-              "costs": {
-                "Antimatter Coating": 18,
-                "Reinforced Alloy": 60
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 164.1,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 88,
-              "name": "88",
-              "costs": {
-                "Antimatter Coating": 18,
-                "Reinforced Alloy": 60
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 165.79999999999998,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 89,
-              "name": "89",
-              "costs": {
-                "Antimatter Coating": 18,
-                "Reinforced Alloy": 60
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 167.6,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 90,
-              "name": "90",
-              "costs": {
-                "Antimatter Coating": 18,
-                "Reinforced Alloy": 60
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 169.3,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 91,
-              "name": "91",
-              "costs": {
-                "Antimatter Coating": 18,
-                "Reinforced Alloy": 60
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 171.1,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 92,
-              "name": "92",
-              "costs": {
-                "Antimatter Coating": 20,
-                "Reinforced Alloy": 70
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 172.9,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 93,
-              "name": "93",
-              "costs": {
-                "Antimatter Coating": 20,
-                "Reinforced Alloy": 70
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 174.6,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 94,
-              "name": "94",
-              "costs": {
-                "Antimatter Coating": 20,
-                "Reinforced Alloy": 70
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 176.4,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 95,
-              "name": "95",
-              "costs": {
-                "Antimatter Coating": 20,
-                "Reinforced Alloy": 70
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 178.1,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 96,
-              "name": "96",
-              "costs": {
-                "Antimatter Coating": 20,
-                "Reinforced Alloy": 70
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 179.9,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 97,
-              "name": "97",
-              "costs": {
-                "Antimatter Coating": 20,
-                "Reinforced Alloy": 70
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 181.6,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 98,
-              "name": "98",
-              "costs": {
-                "Antimatter Coating": 20,
-                "Reinforced Alloy": 70
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 183.4,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 99,
-              "name": "99",
-              "costs": {
-                "Antimatter Coating": 20,
-                "Reinforced Alloy": 70
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 185.20000000000002,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 100,
-              "name": "100",
-              "costs": {
-                "Antimatter Coating": 20,
-                "Reinforced Alloy": 70
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 186.9,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 101,
-              "name": "101",
-              "costs": {
-                "Antimatter Coating": 20,
-                "Reinforced Alloy": 70
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 188.7,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 102,
-              "name": "102",
-              "costs": {
-                "Antimatter Coating": 25,
-                "Reinforced Alloy": 90
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 190.39999999999998,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 103,
-              "name": "103",
-              "costs": {
-                "Antimatter Coating": 25,
-                "Reinforced Alloy": 90
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 192.2,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 104,
-              "name": "104",
-              "costs": {
-                "Antimatter Coating": 25,
-                "Reinforced Alloy": 90
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 193.9,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 105,
-              "name": "105",
-              "costs": {
-                "Antimatter Coating": 25,
-                "Reinforced Alloy": 90
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 195.70000000000002,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 106,
-              "name": "106",
-              "costs": {
-                "Antimatter Coating": 25,
-                "Reinforced Alloy": 90
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 197.5,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 107,
-              "name": "107",
-              "costs": {
-                "Antimatter Coating": 25,
-                "Reinforced Alloy": 90
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 199.2,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 108,
-              "name": "108",
-              "costs": {
-                "Antimatter Coating": 25,
-                "Reinforced Alloy": 90
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 200.99999999999997,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 109,
-              "name": "109",
-              "costs": {
-                "Antimatter Coating": 25,
-                "Reinforced Alloy": 90
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 202.70000000000002,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 110,
-              "name": "110",
-              "costs": {
-                "Antimatter Coating": 25,
-                "Reinforced Alloy": 90
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 204.5,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 111,
-              "name": "111",
-              "costs": {
-                "Antimatter Coating": 25,
-                "Reinforced Alloy": 90
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 206.3,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 112,
-              "name": "112",
-              "costs": {
-                "Antimatter Coating": 30,
-                "Reinforced Alloy": 120
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 208,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 113,
-              "name": "113",
-              "costs": {
-                "Antimatter Coating": 30,
-                "Reinforced Alloy": 120
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 209.79999999999998,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 114,
-              "name": "114",
-              "costs": {
-                "Antimatter Coating": 30,
-                "Reinforced Alloy": 120
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 211.50000000000003,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 115,
-              "name": "115",
-              "costs": {
-                "Antimatter Coating": 30,
-                "Reinforced Alloy": 120
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 213.3,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 116,
-              "name": "116",
-              "costs": {
-                "Antimatter Coating": 30,
-                "Reinforced Alloy": 120
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 215,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 117,
-              "name": "117",
-              "costs": {
-                "Antimatter Coating": 30,
-                "Reinforced Alloy": 120
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 216.8,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 118,
-              "name": "118",
-              "costs": {
-                "Antimatter Coating": 30,
-                "Reinforced Alloy": 120
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 218.6,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 119,
-              "name": "119",
-              "costs": {
-                "Antimatter Coating": 30,
-                "Reinforced Alloy": 120
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 220.29999999999998,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 120,
-              "name": "120",
-              "costs": {
-                "Antimatter Coating": 30,
-                "Reinforced Alloy": 120
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 222.10000000000002,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 121,
-              "name": "121",
-              "costs": {
-                "Antimatter Coating": 30,
-                "Reinforced Alloy": 120
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 223.8,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 122,
-              "name": "122",
-              "costs": {
-                "Antimatter Coating": 35,
-                "Reinforced Alloy": 150
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 225.59999999999997,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 123,
-              "name": "123",
-              "costs": {
-                "Antimatter Coating": 35,
-                "Reinforced Alloy": 150
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 227.4,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 124,
-              "name": "124",
-              "costs": {
-                "Antimatter Coating": 35,
-                "Reinforced Alloy": 150
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 229.1,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 125,
-              "name": "125",
-              "costs": {
-                "Antimatter Coating": 35,
-                "Reinforced Alloy": 150
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 230.9,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 126,
-              "name": "126",
-              "costs": {
-                "Antimatter Coating": 35,
-                "Reinforced Alloy": 150
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 232.6,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 127,
-              "name": "127",
-              "costs": {
-                "Antimatter Coating": 35,
-                "Reinforced Alloy": 150
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 234.39999999999998,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 128,
-              "name": "128",
-              "costs": {
-                "Antimatter Coating": 35,
-                "Reinforced Alloy": 150
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 236.10000000000002,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 129,
-              "name": "129",
-              "costs": {
-                "Antimatter Coating": 35,
-                "Reinforced Alloy": 150
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 237.9,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 130,
-              "name": "130",
-              "costs": {
-                "Antimatter Coating": 35,
-                "Reinforced Alloy": 150
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 239.7,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 131,
-              "name": "131",
-              "costs": {
-                "Antimatter Coating": 35,
-                "Reinforced Alloy": 150
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 241.4,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 132,
-              "name": "132",
-              "costs": {
-                "Antimatter Coating": 40,
-                "Reinforced Alloy": 200
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 243.2,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 133,
-              "name": "133",
-              "costs": {
-                "Antimatter Coating": 40,
-                "Reinforced Alloy": 200
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 244.89999999999998,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 134,
-              "name": "134",
-              "costs": {
-                "Antimatter Coating": 40,
-                "Reinforced Alloy": 200
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 246.70000000000002,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 135,
-              "name": "135",
-              "costs": {
-                "Antimatter Coating": 40,
-                "Reinforced Alloy": 200
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 248.5,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 136,
-              "name": "136",
-              "costs": {
-                "Antimatter Coating": 40,
-                "Reinforced Alloy": 200
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 250.2,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 137,
-              "name": "137",
-              "costs": {
-                "Antimatter Coating": 40,
-                "Reinforced Alloy": 200
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 252,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 138,
-              "name": "138",
-              "costs": {
-                "Antimatter Coating": 40,
-                "Reinforced Alloy": 200
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 253.7,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 139,
-              "name": "139",
-              "costs": {
-                "Antimatter Coating": 40,
-                "Reinforced Alloy": 200
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 255.50000000000003,
-                  "unit": "%"
-                }
-              ]
-            },
-            {
-              "level": 140,
-              "name": "140",
-              "costs": {
-                "Antimatter Coating": 40,
-                "Reinforced Alloy": 200
-              },
-              "bonuses": [
-                {
-                  "type": "Health/Lethality",
-                  "value": 257.2,
-                  "unit": "%"
+          "name": "Aircraft",
+          "items": [
+            {
+              "id": "ac04",
+              "name": "AC04",
+              "maxLevel": 140,
+              "levels": [
+                {
+                  "level": 1,
+                  "name": "1",
+                  "costs": {},
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 12.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "name": "2",
+                  "costs": {
+                    "Antimatter Coating": 2,
+                    "Reinforced Alloy": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 14.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "name": "3",
+                  "costs": {
+                    "Antimatter Coating": 2,
+                    "Reinforced Alloy": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 16.400000000000002,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "name": "4",
+                  "costs": {
+                    "Antimatter Coating": 2,
+                    "Reinforced Alloy": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 18.099999999999998,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "name": "5",
+                  "costs": {
+                    "Antimatter Coating": 2,
+                    "Reinforced Alloy": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 19.900000000000002,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "name": "6",
+                  "costs": {
+                    "Antimatter Coating": 2,
+                    "Reinforced Alloy": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 21.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "name": "7",
+                  "costs": {
+                    "Antimatter Coating": 2,
+                    "Reinforced Alloy": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 23.400000000000002,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "name": "8",
+                  "costs": {
+                    "Antimatter Coating": 2,
+                    "Reinforced Alloy": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 25.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "name": "9",
+                  "costs": {
+                    "Antimatter Coating": 2,
+                    "Reinforced Alloy": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 26.900000000000002,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "name": "10",
+                  "costs": {
+                    "Antimatter Coating": 2,
+                    "Reinforced Alloy": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 28.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 11,
+                  "name": "11",
+                  "costs": {
+                    "Antimatter Coating": 2,
+                    "Reinforced Alloy": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 30.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 12,
+                  "name": "12",
+                  "costs": {
+                    "Antimatter Coating": 4,
+                    "Reinforced Alloy": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 32.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 13,
+                  "name": "13",
+                  "costs": {
+                    "Antimatter Coating": 4,
+                    "Reinforced Alloy": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 34,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 14,
+                  "name": "14",
+                  "costs": {
+                    "Antimatter Coating": 4,
+                    "Reinforced Alloy": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 35.699999999999996,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 15,
+                  "name": "15",
+                  "costs": {
+                    "Antimatter Coating": 4,
+                    "Reinforced Alloy": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 37.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 16,
+                  "name": "16",
+                  "costs": {
+                    "Antimatter Coating": 4,
+                    "Reinforced Alloy": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 39.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 17,
+                  "name": "17",
+                  "costs": {
+                    "Antimatter Coating": 4,
+                    "Reinforced Alloy": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 41,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 18,
+                  "name": "18",
+                  "costs": {
+                    "Antimatter Coating": 4,
+                    "Reinforced Alloy": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 42.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 19,
+                  "name": "19",
+                  "costs": {
+                    "Antimatter Coating": 4,
+                    "Reinforced Alloy": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 44.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 20,
+                  "name": "20",
+                  "costs": {
+                    "Antimatter Coating": 4,
+                    "Reinforced Alloy": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 46.300000000000004,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 21,
+                  "name": "21",
+                  "costs": {
+                    "Antimatter Coating": 4,
+                    "Reinforced Alloy": 8
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 48,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 22,
+                  "name": "22",
+                  "costs": {
+                    "Antimatter Coating": 6,
+                    "Reinforced Alloy": 12
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 49.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 23,
+                  "name": "23",
+                  "costs": {
+                    "Antimatter Coating": 6,
+                    "Reinforced Alloy": 12
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 51.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 24,
+                  "name": "24",
+                  "costs": {
+                    "Antimatter Coating": 6,
+                    "Reinforced Alloy": 12
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 53.300000000000004,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 25,
+                  "name": "25",
+                  "costs": {
+                    "Antimatter Coating": 6,
+                    "Reinforced Alloy": 12
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 55.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 26,
+                  "name": "26",
+                  "costs": {
+                    "Antimatter Coating": 6,
+                    "Reinforced Alloy": 12
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 56.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 27,
+                  "name": "27",
+                  "costs": {
+                    "Antimatter Coating": 6,
+                    "Reinforced Alloy": 12
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 58.599999999999994,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 28,
+                  "name": "28",
+                  "costs": {
+                    "Antimatter Coating": 6,
+                    "Reinforced Alloy": 12
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 60.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 29,
+                  "name": "29",
+                  "costs": {
+                    "Antimatter Coating": 6,
+                    "Reinforced Alloy": 12
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 62.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 30,
+                  "name": "30",
+                  "costs": {
+                    "Antimatter Coating": 6,
+                    "Reinforced Alloy": 12
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 63.800000000000004,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 31,
+                  "name": "31",
+                  "costs": {
+                    "Antimatter Coating": 6,
+                    "Reinforced Alloy": 12
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 65.60000000000001,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 32,
+                  "name": "32",
+                  "costs": {
+                    "Antimatter Coating": 8,
+                    "Reinforced Alloy": 18
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 67.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 33,
+                  "name": "33",
+                  "costs": {
+                    "Antimatter Coating": 8,
+                    "Reinforced Alloy": 18
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 69.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 34,
+                  "name": "34",
+                  "costs": {
+                    "Antimatter Coating": 8,
+                    "Reinforced Alloy": 18
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 70.89999999999999,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 35,
+                  "name": "35",
+                  "costs": {
+                    "Antimatter Coating": 8,
+                    "Reinforced Alloy": 18
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 72.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 36,
+                  "name": "36",
+                  "costs": {
+                    "Antimatter Coating": 8,
+                    "Reinforced Alloy": 18
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 74.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 37,
+                  "name": "37",
+                  "costs": {
+                    "Antimatter Coating": 8,
+                    "Reinforced Alloy": 18
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 76.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 38,
+                  "name": "38",
+                  "costs": {
+                    "Antimatter Coating": 8,
+                    "Reinforced Alloy": 18
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 77.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 39,
+                  "name": "39",
+                  "costs": {
+                    "Antimatter Coating": 8,
+                    "Reinforced Alloy": 18
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 79.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 40,
+                  "name": "40",
+                  "costs": {
+                    "Antimatter Coating": 8,
+                    "Reinforced Alloy": 18
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 81.39999999999999,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 41,
+                  "name": "41",
+                  "costs": {
+                    "Antimatter Coating": 8,
+                    "Reinforced Alloy": 18
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 83.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 42,
+                  "name": "42",
+                  "costs": {
+                    "Antimatter Coating": 10,
+                    "Reinforced Alloy": 24
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 84.89999999999999,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 43,
+                  "name": "43",
+                  "costs": {
+                    "Antimatter Coating": 10,
+                    "Reinforced Alloy": 24
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 86.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 44,
+                  "name": "44",
+                  "costs": {
+                    "Antimatter Coating": 10,
+                    "Reinforced Alloy": 24
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 88.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 45,
+                  "name": "45",
+                  "costs": {
+                    "Antimatter Coating": 10,
+                    "Reinforced Alloy": 24
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 90.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 46,
+                  "name": "46",
+                  "costs": {
+                    "Antimatter Coating": 10,
+                    "Reinforced Alloy": 24
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 92,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 47,
+                  "name": "47",
+                  "costs": {
+                    "Antimatter Coating": 10,
+                    "Reinforced Alloy": 24
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 93.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 48,
+                  "name": "48",
+                  "costs": {
+                    "Antimatter Coating": 10,
+                    "Reinforced Alloy": 24
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 95.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 49,
+                  "name": "49",
+                  "costs": {
+                    "Antimatter Coating": 10,
+                    "Reinforced Alloy": 24
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 97.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 50,
+                  "name": "50",
+                  "costs": {
+                    "Antimatter Coating": 10,
+                    "Reinforced Alloy": 24
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 99,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 51,
+                  "name": "51",
+                  "costs": {
+                    "Antimatter Coating": 10,
+                    "Reinforced Alloy": 24
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 100.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 52,
+                  "name": "52",
+                  "costs": {
+                    "Antimatter Coating": 12,
+                    "Reinforced Alloy": 30
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 102.49999999999999,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 53,
+                  "name": "53",
+                  "costs": {
+                    "Antimatter Coating": 12,
+                    "Reinforced Alloy": 30
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 104.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 54,
+                  "name": "54",
+                  "costs": {
+                    "Antimatter Coating": 12,
+                    "Reinforced Alloy": 30
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 106,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 55,
+                  "name": "55",
+                  "costs": {
+                    "Antimatter Coating": 12,
+                    "Reinforced Alloy": 30
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 107.80000000000001,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 56,
+                  "name": "56",
+                  "costs": {
+                    "Antimatter Coating": 12,
+                    "Reinforced Alloy": 30
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 109.60000000000001,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 57,
+                  "name": "57",
+                  "costs": {
+                    "Antimatter Coating": 12,
+                    "Reinforced Alloy": 30
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 111.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 58,
+                  "name": "58",
+                  "costs": {
+                    "Antimatter Coating": 12,
+                    "Reinforced Alloy": 30
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 113.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 59,
+                  "name": "59",
+                  "costs": {
+                    "Antimatter Coating": 12,
+                    "Reinforced Alloy": 30
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 114.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 60,
+                  "name": "60",
+                  "costs": {
+                    "Antimatter Coating": 12,
+                    "Reinforced Alloy": 30
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 116.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 61,
+                  "name": "61",
+                  "costs": {
+                    "Antimatter Coating": 12,
+                    "Reinforced Alloy": 30
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 118.30000000000001,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 62,
+                  "name": "62",
+                  "costs": {
+                    "Antimatter Coating": 14,
+                    "Reinforced Alloy": 40
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 120.10000000000001,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 63,
+                  "name": "63",
+                  "costs": {
+                    "Antimatter Coating": 14,
+                    "Reinforced Alloy": 40
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 121.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 64,
+                  "name": "64",
+                  "costs": {
+                    "Antimatter Coating": 14,
+                    "Reinforced Alloy": 40
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 123.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 65,
+                  "name": "65",
+                  "costs": {
+                    "Antimatter Coating": 14,
+                    "Reinforced Alloy": 40
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 125.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 66,
+                  "name": "66",
+                  "costs": {
+                    "Antimatter Coating": 14,
+                    "Reinforced Alloy": 40
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 127.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 67,
+                  "name": "67",
+                  "costs": {
+                    "Antimatter Coating": 14,
+                    "Reinforced Alloy": 40
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 128.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 68,
+                  "name": "68",
+                  "costs": {
+                    "Antimatter Coating": 14,
+                    "Reinforced Alloy": 40
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 130.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 69,
+                  "name": "69",
+                  "costs": {
+                    "Antimatter Coating": 14,
+                    "Reinforced Alloy": 40
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 132.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 70,
+                  "name": "70",
+                  "costs": {
+                    "Antimatter Coating": 14,
+                    "Reinforced Alloy": 40
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 134.20000000000002,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 71,
+                  "name": "71",
+                  "costs": {
+                    "Antimatter Coating": 16,
+                    "Reinforced Alloy": 50
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 135.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 72,
+                  "name": "72",
+                  "costs": {
+                    "Antimatter Coating": 16,
+                    "Reinforced Alloy": 50
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 137.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 73,
+                  "name": "73",
+                  "costs": {
+                    "Antimatter Coating": 16,
+                    "Reinforced Alloy": 50
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 139.39999999999998,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 74,
+                  "name": "74",
+                  "costs": {
+                    "Antimatter Coating": 16,
+                    "Reinforced Alloy": 50
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 141.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 75,
+                  "name": "75",
+                  "costs": {
+                    "Antimatter Coating": 16,
+                    "Reinforced Alloy": 50
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 143,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 76,
+                  "name": "76",
+                  "costs": {
+                    "Antimatter Coating": 16,
+                    "Reinforced Alloy": 50
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 144.70000000000002,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 77,
+                  "name": "77",
+                  "costs": {
+                    "Antimatter Coating": 16,
+                    "Reinforced Alloy": 50
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 146.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 78,
+                  "name": "78",
+                  "costs": {
+                    "Antimatter Coating": 16,
+                    "Reinforced Alloy": 50
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 148.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 79,
+                  "name": "79",
+                  "costs": {
+                    "Antimatter Coating": 16,
+                    "Reinforced Alloy": 50
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 150,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 80,
+                  "name": "80",
+                  "costs": {
+                    "Antimatter Coating": 16,
+                    "Reinforced Alloy": 50
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 151.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 81,
+                  "name": "81",
+                  "costs": {
+                    "Antimatter Coating": 16,
+                    "Reinforced Alloy": 50
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 153.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 82,
+                  "name": "82",
+                  "costs": {
+                    "Antimatter Coating": 18,
+                    "Reinforced Alloy": 60
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 155.29999999999998,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 83,
+                  "name": "83",
+                  "costs": {
+                    "Antimatter Coating": 18,
+                    "Reinforced Alloy": 60
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 157,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 84,
+                  "name": "84",
+                  "costs": {
+                    "Antimatter Coating": 18,
+                    "Reinforced Alloy": 60
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 158.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 85,
+                  "name": "85",
+                  "costs": {
+                    "Antimatter Coating": 18,
+                    "Reinforced Alloy": 60
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 160.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 86,
+                  "name": "86",
+                  "costs": {
+                    "Antimatter Coating": 18,
+                    "Reinforced Alloy": 60
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 162.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 87,
+                  "name": "87",
+                  "costs": {
+                    "Antimatter Coating": 18,
+                    "Reinforced Alloy": 60
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 164.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 88,
+                  "name": "88",
+                  "costs": {
+                    "Antimatter Coating": 18,
+                    "Reinforced Alloy": 60
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 165.79999999999998,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 89,
+                  "name": "89",
+                  "costs": {
+                    "Antimatter Coating": 18,
+                    "Reinforced Alloy": 60
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 167.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 90,
+                  "name": "90",
+                  "costs": {
+                    "Antimatter Coating": 18,
+                    "Reinforced Alloy": 60
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 169.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 91,
+                  "name": "91",
+                  "costs": {
+                    "Antimatter Coating": 18,
+                    "Reinforced Alloy": 60
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 171.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 92,
+                  "name": "92",
+                  "costs": {
+                    "Antimatter Coating": 20,
+                    "Reinforced Alloy": 70
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 172.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 93,
+                  "name": "93",
+                  "costs": {
+                    "Antimatter Coating": 20,
+                    "Reinforced Alloy": 70
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 174.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 94,
+                  "name": "94",
+                  "costs": {
+                    "Antimatter Coating": 20,
+                    "Reinforced Alloy": 70
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 176.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 95,
+                  "name": "95",
+                  "costs": {
+                    "Antimatter Coating": 20,
+                    "Reinforced Alloy": 70
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 178.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 96,
+                  "name": "96",
+                  "costs": {
+                    "Antimatter Coating": 20,
+                    "Reinforced Alloy": 70
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 179.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 97,
+                  "name": "97",
+                  "costs": {
+                    "Antimatter Coating": 20,
+                    "Reinforced Alloy": 70
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 181.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 98,
+                  "name": "98",
+                  "costs": {
+                    "Antimatter Coating": 20,
+                    "Reinforced Alloy": 70
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 183.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 99,
+                  "name": "99",
+                  "costs": {
+                    "Antimatter Coating": 20,
+                    "Reinforced Alloy": 70
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 185.20000000000002,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 100,
+                  "name": "100",
+                  "costs": {
+                    "Antimatter Coating": 20,
+                    "Reinforced Alloy": 70
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 186.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 101,
+                  "name": "101",
+                  "costs": {
+                    "Antimatter Coating": 20,
+                    "Reinforced Alloy": 70
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 188.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 102,
+                  "name": "102",
+                  "costs": {
+                    "Antimatter Coating": 25,
+                    "Reinforced Alloy": 90
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 190.39999999999998,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 103,
+                  "name": "103",
+                  "costs": {
+                    "Antimatter Coating": 25,
+                    "Reinforced Alloy": 90
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 192.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 104,
+                  "name": "104",
+                  "costs": {
+                    "Antimatter Coating": 25,
+                    "Reinforced Alloy": 90
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 193.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 105,
+                  "name": "105",
+                  "costs": {
+                    "Antimatter Coating": 25,
+                    "Reinforced Alloy": 90
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 195.70000000000002,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 106,
+                  "name": "106",
+                  "costs": {
+                    "Antimatter Coating": 25,
+                    "Reinforced Alloy": 90
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 197.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 107,
+                  "name": "107",
+                  "costs": {
+                    "Antimatter Coating": 25,
+                    "Reinforced Alloy": 90
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 199.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 108,
+                  "name": "108",
+                  "costs": {
+                    "Antimatter Coating": 25,
+                    "Reinforced Alloy": 90
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 200.99999999999997,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 109,
+                  "name": "109",
+                  "costs": {
+                    "Antimatter Coating": 25,
+                    "Reinforced Alloy": 90
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 202.70000000000002,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 110,
+                  "name": "110",
+                  "costs": {
+                    "Antimatter Coating": 25,
+                    "Reinforced Alloy": 90
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 204.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 111,
+                  "name": "111",
+                  "costs": {
+                    "Antimatter Coating": 25,
+                    "Reinforced Alloy": 90
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 206.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 112,
+                  "name": "112",
+                  "costs": {
+                    "Antimatter Coating": 30,
+                    "Reinforced Alloy": 120
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 208,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 113,
+                  "name": "113",
+                  "costs": {
+                    "Antimatter Coating": 30,
+                    "Reinforced Alloy": 120
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 209.79999999999998,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 114,
+                  "name": "114",
+                  "costs": {
+                    "Antimatter Coating": 30,
+                    "Reinforced Alloy": 120
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 211.50000000000003,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 115,
+                  "name": "115",
+                  "costs": {
+                    "Antimatter Coating": 30,
+                    "Reinforced Alloy": 120
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 213.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 116,
+                  "name": "116",
+                  "costs": {
+                    "Antimatter Coating": 30,
+                    "Reinforced Alloy": 120
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 215,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 117,
+                  "name": "117",
+                  "costs": {
+                    "Antimatter Coating": 30,
+                    "Reinforced Alloy": 120
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 216.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 118,
+                  "name": "118",
+                  "costs": {
+                    "Antimatter Coating": 30,
+                    "Reinforced Alloy": 120
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 218.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 119,
+                  "name": "119",
+                  "costs": {
+                    "Antimatter Coating": 30,
+                    "Reinforced Alloy": 120
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 220.29999999999998,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 120,
+                  "name": "120",
+                  "costs": {
+                    "Antimatter Coating": 30,
+                    "Reinforced Alloy": 120
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 222.10000000000002,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 121,
+                  "name": "121",
+                  "costs": {
+                    "Antimatter Coating": 30,
+                    "Reinforced Alloy": 120
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 223.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 122,
+                  "name": "122",
+                  "costs": {
+                    "Antimatter Coating": 35,
+                    "Reinforced Alloy": 150
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 225.59999999999997,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 123,
+                  "name": "123",
+                  "costs": {
+                    "Antimatter Coating": 35,
+                    "Reinforced Alloy": 150
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 227.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 124,
+                  "name": "124",
+                  "costs": {
+                    "Antimatter Coating": 35,
+                    "Reinforced Alloy": 150
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 229.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 125,
+                  "name": "125",
+                  "costs": {
+                    "Antimatter Coating": 35,
+                    "Reinforced Alloy": 150
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 230.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 126,
+                  "name": "126",
+                  "costs": {
+                    "Antimatter Coating": 35,
+                    "Reinforced Alloy": 150
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 232.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 127,
+                  "name": "127",
+                  "costs": {
+                    "Antimatter Coating": 35,
+                    "Reinforced Alloy": 150
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 234.39999999999998,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 128,
+                  "name": "128",
+                  "costs": {
+                    "Antimatter Coating": 35,
+                    "Reinforced Alloy": 150
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 236.10000000000002,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 129,
+                  "name": "129",
+                  "costs": {
+                    "Antimatter Coating": 35,
+                    "Reinforced Alloy": 150
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 237.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 130,
+                  "name": "130",
+                  "costs": {
+                    "Antimatter Coating": 35,
+                    "Reinforced Alloy": 150
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 239.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 131,
+                  "name": "131",
+                  "costs": {
+                    "Antimatter Coating": 35,
+                    "Reinforced Alloy": 150
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 241.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 132,
+                  "name": "132",
+                  "costs": {
+                    "Antimatter Coating": 40,
+                    "Reinforced Alloy": 200
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 243.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 133,
+                  "name": "133",
+                  "costs": {
+                    "Antimatter Coating": 40,
+                    "Reinforced Alloy": 200
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 244.89999999999998,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 134,
+                  "name": "134",
+                  "costs": {
+                    "Antimatter Coating": 40,
+                    "Reinforced Alloy": 200
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 246.70000000000002,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 135,
+                  "name": "135",
+                  "costs": {
+                    "Antimatter Coating": 40,
+                    "Reinforced Alloy": 200
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 248.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 136,
+                  "name": "136",
+                  "costs": {
+                    "Antimatter Coating": 40,
+                    "Reinforced Alloy": 200
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 250.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 137,
+                  "name": "137",
+                  "costs": {
+                    "Antimatter Coating": 40,
+                    "Reinforced Alloy": 200
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 252,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 138,
+                  "name": "138",
+                  "costs": {
+                    "Antimatter Coating": 40,
+                    "Reinforced Alloy": 200
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 253.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 139,
+                  "name": "139",
+                  "costs": {
+                    "Antimatter Coating": 40,
+                    "Reinforced Alloy": 200
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 255.50000000000003,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 140,
+                  "name": "140",
+                  "costs": {
+                    "Antimatter Coating": 40,
+                    "Reinforced Alloy": 200
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Lethality",
+                      "value": 257.2,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Carrier",
+          "items": [
+            {
+              "id": "fhs-ark-cv-1-carrier",
+              "name": "FHS Ark CV-1 (Carrier)",
+              "maxLevel": 35,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {},
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 2.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Specialized Steel": 1
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 3.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Specialized Steel": 1
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 5.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Specialized Steel": 1
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 6.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Specialized Steel": 1
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 8.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Specialized Steel": 1
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 9.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Specialized Steel": 1
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 10.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Specialized Steel": 1
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 12.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Specialized Steel": 1
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 13.7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Specialized Steel": 1
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 15.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 11,
+                  "costs": {
+                    "Specialized Steel": 1
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 16.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 12,
+                  "costs": {
+                    "Specialized Steel": 3
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 18,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 13,
+                  "costs": {
+                    "Specialized Steel": 3
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 19.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 14,
+                  "costs": {
+                    "Specialized Steel": 3
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 20.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 15,
+                  "costs": {
+                    "Specialized Steel": 3
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 22.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 16,
+                  "costs": {
+                    "Specialized Steel": 3
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 23.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 17,
+                  "costs": {
+                    "Specialized Steel": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 25,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 18,
+                  "costs": {
+                    "Specialized Steel": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 26.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 19,
+                  "costs": {
+                    "Specialized Steel": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 27.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 20,
+                  "costs": {
+                    "Specialized Steel": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 29.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 21,
+                  "costs": {
+                    "Specialized Steel": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 30.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 22,
+                  "costs": {
+                    "Specialized Steel": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 32,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 23,
+                  "costs": {
+                    "Specialized Steel": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 33.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 24,
+                  "costs": {
+                    "Specialized Steel": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 34.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 25,
+                  "costs": {
+                    "Specialized Steel": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 36.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 26,
+                  "costs": {
+                    "Specialized Steel": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 37.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 27,
+                  "costs": {
+                    "Specialized Steel": 5
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 39,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 28,
+                  "costs": {
+                    "Specialized Steel": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 40.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 29,
+                  "costs": {
+                    "Specialized Steel": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 41.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 30,
+                  "costs": {
+                    "Specialized Steel": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 43.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 31,
+                  "costs": {
+                    "Specialized Steel": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 44.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 32,
+                  "costs": {
+                    "Specialized Steel": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 46,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 33,
+                  "costs": {
+                    "Specialized Steel": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 47.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 34,
+                  "costs": {
+                    "Specialized Steel": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 48.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 35,
+                  "costs": {
+                    "Specialized Steel": 6
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Health/Damage",
+                      "value": 50.3,
+                      "unit": "%"
+                    }
+                  ]
                 }
               ]
             }

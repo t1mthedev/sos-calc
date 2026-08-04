@@ -71,6 +71,10 @@ function isSpacecraftFile(sheetNames) {
   return sheetNames.some(n => n.startsWith('Capsule_') || n === 'AC04' || n.startsWith('Enterprise Capsule_'));
 }
 
+function isCarrierFile(sheetNames) {
+  return sheetNames.some(n => String(n).toLowerCase().includes('carrier'));
+}
+
 const FORMATION_GROUPS = [
   { name: 'Plasma Wings', offset: 0, count: 6 },
   { name: 'Plasma Fuselage', offset: 6, count: 7 },
@@ -334,6 +338,41 @@ function parseBehemothLevels(wb) {
   return items;
 }
 
+function parseCarrier(wb) {
+  const items = [];
+  for (const name of wb.SheetNames) {
+    if (!String(name).toLowerCase().includes('carrier')) continue;
+    const ws = wb.Sheets[name];
+    const rows = XLSX.utils.sheet_to_json(ws, { header: 1, defval: '' });
+    if (rows.length < 2) continue;
+    const levels = [];
+    for (let i = 1; i < rows.length; i++) {
+      const row = rows[i];
+      const lvl = parseInt(row[0], 10);
+      if (!lvl) continue;
+      const healthDamage = parsePct(row[1]);
+      const steel = parseNum(row[2]);
+      const costs = {};
+      if (steel > 0) costs['Specialized Steel'] = steel;
+      const entry = {
+        level: lvl,
+        costs,
+        bonuses: healthDamage ? [{ type: 'Health/Damage', value: healthDamage, unit: '%' }] : []
+      };
+      levels.push(entry);
+    }
+    if (levels.length) {
+      items.push({
+        id: name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''),
+        name,
+        maxLevel: levels.length,
+        levels
+      });
+    }
+  }
+  return items;
+}
+
 function main() {
   ensureDir(JSON_DIR);
   const files = readdirSync(EXCEL_DIR).filter(f => f.endsWith('.xlsx'));
@@ -342,6 +381,8 @@ function main() {
     return;
   }
   const categories = [];
+  const aircraftItems = [];
+  const carrierItems = [];
   for (const file of files) {
     const wb = XLSX.readFile(join(EXCEL_DIR, file), { cellDates: true });
     const sheets = wb.SheetNames;
@@ -380,13 +421,18 @@ function main() {
           groups: [spacecraftGroup, enterpriseGroup].filter(g => g.items.length > 0),
         });
       }
-      const aircraftItems = parseAircraft(wb);
-      if (aircraftItems.length) {
-        categories.push({ id: 'aircraft', name: 'Aircraft', items: aircraftItems });
-      }
+      aircraftItems.push(...parseAircraft(wb));
+    } else if (isCarrierFile(sheets)) {
+      carrierItems.push(...parseCarrier(wb));
     } else {
       console.warn(`Unknown file format: ${file}, skipping`);
     }
+  }
+  if (aircraftItems.length || carrierItems.length) {
+    const aircraftGroups = [];
+    if (aircraftItems.length) aircraftGroups.push({ name: 'Aircraft', items: aircraftItems });
+    if (carrierItems.length) aircraftGroups.push({ name: 'Carrier', items: carrierItems });
+    categories.push({ id: 'aircraft', name: 'Aircraft', groups: aircraftGroups });
   }
   const data = {
     version: '1.0',

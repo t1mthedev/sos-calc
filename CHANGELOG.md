@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.3.3-beta] - 2026-08-03
+### Added
+- Carrier data
+
 ## [0.3.2-beta] - 2026-08-03
 ### Added
 - Aircraft Custom Crate, expanded Spacecraft Research crate options (adding Fusion Cells, Maglev Module, and Plasma Fuel materials), and Behemoth MK I / MK II / Custom crates

@@ -54,4 +54,10 @@
 
 - [x] Behemoth page — MK/section card flow (`BehemothPage`, `BehemothSelector`)
 - [x] Spacecraft page — type tiles (Spacecraft / Enterprise) → detail (`SpacecraftPage`, `SpacecraftSelector`)
-- [ ] Aircraft page — convert to the same tile-based flow as Behemoth/Spacecraft
+- [x] Aircraft page — type tiles (Aircraft / Carrier) → detail (`AircraftPage`, `AircraftSelector`)
+
+## Carrier (FHS Ark CV-1)
+
+- [x] Import LEVEL STATISTICS & COST — 35 levels, cost in Specialized Steel, bonus Health/Damage %. Scraper `scripts/scrape-carrier.mjs` → `src/data/excel/carrier.xlsx` → `parseCarrier` in `convert-excel.js`; aircraft category is now grouped (Aircraft / Carrier)
+- [ ] Import SKILL DESCRIPTIONS & COST — skills: Joint Strike (incl. 6-star table), Firestorm, Tidal Assault, Shatter Defenses. Costs in Specialized Steel + Carbon-Based Composite; descriptions are the benefit text
+- [ ] Decide/verify modeling: wiki shows "Total Per Component"=119 and "Total For All Components"=714 (×6 components); we currently use per-level costs as shown (scraper sum=118, wiki's own summary is off by 1 on the 26-35 range)

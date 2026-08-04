@@ -21,7 +21,7 @@ const CATEGORIES = [
   {
     id: 'aircraft',
     name: 'Aircraft',
-    description: 'Upgrade aircraft with nuclear fuel rods',
+    description: 'Upgrade the Gen 1 aircraft and the FHS Ark CV-1 Carrier',
   },
 ];
 
