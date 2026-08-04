@@ -49,3 +49,9 @@
 
 - [x] Backpack page with materials and crates inventory
 - [x] Dashboard "have vs need" comparison — reads `sos-calc-backpack` from localStorage, displays Have and Remaining columns per material, shows crate contributions as grey captions, includes crate summary card when no upgrades exist
+
+## Future: Tile-based category pages
+
+- [x] Behemoth page — MK/section card flow (`BehemothPage`, `BehemothSelector`)
+- [x] Spacecraft page — type tiles (Spacecraft / Enterprise) → detail (`SpacecraftPage`, `SpacecraftSelector`)
+- [ ] Aircraft page — convert to the same tile-based flow as Behemoth/Spacecraft
