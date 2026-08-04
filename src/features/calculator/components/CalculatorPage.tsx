@@ -1,6 +1,6 @@
 import { useEffect, useMemo } from 'react';
-import { useParams } from 'react-router-dom';
-import { Grid, Stack, Typography, Accordion, AccordionSummary, AccordionDetails, Card, CardContent } from '@mui/material';
+import { useParams, useNavigate } from 'react-router-dom';
+import { Grid, Stack, Typography, Accordion, AccordionSummary, AccordionDetails, Card, CardContent, Breadcrumbs, Link, Box } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { UpgradeSelector } from './UpgradeSelector';
 import { UpgradeList } from './UpgradeList';
@@ -11,11 +11,12 @@ import { BonusesTable } from './BonusesTable';
 import { CrateConversion } from './CrateConversion';
 import { BundleConversion } from './BundleConversion';
 import { useCalculator } from '../hooks/useCalculator';
-import { resolveCategoryId, resolveBySlug, buildSlugLookup } from '../../../utils/slugs';
+import { resolveCategoryId, resolveBySlug, buildSlugLookup, getCategorySlug } from '../../../utils/slugs';
 
 export function CalculatorPage() {
   const { categorySlug, groupSlug } = useParams();
-  const { dispatch, selectedCategoryId, selectedGroupName, selectedUpgrades, results, allItems, categories } = useCalculator();
+  const navigate = useNavigate();
+  const { dispatch, selectedCategoryId, selectedGroupName, selectedCategory, selectedUpgrades, results, allItems, categories } = useCalculator();
 
   const groupLookup = useMemo(
     () => buildSlugLookup(categories.flatMap(c => (c.groups ?? []).map(g => g.name))),
@@ -34,6 +35,27 @@ export function CalculatorPage() {
 
   return (
     <>
+      <Box sx={{ mb: 2 }}>
+        <Breadcrumbs aria-label="breadcrumb">
+          <Link component="button" underline="hover" color="inherit" onClick={() => navigate('/calculator')}>
+            Calculator
+          </Link>
+          {selectedCategoryId && selectedCategory && (
+            selectedGroupName ? (
+              <Link
+                component="button"
+                underline="hover"
+                color="inherit"
+                onClick={() => navigate(`/calculator/${getCategorySlug(selectedCategoryId)}`)}
+              >
+                {selectedCategory.name}
+              </Link>
+            ) : (
+              <Typography color="text.primary">{selectedCategory.name}</Typography>
+            )
+          )}
+        </Breadcrumbs>
+      </Box>
       <Grid container spacing={3}>
         <Grid size={{ xs: 12, md: 4 }}>
           <UpgradeSelector />

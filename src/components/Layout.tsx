@@ -30,13 +30,18 @@ export function Layout() {
       <AppBar position="static" elevation={1} sx={{ position: 'relative' }}>
         <Tabs
           value={activeTab >= 0 ? activeTab : 1}
-          onChange={(_e, newValue) => navigate(NAV_ITEMS[newValue].path)}
           indicatorColor="secondary"
           textColor="inherit"
           variant="fullWidth"
         >
           {NAV_ITEMS.map(item => (
-            <Tab key={item.path} label={item.label} icon={item.icon} iconPosition="start" />
+            <Tab
+              key={item.path}
+              label={item.label}
+              icon={item.icon}
+              iconPosition="start"
+              onClick={() => navigate(item.path)}
+            />
           ))}
         </Tabs>
         {isDev && (

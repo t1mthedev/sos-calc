@@ -10,15 +10,8 @@ export function UpgradeSelector() {
   const isDev = useDevMode();
   const inputRef = useRef<HTMLInputElement>(null);
   const navigate = useNavigate();
-  const { categories, selectedCategoryId, selectedCategory, selectedGroupName, groupItems, allItems,
-    selectCategory, selectGroup, addUpgrade, selectedUpgrades, reset, hasSavedData, hasCurrentData, clearCategory } = useCalculator();
-
-  const dropdownOptions = categories;
-
-  const handleCategoryChange = (id: string) => {
-    selectCategory(id);
-    navigate(`/calculator/${getCategorySlug(id)}`);
-  };
+  const { selectedCategoryId, selectedCategory, selectedGroupName, groupItems, allItems,
+    selectGroup, addUpgrade, selectedUpgrades, reset, hasSavedData, hasCurrentData, clearCategory } = useCalculator();
 
   const handleGroupChange = (name: string) => {
     selectGroup(name);
@@ -82,15 +75,6 @@ export function UpgradeSelector() {
 
   return (
     <Stack spacing={2}>
-      <FormControl fullWidth>
-        <InputLabel>Category</InputLabel>
-        <Select value={selectedCategoryId ?? ''} label="Category" onChange={e => handleCategoryChange(e.target.value)}>
-          {dropdownOptions.map(opt => (
-            <MenuItem key={opt.id} value={opt.id}>{opt.name}</MenuItem>
-          ))}
-        </Select>
-      </FormControl>
-
       {selectedCategory?.groups && (
             <FormControl fullWidth>
               <InputLabel>Group</InputLabel>

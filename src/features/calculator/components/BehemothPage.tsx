@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Grid, Stack, Typography, Accordion, AccordionSummary, AccordionDetails, Card, Box, IconButton } from '@mui/material';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { Grid, Stack, Typography, Accordion, AccordionSummary, AccordionDetails, Card, Breadcrumbs, Link, Box } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { BehemothSelector } from './BehemothSelector';
 import { UpgradeList } from './UpgradeList';
@@ -11,7 +10,13 @@ import { BonusesTable } from './BonusesTable';
 import { CrateConversion } from './CrateConversion';
 import { BundleConversion } from './BundleConversion';
 import { useCalculator } from '../hooks/useCalculator';
-import { normalizeSlug, resolveMk } from '../../../utils/slugs';
+import { normalizeSlug, resolveMk, getMkSlug } from '../../../utils/slugs';
+
+const SECTION_LABELS: Record<string, string> = {
+  enhancement: 'Enhancement',
+  levels: 'Levels',
+  skills: 'Skills',
+};
 
 export function BehemothPage() {
   const { mkSlug, sectionSlug } = useParams();
@@ -28,25 +33,53 @@ export function BehemothPage() {
 
   const isDetail = mkSlug != null;
 
+  const breadcrumbs = (
+    <Box sx={{ mb: 2 }}>
+      <Breadcrumbs aria-label="breadcrumb">
+        <Link component="button" underline="hover" color="inherit" onClick={() => navigate('/calculator')}>
+          Calculator
+        </Link>
+        {behemothMk ? (
+          <Link component="button" underline="hover" color="inherit" onClick={() => navigate('/calculator/behemoth')}>
+            Behemoth
+          </Link>
+        ) : (
+          <Typography color="text.primary">Behemoth</Typography>
+        )}
+        {behemothMk && (behemothSection ? (
+          <Link
+            component="button"
+            underline="hover"
+            color="inherit"
+            onClick={() => navigate(`/calculator/behemoth/${getMkSlug(behemothMk)}`)}
+          >
+            {behemothMk}
+          </Link>
+        ) : (
+          <Typography color="text.primary">{behemothMk}</Typography>
+        ))}
+        {behemothSection && <Typography color="text.primary">{SECTION_LABELS[behemothSection] ?? behemothSection}</Typography>}
+      </Breadcrumbs>
+    </Box>
+  );
+
   if (!isDetail) {
     return (
       <Card variant="outlined" sx={{ p: 3 }}>
-        <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 2 }}>
-          <IconButton size="small" onClick={() => navigate('/calculator')}>
-            <ArrowBackIcon fontSize="small" />
-          </IconButton>
-          <Typography variant="h5">Behemoth</Typography>
-        </Box>
+        {breadcrumbs}
+        <Typography variant="h5" sx={{ mb: 2 }}>Behemoth</Typography>
         <BehemothSelector />
       </Card>
     );
   }
 
   return (
-    <Grid container spacing={3}>
-      <Grid size={{ xs: 12, md: 4 }}>
-        <BehemothSelector />
-      </Grid>
+    <>
+      {breadcrumbs}
+      <Grid container spacing={3}>
+        <Grid size={{ xs: 12, md: 4 }}>
+          <BehemothSelector />
+        </Grid>
       <Grid size={{ xs: 12, md: 8 }}>
         <Stack spacing={3}>
           {behemothMk && behemothSection && <UpgradeList />}
@@ -85,5 +118,6 @@ export function BehemothPage() {
         </Stack>
       </Grid>
     </Grid>
+    </>
   );
 }
