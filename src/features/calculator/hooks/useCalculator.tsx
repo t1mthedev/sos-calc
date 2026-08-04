@@ -5,7 +5,7 @@ import { calculate } from '../utils/calculator';
 
 const STORAGE_KEY = 'sos-calc-state';
 const BEHEMOTH_ENTRY = '__behemoth__';
-const GROUP_SCOPED_CATEGORIES = new Set(['aircraft', 'spacecraft']);
+const GROUP_SCOPED_CATEGORIES = new Set(['aircraft', 'spacecraft', 'vehicles']);
 
 interface CategoryState {
   selectedGroupName: string | null;

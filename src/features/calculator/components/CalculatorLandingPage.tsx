@@ -23,6 +23,11 @@ const CATEGORIES = [
     name: 'Aircraft',
     description: 'Upgrade the Gen 4 (AC04) and Gen 3 (FA-1 Specter) aircraft and the FHS Ark CV-1 Carrier',
   },
+  {
+    id: 'vehicles',
+    name: 'Vehicles',
+    description: 'Upgrade vehicles',
+  },
 ];
 
 export function CalculatorLandingPage() {

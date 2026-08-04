@@ -176,6 +176,7 @@ const MATERIAL_TYPE_DEFS: { id: string; name: string; categoryIds: string[] }[] 
   { id: 'formation-system', name: 'Formation System', categoryIds: ['formation-system'] },
   { id: 'spacecraft', name: 'Spacecraft', categoryIds: ['spacecraft'] },
   { id: 'aircraft', name: 'Aircraft', categoryIds: ['aircraft'] },
+  { id: 'vehicles', name: 'Vehicles', categoryIds: ['vehicles'] },
 ];
 
 export function getMaterialsByType(): { id: string; name: string; materialKeys: string[] }[] {

@@ -1,8 +1,11 @@
 # Changelog
 
-## [0.3.4-beta] - 2026-08-04
+## [0.4.0-beta] - 2026-08-04
 ### Added
+- Vehicles section with Purple, Gen 1, and Gen 2 vehicle star enhancement ladders on per-generation tile pages
 - FA-1 Specter (Gen 3) aircraft data
+- Carrier data
+
 ### Changed
 - Split the Aircraft page into per-aircraft tiles (AC04 / FA-1 Specter / Carrier) and mark AC04 as Gen 4
 

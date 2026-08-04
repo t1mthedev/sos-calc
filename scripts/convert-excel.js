@@ -79,6 +79,22 @@ function isFA1SpecterFile(sheetNames) {
   return sheetNames.some(n => /FA-1\s*Specter/i.test(String(n)));
 }
 
+const VEHICLE_DEFS = [
+  { name: 'Ravager', group: 'Purple' },
+  { name: 'Inferno Striker Mk I', group: 'Gen 1' },
+  { name: 'Doomwheel', group: 'Gen 2' },
+];
+
+const VEHICLE_FRAGMENT_RENAME = {
+  'Ravager Fragment': 'Gen 1 vehicle purple fragment',
+  'Inferno Striker Mk I Fragment': 'Gen 1 vehicle fragment',
+  'Doomwheel Fragment': 'Gen 2 vehicle fragment',
+};
+
+function isVehiclesFile(sheetNames) {
+  return sheetNames.some(n => VEHICLE_DEFS.some(v => v.name === n));
+}
+
 const FORMATION_GROUPS = [
   { name: 'Plasma Wings', offset: 0, count: 6 },
   { name: 'Plasma Fuselage', offset: 6, count: 7 },
@@ -414,6 +430,63 @@ function parseFA1Specter(wb) {
   return items;
 }
 
+function parseVehicles(wb) {
+  const groups = [];
+  for (const def of VEHICLE_DEFS) {
+    const ws = wb.Sheets[def.name];
+    if (!ws) continue;
+    const rows = XLSX.utils.sheet_to_json(ws, { defval: '' });
+    if (!rows.length) continue;
+    const rarityOrder = [];
+    const rarityLevels = {};
+    for (const row of rows) {
+      let rarity = String(row.Rarity || '').trim();
+      rarity = rarity.replace(/_Enhancements$/, '').trim();
+      if (!rarity) continue;
+      if (!rarityLevels[rarity]) {
+        rarityLevels[rarity] = [];
+        rarityOrder.push(rarity);
+      }
+      const entry = {
+        name: String(row.Level ?? '').trim(),
+        costs: {},
+        bonuses: [],
+      };
+      for (const [nameCol, valCol] of [['Stat1Name', 'Stat1'], ['Stat2Name', 'Stat2']]) {
+        const bonusName = String(row[nameCol] || '').trim();
+        const bonusVal = parsePct(row[valCol]);
+        if (bonusName && bonusVal) entry.bonuses.push({ type: bonusName, value: bonusVal, unit: '%' });
+      }
+      for (const [nameCol, valCol] of [['Cost1Name', 'Cost1'], ['Cost2Name', 'Cost2']]) {
+        const costName = String(row[nameCol] || '').trim();
+        const costVal = parseNum(row[valCol]);
+        if (costName && costVal > 0) entry.costs[VEHICLE_FRAGMENT_RENAME[costName] ?? costName] = costVal;
+      }
+      rarityLevels[rarity].push(entry);
+    }
+    const levels = [];
+    for (const rarity of rarityOrder) {
+      for (const lvl of rarityLevels[rarity]) {
+        levels.push({
+          level: levels.length + 1,
+          name: `${rarity} ${lvl.name}`.trim(),
+          costs: lvl.costs,
+          bonuses: lvl.bonuses,
+        });
+      }
+    }
+    const itemName = `${def.group} Vehicle`;
+    const item = {
+      id: itemName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''),
+      name: itemName,
+      maxLevel: levels.length,
+      levels,
+    };
+    groups.push({ name: def.group, items: [item] });
+  }
+  return groups;
+}
+
 function main() {
   ensureDir(JSON_DIR);
   const files = readdirSync(EXCEL_DIR).filter(f => f.endsWith('.xlsx'));
@@ -467,6 +540,12 @@ function main() {
       aircraftItems.push(...parseFA1Specter(wb));
     } else if (isCarrierFile(sheets)) {
       carrierItems.push(...parseCarrier(wb));
+    } else if (isVehiclesFile(sheets)) {
+      categories.push({
+        id: 'vehicles',
+        name: 'Vehicles',
+        groups: parseVehicles(wb),
+      });
     } else {
       console.warn(`Unknown file format: ${file}, skipping`);
     }

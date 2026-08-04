@@ -53,7 +53,8 @@
 ## Backlog
 
 - [x] Add FA-1 Specter data under Aircraft section (https://state-of-survival.fandom.com/wiki/FA-1_Specter)
-- [ ] Add Vehicles section — purple vehicles (Gen 1 & Gen 2), mechs levels & skills (https://state-of-survival.fandom.com/wiki/War_Vehicles_-_Infantry, /wiki/Mechs)
+- [x] Add Vehicles section — Purple, Gen 1 & Gen 2 vehicle star enhancements (https://state-of-survival.fandom.com/wiki/War_Vehicles_-_Infantry)
+- [ ] Add Mechs levels & skills (https://state-of-survival.fandom.com/wiki/Mechs)
 - [ ] Add MK V data
 - [ ] Add Hero Appointment section (https://state-of-survival.fandom.com/wiki/Hero_Appointment)
 

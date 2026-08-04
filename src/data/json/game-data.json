@@ -84004,6 +84004,2283 @@
       ]
     },
     {
+      "id": "vehicles",
+      "name": "Vehicles",
+      "groups": [
+        {
+          "name": "Purple",
+          "items": [
+            {
+              "id": "purple-vehicle",
+              "name": "Purple Vehicle",
+              "maxLevel": 26,
+              "levels": [
+                {
+                  "level": 1,
+                  "name": "Green 1",
+                  "costs": {},
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Damage",
+                      "value": 0.8,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 0.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "name": "Green 2",
+                  "costs": {
+                    "Gen 1 vehicle purple fragment": 1
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Damage",
+                      "value": 1.1,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 0.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "name": "Green 3",
+                  "costs": {
+                    "Gen 1 vehicle purple fragment": 1
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Damage",
+                      "value": 1.1,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 1.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "name": "Green 4",
+                  "costs": {
+                    "Gen 1 vehicle purple fragment": 1
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Damage",
+                      "value": 1.4,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 1.1,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "name": "Green 5",
+                  "costs": {
+                    "Gen 1 vehicle purple fragment": 2
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Damage",
+                      "value": 1.4,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 1.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "name": "Green Ascend",
+                  "costs": {
+                    "Gen 1 vehicle purple fragment": 3
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Damage",
+                      "value": 1.4,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 1.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "name": "Blue 2",
+                  "costs": {
+                    "Gen 1 vehicle purple fragment": 4
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Damage",
+                      "value": 1.9,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 1.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "name": "Blue 3",
+                  "costs": {
+                    "Gen 1 vehicle purple fragment": 7
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Damage",
+                      "value": 1.9,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 1.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "name": "Blue 4",
+                  "costs": {
+                    "Gen 1 vehicle purple fragment": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Damage",
+                      "value": 2.4,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 1.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "name": "Blue 5",
+                  "costs": {
+                    "Gen 1 vehicle purple fragment": 15
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Damage",
+                      "value": 2.4,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 2.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 11,
+                  "name": "Blue Ascend",
+                  "costs": {
+                    "Gen 1 vehicle purple fragment": 20
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Damage",
+                      "value": 2.4,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 2.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 12,
+                  "name": "Purple 2",
+                  "costs": {
+                    "Gen 1 vehicle purple fragment": 27
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Damage",
+                      "value": 2.9,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 2.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 13,
+                  "name": "Purple 3",
+                  "costs": {
+                    "Gen 1 vehicle purple fragment": 36
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Damage",
+                      "value": 2.9,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 2.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 14,
+                  "name": "Purple 4",
+                  "costs": {
+                    "Gen 1 vehicle purple fragment": 46
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Damage",
+                      "value": 3.4,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 2.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 15,
+                  "name": "Purple 5",
+                  "costs": {
+                    "Gen 1 vehicle purple fragment": 58
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Damage",
+                      "value": 3.4,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 3.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 16,
+                  "name": "Purple Ascend",
+                  "costs": {
+                    "Gen 1 vehicle purple fragment": 71
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Damage",
+                      "value": 3.4,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 3.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 17,
+                  "name": "Orange 2",
+                  "costs": {
+                    "Gen 1 vehicle purple fragment": 87
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Damage",
+                      "value": 4,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 3.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 18,
+                  "name": "Orange 3",
+                  "costs": {
+                    "Gen 1 vehicle purple fragment": 105
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Damage",
+                      "value": 4,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 19,
+                  "name": "Orange 4",
+                  "costs": {
+                    "Gen 1 vehicle purple fragment": 125
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Damage",
+                      "value": 4.6,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 20,
+                  "name": "Orange 5",
+                  "costs": {
+                    "Gen 1 vehicle purple fragment": 148
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Damage",
+                      "value": 4.6,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 4.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 21,
+                  "name": "Orange Ascend",
+                  "costs": {
+                    "Gen 1 vehicle purple fragment": 173
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Damage",
+                      "value": 4.6,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 4.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 22,
+                  "name": "Orange+ 2",
+                  "costs": {
+                    "Gen 1 vehicle purple fragment": 201
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Damage",
+                      "value": 5.3,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 4.6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 23,
+                  "name": "Orange+ 3",
+                  "costs": {
+                    "Gen 1 vehicle purple fragment": 231
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Damage",
+                      "value": 5.3,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 5.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 24,
+                  "name": "Orange+ 4",
+                  "costs": {
+                    "Gen 1 vehicle purple fragment": 265
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Damage",
+                      "value": 6,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 5.3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 25,
+                  "name": "Orange+ 5",
+                  "costs": {
+                    "Gen 1 vehicle purple fragment": 302
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Damage",
+                      "value": 6,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 26,
+                  "name": "Orange+ Ascend",
+                  "costs": {
+                    "Gen 1 vehicle purple fragment": 342
+                  },
+                  "bonuses": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gen 1",
+          "items": [
+            {
+              "id": "gen-1-vehicle",
+              "name": "Gen 1 Vehicle",
+              "maxLevel": 30,
+              "levels": [
+                {
+                  "level": 1,
+                  "name": "Green 1",
+                  "costs": {},
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 1.4,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 1.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "name": "Green 2",
+                  "costs": {
+                    "Plasma Cores": 5,
+                    "Gen 1 vehicle fragment": 1
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 1.9,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 1.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "name": "Green 3",
+                  "costs": {
+                    "Plasma Cores": 5,
+                    "Gen 1 vehicle fragment": 2
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 1.9,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 1.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "name": "Green 4",
+                  "costs": {
+                    "Plasma Cores": 10,
+                    "Gen 1 vehicle fragment": 3
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 2.4,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 1.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "name": "Green 5",
+                  "costs": {
+                    "Plasma Cores": 15,
+                    "Gen 1 vehicle fragment": 5
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 2.4,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 2.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "name": "Green Ascend",
+                  "costs": {
+                    "Plasma Cores": 30,
+                    "Gen 1 vehicle fragment": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 2.4,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 2.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "name": "Blue 1",
+                  "costs": {},
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 2.4,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 2.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "name": "Blue 2",
+                  "costs": {
+                    "Plasma Cores": 50,
+                    "Gen 1 vehicle fragment": 15
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 3.2,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 2.4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "name": "Blue 3",
+                  "costs": {
+                    "Plasma Cores": 60,
+                    "Gen 1 vehicle fragment": 20
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 3.2,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 3.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "name": "Blue 4",
+                  "costs": {
+                    "Plasma Cores": 80,
+                    "Gen 1 vehicle fragment": 25
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 4,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 3.2,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 11,
+                  "name": "Blue 5",
+                  "costs": {
+                    "Plasma Cores": 80,
+                    "Gen 1 vehicle fragment": 25
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 4,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 12,
+                  "name": "Blue Ascend",
+                  "costs": {
+                    "Plasma Cores": 90,
+                    "Gen 1 vehicle fragment": 30
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 4,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 13,
+                  "name": "Purple 1",
+                  "costs": {},
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 4,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 14,
+                  "name": "Purple 2",
+                  "costs": {
+                    "Plasma Cores": 130,
+                    "Gen 1 vehicle fragment": 40
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 4.9,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 15,
+                  "name": "Purple 3",
+                  "costs": {
+                    "Plasma Cores": 130,
+                    "Gen 1 vehicle fragment": 40
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 4.9,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 4.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 16,
+                  "name": "Purple 4",
+                  "costs": {
+                    "Plasma Cores": 130,
+                    "Gen 1 vehicle fragment": 40
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 5.8,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 4.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 17,
+                  "name": "Purple 5",
+                  "costs": {
+                    "Plasma Cores": 130,
+                    "Gen 1 vehicle fragment": 40
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 5.8,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 5.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 18,
+                  "name": "Purple Ascend",
+                  "costs": {
+                    "Plasma Cores": 160,
+                    "Gen 1 vehicle fragment": 50
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 5.8,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 5.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 19,
+                  "name": "Orange 1",
+                  "costs": {},
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 5.8,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 5.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 20,
+                  "name": "Orange 2",
+                  "costs": {
+                    "Plasma Cores": 200,
+                    "Gen 1 vehicle fragment": 65
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 6.8,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 5.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 21,
+                  "name": "Orange 3",
+                  "costs": {
+                    "Plasma Cores": 250,
+                    "Gen 1 vehicle fragment": 80
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 6.8,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 6.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 22,
+                  "name": "Orange 4",
+                  "costs": {
+                    "Plasma Cores": 300,
+                    "Gen 1 vehicle fragment": 95
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 7.8,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 6.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 23,
+                  "name": "Orange 5",
+                  "costs": {
+                    "Plasma Cores": 350,
+                    "Gen 1 vehicle fragment": 110
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 7.8,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 7.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 24,
+                  "name": "Orange Ascend",
+                  "costs": {
+                    "Plasma Cores": 400,
+                    "Gen 1 vehicle fragment": 125
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 7.8,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 7.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 25,
+                  "name": "Orange+ 1",
+                  "costs": {},
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 7.8,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 7.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 26,
+                  "name": "Orange+ 2",
+                  "costs": {
+                    "Plasma Cores": 400,
+                    "Gen 1 vehicle fragment": 130
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 8.9,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 7.8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 27,
+                  "name": "Orange+ 3",
+                  "costs": {
+                    "Plasma Cores": 400,
+                    "Gen 1 vehicle fragment": 130
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 8.9,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 8.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 28,
+                  "name": "Orange+ 4",
+                  "costs": {
+                    "Plasma Cores": 400,
+                    "Gen 1 vehicle fragment": 130
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 10,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 8.9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 29,
+                  "name": "Orange+ 5",
+                  "costs": {
+                    "Plasma Cores": 400,
+                    "Gen 1 vehicle fragment": 130
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 10,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 10,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 30,
+                  "name": "Orange+ Ascend",
+                  "costs": {
+                    "Plasma Cores": 400,
+                    "Gen 1 vehicle fragment": 130
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 10,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 10,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gen 2",
+          "items": [
+            {
+              "id": "gen-2-vehicle",
+              "name": "Gen 2 Vehicle",
+              "maxLevel": 60,
+              "levels": [
+                {
+                  "level": 1,
+                  "name": "Green 1",
+                  "costs": {},
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 2.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 2.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 2,
+                  "name": "Green 2",
+                  "costs": {
+                    "Gen 2 vehicle fragment": 1
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 3,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 2.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 3,
+                  "name": "Green 3",
+                  "costs": {
+                    "Plasma Cores": 5,
+                    "Gen 2 vehicle fragment": 2
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 3,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 4,
+                  "name": "Green 4",
+                  "costs": {
+                    "Plasma Cores": 10,
+                    "Gen 2 vehicle fragment": 3
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 3.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 3,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 5,
+                  "name": "Green 5",
+                  "costs": {
+                    "Plasma Cores": 15,
+                    "Gen 2 vehicle fragment": 5
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 3.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 3.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "name": "Green Ascend",
+                  "costs": {
+                    "Plasma Cores": 30,
+                    "Gen 2 vehicle fragment": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 4,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 3.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 7,
+                  "name": "Blue 1",
+                  "costs": {},
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 4,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 3.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 8,
+                  "name": "Blue 2",
+                  "costs": {
+                    "Plasma Cores": 30,
+                    "Gen 2 vehicle fragment": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 4,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 9,
+                  "name": "Blue 3",
+                  "costs": {
+                    "Plasma Cores": 30,
+                    "Gen 2 vehicle fragment": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 4.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 4,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 10,
+                  "name": "Blue 4",
+                  "costs": {
+                    "Plasma Cores": 30,
+                    "Gen 2 vehicle fragment": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 4.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 4.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 11,
+                  "name": "Blue 5",
+                  "costs": {
+                    "Plasma Cores": 30,
+                    "Gen 2 vehicle fragment": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 4.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 12,
+                  "name": "Blue Ascend",
+                  "costs": {
+                    "Plasma Cores": 30,
+                    "Gen 2 vehicle fragment": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 13,
+                  "name": "Blue+ 1",
+                  "costs": {},
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 14,
+                  "name": "Blue+ 2",
+                  "costs": {
+                    "Plasma Cores": 45,
+                    "Gen 2 vehicle fragment": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 5.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 15,
+                  "name": "Blue+ 3",
+                  "costs": {
+                    "Plasma Cores": 45,
+                    "Gen 2 vehicle fragment": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 5.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 5.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 16,
+                  "name": "Blue+ 4",
+                  "costs": {
+                    "Plasma Cores": 45,
+                    "Gen 2 vehicle fragment": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 6,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 5.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 17,
+                  "name": "Blue+ 5",
+                  "costs": {
+                    "Plasma Cores": 45,
+                    "Gen 2 vehicle fragment": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 6,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 18,
+                  "name": "Blue+ Ascend",
+                  "costs": {
+                    "Plasma Cores": 45,
+                    "Gen 2 vehicle fragment": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 6.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 19,
+                  "name": "Blue++ 1",
+                  "costs": {},
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 6.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 6,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 20,
+                  "name": "Blue++ 2",
+                  "costs": {
+                    "Plasma Cores": 70,
+                    "Gen 2 vehicle fragment": 25
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 6.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 6.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 21,
+                  "name": "Blue++ 3",
+                  "costs": {
+                    "Plasma Cores": 70,
+                    "Gen 2 vehicle fragment": 25
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 7,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 6.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 22,
+                  "name": "Blue++ 4",
+                  "costs": {
+                    "Plasma Cores": 70,
+                    "Gen 2 vehicle fragment": 25
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 7,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 23,
+                  "name": "Blue++ 5",
+                  "costs": {
+                    "Plasma Cores": 70,
+                    "Gen 2 vehicle fragment": 25
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 7.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 7,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 24,
+                  "name": "Blue++ Ascend",
+                  "costs": {
+                    "Plasma Cores": 70,
+                    "Gen 2 vehicle fragment": 25
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 7.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 7.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 25,
+                  "name": "Purple 1",
+                  "costs": {},
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 7.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 7.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 26,
+                  "name": "Purple 2",
+                  "costs": {
+                    "Plasma Cores": 100,
+                    "Gen 2 vehicle fragment": 35
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 8,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 7.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 27,
+                  "name": "Purple 3",
+                  "costs": {
+                    "Plasma Cores": 100,
+                    "Gen 2 vehicle fragment": 35
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 8,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 28,
+                  "name": "Purple 4",
+                  "costs": {
+                    "Plasma Cores": 100,
+                    "Gen 2 vehicle fragment": 35
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 8.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 8,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 29,
+                  "name": "Purple 5",
+                  "costs": {
+                    "Plasma Cores": 100,
+                    "Gen 2 vehicle fragment": 35
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 8.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 8.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 30,
+                  "name": "Purple Ascend",
+                  "costs": {
+                    "Plasma Cores": 100,
+                    "Gen 2 vehicle fragment": 35
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 9,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 8.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 31,
+                  "name": "Purple+ 1",
+                  "costs": {},
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 9,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 8.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 32,
+                  "name": "Purple+ 2",
+                  "costs": {
+                    "Plasma Cores": 140,
+                    "Gen 2 vehicle fragment": 50
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 9,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 33,
+                  "name": "Purple+ 3",
+                  "costs": {
+                    "Plasma Cores": 140,
+                    "Gen 2 vehicle fragment": 50
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 9.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 9,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 34,
+                  "name": "Purple+ 4",
+                  "costs": {
+                    "Plasma Cores": 140,
+                    "Gen 2 vehicle fragment": 50
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 9.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 9.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 35,
+                  "name": "Purple+ 5",
+                  "costs": {
+                    "Plasma Cores": 140,
+                    "Gen 2 vehicle fragment": 50
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 10,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 9.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 36,
+                  "name": "Purple+ Ascend",
+                  "costs": {
+                    "Plasma Cores": 140,
+                    "Gen 2 vehicle fragment": 50
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 10,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 10,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 37,
+                  "name": "Purple++ 1",
+                  "costs": {},
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 10,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 10,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 38,
+                  "name": "Purple++ 2",
+                  "costs": {
+                    "Plasma Cores": 200,
+                    "Gen 2 vehicle fragment": 70
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 10.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 10,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 39,
+                  "name": "Purple++ 3",
+                  "costs": {
+                    "Plasma Cores": 200,
+                    "Gen 2 vehicle fragment": 70
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 10.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 10.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 40,
+                  "name": "Purple++ 4",
+                  "costs": {
+                    "Plasma Cores": 200,
+                    "Gen 2 vehicle fragment": 70
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 11,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 10.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 41,
+                  "name": "Purple++ 5",
+                  "costs": {
+                    "Plasma Cores": 200,
+                    "Gen 2 vehicle fragment": 70
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 11,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 11,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 42,
+                  "name": "Purple++ Ascend",
+                  "costs": {
+                    "Plasma Cores": 200,
+                    "Gen 2 vehicle fragment": 70
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 11.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 11,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 43,
+                  "name": "Orange 1",
+                  "costs": {},
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 11.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 11,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 44,
+                  "name": "Orange 2",
+                  "costs": {
+                    "Plasma Cores": 285,
+                    "Gen 2 vehicle fragment": 100
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 11.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 11.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 45,
+                  "name": "Orange 3",
+                  "costs": {
+                    "Plasma Cores": 285,
+                    "Gen 2 vehicle fragment": 100
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 12,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 11.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 46,
+                  "name": "Orange 4",
+                  "costs": {
+                    "Plasma Cores": 285,
+                    "Gen 2 vehicle fragment": 100
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 12,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 12,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 47,
+                  "name": "Orange 5",
+                  "costs": {
+                    "Plasma Cores": 285,
+                    "Gen 2 vehicle fragment": 100
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 12.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 12,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 48,
+                  "name": "Orange Ascend",
+                  "costs": {
+                    "Plasma Cores": 285,
+                    "Gen 2 vehicle fragment": 100
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 12.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 12.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 49,
+                  "name": "Orange+ 1",
+                  "costs": {},
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 12.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 12.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 50,
+                  "name": "Orange+ 2",
+                  "costs": {
+                    "Plasma Cores": 285,
+                    "Gen 2 vehicle fragment": 100
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 13,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 12.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 51,
+                  "name": "Orange+ 3",
+                  "costs": {
+                    "Plasma Cores": 285,
+                    "Gen 2 vehicle fragment": 100
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 13,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 13,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 52,
+                  "name": "Orange+ 4",
+                  "costs": {
+                    "Plasma Cores": 285,
+                    "Gen 2 vehicle fragment": 100
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 13.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 13,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 53,
+                  "name": "Orange+ 5",
+                  "costs": {
+                    "Plasma Cores": 285,
+                    "Gen 2 vehicle fragment": 100
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 13.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 13.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 54,
+                  "name": "Orange+ Ascend",
+                  "costs": {
+                    "Plasma Cores": 285,
+                    "Gen 2 vehicle fragment": 100
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 14,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 13.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 55,
+                  "name": "Orange++ 1",
+                  "costs": {},
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 14,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 13.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 56,
+                  "name": "Orange++ 2",
+                  "costs": {
+                    "Plasma Cores": 285,
+                    "Gen 2 vehicle fragment": 100
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 14,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 14,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 57,
+                  "name": "Orange++ 3",
+                  "costs": {
+                    "Plasma Cores": 285,
+                    "Gen 2 vehicle fragment": 100
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 14.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 14,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 58,
+                  "name": "Orange++ 4",
+                  "costs": {
+                    "Plasma Cores": 285,
+                    "Gen 2 vehicle fragment": 100
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 14.5,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 14.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 59,
+                  "name": "Orange++ 5",
+                  "costs": {
+                    "Plasma Cores": 285,
+                    "Gen 2 vehicle fragment": 100
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 15,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 14.5,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 60,
+                  "name": "Orange++ Ascend",
+                  "costs": {
+                    "Plasma Cores": 285,
+                    "Gen 2 vehicle fragment": 100
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Infantry Base Lethality",
+                      "value": 15,
+                      "unit": "%"
+                    },
+                    {
+                      "type": "Infantry Base Health",
+                      "value": 15,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "aircraft",
       "name": "Aircraft",
       "groups": [
