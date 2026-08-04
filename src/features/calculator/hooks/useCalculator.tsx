@@ -5,6 +5,7 @@ import { calculate } from '../utils/calculator';
 
 const STORAGE_KEY = 'sos-calc-state';
 const BEHEMOTH_ENTRY = '__behemoth__';
+const GROUP_SCOPED_CATEGORIES = new Set(['aircraft', 'spacecraft']);
 
 interface CategoryState {
   selectedGroupName: string | null;
@@ -323,6 +324,14 @@ export function useCalculator() {
   const selectedGroup = selectedCategory?.groups?.find(g => g.name === state.activeGroupName) ?? null;
   const groupItems = selectedGroup?.items ?? [];
 
+  const visibleUpgrades = useMemo(() => {
+    if (isBehemoth) return state.activeUpgrades;
+    if (!GROUP_SCOPED_CATEGORIES.has(state.activeCategoryId ?? '')) return state.activeUpgrades;
+    if (!selectedGroup) return state.activeUpgrades;
+    const ids = new Set(selectedGroup.items.map(i => i.id));
+    return state.activeUpgrades.filter(u => ids.has(u.itemId));
+  }, [isBehemoth, state.activeCategoryId, state.activeUpgrades, selectedGroup]);
+
   const results = useMemo(() => {
     const map = new Map<string, CalculatorResult>();
     const catId = isBehemoth ? behemothCategoryId : state.activeCategoryId;
@@ -331,7 +340,7 @@ export function useCalculator() {
       if (!isCombinedBehemoth) return catId ?? '';
       return behemothItemCategoryMap.get(itemId) ?? catId ?? '';
     };
-    for (const sel of state.activeUpgrades) {
+    for (const sel of visibleUpgrades) {
       if (sel.currentLevel < 1 || sel.targetLevel < 1) continue;
       if (validIds && !validIds.has(sel.itemId)) continue;
       const item = getItemById(lookupCatId(sel.itemId), sel.itemId);
@@ -339,7 +348,7 @@ export function useCalculator() {
       map.set(sel.itemId, calculate(item, sel.currentLevel, sel.targetLevel));
     }
     return map;
-  }, [state.activeUpgrades, state.activeCategoryId, isBehemoth, behemothCategoryId, behemothItems, behemothItemCategoryMap, isCombinedBehemoth]);
+  }, [visibleUpgrades, state.activeCategoryId, isBehemoth, behemothCategoryId, behemothItems, behemothItemCategoryMap, isCombinedBehemoth]);
 
   const combinedCosts = useMemo(() => {
     const totals: Record<string, number> = {};
@@ -377,7 +386,7 @@ export function useCalculator() {
     dispatch: dispatchAction,
     selectedCategoryId: state.activeCategoryId,
     selectedGroupName: state.activeGroupName,
-    selectedUpgrades: state.activeUpgrades,
+    selectedUpgrades: visibleUpgrades,
     categories: state.categories,
     selectedCategory,
     allItems,
@@ -405,5 +414,5 @@ export function useCalculator() {
   }  ), [state, selectedCategory, allItems, selectedGroup, groupItems, results, combinedCosts, hasSavedData,
       hasCurrentData, isBehemoth, isCombinedBehemoth, behemothCategoryId,
       selectCategory, selectGroup, addUpgrade, removeUpgrade, setUpgradeCurrent, setUpgradeTarget, reset,
-      clearCategory, selectBehemothMk, selectBehemothSection, dispatchAction]);
+      clearCategory, selectBehemothMk, selectBehemothSection, dispatchAction, visibleUpgrades]);
 }
