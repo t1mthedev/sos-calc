@@ -2,11 +2,11 @@ import { AppBar, Tabs, Tab, Box, Container, Button } from '@mui/material';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import CalculateIcon from '@mui/icons-material/Calculate';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
-import BuildIcon from '@mui/icons-material/Build';
 import LogoutIcon from '@mui/icons-material/Logout';
-import { useEffect } from 'react';
+import BuildIcon from '@mui/icons-material/Build';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { useDevMode } from '../hooks/useDevMode';
+import { usePageMeta } from '../hooks/usePageMeta';
 import { AppFooter } from '../features/calculator/components/AppFooter';
 
 const NAV_ITEMS = [
@@ -22,9 +22,7 @@ export function Layout() {
   const navigate = useNavigate();
   const isDev = useDevMode();
 
-  useEffect(() => {
-    (window as any).gtag?.('event', 'page_view', { page_path: location.pathname + location.hash });
-  }, [location]);
+  usePageMeta();
 
   const navItems = isDev ? [...NAV_ITEMS, DEV_NAV_ITEM] : NAV_ITEMS;
   const activeTab = navItems.findIndex(item => location.pathname.startsWith(item.path));
