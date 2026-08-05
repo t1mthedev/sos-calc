@@ -1,17 +1,13 @@
-import { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FormControl, InputLabel, Select, MenuItem, Button, Stack, Typography, Divider, IconButton, Tooltip, Chip } from '@mui/material';
-import { useDevMode } from '../../../hooks/useDevMode';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { useCalculator } from '../hooks/useCalculator';
 import { getCategorySlug, toSlug } from '../../../utils/slugs';
 
 export function UpgradeSelector() {
-  const isDev = useDevMode();
-  const inputRef = useRef<HTMLInputElement>(null);
   const navigate = useNavigate();
   const { selectedCategoryId, selectedCategory, selectedGroupName, groupItems, allItems,
-    selectGroup, addUpgrade, selectedUpgrades, reset, hasSavedData, hasCurrentData, clearCategory } = useCalculator();
+    selectGroup, addUpgrade, selectedUpgrades, hasCurrentData, clearCategory } = useCalculator();
 
   const handleGroupChange = (name: string) => {
     selectGroup(name);
@@ -24,53 +20,6 @@ export function UpgradeSelector() {
       clearCategory();
       navigate('/calculator');
     }
-  };
-
-  const handleExport = () => {
-    const ls = localStorage.getItem('sos-calc-state');
-    const data = ls ? JSON.parse(ls) : {};
-    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `sos-calc-backup-${new Date().toISOString().slice(0, 10)}.json`;
-    a.click();
-    URL.revokeObjectURL(url);
-  };
-
-  const handleImport = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = () => {
-      try {
-        const parsed = JSON.parse(reader.result as string);
-        if (typeof parsed !== 'object' || !parsed) throw new Error('invalid');
-        if (parsed.savedStates) {
-          if (typeof parsed.savedStates !== 'object') throw new Error('invalid');
-        } else if (typeof parsed.selectedCategoryId === 'string') {
-          parsed.savedStates = {};
-          if (parsed.selectedCategoryId) {
-            parsed.savedStates[parsed.selectedCategoryId] = {
-              selectedGroupName: parsed.selectedGroupName ?? null,
-              selectedUpgrades: Array.isArray(parsed.selectedUpgrades) ? parsed.selectedUpgrades : [],
-            };
-          }
-          parsed.activeCategoryId = parsed.selectedCategoryId;
-          delete parsed.selectedCategoryId;
-          delete parsed.selectedGroupName;
-          delete parsed.selectedUpgrades;
-        } else {
-          throw new Error('invalid');
-        }
-        localStorage.setItem('sos-calc-state', JSON.stringify(parsed));
-        window.location.reload();
-      } catch {
-        alert('Could not parse backup file');
-      }
-    };
-    reader.readAsText(file);
-    e.target.value = '';
   };
 
   return (
@@ -128,23 +77,7 @@ export function UpgradeSelector() {
             <DeleteIcon fontSize="small" />
           </IconButton>
         </Tooltip>}
-        {isDev && (
-          <>
-            {hasSavedData && <Button variant="outlined" size="small" color="error" onClick={() => {
-              if (window.confirm('This will permanently delete ALL saved upgrades across ALL categories. Are you sure?')) reset();
-            }}>
-              Clear All
-            </Button>}
-            <Button variant="outlined" size="small" onClick={handleExport}>
-              Export to JSON
-            </Button>
-            <Button variant="outlined" size="small" onClick={() => inputRef.current?.click()}>
-              Import from JSON
-            </Button>
-          </>
-        )}
       </Stack>
-      <input type="file" accept=".json" ref={inputRef} onChange={handleImport} style={{ display: 'none' }} />
     </Stack>
   );
 }

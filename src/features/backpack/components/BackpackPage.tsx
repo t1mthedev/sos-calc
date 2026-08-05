@@ -1,17 +1,14 @@
-import { useState, useRef, useEffect, useCallback, useMemo } from 'react';
+import { useState, useEffect, useCallback, useMemo } from 'react';
 import {
   Card, CardContent, Typography, Table, TableBody, TableCell,
   TableContainer, TableHead, TableRow, Paper, Stack, Box,
-  TextField, Button, Alert, Snackbar, Accordion, AccordionSummary, AccordionDetails,
+  TextField, Alert, Snackbar, Accordion, AccordionSummary, AccordionDetails,
 } from '@mui/material';
-import UploadIcon from '@mui/icons-material/Upload';
-import DownloadIcon from '@mui/icons-material/Download';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ImageIcon from '@mui/icons-material/Image';
 import type { BackpackData, Crate } from '../../../types';
 import { MaterialIcon } from '../../../components/MaterialIcon';
 import { getAllMaterialKeys, getCrates, getMaterialsByType } from '../../../services/dataService';
-import { useDevMode } from '../../../hooks/useDevMode';
 
 const BACKPACK_KEY = 'sos-calc-backpack';
 
@@ -50,8 +47,6 @@ function CrateIcon({ crateName, imageName }: { crateName: string; imageName?: st
 export function BackpackPage() {
   const [data, setData] = useState<BackpackData>(loadFromStorage);
   const [snackbar, setSnackbar] = useState<{ message: string; severity: 'success' | 'error' } | null>(null);
-  const fileInputRef = useRef<HTMLInputElement>(null);
-  const isDevMode = useDevMode();
 
   useEffect(() => {
     localStorage.setItem(BACKPACK_KEY, JSON.stringify(data));
@@ -81,43 +76,6 @@ export function BackpackPage() {
   const handleCrateChange = useCallback((id: string, raw: string) => {
     const num = Math.max(0, parseInt(raw, 10) || 0);
     setData(prev => ({ ...prev, crates: { ...prev.crates, [id]: num } }));
-  }, []);
-
-  const handleExport = useCallback(() => {
-    const json = JSON.stringify(data, null, 2);
-    const blob = new Blob([json], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'sos-calc-backpack.json';
-    a.click();
-    URL.revokeObjectURL(url);
-  }, [data]);
-
-  const handleImportClick = useCallback(() => {
-    fileInputRef.current?.click();
-  }, []);
-
-  const handleImport = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-
-    const reader = new FileReader();
-    reader.onload = evt => {
-      try {
-        const parsed = JSON.parse(evt.target?.result as string);
-        if (!parsed || typeof parsed !== 'object' || !('materials' in parsed) || !('crates' in parsed)) {
-          setSnackbar({ message: 'Invalid file — expected { materials: {}, crates: {} }', severity: 'error' });
-          return;
-        }
-        setData({ materials: parsed.materials ?? {}, crates: parsed.crates ?? {} });
-        setSnackbar({ message: 'Backpack imported successfully', severity: 'success' });
-      } catch {
-        setSnackbar({ message: 'Failed to parse JSON file', severity: 'error' });
-      }
-    };
-    reader.readAsText(file);
-    e.target.value = '';
   }, []);
 
   const crateOptionsText = (crate: Crate): string =>
@@ -182,19 +140,6 @@ export function BackpackPage() {
               Track your resource and crate inventory
             </Typography>
           </Box>
-          {isDevMode && (
-            <>
-              <Stack direction="row" spacing={1}>
-                <Button variant="outlined" startIcon={<UploadIcon />} onClick={handleImportClick}>
-                  Import
-                </Button>
-                <Button variant="outlined" startIcon={<DownloadIcon />} onClick={handleExport}>
-                  Export
-                </Button>
-              </Stack>
-              <input ref={fileInputRef} type="file" accept=".json" style={{ display: 'none' }} onChange={handleImport} />
-            </>
-          )}
         </Box>
 
         <Card>
@@ -266,7 +211,6 @@ export function BackpackPage() {
         {!hasAny && (
           <Alert severity="info">
             Your backpack is empty. Enter quantities for materials and crates you own.
-            {isDevMode && ' Use the Import button to load data from a file.'}
           </Alert>
         )}
       </Stack>

@@ -8,6 +8,7 @@ import { AircraftPage } from './features/calculator/components/AircraftPage';
 import { VehiclesPage } from './features/calculator/components/VehiclesPage';
 import { DashboardPage } from './features/dashboard/components/DashboardPage';
 import { BackpackPage } from './features/backpack/components/BackpackPage';
+import { DevToolsPage } from './features/dev/components/DevToolsPage';
 import { Layout } from './components/Layout';
 import { CalculatorProvider } from './features/calculator/hooks/useCalculator';
 
@@ -38,6 +39,7 @@ function App() {
               <Route path="/calculator/:categorySlug" element={<CalculatorPage />} />
               <Route path="/calculator/:categorySlug/:groupSlug" element={<CalculatorPage />} />
               <Route path="/backpack" element={<BackpackPage />} />
+              <Route path="/dev" element={<DevToolsPage />} />
             </Route>
           </Routes>
         </CalculatorProvider>

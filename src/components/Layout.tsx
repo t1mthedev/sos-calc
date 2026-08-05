@@ -2,6 +2,7 @@ import { AppBar, Tabs, Tab, Box, Container, Button } from '@mui/material';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import CalculateIcon from '@mui/icons-material/Calculate';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
+import BuildIcon from '@mui/icons-material/Build';
 import LogoutIcon from '@mui/icons-material/Logout';
 import { useEffect } from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
@@ -14,6 +15,8 @@ const NAV_ITEMS = [
   { label: 'Backpack', path: '/backpack', icon: <WorkHistoryIcon /> },
 ];
 
+const DEV_NAV_ITEM = { label: 'Dev Tools', path: '/dev', icon: <BuildIcon /> };
+
 export function Layout() {
   const location = useLocation();
   const navigate = useNavigate();
@@ -23,7 +26,8 @@ export function Layout() {
     (window as any).gtag?.('event', 'page_view', { page_path: location.pathname + location.hash });
   }, [location]);
 
-  const activeTab = NAV_ITEMS.findIndex(item => location.pathname.startsWith(item.path));
+  const navItems = isDev ? [...NAV_ITEMS, DEV_NAV_ITEM] : NAV_ITEMS;
+  const activeTab = navItems.findIndex(item => location.pathname.startsWith(item.path));
 
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
@@ -34,7 +38,7 @@ export function Layout() {
           textColor="inherit"
           variant="fullWidth"
         >
-          {NAV_ITEMS.map(item => (
+          {navItems.map(item => (
             <Tab
               key={item.path}
               label={item.label}
