@@ -1,23 +1,19 @@
 import { useMemo } from 'react';
-import { Card, CardContent, Typography, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Stack, Chip, Box } from '@mui/material';
+import { Card, CardContent, Typography, Stack, Chip, Box } from '@mui/material';
 import InfoIcon from '@mui/icons-material/Info';
-import type { UpgradeItem, SelectedUpgrade, BackpackData, BehemothMk } from '../../../types';
-import { getCategories, getCrates, getBehemothItemsForMk } from '../../../services/dataService';
+import type { UpgradeItem, SelectedUpgrade, BackpackData } from '../../../types';
+import { getCategories, getCrates, getBehemothItemMkMap } from '../../../services/dataService';
 import { sumCosts } from '../../calculator/utils/calculator';
-import { MaterialIcon } from '../../../components/MaterialIcon';
+import { MaterialsTable, sortMaterialEntries, type MaterialsTableSection, type MaterialsTableSectionMk } from './MaterialsTable';
 
-const MATERIAL_LABELS: Record<string, string> = {
-  manuals: 'Tactical Analysis',
-  boards: 'Optical Storage Boards',
-  fiber: 'Luminous Fiber',
-  fuel: 'Nuclear Fuel Rod',
-  coating: 'Antimatter Coating',
-  alloy: 'Reinforced Alloy',
-  neuronal: 'Neuronal Medium',
-};
+const BEHEMOTH_CATEGORY_IDS = ['behemoth-enhancement', 'behemoth-levels', 'behemoth-skills'];
+const BEHEMOTH_KEYS = new Set(['__behemoth__', ...BEHEMOTH_CATEGORY_IDS]);
 
-const SORT_ORDER = ['manuals', 'boards', 'fiber', 'fuel', 'coating', 'alloy', 'neuronal'];
-const BEHEMOTH_HIDDEN_IDS = new Set(['behemoth-enhancement', 'behemoth-levels', 'behemoth-skills']);
+const BEHEMOTH_GROUP_DEFS: { name: string; mks: string[] }[] = [
+  { name: 'Behemoths', mks: ['MK I', 'MK II'] },
+  { name: 'Companion Behemoths', mks: ['MK 0', 'MK III', 'MK IV', 'MK V'] },
+];
+
 const BACKPACK_KEY = 'sos-calc-backpack';
 
 function loadBackpack(): BackpackData {
@@ -49,50 +45,47 @@ interface SavedCategoryInfo {
   upgradeCount: number;
 }
 
-function loadAggregatedCosts(): { totals: Record<string, number>; categories: SavedCategoryInfo[] } {
+function loadAggregatedCosts(): { totals: Record<string, number>; categories: SavedCategoryInfo[]; behemothSections: MaterialsTableSection[]; nonBehemothUpgradeCount: number; behemothUpgradeCount: number } {
   try {
     const raw = localStorage.getItem('sos-calc-state');
-    if (!raw) return { totals: {}, categories: [] };
+    if (!raw) return { totals: {}, categories: [], behemothSections: [], nonBehemothUpgradeCount: 0, behemothUpgradeCount: 0 };
 
     const parsed = JSON.parse(raw);
     const savedStates = parsed.savedStates as Record<string, { selectedUpgrades: SelectedUpgrade[] }> | undefined;
-    if (!savedStates) return { totals: {}, categories: [] };
+    if (!savedStates) return { totals: {}, categories: [], behemothSections: [], nonBehemothUpgradeCount: 0, behemothUpgradeCount: 0 };
 
     const itemLookup = buildItemLookup();
+    const behemothItemMkMap = getBehemothItemMkMap();
     const categories = getCategories();
     const catNameMap = new Map(categories.map(c => [c.id, c.name]));
-    catNameMap.set('__behemoth__', 'Behemoth');
 
     const totals: Record<string, number> = {};
     const categoriesInfo: SavedCategoryInfo[] = [];
+    let nonBehemothUpgradeCount = 0;
 
-    const hasBehemothEntry = '__behemoth__' in savedStates;
+    const behemothUpgrades = new Map<string, SelectedUpgrade>();
+    for (const id of BEHEMOTH_CATEGORY_IDS) {
+      for (const u of savedStates[id]?.selectedUpgrades ?? []) {
+        behemothUpgrades.set(u.itemId, u);
+      }
+    }
+    for (const u of savedStates['__behemoth__']?.selectedUpgrades ?? []) {
+      behemothUpgrades.set(u.itemId, u);
+    }
 
     for (const [catId, state] of Object.entries(savedStates)) {
-      if (hasBehemothEntry && BEHEMOTH_HIDDEN_IDS.has(catId)) continue;
+      if (BEHEMOTH_KEYS.has(catId)) continue;
 
       const upgrades = state.selectedUpgrades ?? [];
       if (upgrades.length === 0) continue;
 
-      let filteredUpgrades = upgrades;
-      if (catId === '__behemoth__') {
-        const behemothMk = (state as Record<string, unknown>).behemothMk as string | undefined;
-        if (behemothMk) {
-          const validIds = new Set(
-            getBehemothItemsForMk(behemothMk as BehemothMk).flatMap(s => s.items.map(i => i.id))
-          );
-          filteredUpgrades = upgrades.filter(u => validIds.has(u.itemId));
-        }
-      }
-
-      if (filteredUpgrades.length === 0) continue;
-
       categoriesInfo.push({
         categoryName: catNameMap.get(catId) ?? catId,
-        upgradeCount: filteredUpgrades.length,
+        upgradeCount: upgrades.length,
       });
+      nonBehemothUpgradeCount += upgrades.length;
 
-      for (const upgrade of filteredUpgrades) {
+      for (const upgrade of upgrades) {
         const item = itemLookup.get(upgrade.itemId);
         if (!item) continue;
         const costs = sumCosts(item, upgrade.currentLevel, upgrade.targetLevel);
@@ -102,14 +95,64 @@ function loadAggregatedCosts(): { totals: Record<string, number>; categories: Sa
       }
     }
 
-    return { totals, categories: categoriesInfo };
+    const mkTotals = new Map<string, Record<string, number>>();
+    const mkCounts = new Map<string, number>();
+    let behemothUpgradeCount = 0;
+
+    for (const upgrade of behemothUpgrades.values()) {
+      const item = itemLookup.get(upgrade.itemId);
+      if (!item) continue;
+      behemothUpgradeCount++;
+
+      const costs = sumCosts(item, upgrade.currentLevel, upgrade.targetLevel);
+
+      const mk = behemothItemMkMap.get(upgrade.itemId) ?? 'Other';
+      const mkTotal = mkTotals.get(mk) ?? {};
+      for (const [key, val] of Object.entries(costs)) {
+        mkTotal[key] = (mkTotal[key] || 0) + val;
+      }
+      mkTotals.set(mk, mkTotal);
+      mkCounts.set(mk, (mkCounts.get(mk) ?? 0) + 1);
+    }
+
+    if (behemothUpgradeCount > 0) {
+      categoriesInfo.push({ categoryName: 'Behemoth', upgradeCount: behemothUpgradeCount });
+    }
+
+    const behemothSections: MaterialsTableSection[] = [];
+    for (const def of BEHEMOTH_GROUP_DEFS) {
+      const mks: MaterialsTableSectionMk[] = [];
+      for (const mk of def.mks) {
+        const count = mkCounts.get(mk) ?? 0;
+        if (count === 0) continue;
+        mks.push({ mk, upgradeCount: count, entries: sortMaterialEntries(mkTotals.get(mk) ?? {}) });
+      }
+      if (def.name === 'Companion Behemoths') {
+        const count = mkCounts.get('Other') ?? 0;
+        if (count > 0) {
+          mks.push({ mk: 'Other', upgradeCount: count, entries: sortMaterialEntries(mkTotals.get('Other') ?? {}) });
+        }
+      }
+      const upgradeCount = mks.reduce((sum, m) => sum + m.upgradeCount, 0);
+      if (upgradeCount === 0) continue;
+
+      const groupTotals: Record<string, number> = {};
+      for (const m of mks) {
+        for (const [key, val] of m.entries) {
+          groupTotals[key] = (groupTotals[key] || 0) + val;
+        }
+      }
+      behemothSections.push({ name: def.name, upgradeCount, mks, totalEntries: sortMaterialEntries(groupTotals) });
+    }
+
+    return { totals, categories: categoriesInfo, behemothSections, nonBehemothUpgradeCount, behemothUpgradeCount };
   } catch {
-    return { totals: {}, categories: [] };
+    return { totals: {}, categories: [], behemothSections: [], nonBehemothUpgradeCount: 0, behemothUpgradeCount: 0 };
   }
 }
 
 function DashboardPage() {
-  const { totals, categories } = useMemo(() => loadAggregatedCosts(), []);
+  const { totals, categories, behemothSections, nonBehemothUpgradeCount, behemothUpgradeCount } = useMemo(() => loadAggregatedCosts(), []);
 
   const backpack = useMemo(() => loadBackpack(), []);
 
@@ -127,17 +170,10 @@ function DashboardPage() {
     return contributions;
   }, [backpack.crates, crates]);
 
-  const sortedEntries = useMemo(() => {
-    const entries = Object.entries(totals).filter(([_, v]) => v > 0);
-    entries.sort((a, b) => {
-      const ai = SORT_ORDER.indexOf(a[0]);
-      const bi = SORT_ORDER.indexOf(b[0]);
-      return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
-    });
-    return entries;
-  }, [totals]);
+  const sortedEntries = useMemo(() => sortMaterialEntries(totals), [totals]);
 
-  const totalItems = categories.reduce((sum, c) => sum + c.upgradeCount, 0);
+  const totalUpgradeCount = nonBehemothUpgradeCount + behemothUpgradeCount;
+  const hasAnyUpgrades = sortedEntries.length > 0 || behemothSections.length > 0;
 
   const crateEntries = useMemo(() => {
     return crates
@@ -169,72 +205,18 @@ function DashboardPage() {
         </Card>
       )}
 
-      {sortedEntries.length > 0 ? (
+      {hasAnyUpgrades ? (
         <Card>
           <CardContent>
             <Typography variant="subtitle1" gutterBottom sx={{ fontWeight: 600 }}>
-              Total Resources Needed ({totalItems} upgrade{totalItems !== 1 ? 's' : ''})
+              Total Resources Needed ({totalUpgradeCount} upgrade{totalUpgradeCount !== 1 ? 's' : ''})
             </Typography>
-            <TableContainer component={Paper} variant="outlined">
-              <Table size="small">
-                <TableHead>
-                  <TableRow>
-                    <TableCell sx={{ width: 40 }}>Icon</TableCell>
-                    <TableCell>Material</TableCell>
-                    <TableCell align="right">Total</TableCell>
-                    <TableCell align="right">Have</TableCell>
-                    <TableCell align="right">Remaining</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {sortedEntries.map(([key, val]) => {
-                    const have = backpack.materials[key] ?? 0;
-                    const fromCrates = crateContributions[key] ?? 0;
-                    const remaining = Math.max(0, val - have);
-                    const remainingWithCrates = Math.max(0, val - have - fromCrates);
-                    return (
-                      <TableRow key={key}>
-                        <TableCell><MaterialIcon materialKey={key} /></TableCell>
-                        <TableCell>{MATERIAL_LABELS[key] ?? key}</TableCell>
-                        <TableCell align="right">{val.toLocaleString()}</TableCell>
-                        <TableCell align="right">
-                          {have > 0 ? (
-                            <>
-                              <Typography component="span" variant="body2">{have.toLocaleString()}</Typography>
-                              {fromCrates > 0 && (
-                                <Typography variant="caption" color="text.secondary" sx={{ display: 'block', whiteSpace: 'nowrap' }}>
-                                  {have + fromCrates} with crates
-                                </Typography>
-                              )}
-                            </>
-                          ) : fromCrates > 0 ? (
-                            <Typography variant="caption" color="text.secondary" sx={{ whiteSpace: 'nowrap' }}>
-                              {fromCrates} (crates)
-                            </Typography>
-                          ) : (
-                            <Typography variant="body2" color="text.disabled">0</Typography>
-                          )}
-                        </TableCell>
-                        <TableCell align="right">
-                          <Typography
-                            component="span"
-                            variant="body2"
-                            sx={{ fontWeight: 600, color: remaining === 0 ? 'success.main' : 'warning.main' }}
-                          >
-                            {remaining.toLocaleString()}
-                          </Typography>
-                          {fromCrates > 0 && remainingWithCrates < remaining && (
-                            <Typography variant="caption" sx={{ display: 'block', whiteSpace: 'nowrap', color: 'warning.light', fontStyle: 'italic' }}>
-                              {remainingWithCrates.toLocaleString()} with crates
-                            </Typography>
-                          )}
-                        </TableCell>
-                      </TableRow>
-                    );
-                  })}
-                </TableBody>
-              </Table>
-            </TableContainer>
+            <MaterialsTable
+              entries={sortedEntries}
+              sections={behemothSections}
+              backpack={backpack}
+              crateContributions={crateContributions}
+            />
             <Box sx={{ mt: 1.5, display: 'flex', gap: 2, flexWrap: 'wrap' }}>
               <Typography variant="caption" color="text.secondary">
                 <Typography component="span" sx={{ color: 'success.main', fontWeight: 600 }}>●</Typography> Fully covered
@@ -256,7 +238,7 @@ function DashboardPage() {
         </Card>
       )}
 
-      {crateEntries.length > 0 && sortedEntries.length === 0 && (
+      {crateEntries.length > 0 && !hasAnyUpgrades && (
         <Card>
           <CardContent>
             <Typography variant="subtitle1" gutterBottom sx={{ fontWeight: 600 }}>

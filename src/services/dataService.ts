@@ -244,6 +244,10 @@ const MK_SUFFIX_MAP: Record<string, string> = {
   'MK V': 'mk-v',
 };
 
+const MK_BY_SUFFIX = new Map<string, string>(
+  Object.entries(MK_SUFFIX_MAP).map(([mk, suffix]) => [suffix, mk])
+);
+
 export function getBehemothItems(mk: BehemothMk, section: BehemothSection): { categoryId: string; items: UpgradeItem[] } {
   const categoryId = BEHEMOTH_CATEGORY_IDS[section];
   const cat = getCategoryById(categoryId);
@@ -277,4 +281,29 @@ export function getAllBehemothItems(): { categoryId: string; items: UpgradeItem[
     }
     return { categoryId, items: cat.items ?? [] };
   });
+}
+
+export function getBehemothItemMkMap(): Map<string, string> {
+  const map = new Map<string, string>();
+  for (const section of BEHEMOTH_SECTIONS) {
+    const categoryId = BEHEMOTH_CATEGORY_IDS[section];
+    const cat = getCategoryById(categoryId);
+    if (!cat) continue;
+    if (section === 'skills') {
+      for (const group of cat.groups ?? []) {
+        if (!group.mk) continue;
+        for (const item of group.items) map.set(item.id, group.mk);
+      }
+    } else {
+      for (const item of cat.items ?? []) {
+        for (const [suffix, mk] of MK_BY_SUFFIX) {
+          if (item.id.endsWith(suffix)) {
+            map.set(item.id, mk);
+            break;
+          }
+        }
+      }
+    }
+  }
+  return map;
 }

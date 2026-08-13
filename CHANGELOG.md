@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.4.1-beta] - 2026-08-13
+### Changed
+- Dashboard now shows all saved Behemoth upgrades regardless of the last-selected type
+- Dashboard groups Behemoth resources into Behemoths / Companion Behemoths sections with group totals and collapsible per-MK detail
+
 ## [0.4.0-beta] - 2026-08-04
 ### Added
 - Vehicles section with Purple, Gen 1, and Gen 2 vehicle star enhancement ladders on per-generation tile pages
