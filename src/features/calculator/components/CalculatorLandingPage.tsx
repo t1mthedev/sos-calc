@@ -4,7 +4,7 @@ import { getCategorySlug } from '../../../utils/slugs';
 
 const CATEGORIES = [
   {
-    id: '__behemoth__',
+    id: 'behemoth',
     name: 'Behemoth',
     description: 'Upgrade behemoth enhancements, levels, and skill trees',
   },

@@ -10,7 +10,9 @@ import { BonusesTable } from './BonusesTable';
 import { CrateConversion } from './CrateConversion';
 import { BundleConversion } from './BundleConversion';
 import { useCalculator } from '../hooks/useCalculator';
+import { getBehemothCategoryId } from '../../../services/dataService';
 import { normalizeSlug, resolveMk, getMkSlug } from '../../../utils/slugs';
+import type { BehemothSection } from '../../../types';
 
 const SECTION_LABELS: Record<string, string> = {
   enhancement: 'Enhancement',
@@ -25,9 +27,11 @@ export function BehemothPage() {
 
   useEffect(() => {
     const mk = mkSlug ? (resolveMk(mkSlug) ?? null) : null;
-    const section = sectionSlug ? normalizeSlug(sectionSlug) : null;
+    const section = sectionSlug ? (normalizeSlug(sectionSlug) as BehemothSection) : null;
     if (mkSlug && !mk) return;
-    if (selectedCategoryId === '__behemoth__' && behemothMk === mk && behemothSection === section) return;
+    if (mk && section && section !== 'enhancement' && section !== 'levels' && section !== 'skills') return;
+    const expectedCategoryId = mk && section ? getBehemothCategoryId(section) : null;
+    if (selectedCategoryId === expectedCategoryId && behemothMk === mk && behemothSection === section) return;
     dispatch({ type: 'SYNC_BEHEMOTH', mk, section });
   }, [mkSlug, sectionSlug, dispatch, selectedCategoryId, behemothMk, behemothSection]);
 

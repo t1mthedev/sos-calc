@@ -106,13 +106,6 @@ export function getCrates(): Crate[] {
 }
 
 export function getCratesByCategory(categoryId: string): Crate[] {
-  if (categoryId === '__behemoth__') {
-    return loadCrates().filter(c =>
-      c.categoryIds.includes('behemoth-enhancement') ||
-      c.categoryIds.includes('behemoth-levels') ||
-      c.categoryIds.includes('behemoth-skills')
-    );
-  }
   return loadCrates().filter(c => c.categoryIds.includes(categoryId));
 }
 
@@ -136,13 +129,10 @@ export function getBundlesByCrateId(crateId: string): Bundle[] {
 }
 
 export function getBundlesByCategory(categoryId: string): Bundle[] {
-  const behemothIds = categoryId === '__behemoth__'
-    ? ['behemoth-enhancement', 'behemoth-levels', 'behemoth-skills']
-    : [categoryId];
-  const crates = loadCrates().filter(c => c.categoryIds.some(id => behemothIds.includes(id)));
+  const crates = loadCrates().filter(c => c.categoryIds.includes(categoryId));
   const crateIds = new Set(crates.map(c => c.id));
   return loadBundles().filter(b =>
-    behemothIds.includes(b.categoryId ?? '') || b.contents.some(c => c.crateId && crateIds.has(c.crateId))
+    b.categoryId === categoryId || b.contents.some(c => c.crateId && crateIds.has(c.crateId))
   );
 }
 

@@ -38,12 +38,14 @@ The `main()` loop in `convert-excel.js` checks files in this order:
 | Aircraft | `aircraft` | 3 groups | 3 items (AC04 + FA-1 Specter at 140 levels, Carrier at 35 levels) |
 
 ### Behemoth Page
-- The category dropdown shows "Behemoth" as a single entry (virtual category, id `__behemoth__`)
-- Three underlying categories (`behemoth-enhancement`, `behemoth-levels`, `behemoth-skills`) are hidden from the dropdown
-- When "Behemoth" is selected, the left panel shows a card-based flow: **MK type** (MK III / MK IV) → **section** (Enhancement / Levels / Skills) → filtered items list
+- The category dropdown shows "Behemoth" as a single entry (category id `behemoth`, no saved state of its own)
+- Three underlying categories (`behemoth-enhancement`, `behemoth-levels`, `behemoth-skills`) are hidden from the dropdown but hold the actual data
+- When "Behemoth" is selected, the left panel shows a card-based flow: **MK type** (MK I / MK II / MK III / MK IV / MK 0) → **section** (Enhancement / Levels / Skills) → filtered items list
 - `getBehemothItems(mk, section)` in `dataService.ts` returns only matching items
 - `BehemothSelector.tsx` renders the card flow (MK cards, section cards, add buttons)
-- Behemoth MK/section state is stored in `savedStates["__behemoth__"]` in localStorage
+- Selecting MK + section dispatches `SYNC_BEHEMOTH` in `useCalculator.tsx`, which sets `activeCategoryId` to the matching real category (e.g. `behemoth-skills`) — upgrades are stored in that category's `savedStates` entry, NOT in a virtual `__behemoth__` key
+- `HYDRATE` migrates legacy saved data: `savedStates["__behemoth__"]` upgrades are merged into `savedStates["behemoth-skills"]` (deduped by itemId), and the old key is removed
+- Dashboard aggregates behemoth costs from `behemoth-enhancement`, `behemoth-levels`, and `behemoth-skills` only
 
 ### Behemoth Skills
 - 9 skill trees: Laser Storm, Power Core I/II, Missile Interception (MK III); Frost Rend, Cryo Loadout I/II, Howl of Winter, Frozen Fortress (MK IV)

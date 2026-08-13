@@ -32,17 +32,17 @@ const SECTION_OPTIONS: { value: string; label: string; description: string }[] =
 
 export function BehemothSelector() {
   const navigate = useNavigate();
-  const { behemothMk, behemothSection, selectBehemothMk, selectBehemothSection, allItems, addUpgrade, selectedUpgrades } = useCalculator();
+  const { dispatch, behemothMk, behemothSection, allItems, addUpgrade, selectedUpgrades } = useCalculator();
 
   const handleSelectMk = useCallback((value: string) => {
-    selectBehemothMk(value);
+    dispatch({ type: 'SYNC_BEHEMOTH', mk: value, section: null });
     navigate(`/calculator/behemoth/${getMkSlug(value)}`);
-  }, [selectBehemothMk, navigate]);
+  }, [dispatch, navigate]);
 
   const handleSelectSection = useCallback((value: string) => {
-    selectBehemothSection(value);
+    dispatch({ type: 'SYNC_BEHEMOTH', mk: behemothMk, section: value });
     navigate(`/calculator/behemoth/${getMkSlug(behemothMk ?? '')}/${getSectionSlug(value)}`);
-  }, [selectBehemothSection, behemothMk, navigate]);
+  }, [dispatch, behemothMk, navigate]);
 
   return (
     <Stack spacing={2}>

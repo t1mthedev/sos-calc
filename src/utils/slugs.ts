@@ -6,18 +6,12 @@ export function normalizeSlug(slug: string): string {
   return slug.toLowerCase().replace(/-/g, ' ');
 }
 
-const CATEGORY_SLUG_OVERRIDE: Record<string, string> = {
-  '__behemoth__': 'behemoth',
-};
-
 export function getCategorySlug(categoryId: string): string {
-  return CATEGORY_SLUG_OVERRIDE[categoryId] ?? categoryId;
+  return categoryId;
 }
 
 export function resolveCategoryId(slug: string): string | undefined {
-  const normalized = normalizeSlug(slug).replace(/\s+/g, '-');
-  if (normalized === 'behemoth') return '__behemoth__';
-  return normalized;
+  return normalizeSlug(slug).replace(/\s+/g, '-');
 }
 
 export function buildSlugLookup<T extends string>(names: T[]): Map<string, T> {

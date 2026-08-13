@@ -1,10 +1,10 @@
-import { createContext, useContext, useReducer, useMemo, useCallback, useEffect, type ReactNode } from 'react';
+import { createContext, useContext, useReducer, useMemo, useCallback, useEffect, useState, type ReactNode } from 'react';
 import type { Category, UpgradeItem, CalculatorResult, SelectedUpgrade, BehemothMk, BehemothSection } from '../../../types';
-import { getCategories, getItemById, getBehemothCategoryId, getBehemothItems, getBehemothItemsForMk, getAllBehemothItems } from '../../../services/dataService';
+import { getCategories, getItemById, getBehemothCategoryId, getBehemothItems, getBehemothItemsForMk, getAllBehemothItems, getBehemothItemMkMap } from '../../../services/dataService';
 import { calculate } from '../utils/calculator';
 
 const STORAGE_KEY = 'sos-calc-state';
-const BEHEMOTH_ENTRY = '__behemoth__';
+const BEHEMOTH_CATEGORY_IDS = ['behemoth-enhancement', 'behemoth-levels', 'behemoth-skills'];
 const GROUP_SCOPED_CATEGORIES = new Set(['aircraft', 'spacecraft', 'vehicles']);
 
 interface CategoryState {
@@ -32,8 +32,6 @@ type Action =
   | { type: 'HYDRATE'; partial: Partial<CalculatorState> }
   | { type: 'RESET' }
   | { type: 'CLEAR_CATEGORY' }
-  | { type: 'SELECT_BEHEMOTH_MK'; mk: string }
-  | { type: 'SELECT_BEHEMOTH_SECTION'; section: string }
   | { type: 'SYNC_BEHEMOTH'; mk: string | null; section: string | null }
   | { type: 'HYDRATE_FROM_URL'; categoryId: string | null; groupName?: string };
 
@@ -65,14 +63,10 @@ function replaceUpgrade(list: SelectedUpgrade[], itemId: string, patch: Partial<
 
 function saveCurrent(state: CalculatorState): CalculatorState {
   if (!state.activeCategoryId) return state;
-  const entry: CategoryState & { behemothMk?: string | null; behemothSection?: string | null } = {
+  const entry: CategoryState = {
     selectedGroupName: state.activeGroupName,
     selectedUpgrades: state.activeUpgrades,
   };
-  if (state.activeCategoryId === BEHEMOTH_ENTRY) {
-    entry.behemothMk = state.behemothMk;
-    entry.behemothSection = state.behemothSection;
-  }
   return {
     ...state,
     savedStates: {
@@ -87,17 +81,6 @@ function reducer(state: CalculatorState, action: Action): CalculatorState {
     case 'SELECT_CATEGORY': {
       if (action.categoryId === state.activeCategoryId) return state;
       const saved = saveCurrent(state);
-      if (action.categoryId === BEHEMOTH_ENTRY) {
-        const restored = saved.savedStates[BEHEMOTH_ENTRY] as (CategoryState & { behemothMk?: string | null; behemothSection?: string | null }) | undefined;
-        return {
-          ...saved,
-          activeCategoryId: BEHEMOTH_ENTRY,
-          activeGroupName: null,
-          activeUpgrades: restored?.selectedUpgrades ?? [],
-          behemothMk: restored?.behemothMk ?? null,
-          behemothSection: restored?.behemothSection ?? null,
-        };
-      }
       const restored = saved.savedStates[action.categoryId];
       return {
         ...saved,
@@ -112,20 +95,24 @@ function reducer(state: CalculatorState, action: Action): CalculatorState {
       const next = { ...state, activeGroupName: action.groupName };
       return saveCurrent(next);
     }
-    case 'SELECT_BEHEMOTH_MK': {
-      const next = { ...state, behemothMk: action.mk, behemothSection: null };
-      return saveCurrent(next);
-    }
-    case 'SELECT_BEHEMOTH_SECTION': {
-      const next = { ...state, behemothSection: action.section };
-      return saveCurrent(next);
-    }
     case 'SYNC_BEHEMOTH': {
+      if (action.mk && action.section) {
+        const categoryId = getBehemothCategoryId(action.section as BehemothSection);
+        const saved = state.savedStates[categoryId] ?? { selectedGroupName: null, selectedUpgrades: [] };
+        return {
+          ...state,
+          activeCategoryId: categoryId,
+          activeGroupName: null,
+          activeUpgrades: saved.selectedUpgrades ?? [],
+          behemothMk: action.mk,
+          behemothSection: action.section,
+        };
+      }
       return {
         ...state,
-        activeCategoryId: BEHEMOTH_ENTRY,
+        activeCategoryId: null,
         activeGroupName: null,
-        activeUpgrades: state.savedStates[BEHEMOTH_ENTRY]?.selectedUpgrades ?? [],
+        activeUpgrades: [],
         behemothMk: action.mk,
         behemothSection: action.section,
       };
@@ -155,50 +142,69 @@ function reducer(state: CalculatorState, action: Action): CalculatorState {
       const raw = action.partial;
       const rawStates = (raw as any).savedStates as Record<string, CategoryState> | undefined;
       const rawActiveId = (raw as any).activeCategoryId as string | undefined;
-      const rawBehemothMk = (raw as any).behemothMk as string | undefined;
-      const rawBehemothSection = (raw as any).behemothSection as string | undefined;
+
+      const itemCategoryMap = new Map<string, string>();
+      for (const { categoryId, items } of getAllBehemothItems()) {
+        for (const item of items) itemCategoryMap.set(item.id, categoryId);
+      }
 
       const migratedStates: Record<string, CategoryState> = {};
 
+      const mergeBehemothUpgrades = (ups: SelectedUpgrade[]) => {
+        for (const u of ups) {
+          const targetCat = itemCategoryMap.get(u.itemId);
+          if (!targetCat) continue;
+          const existing = [...(migratedStates[targetCat]?.selectedUpgrades ?? [])];
+          const idx = existing.findIndex(e => e.itemId === u.itemId);
+          if (idx >= 0) existing[idx] = u;
+          else existing.push(u);
+          migratedStates[targetCat] = {
+            selectedGroupName: migratedStates[targetCat]?.selectedGroupName ?? null,
+            selectedUpgrades: existing,
+          };
+        }
+      };
+
       if (rawStates && typeof rawStates === 'object') {
+        const legacyBehemothUpgrades: SelectedUpgrade[] = [];
         for (const [catId, cs] of Object.entries(rawStates)) {
           const ups = (cs.selectedUpgrades ?? []).filter((u: SelectedUpgrade) => validIds.has(u.itemId));
-          const migrated: CategoryState & { behemothMk?: string | null; behemothSection?: string | null } = {
+          if (catId === '__behemoth__') {
+            legacyBehemothUpgrades.push(...ups);
+            continue;
+          }
+          migratedStates[catId] = {
             selectedGroupName: cs.selectedGroupName ?? null,
             selectedUpgrades: ups,
           };
-          if (catId === BEHEMOTH_ENTRY) {
-            const r = cs as unknown as Record<string, unknown>;
-            migrated.behemothMk = (r.behemothMk as string) ?? null;
-            migrated.behemothSection = (r.behemothSection as string) ?? null;
-          }
-          migratedStates[catId] = migrated;
         }
+        mergeBehemothUpgrades(legacyBehemothUpgrades);
       } else {
         const old = raw as any;
         const oldCatId = old.selectedCategoryId as string | undefined;
         if (oldCatId && typeof oldCatId === 'string') {
           const ups = (old.selectedUpgrades ?? []).filter((u: SelectedUpgrade) => validIds.has(u.itemId));
-          migratedStates[oldCatId] = {
-            selectedGroupName: old.selectedGroupName ?? null,
-            selectedUpgrades: ups,
-          };
+          if (oldCatId === '__behemoth__') {
+            mergeBehemothUpgrades(ups);
+          } else {
+            migratedStates[oldCatId] = {
+              selectedGroupName: old.selectedGroupName ?? null,
+              selectedUpgrades: ups,
+            };
+          }
         }
       }
 
-      const activeId = rawActiveId ?? (raw as any).selectedCategoryId ?? null;
-      const isBehemothEntry = activeId === BEHEMOTH_ENTRY;
-      const restored = activeId && !isBehemothEntry ? migratedStates[activeId] : undefined;
+      const activeId = rawActiveId === '__behemoth__' ? null : (rawActiveId ?? (raw as any).selectedCategoryId ?? null);
+      const restored = activeId ? migratedStates[activeId] : undefined;
       return {
         ...state,
         savedStates: migratedStates,
         activeCategoryId: activeId,
         activeGroupName: restored?.selectedGroupName ?? null,
-        activeUpgrades: isBehemothEntry
-          ? (migratedStates[BEHEMOTH_ENTRY]?.selectedUpgrades ?? [])
-          : (restored?.selectedUpgrades ?? []),
-        behemothMk: isBehemothEntry ? (rawBehemothMk ?? (migratedStates[BEHEMOTH_ENTRY] as any)?.behemothMk ?? null) : null,
-        behemothSection: isBehemothEntry ? (rawBehemothSection ?? (migratedStates[BEHEMOTH_ENTRY] as any)?.behemothSection ?? null) : null,
+        activeUpgrades: restored?.selectedUpgrades ?? [],
+        behemothMk: null,
+        behemothSection: null,
       };
     }
     case 'RESET': {
@@ -210,8 +216,6 @@ function reducer(state: CalculatorState, action: Action): CalculatorState {
         ...state,
         activeUpgrades: [],
         savedStates: { ...state.savedStates, [state.activeCategoryId]: { selectedGroupName: null, selectedUpgrades: [] } },
-        behemothMk: state.activeCategoryId === BEHEMOTH_ENTRY ? null : state.behemothMk,
-        behemothSection: state.activeCategoryId === BEHEMOTH_ENTRY ? null : state.behemothSection,
       };
     }
     case 'HYDRATE_FROM_URL': {
@@ -237,6 +241,7 @@ const CalculatorContext = createContext<{
 
 export function CalculatorProvider({ children }: { children: ReactNode }) {
   const [state, dispatch] = useReducer(reducer, null, createInitial);
+  const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
     try {
@@ -248,24 +253,21 @@ export function CalculatorProvider({ children }: { children: ReactNode }) {
     } catch {
       localStorage.removeItem(STORAGE_KEY);
     }
+    setHydrated(true);
   }, []);
 
   useEffect(() => {
-    if (!state.activeCategoryId) return;
+    if (!hydrated) return;
     try {
       const payload: Record<string, unknown> = {
         activeCategoryId: state.activeCategoryId,
         savedStates: state.savedStates,
       };
-      if (state.activeCategoryId === BEHEMOTH_ENTRY) {
-        payload.behemothMk = state.behemothMk;
-        payload.behemothSection = state.behemothSection;
-      }
       localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
     } catch {
       /* quota exceeded, ignore */
     }
-  }, [state.activeCategoryId, state.savedStates, state.behemothMk, state.behemothSection]);
+  }, [hydrated, state.activeCategoryId, state.savedStates]);
 
   return (
     <CalculatorContext.Provider value={{ state, dispatch }}>
@@ -283,10 +285,12 @@ export function useCalculator() {
   if (!ctx) throw new Error('useCalculator must be used within CalculatorProvider');
   const { state, dispatch } = ctx;
 
-  const isBehemoth = state.activeCategoryId === BEHEMOTH_ENTRY;
+  const isBehemoth = BEHEMOTH_CATEGORY_IDS.includes(state.activeCategoryId ?? '');
   const selectedCategory = state.categories.find(c => c.id === state.activeCategoryId) ?? null;
 
   const isCombinedBehemoth = isBehemoth && (!state.behemothMk || !state.behemothSection);
+
+  const behemothItemMkMap = useMemo(() => getBehemothItemMkMap(), []);
 
   const behemothItems = useMemo(() => {
     if (!isBehemoth) return [];
@@ -325,12 +329,15 @@ export function useCalculator() {
   const groupItems = selectedGroup?.items ?? [];
 
   const visibleUpgrades = useMemo(() => {
-    if (isBehemoth) return state.activeUpgrades;
+    if (isBehemoth) {
+      if (!state.behemothMk) return [];
+      return state.activeUpgrades.filter(u => (behemothItemMkMap.get(u.itemId) ?? null) === state.behemothMk);
+    }
     if (!GROUP_SCOPED_CATEGORIES.has(state.activeCategoryId ?? '')) return state.activeUpgrades;
     if (!selectedGroup) return state.activeUpgrades;
     const ids = new Set(selectedGroup.items.map(i => i.id));
     return state.activeUpgrades.filter(u => ids.has(u.itemId));
-  }, [isBehemoth, state.activeCategoryId, state.activeUpgrades, selectedGroup]);
+  }, [isBehemoth, state.activeCategoryId, state.activeUpgrades, selectedGroup, state.behemothMk, behemothItemMkMap]);
 
   const results = useMemo(() => {
     const map = new Map<string, CalculatorResult>();
@@ -378,8 +385,6 @@ export function useCalculator() {
     dispatch({ type: 'RESET' });
   }, [dispatch]);
   const clearCategory = useCallback(() => dispatch({ type: 'CLEAR_CATEGORY' }), [dispatch]);
-  const selectBehemothMk = useCallback((mk: string) => dispatch({ type: 'SELECT_BEHEMOTH_MK', mk }), [dispatch]);
-  const selectBehemothSection = useCallback((section: string) => dispatch({ type: 'SELECT_BEHEMOTH_SECTION', section }), [dispatch]);
   const dispatchAction = dispatch;
 
   return useMemo(() => ({
@@ -409,10 +414,8 @@ export function useCalculator() {
     setUpgradeTarget,
     reset,
     clearCategory,
-    selectBehemothMk,
-    selectBehemothSection,
   }  ), [state, selectedCategory, allItems, selectedGroup, groupItems, results, combinedCosts, hasSavedData,
       hasCurrentData, isBehemoth, isCombinedBehemoth, behemothCategoryId,
       selectCategory, selectGroup, addUpgrade, removeUpgrade, setUpgradeCurrent, setUpgradeTarget, reset,
-      clearCategory, selectBehemothMk, selectBehemothSection, dispatchAction, visibleUpgrades]);
+      clearCategory, dispatchAction, visibleUpgrades]);
 }
