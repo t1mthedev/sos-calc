@@ -167,6 +167,7 @@ const MATERIAL_TYPE_DEFS: { id: string; name: string; categoryIds: string[] }[] 
   { id: 'spacecraft', name: 'Spacecraft', categoryIds: ['spacecraft'] },
   { id: 'aircraft', name: 'Aircraft', categoryIds: ['aircraft'] },
   { id: 'vehicles', name: 'Vehicles', categoryIds: ['vehicles'] },
+  { id: 'hero-appointment', name: 'Hero Appointment', categoryIds: ['hero-appointment'] },
 ];
 
 export function getMaterialsByType(): { id: string; name: string; materialKeys: string[] }[] {

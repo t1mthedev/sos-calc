@@ -23,6 +23,9 @@ const COST_KEY_MAP = {
   'power serum': 'Power Serum',
   biobattery: 'Biobattery',
   serum: 'Serum',
+  'command manual': 'Command Manual',
+  'service badge': 'Service Badge',
+  'tactical guide': 'Tactical Guide',
 };
 
 function mapCostKey(shortKey) {
@@ -93,6 +96,64 @@ const VEHICLE_FRAGMENT_RENAME = {
 
 function isVehiclesFile(sheetNames) {
   return sheetNames.some(n => VEHICLE_DEFS.some(v => v.name === n));
+}
+
+const HERO_APPT_POSITIONS = [
+  'Defensive Strategist', 'Flag Bearer', 'Vanguard',
+  'Military Advisor', 'Reservoir Commando', 'Reservoir Tactician',
+];
+
+function isHeroAppointmentFile(sheetNames) {
+  return sheetNames.length === 6 && sheetNames.every(n => HERO_APPT_POSITIONS.includes(n));
+}
+
+const HERO_APPT_SLOT_NAMES = ['Infantry', 'Hunter', 'Rider'];
+
+function parseHeroAppointment(wb) {
+  const groups = [];
+  for (const posName of wb.SheetNames) {
+    const ws = wb.Sheets[posName];
+    const rows = XLSX.utils.sheet_to_json(ws, { defval: '' });
+    if (!rows.length) continue;
+
+    const items = [];
+    for (const slotName of HERO_APPT_SLOT_NAMES) {
+      const levels = [];
+      for (const row of rows) {
+        const lvl = parseInt(row.Level, 10);
+        if (isNaN(lvl)) continue;
+        const costs = {};
+        const cmdManual = parseNum(row['Command Manual']);
+        const svcBadge = parseNum(row['Service Badge']);
+        const tacGuide = parseNum(row['Tactical Guide']);
+        if (cmdManual > 0) costs[mapCostKey('command manual')] = cmdManual;
+        if (svcBadge > 0) costs[mapCostKey('service badge')] = svcBadge;
+        if (tacGuide > 0) costs[mapCostKey('tactical guide')] = tacGuide;
+        const bonuses = [];
+        const bonusType = String(row['Bonus Type'] || '').trim();
+        const bonusVal = parsePct(row['Bonus Value']);
+        if (bonusType && bonusVal) {
+          for (const bt of bonusType.split(',').map(s => s.trim())) {
+            bonuses.push({ type: `${slotName} ${bt}`, value: bonusVal, unit: '%' });
+          }
+        }
+        levels.push({ level: lvl, costs, bonuses });
+      }
+      levels.sort((a, b) => a.level - b.level);
+      if (levels.length) {
+        items.push({
+          id: `${posName}-${slotName}`.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''),
+          name: slotName,
+          maxLevel: levels.length,
+          levels,
+        });
+      }
+    }
+    if (items.length) {
+      groups.push({ name: posName, items });
+    }
+  }
+  return groups;
 }
 
 const FORMATION_GROUPS = [
@@ -545,6 +606,12 @@ function main() {
         id: 'vehicles',
         name: 'Vehicles',
         groups: parseVehicles(wb),
+      });
+    } else if (isHeroAppointmentFile(sheets)) {
+      categories.push({
+        id: 'hero-appointment',
+        name: 'Hero Appointment',
+        groups: parseHeroAppointment(wb),
       });
     } else {
       console.warn(`Unknown file format: ${file}, skipping`);

@@ -28,6 +28,11 @@ const CATEGORIES = [
     name: 'Vehicles',
     description: 'Upgrade vehicles',
   },
+  {
+    id: 'hero-appointment',
+    name: 'Hero Appointment',
+    description: 'Upgrade hero appointment slots for infantry, hunters, and riders',
+  },
 ];
 
 export function CalculatorLandingPage() {
