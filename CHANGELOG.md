@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.0-beta] - 2026-08-25
+### Added
+- Hero Appointment upgrade category
+- new upgrade materials:Command Manual, Field Manual, Tactical Guide, Service Badge, Medal of Command
+
+### Fixed
+- Prevent multi-tab stale write
+
 ## [0.4.1-beta] - 2026-08-13
 ### Changed
 - Dashboard now shows all saved Behemoth upgrades regardless of the last-selected type

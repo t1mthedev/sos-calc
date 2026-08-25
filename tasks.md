@@ -56,7 +56,7 @@
 - [x] Add Vehicles section — Purple, Gen 1 & Gen 2 vehicle star enhancements (https://state-of-survival.fandom.com/wiki/War_Vehicles_-_Infantry)
 - [ ] Add Mechs levels & skills (https://state-of-survival.fandom.com/wiki/Mechs)
 - [ ] Add MK V data
-- [ ] Add Hero Appointment section (https://state-of-survival.fandom.com/wiki/Hero_Appointment)
+- [x] Add Hero Appointment section (https://state-of-survival.fandom.com/wiki/Hero_Appointment) — Outpost (40 lvls) + Reservoir (80 lvls) + Special slots: Behemoth Master, Air Commander, Head Instructor (80 lvls each)
 
 ## Future: Tile-based category pages
 

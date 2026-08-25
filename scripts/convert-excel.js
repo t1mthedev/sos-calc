@@ -26,6 +26,8 @@ const COST_KEY_MAP = {
   'command manual': 'Command Manual',
   'service badge': 'Service Badge',
   'tactical guide': 'Tactical Guide',
+  'field manual': 'Field Manual',
+  'medal of command': 'Medal of Command',
 };
 
 function mapCostKey(shortKey) {
@@ -107,6 +109,12 @@ function isHeroAppointmentFile(sheetNames) {
   return sheetNames.length === 6 && sheetNames.every(n => HERO_APPT_POSITIONS.includes(n));
 }
 
+const HERO_APPT_NEW_POSITIONS = ['Behemoth Master', 'Air Commander', 'Head Instructor'];
+
+function isHeroAppointmentNewFile(sheetNames) {
+  return sheetNames.length === 3 && sheetNames.every(n => HERO_APPT_NEW_POSITIONS.includes(n));
+}
+
 const HERO_APPT_SLOT_NAMES = ['Infantry', 'Hunter', 'Rider'];
 
 function parseHeroAppointment(wb) {
@@ -135,6 +143,55 @@ function parseHeroAppointment(wb) {
         if (bonusType && bonusVal) {
           for (const bt of bonusType.split(',').map(s => s.trim())) {
             bonuses.push({ type: `${slotName} ${bt}`, value: bonusVal, unit: '%' });
+          }
+        }
+        levels.push({ level: lvl, costs, bonuses });
+      }
+      levels.sort((a, b) => a.level - b.level);
+      if (levels.length) {
+        items.push({
+          id: `${posName}-${slotName}`.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''),
+          name: slotName,
+          maxLevel: levels.length,
+          levels,
+        });
+      }
+    }
+    if (items.length) {
+      groups.push({ name: posName, items });
+    }
+  }
+  return groups;
+}
+
+function parseHeroAppointmentNew(wb) {
+  const groups = [];
+  for (const posName of wb.SheetNames) {
+    const ws = wb.Sheets[posName];
+    const rows = XLSX.utils.sheet_to_json(ws, { defval: '' });
+    if (!rows.length) continue;
+
+    const items = [];
+    for (const slotName of HERO_APPT_SLOT_NAMES) {
+      const levels = [];
+      for (const row of rows) {
+        const lvl = parseInt(row.Level, 10);
+        if (isNaN(lvl)) continue;
+        const costs = {};
+        const fieldManual = parseNum(row['Field Manual']);
+        const medalOfCommand = parseNum(row['Medal of Command']);
+        if (fieldManual > 0) costs[mapCostKey('field manual')] = fieldManual;
+        if (medalOfCommand > 0) costs[mapCostKey('medal of command')] = medalOfCommand;
+        const bonuses = [];
+        const bonusType = String(row['Bonus Type'] || '').trim();
+        const bonusValRaw = String(row['Bonus Value'] || '').trim();
+        if (bonusType) {
+          const types = bonusType.split(',').map(s => s.trim());
+          const vals = bonusValRaw.split(',').map(s => parsePct(s));
+          for (let i = 0; i < types.length; i++) {
+            if (vals[i]) {
+              bonuses.push({ type: `${slotName} ${types[i]}`, value: vals[i], unit: '%' });
+            }
           }
         }
         levels.push({ level: lvl, costs, bonuses });
@@ -613,6 +670,18 @@ function main() {
         name: 'Hero Appointment',
         groups: parseHeroAppointment(wb),
       });
+    } else if (isHeroAppointmentNewFile(sheets)) {
+      const groups = parseHeroAppointmentNew(wb);
+      const existing = categories.find(c => c.id === 'hero-appointment');
+      if (existing) {
+        existing.groups.push(...groups);
+      } else {
+        categories.push({
+          id: 'hero-appointment',
+          name: 'Hero Appointment',
+          groups,
+        });
+      }
     } else {
       console.warn(`Unknown file format: ${file}, skipping`);
     }
