@@ -263,11 +263,31 @@ export function CalculatorProvider({ children }: { children: ReactNode }) {
         activeCategoryId: state.activeCategoryId,
         savedStates: state.savedStates,
       };
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
+      const serialized = JSON.stringify(payload);
+      if (localStorage.getItem(STORAGE_KEY) === serialized) return;
+      localStorage.setItem(STORAGE_KEY, serialized);
     } catch {
       /* quota exceeded, ignore */
     }
   }, [hydrated, state.activeCategoryId, state.savedStates]);
+
+  useEffect(() => {
+    const onStorage = (event: StorageEvent) => {
+      if (event.key !== STORAGE_KEY) return;
+      if (event.newValue === null) {
+        dispatch({ type: 'RESET' });
+        return;
+      }
+      try {
+        const parsed = JSON.parse(event.newValue);
+        dispatch({ type: 'HYDRATE', partial: parsed });
+      } catch {
+        /* ignore malformed data from other tabs */
+      }
+    };
+    window.addEventListener('storage', onStorage);
+    return () => window.removeEventListener('storage', onStorage);
+  }, [dispatch]);
 
   return (
     <CalculatorContext.Provider value={{ state, dispatch }}>
