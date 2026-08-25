@@ -34,12 +34,13 @@ export interface MaterialsTableSectionMk {
 export interface MaterialsTableSection {
   name: string;
   upgradeCount: number;
+  entries?: [string, number][];
   mks: MaterialsTableSectionMk[];
   totalEntries: [string, number][];
 }
 
 interface MaterialsTableProps {
-  entries: [string, number][];
+  entries?: [string, number][];
   backpack: BackpackData;
   crateContributions: Record<string, number>;
   showBackpack?: boolean;
@@ -104,7 +105,7 @@ function MaterialRow({
   );
 }
 
-export function MaterialsTable({ entries, backpack, crateContributions, showBackpack = true, sections = [] }: MaterialsTableProps) {
+export function MaterialsTable({ entries = [], backpack, crateContributions, showBackpack = true, sections = [] }: MaterialsTableProps) {
   const colSpan = showBackpack ? 5 : 3;
   return (
     <TableContainer component={Paper} variant="outlined">
@@ -166,6 +167,9 @@ function TableFragment({
             <AccordionDetails sx={{ p: 0 }}>
               <Table size="small">
                 <TableBody>
+                  {section.entries?.map(entry => (
+                    <MaterialRow key={entry[0]} entry={entry} backpack={backpack} crateContributions={crateContributions} />
+                  ))}
                   {section.mks.map(mk => (
                     <FragmentMk
                       key={mk.mk}
