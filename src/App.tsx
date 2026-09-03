@@ -5,7 +5,9 @@ import { CalculatorLandingPage } from './features/calculator/components/Calculat
 import { BehemothPage } from './features/calculator/components/BehemothPage';
 import { SpacecraftPage } from './features/calculator/components/SpacecraftPage';
 import { AircraftPage } from './features/calculator/components/AircraftPage';
+import { VehiclesLandingPage } from './features/calculator/components/VehiclesLandingPage';
 import { VehiclesPage } from './features/calculator/components/VehiclesPage';
+import { MechPage } from './features/calculator/components/MechPage';
 import { DashboardPage } from './features/dashboard/components/DashboardPage';
 import { BackpackPage } from './features/backpack/components/BackpackPage';
 import { DevToolsPage } from './features/dev/components/DevToolsPage';
@@ -34,8 +36,11 @@ function App() {
               <Route path="/calculator/spacecraft/:typeSlug" element={<SpacecraftPage />} />
               <Route path="/calculator/aircraft" element={<AircraftPage />} />
               <Route path="/calculator/aircraft/:typeSlug" element={<AircraftPage />} />
-              <Route path="/calculator/vehicles" element={<VehiclesPage />} />
-              <Route path="/calculator/vehicles/:typeSlug" element={<VehiclesPage />} />
+              <Route path="/calculator/vehicles" element={<VehiclesLandingPage />} />
+              <Route path="/calculator/vehicles/vehicles" element={<VehiclesPage />} />
+              <Route path="/calculator/vehicles/vehicles/:typeSlug" element={<VehiclesPage />} />
+              <Route path="/calculator/vehicles/mechs" element={<MechPage />} />
+              <Route path="/calculator/vehicles/mechs/:sectionSlug" element={<MechPage />} />
               <Route path="/calculator/:categorySlug" element={<CalculatorPage />} />
               <Route path="/calculator/:categorySlug/:groupSlug" element={<CalculatorPage />} />
               <Route path="/backpack" element={<BackpackPage />} />

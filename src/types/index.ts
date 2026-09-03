@@ -86,6 +86,8 @@ export type BehemothMk = 'MK 0' | 'MK I' | 'MK II' | 'MK III' | 'MK IV';
 
 export type BehemothSection = 'enhancement' | 'levels' | 'skills';
 
+export type MechSection = 'enhancement' | 'skills';
+
 export interface BackpackData {
   materials: Record<string, number>;
   crates: Record<string, number>;

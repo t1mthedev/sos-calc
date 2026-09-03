@@ -1,10 +1,11 @@
 import { createContext, useContext, useReducer, useMemo, useCallback, useEffect, useState, type ReactNode } from 'react';
-import type { Category, UpgradeItem, CalculatorResult, SelectedUpgrade, BehemothMk, BehemothSection } from '../../../types';
-import { getCategories, getItemById, getBehemothCategoryId, getBehemothItems, getBehemothItemsForMk, getAllBehemothItems, getBehemothItemMkMap } from '../../../services/dataService';
+import type { Category, UpgradeItem, CalculatorResult, SelectedUpgrade, BehemothMk, BehemothSection, MechSection } from '../../../types';
+import { getCategories, getItemById, getBehemothCategoryId, getBehemothItems, getBehemothItemsForMk, getAllBehemothItems, getBehemothItemMkMap, getMechCategoryId, getMechItems, getAllMechItems } from '../../../services/dataService';
 import { calculate } from '../utils/calculator';
 
 const STORAGE_KEY = 'sos-calc-state';
 const BEHEMOTH_CATEGORY_IDS = ['behemoth-enhancement', 'behemoth-levels', 'behemoth-skills'];
+const MECH_CATEGORY_IDS = ['mech-enhancement', 'mech-skills'];
 const GROUP_SCOPED_CATEGORIES = new Set(['aircraft', 'spacecraft', 'vehicles']);
 
 interface CategoryState {
@@ -20,6 +21,7 @@ export interface CalculatorState {
   savedStates: Record<string, CategoryState>;
   behemothMk: string | null;
   behemothSection: string | null;
+  mechSection: string | null;
 }
 
 type Action =
@@ -33,6 +35,7 @@ type Action =
   | { type: 'RESET' }
   | { type: 'CLEAR_CATEGORY' }
   | { type: 'SYNC_BEHEMOTH'; mk: string | null; section: string | null }
+  | { type: 'SYNC_MECH'; section: string | null }
   | { type: 'HYDRATE_FROM_URL'; categoryId: string | null; groupName?: string };
 
 function flattenCatItems(cat: Category): UpgradeItem[] {
@@ -54,6 +57,7 @@ function createInitial(): CalculatorState {
     savedStates: {},
     behemothMk: null,
     behemothSection: null,
+    mechSection: null,
   };
 }
 
@@ -89,6 +93,7 @@ function reducer(state: CalculatorState, action: Action): CalculatorState {
         activeUpgrades: restored?.selectedUpgrades ?? [],
         behemothMk: null,
         behemothSection: null,
+        mechSection: null,
       };
     }
     case 'SELECT_GROUP': {
@@ -115,6 +120,30 @@ function reducer(state: CalculatorState, action: Action): CalculatorState {
         activeUpgrades: [],
         behemothMk: action.mk,
         behemothSection: action.section,
+      };
+    }
+    case 'SYNC_MECH': {
+      if (action.section) {
+        const categoryId = getMechCategoryId(action.section as MechSection);
+        const saved = state.savedStates[categoryId] ?? { selectedGroupName: null, selectedUpgrades: [] };
+        return {
+          ...state,
+          activeCategoryId: categoryId,
+          activeGroupName: null,
+          activeUpgrades: saved.selectedUpgrades ?? [],
+          behemothMk: null,
+          behemothSection: null,
+          mechSection: action.section,
+        };
+      }
+      return {
+        ...state,
+        activeCategoryId: null,
+        activeGroupName: null,
+        activeUpgrades: [],
+        behemothMk: null,
+        behemothSection: null,
+        mechSection: null,
       };
     }
     case 'ADD_UPGRADE': {
@@ -205,10 +234,11 @@ function reducer(state: CalculatorState, action: Action): CalculatorState {
         activeUpgrades: restored?.selectedUpgrades ?? [],
         behemothMk: null,
         behemothSection: null,
+        mechSection: null,
       };
     }
     case 'RESET': {
-      return { ...state, activeCategoryId: null, activeGroupName: null, activeUpgrades: [], savedStates: {}, behemothMk: null, behemothSection: null };
+      return { ...state, activeCategoryId: null, activeGroupName: null, activeUpgrades: [], savedStates: {}, behemothMk: null, behemothSection: null, mechSection: null };
     }
     case 'CLEAR_CATEGORY': {
       if (!state.activeCategoryId) return state;
@@ -227,6 +257,7 @@ function reducer(state: CalculatorState, action: Action): CalculatorState {
         activeUpgrades: restored?.selectedUpgrades ?? [],
         behemothMk: null,
         behemothSection: null,
+        mechSection: null,
       };
     }
     default:
@@ -306,6 +337,7 @@ export function useCalculator() {
   const { state, dispatch } = ctx;
 
   const isBehemoth = BEHEMOTH_CATEGORY_IDS.includes(state.activeCategoryId ?? '');
+  const isMech = MECH_CATEGORY_IDS.includes(state.activeCategoryId ?? '');
   const selectedCategory = state.categories.find(c => c.id === state.activeCategoryId) ?? null;
 
   const isCombinedBehemoth = isBehemoth && (!state.behemothMk || !state.behemothSection);
@@ -344,7 +376,36 @@ export function useCalculator() {
     return 'behemoth-enhancement';
   }, [isBehemoth, state.behemothMk, state.behemothSection]);
 
-  const allItems = isBehemoth ? behemothItems : (selectedCategory ? flattenCatItems(selectedCategory) : []);
+  const mechCategoryId = useMemo(() => {
+    if (!isMech || !state.mechSection) return null;
+    return getMechCategoryId(state.mechSection as MechSection);
+  }, [isMech, state.mechSection]);
+
+  const mechItems = useMemo(() => {
+    if (!isMech || !state.mechSection) return [];
+    const { items } = getMechItems(state.mechSection as MechSection);
+    return items;
+  }, [isMech, state.mechSection]);
+
+  const mechItemCategoryMap = useMemo(() => {
+    if (!isMech) return new Map<string, string>();
+    const map = new Map<string, string>();
+    for (const { categoryId, items } of getAllMechItems()) {
+      for (const item of items) map.set(item.id, categoryId);
+    }
+    return map;
+  }, [isMech]);
+
+  const isCombinedMech = isMech && !state.mechSection;
+
+  const allItems = useMemo(() => {
+    if (isBehemoth) return behemothItems;
+    if (isMech) {
+      if (!state.mechSection) return getAllMechItems().flatMap(s => s.items);
+      return mechItems;
+    }
+    return selectedCategory ? flattenCatItems(selectedCategory) : [];
+  }, [isBehemoth, isMech, behemothItems, mechItems, state.mechSection, selectedCategory]);
   const selectedGroup = selectedCategory?.groups?.find(g => g.name === state.activeGroupName) ?? null;
   const groupItems = selectedGroup?.items ?? [];
 
@@ -353,19 +414,24 @@ export function useCalculator() {
       if (!state.behemothMk) return [];
       return state.activeUpgrades.filter(u => (behemothItemMkMap.get(u.itemId) ?? null) === state.behemothMk);
     }
+    if (isMech) {
+      if (!state.mechSection) return [];
+      return state.activeUpgrades;
+    }
     if (!GROUP_SCOPED_CATEGORIES.has(state.activeCategoryId ?? '')) return state.activeUpgrades;
     if (!selectedGroup) return state.activeUpgrades;
     const ids = new Set(selectedGroup.items.map(i => i.id));
     return state.activeUpgrades.filter(u => ids.has(u.itemId));
-  }, [isBehemoth, state.activeCategoryId, state.activeUpgrades, selectedGroup, state.behemothMk, behemothItemMkMap]);
+  }, [isBehemoth, isMech, state.activeCategoryId, state.activeUpgrades, selectedGroup, state.behemothMk, behemothItemMkMap, state.mechSection]);
 
   const results = useMemo(() => {
     const map = new Map<string, CalculatorResult>();
-    const catId = isBehemoth ? behemothCategoryId : state.activeCategoryId;
-    const validIds = isBehemoth ? new Set(behemothItems.map(i => i.id)) : null;
+    const catId = isBehemoth ? behemothCategoryId : isMech ? mechCategoryId : state.activeCategoryId;
+    const validIds = isBehemoth ? new Set(behemothItems.map(i => i.id)) : isMech ? new Set(mechItems.map(i => i.id)) : null;
     const lookupCatId = (itemId: string) => {
-      if (!isCombinedBehemoth) return catId ?? '';
-      return behemothItemCategoryMap.get(itemId) ?? catId ?? '';
+      if (isCombinedBehemoth) return behemothItemCategoryMap.get(itemId) ?? catId ?? '';
+      if (isCombinedMech) return mechItemCategoryMap.get(itemId) ?? catId ?? '';
+      return catId ?? '';
     };
     for (const sel of visibleUpgrades) {
       if (sel.currentLevel < 1 || sel.targetLevel < 1) continue;
@@ -375,7 +441,7 @@ export function useCalculator() {
       map.set(sel.itemId, calculate(item, sel.currentLevel, sel.targetLevel));
     }
     return map;
-  }, [visibleUpgrades, state.activeCategoryId, isBehemoth, behemothCategoryId, behemothItems, behemothItemCategoryMap, isCombinedBehemoth]);
+  }, [visibleUpgrades, state.activeCategoryId, isBehemoth, isMech, behemothCategoryId, mechCategoryId, behemothItems, mechItems, behemothItemCategoryMap, mechItemCategoryMap, isCombinedBehemoth, isCombinedMech]);
 
   const combinedCosts = useMemo(() => {
     const totals: Record<string, number> = {};
@@ -426,6 +492,10 @@ export function useCalculator() {
     behemothMk: state.behemothMk,
     behemothSection: state.behemothSection,
     behemothCategoryId,
+    isMech,
+    isCombinedMech,
+    mechSection: state.mechSection,
+    mechCategoryId,
     selectCategory,
     selectGroup,
     addUpgrade,
@@ -436,6 +506,7 @@ export function useCalculator() {
     clearCategory,
   }  ), [state, selectedCategory, allItems, selectedGroup, groupItems, results, combinedCosts, hasSavedData,
       hasCurrentData, isBehemoth, isCombinedBehemoth, behemothCategoryId,
+      isMech, isCombinedMech, mechCategoryId,
       selectCategory, selectGroup, addUpgrade, removeUpgrade, setUpgradeCurrent, setUpgradeTarget, reset,
       clearCategory, dispatchAction, visibleUpgrades]);
 }

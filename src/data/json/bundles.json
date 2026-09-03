@@ -33,6 +33,14 @@
         { "materialKey": "Superconducting Coil", "count": 15 },
         { "materialKey": "Nuclear Fuel Rod", "count": 5 }
       ]
+    },
+    {
+      "id": "mech-growth",
+      "name": "Mech Growth Bundle",
+      "priceDiamonds": 99,
+      "contents": [
+        { "crateId": "mech-custom", "count": 5 }
+      ]
     }
   ]
 }

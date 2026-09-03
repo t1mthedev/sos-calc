@@ -26,7 +26,7 @@ const CATEGORIES = [
   {
     id: 'vehicles',
     name: 'Vehicles',
-    description: 'Upgrade vehicles',
+    description: 'Upgrade vehicles and mechs',
   },
   {
     id: 'hero-appointment',

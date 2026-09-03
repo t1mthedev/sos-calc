@@ -28,6 +28,8 @@ const COST_KEY_MAP = {
   'tactical guide': 'Tactical Guide',
   'field manual': 'Field Manual',
   'medal of command': 'Medal of Command',
+  'mech fragment': 'Mech Fragment',
+  'firmware module': 'Firmware Module',
 };
 
 function mapCostKey(shortKey) {
@@ -98,6 +100,115 @@ const VEHICLE_FRAGMENT_RENAME = {
 
 function isVehiclesFile(sheetNames) {
   return sheetNames.some(n => VEHICLE_DEFS.some(v => v.name === n));
+}
+
+function isMechEnhancementFile(wb) {
+  const sheetNames = wb.SheetNames;
+  if (sheetNames.length !== 1) return false;
+  const ws = wb.Sheets[sheetNames[0]];
+  const rows = XLSX.utils.sheet_to_json(ws, { header: 1, defval: '' });
+  if (!rows.length) return false;
+  const headers = rows[0].map(h => String(h).toLowerCase());
+  return headers.includes('rarity') && headers.some(h => h.includes('stat1name'));
+}
+
+function isMechSkillsFile(wb) {
+  const sheetNames = wb.SheetNames;
+  if (sheetNames.length !== 1) return false;
+  const ws = wb.Sheets[sheetNames[0]];
+  const rows = XLSX.utils.sheet_to_json(ws, { header: 1, defval: '' });
+  if (!rows.length) return false;
+  const headers = rows[0].map(h => String(h).toLowerCase());
+  return headers.includes('skill') && headers.includes('level');
+}
+
+function parseMechEnhancement(wb) {
+  const ws = wb.Sheets[wb.SheetNames[0]];
+  const rows = XLSX.utils.sheet_to_json(ws, { defval: '' });
+  if (!rows.length) return [];
+
+  const levels = [];
+  for (const row of rows) {
+    const rarity = String(row.Rarity || '').trim();
+    const stars = parseInt(row.Stars, 10);
+    if (!rarity || isNaN(stars)) continue;
+
+    const bonuses = [];
+    const stat1Name = String(row.Stat1Name || '').trim();
+    const stat1 = parsePct(row.Stat1);
+    const stat2Name = String(row.Stat2Name || '').trim();
+    const stat2 = parsePct(row.Stat2);
+    if (stat1Name && stat1) bonuses.push({ type: stat1Name, value: stat1, unit: '%' });
+    if (stat2Name && stat2) bonuses.push({ type: stat2Name, value: stat2, unit: '%' });
+
+    const costs = {};
+    const cost1Name = String(row.Cost1Name || '').trim();
+    const cost1 = parseNum(row.Cost1);
+    if (cost1Name && cost1 > 0) costs[mapCostKey(cost1Name)] = cost1;
+
+    levels.push({
+      level: levels.length + 1,
+      name: `${rarity} ${'★'.repeat(stars)}`.trim(),
+      costs,
+      bonuses,
+    });
+  }
+
+  if (!levels.length) return [];
+  return [{
+    id: 'mech',
+    name: 'Mech',
+    maxLevel: levels.length,
+    levels,
+  }];
+}
+
+function parseMechSkills(wb) {
+  const ws = wb.Sheets[wb.SheetNames[0]];
+  const rows = XLSX.utils.sheet_to_json(ws, { defval: '' });
+  if (!rows.length) return [];
+
+  const skillMap = {};
+  for (const row of rows) {
+    const skill = String(row.Skill || '').trim();
+    const levelStr = String(row.Level || '').trim();
+    if (!skill || !levelStr) continue;
+    if (!skillMap[skill]) skillMap[skill] = [];
+
+    const bonuses = [];
+    const stat1Name = String(row.Stat1Name || '').trim();
+    const stat1 = parseNum(row.Stat1);
+    const stat2Name = String(row.Stat2Name || '').trim();
+    const stat2 = parseNum(row.Stat2);
+    if (stat1Name && stat1) bonuses.push({ type: stat1Name, value: stat1, unit: '' });
+    if (stat2Name && stat2) bonuses.push({ type: stat2Name, value: stat2, unit: '' });
+
+    const costs = {};
+    const cost1Name = String(row.Cost1Name || '').trim();
+    const cost1 = parseNum(row.Cost1);
+    if (cost1Name && cost1 > 0) costs[mapCostKey(cost1Name)] = cost1;
+
+    skillMap[skill].push({
+      level: skillMap[skill].length + 1,
+      name: levelStr,
+      costs,
+      bonuses,
+    });
+  }
+
+  const groups = [];
+  for (const [skillName, skillLevels] of Object.entries(skillMap)) {
+    groups.push({
+      name: skillName,
+      items: [{
+        id: skillName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''),
+        name: skillName,
+        maxLevel: skillLevels.length,
+        levels: skillLevels,
+      }],
+    });
+  }
+  return groups;
 }
 
 const HERO_APPT_POSITIONS = [
@@ -663,6 +774,18 @@ function main() {
         id: 'vehicles',
         name: 'Vehicles',
         groups: parseVehicles(wb),
+      });
+    } else if (isMechEnhancementFile(wb)) {
+      categories.push({
+        id: 'mech-enhancement',
+        name: 'Mech Enhancement',
+        items: parseMechEnhancement(wb),
+      });
+    } else if (isMechSkillsFile(wb)) {
+      categories.push({
+        id: 'mech-skills',
+        name: 'Mech Skills',
+        groups: parseMechSkills(wb),
       });
     } else if (isHeroAppointmentFile(sheets)) {
       categories.push({

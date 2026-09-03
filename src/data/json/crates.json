@@ -124,6 +124,15 @@
         { "materialKey": "Field Manual", "materialName": "Field Manual", "amount": 50 },
         { "materialKey": "Medal of Command", "materialName": "Medal of Command", "amount": 1 }
       ]
+    },
+    {
+      "id": "mech-custom",
+      "name": "Mech Custom Crate",
+      "categoryIds": ["mech-enhancement", "mech-skills"],
+      "options": [
+        { "materialKey": "Mech Fragment", "materialName": "Mech Fragment", "amount": 2 },
+        { "materialKey": "Firmware Module", "materialName": "Firmware Module", "amount": 4 }
+      ]
     }
   ]
 }

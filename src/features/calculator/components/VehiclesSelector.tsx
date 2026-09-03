@@ -16,7 +16,7 @@ export function VehiclesSelector() {
   );
 
   const handleSelectGroup = useCallback((label: string) => {
-    navigate(`/calculator/vehicles/${toSlug(label)}`);
+    navigate(`/calculator/vehicles/vehicles/${toSlug(label)}`);
   }, [navigate]);
 
   if (!selectedGroup) {

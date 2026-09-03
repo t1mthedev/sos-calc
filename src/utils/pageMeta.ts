@@ -8,6 +8,7 @@ const ROUTE_SCREEN_NAMES: Array<{ pattern: RegExp; name: string }> = [
   { pattern: /^\/calculator\/behemoth/, name: 'Behemoth' },
   { pattern: /^\/calculator\/spacecraft/, name: 'Spacecraft' },
   { pattern: /^\/calculator\/aircraft/, name: 'Aircraft' },
+  { pattern: /^\/calculator\/vehicles\/mechs/, name: 'Mechs' },
   { pattern: /^\/calculator\/vehicles/, name: 'Vehicles' },
   { pattern: /^\/calculator\/$/, name: 'Calculator' },
   { pattern: /^\/calculator$/, name: 'Calculator' },
@@ -28,7 +29,10 @@ export function getScreenName(pathname: string): string {
   if (parts[1] === 'behemoth') return 'Behemoth';
   if (parts[1] === 'spacecraft') return 'Spacecraft';
   if (parts[1] === 'aircraft') return 'Aircraft';
-  if (parts[1] === 'vehicles') return 'Vehicles';
+  if (parts[1] === 'vehicles') {
+    if (parts[2] === 'mechs') return 'Mechs';
+    return 'Vehicles';
+  }
 
   const slug = parts[1];
   if (slug) return toTitleCase(normalizeSlug(slug));

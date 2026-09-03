@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import type { GameData, Category, Group, UpgradeItem, UpgradeLevel, Crate, Bundle, BehemothMk, BehemothSection } from '../types';
+import type { GameData, Category, Group, UpgradeItem, UpgradeLevel, Crate, Bundle, BehemothMk, BehemothSection, MechSection } from '../types';
 import gameDataRaw from '../data/json/game-data.json';
 import cratesData from '../data/json/crates.json';
 import bundlesData from '../data/json/bundles.json';
@@ -160,9 +160,11 @@ export function getAllMaterialKeys(): string[] {
 }
 
 const BEHEMOTH_TYPE_IDS = ['behemoth-enhancement', 'behemoth-levels', 'behemoth-skills'];
+const MECH_TYPE_IDS = ['mech-enhancement', 'mech-skills'];
 
 const MATERIAL_TYPE_DEFS: { id: string; name: string; categoryIds: string[] }[] = [
   { id: '__behemoth__', name: 'Behemoth', categoryIds: BEHEMOTH_TYPE_IDS },
+  { id: '__mech__', name: 'Mech', categoryIds: MECH_TYPE_IDS },
   { id: 'formation-system', name: 'Formation System', categoryIds: ['formation-system'] },
   { id: 'spacecraft', name: 'Spacecraft', categoryIds: ['spacecraft'] },
   { id: 'aircraft', name: 'Aircraft', categoryIds: ['aircraft'] },
@@ -295,6 +297,40 @@ export function getBehemothItemMkMap(): Map<string, string> {
         }
       }
     }
+  }
+  return map;
+}
+
+const MECH_CATEGORY_IDS: Record<MechSection, string> = {
+  enhancement: 'mech-enhancement',
+  skills: 'mech-skills',
+};
+
+const MECH_SECTIONS: MechSection[] = ['enhancement', 'skills'];
+
+export function getMechCategoryId(section: MechSection): string {
+  return MECH_CATEGORY_IDS[section];
+}
+
+export function getMechItems(section: MechSection): { categoryId: string; items: UpgradeItem[] } {
+  const categoryId = MECH_CATEGORY_IDS[section];
+  const cat = getCategoryById(categoryId);
+  if (!cat) return { categoryId, items: [] };
+  if (section === 'skills') {
+    return { categoryId, items: (cat.groups ?? []).flatMap(g => g.items) };
+  }
+  return { categoryId, items: cat.items ?? [] };
+}
+
+export function getAllMechItems(): { categoryId: string; items: UpgradeItem[] }[] {
+  return MECH_SECTIONS.map(section => getMechItems(section));
+}
+
+export function getMechItemSectionMap(): Map<string, MechSection> {
+  const map = new Map<string, MechSection>();
+  for (const section of MECH_SECTIONS) {
+    const { items } = getMechItems(section);
+    for (const item of items) map.set(item.id, section);
   }
   return map;
 }
