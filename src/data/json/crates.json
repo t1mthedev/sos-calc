@@ -127,11 +127,11 @@
     },
     {
       "id": "mech-custom",
-      "name": "Mech Custom Crate",
+      "name": "Custom Cockpit Fragment Crate",
       "categoryIds": ["mech-enhancement", "mech-skills"],
       "options": [
-        { "materialKey": "Mech Fragment", "materialName": "Mech Fragment", "amount": 2 },
-        { "materialKey": "Firmware Module", "materialName": "Firmware Module", "amount": 4 }
+        { "materialKey": "Mech Fragment", "materialName": "Mech Fragment", "amount": 1 },
+        { "materialKey": "Firmware Module", "materialName": "Firmware Module", "amount": 1 }
       ]
     }
   ]

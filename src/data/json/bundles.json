@@ -36,10 +36,10 @@
     },
     {
       "id": "mech-growth",
-      "name": "Mech Growth Bundle",
-      "priceDiamonds": 99,
+      "name": "Mech Deals",
+      "priceDiamonds": 299,
       "contents": [
-        { "crateId": "mech-custom", "count": 5 }
+        { "crateId": "mech-custom", "count": 6 }
       ]
     }
   ]

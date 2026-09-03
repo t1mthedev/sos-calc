@@ -142,9 +142,9 @@ function parseMechEnhancement(wb) {
     rarityCounter++;
 
     const bonuses = [];
-    const stat1Name = String(row.Stat1Name || '').trim();
+    const stat1Name = String(row.Stat1Name || '').trim().replace(/^Infantry\s+/, '');
     const stat1 = parsePct(row.Stat1);
-    const stat2Name = String(row.Stat2Name || '').trim();
+    const stat2Name = String(row.Stat2Name || '').trim().replace(/^Infantry\s+/, '');
     const stat2 = parsePct(row.Stat2);
     if (stat1Name && stat1) bonuses.push({ type: stat1Name, value: stat1, unit: '%' });
     if (stat2Name && stat2) bonuses.push({ type: stat2Name, value: stat2, unit: '%' });

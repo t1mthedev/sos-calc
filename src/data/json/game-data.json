@@ -109046,7 +109046,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 1.63,
                   "unit": "%"
                 }
@@ -109060,7 +109060,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 3.26,
                   "unit": "%"
                 }
@@ -109074,7 +109074,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 4.89,
                   "unit": "%"
                 }
@@ -109088,7 +109088,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 6.51,
                   "unit": "%"
                 }
@@ -109102,7 +109102,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 8.14,
                   "unit": "%"
                 }
@@ -109116,7 +109116,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 9.77,
                   "unit": "%"
                 }
@@ -109130,7 +109130,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 11.39,
                   "unit": "%"
                 }
@@ -109144,7 +109144,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 13.02,
                   "unit": "%"
                 }
@@ -109158,7 +109158,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 14.65,
                   "unit": "%"
                 }
@@ -109172,7 +109172,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 16.27,
                   "unit": "%"
                 }
@@ -109186,7 +109186,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 17.9,
                   "unit": "%"
                 }
@@ -109200,7 +109200,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 19.53,
                   "unit": "%"
                 }
@@ -109214,7 +109214,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 21.16,
                   "unit": "%"
                 }
@@ -109228,7 +109228,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 22.78,
                   "unit": "%"
                 }
@@ -109242,7 +109242,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 24.41,
                   "unit": "%"
                 }
@@ -109256,7 +109256,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 26.04,
                   "unit": "%"
                 }
@@ -109270,7 +109270,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 27.66,
                   "unit": "%"
                 }
@@ -109284,7 +109284,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 29.29,
                   "unit": "%"
                 }
@@ -109298,7 +109298,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 30.92,
                   "unit": "%"
                 }
@@ -109312,7 +109312,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 32.54,
                   "unit": "%"
                 }
@@ -109326,7 +109326,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 34.17,
                   "unit": "%"
                 }
@@ -109340,7 +109340,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 35.8,
                   "unit": "%"
                 }
@@ -109354,7 +109354,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 37.43,
                   "unit": "%"
                 }
@@ -109368,7 +109368,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 39.05,
                   "unit": "%"
                 }
@@ -109382,7 +109382,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 40.68,
                   "unit": "%"
                 }
@@ -109396,7 +109396,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 42.31,
                   "unit": "%"
                 }
@@ -109410,7 +109410,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 43.93,
                   "unit": "%"
                 }
@@ -109424,7 +109424,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 45.56,
                   "unit": "%"
                 }
@@ -109438,7 +109438,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 47.19,
                   "unit": "%"
                 }
@@ -109452,7 +109452,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 48.81,
                   "unit": "%"
                 }
@@ -109466,7 +109466,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 50.44,
                   "unit": "%"
                 }
@@ -109480,7 +109480,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 52.07,
                   "unit": "%"
                 }
@@ -109494,7 +109494,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 53.69,
                   "unit": "%"
                 }
@@ -109508,7 +109508,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 55.32,
                   "unit": "%"
                 }
@@ -109522,7 +109522,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 56.95,
                   "unit": "%"
                 }
@@ -109536,7 +109536,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 58.58,
                   "unit": "%"
                 }
@@ -109550,7 +109550,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 60.2,
                   "unit": "%"
                 }
@@ -109564,7 +109564,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 61.83,
                   "unit": "%"
                 }
@@ -109578,7 +109578,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 63.46,
                   "unit": "%"
                 }
@@ -109592,7 +109592,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 65.08,
                   "unit": "%"
                 }
@@ -109606,7 +109606,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 66.71,
                   "unit": "%"
                 }
@@ -109620,7 +109620,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 68.34,
                   "unit": "%"
                 }
@@ -109634,7 +109634,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 69.96,
                   "unit": "%"
                 }
@@ -109648,7 +109648,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 71.59,
                   "unit": "%"
                 }
@@ -109662,7 +109662,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 73.22,
                   "unit": "%"
                 }
@@ -109676,7 +109676,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 74.85,
                   "unit": "%"
                 }
@@ -109690,7 +109690,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 76.47,
                   "unit": "%"
                 }
@@ -109704,7 +109704,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 78.1,
                   "unit": "%"
                 }
@@ -109718,7 +109718,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 79.73,
                   "unit": "%"
                 }
@@ -109732,7 +109732,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 81.35,
                   "unit": "%"
                 }
@@ -109746,7 +109746,7 @@
               },
               "bonuses": [
                 {
-                  "type": "Infantry Lethality and Health",
+                  "type": "Lethality and Health",
                   "value": 82.98,
                   "unit": "%"
                 }

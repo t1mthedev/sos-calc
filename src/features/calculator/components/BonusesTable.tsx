@@ -1,7 +1,9 @@
 import { Card, CardContent, Typography, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
 import { useCalculator } from '../hooks/useCalculator';
 
-export function BonusesTable({ itemId }: { itemId?: string }) {
+export function BonusesTable({ itemId, hideBonuses }: { itemId?: string; hideBonuses?: boolean }) {
+  if (hideBonuses) return null;
+
   const { results } = useCalculator();
 
   const key = itemId ?? Array.from(results.keys())[0];

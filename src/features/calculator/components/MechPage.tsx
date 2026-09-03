@@ -102,7 +102,7 @@ export function MechPage() {
                       </AccordionSummary>
                       <AccordionDetails>
                         <Stack spacing={2}>
-                          <BonusesTable itemId={itemId} />
+                           <BonusesTable itemId={itemId} hideBonuses={mechSection === 'skills'} />
                           <ResourcesTable itemId={itemId} />
                           <UpgradePathTable itemId={itemId} />
                         </Stack>
