@@ -232,9 +232,9 @@ function reducer(state: CalculatorState, action: Action): CalculatorState {
         activeCategoryId: activeId,
         activeGroupName: restored?.selectedGroupName ?? null,
         activeUpgrades: restored?.selectedUpgrades ?? [],
-        behemothMk: null,
-        behemothSection: null,
-        mechSection: null,
+        behemothMk: state.behemothMk,
+        behemothSection: state.behemothSection,
+        mechSection: state.mechSection,
       };
     }
     case 'RESET': {
