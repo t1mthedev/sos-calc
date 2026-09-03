@@ -32,6 +32,7 @@ type Action =
   | { type: 'SET_UPGRADE_CURRENT'; itemId: string; level: number }
   | { type: 'SET_UPGRADE_TARGET'; itemId: string; level: number }
   | { type: 'HYDRATE'; partial: Partial<CalculatorState> }
+  | { type: 'SYNC_STORAGE'; partial: Partial<CalculatorState> }
   | { type: 'RESET' }
   | { type: 'CLEAR_CATEGORY' }
   | { type: 'SYNC_BEHEMOTH'; mk: string | null; section: string | null }
@@ -237,6 +238,23 @@ function reducer(state: CalculatorState, action: Action): CalculatorState {
         mechSection: state.mechSection,
       };
     }
+    case 'SYNC_STORAGE': {
+      const validIds = new Set(allItemsFromCategories(state.categories).map(i => i.id));
+      const rawStates = (action.partial as any)?.savedStates as Record<string, CategoryState> | undefined;
+      if (!rawStates || typeof rawStates !== 'object') return state;
+      const newStates: Record<string, CategoryState> = {};
+      for (const [catId, cs] of Object.entries(rawStates)) {
+        const ups = (cs.selectedUpgrades ?? []).filter((u: SelectedUpgrade) => validIds.has(u.itemId));
+        newStates[catId] = {
+          selectedGroupName: cs.selectedGroupName ?? null,
+          selectedUpgrades: ups,
+        };
+      }
+      return {
+        ...state,
+        savedStates: newStates,
+      };
+    }
     case 'RESET': {
       return { ...state, activeCategoryId: null, activeGroupName: null, activeUpgrades: [], savedStates: {}, behemothMk: null, behemothSection: null, mechSection: null };
     }
@@ -311,7 +329,7 @@ export function CalculatorProvider({ children }: { children: ReactNode }) {
       }
       try {
         const parsed = JSON.parse(event.newValue);
-        dispatch({ type: 'HYDRATE', partial: parsed });
+        dispatch({ type: 'SYNC_STORAGE', partial: parsed });
       } catch {
         /* ignore malformed data from other tabs */
       }
