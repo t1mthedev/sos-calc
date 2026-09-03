@@ -115,6 +115,15 @@
         { "materialKey": "Tactical Analysis", "materialName": "Tactical Analysis", "amount": 1 },
         { "materialKey": "Coordinated Operation", "materialName": "Coordinated Operation", "amount": 2 }
       ]
+    },
+    {
+      "id": "hero-appointment-custom",
+      "name": "Custom Hero Appointment Crate",
+      "categoryIds": ["hero-appointment"],
+      "options": [
+        { "materialKey": "Field Manual", "materialName": "Field Manual", "amount": 50 },
+        { "materialKey": "Medal of Command", "materialName": "Medal of Command", "amount": 1 }
+      ]
     }
   ]
 }
