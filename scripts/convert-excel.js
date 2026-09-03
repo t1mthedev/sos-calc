@@ -128,10 +128,18 @@ function parseMechEnhancement(wb) {
   if (!rows.length) return [];
 
   const levels = [];
+  let lastRarity = '';
+  let rarityCounter = 0;
   for (const row of rows) {
     const rarity = String(row.Rarity || '').trim();
     const stars = parseInt(row.Stars, 10);
     if (!rarity || isNaN(stars)) continue;
+
+    if (rarity !== lastRarity) {
+      lastRarity = rarity;
+      rarityCounter = 0;
+    }
+    rarityCounter++;
 
     const bonuses = [];
     const stat1Name = String(row.Stat1Name || '').trim();
@@ -148,7 +156,7 @@ function parseMechEnhancement(wb) {
 
     levels.push({
       level: levels.length + 1,
-      name: `${rarity} ${'★'.repeat(stars)}`.trim(),
+      name: `${rarity} 1-${stars}`,
       costs,
       bonuses,
     });
