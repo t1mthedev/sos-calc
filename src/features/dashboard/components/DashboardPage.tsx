@@ -4,12 +4,13 @@ import InfoIcon from '@mui/icons-material/Info';
 import type { UpgradeItem, SelectedUpgrade, BackpackData } from '../../../types';
 import { getCategories, getCrates, getBehemothItemMkMap } from '../../../services/dataService';
 import { sumCosts } from '../../calculator/utils/calculator';
-import { MaterialsTable, sortMaterialEntries, type MaterialsTableSection, type MaterialsTableSectionMk } from './MaterialsTable';
+import { MaterialsTable, sortMaterialEntries, type MaterialsTableSection, type MaterialsTableSectionMk, type MaterialsTableSectionGroup } from './MaterialsTable';
 
 const BEHEMOTH_CATEGORY_IDS = ['behemoth-enhancement', 'behemoth-levels', 'behemoth-skills'];
 const BEHEMOTH_KEYS = new Set(['__behemoth__', ...BEHEMOTH_CATEGORY_IDS]);
 const MECH_CATEGORY_IDS = ['mech-enhancement', 'mech-skills'];
 const MECH_KEYS = new Set(['__mech__', ...MECH_CATEGORY_IDS]);
+const VEHICLES_KEYS = new Set(['vehicles']);
 
 const BEHEMOTH_GROUP_DEFS: { name: string; mks: string[] }[] = [
   { name: 'Behemoths', mks: ['MK I', 'MK II'] },
@@ -86,6 +87,7 @@ function loadAggregatedCosts(): { sections: MaterialsTableSection[] } {
       mkCounts.set(mk, (mkCounts.get(mk) ?? 0) + 1);
     }
 
+    const behemothGroups: MaterialsTableSectionGroup[] = [];
     for (const def of BEHEMOTH_GROUP_DEFS) {
       const mks: MaterialsTableSectionMk[] = [];
       for (const mk of def.mks) {
@@ -108,7 +110,29 @@ function loadAggregatedCosts(): { sections: MaterialsTableSection[] } {
           groupTotals[key] = (groupTotals[key] || 0) + val;
         }
       }
-      sections.push({ name: def.name, upgradeCount, entries: [], mks, totalEntries: sortMaterialEntries(groupTotals) });
+      behemothGroups.push({ name: def.name, upgradeCount, mks, totalEntries: sortMaterialEntries(groupTotals) });
+    }
+
+    if (behemothGroups.length > 0) {
+      const behemothUpgradeCount = behemothGroups.reduce((sum, g) => sum + g.upgradeCount, 0);
+      const behemothAllTotals: Record<string, number> = {};
+      for (const g of behemothGroups) {
+        for (const [key, val] of g.totalEntries) {
+          behemothAllTotals[key] = (behemothAllTotals[key] || 0) + val;
+        }
+      }
+      sections.push({ name: 'Behemoth', upgradeCount: behemothUpgradeCount, entries: [], mks: [], totalEntries: sortMaterialEntries(behemothAllTotals), groups: behemothGroups });
+    }
+
+    const VEHICLE_ITEM_SECTIONS: Record<string, string> = {
+      'purple-vehicle': 'Purple',
+      'gen-1-vehicle': 'Gen 1',
+      'gen-2-vehicle': 'Gen 2',
+    };
+
+    const vehicleUpgrades = new Map<string, SelectedUpgrade>();
+    for (const u of savedStates['vehicles']?.selectedUpgrades ?? []) {
+      vehicleUpgrades.set(u.itemId, u);
     }
 
     const mechUpgrades = new Map<string, SelectedUpgrade>();
@@ -121,46 +145,63 @@ function loadAggregatedCosts(): { sections: MaterialsTableSection[] } {
       mechUpgrades.set(u.itemId, u);
     }
 
-    if (mechUpgrades.size > 0) {
-      const mechSectionTotals = new Map<string, Record<string, number>>();
-      const mechSectionCounts = new Map<string, number>();
+    const vehiclesMks: MaterialsTableSectionMk[] = [];
 
-      for (const upgrade of mechUpgrades.values()) {
-        const item = itemLookup.get(upgrade.itemId);
-        if (!item) continue;
+    const vehicleSectionTotals = new Map<string, Record<string, number>>();
+    const vehicleSectionCounts = new Map<string, number>();
+    for (const upgrade of vehicleUpgrades.values()) {
+      const item = itemLookup.get(upgrade.itemId);
+      if (!item) continue;
+      const costs = sumCosts(item, upgrade.currentLevel, upgrade.targetLevel);
+      const section = VEHICLE_ITEM_SECTIONS[upgrade.itemId] ?? 'Other';
+      const sectionTotal = vehicleSectionTotals.get(section) ?? {};
+      for (const [key, val] of Object.entries(costs)) {
+        sectionTotal[key] = (sectionTotal[key] || 0) + val;
+      }
+      vehicleSectionTotals.set(section, sectionTotal);
+      vehicleSectionCounts.set(section, (vehicleSectionCounts.get(section) ?? 0) + 1);
+    }
+    for (const [section, total] of vehicleSectionTotals) {
+      const count = vehicleSectionCounts.get(section) ?? 0;
+      if (count === 0) continue;
+      vehiclesMks.push({ mk: section, upgradeCount: count, entries: sortMaterialEntries(total) });
+    }
 
-        const costs = sumCosts(item, upgrade.currentLevel, upgrade.targetLevel);
+    const mechSectionTotals = new Map<string, Record<string, number>>();
+    const mechSectionCounts = new Map<string, number>();
+    for (const upgrade of mechUpgrades.values()) {
+      const item = itemLookup.get(upgrade.itemId);
+      if (!item) continue;
+      const costs = sumCosts(item, upgrade.currentLevel, upgrade.targetLevel);
+      const section = upgrade.itemId.includes('skill') ? 'Mech Skills' : 'Mech Enhancement';
+      const sectionTotal = mechSectionTotals.get(section) ?? {};
+      for (const [key, val] of Object.entries(costs)) {
+        sectionTotal[key] = (sectionTotal[key] || 0) + val;
+      }
+      mechSectionTotals.set(section, sectionTotal);
+      mechSectionCounts.set(section, (mechSectionCounts.get(section) ?? 0) + 1);
+    }
+    for (const [section, total] of mechSectionTotals) {
+      const count = mechSectionCounts.get(section) ?? 0;
+      if (count === 0) continue;
+      vehiclesMks.push({ mk: section, upgradeCount: count, entries: sortMaterialEntries(total) });
+    }
 
-        const section = upgrade.itemId.includes('skill') ? 'Skills' : 'Enhancement';
-        const sectionTotal = mechSectionTotals.get(section) ?? {};
-        for (const [key, val] of Object.entries(costs)) {
-          sectionTotal[key] = (sectionTotal[key] || 0) + val;
+    if (vehiclesMks.length > 0) {
+      const vehiclesUpgradeCount = vehiclesMks.reduce((sum, m) => sum + m.upgradeCount, 0);
+      const vehiclesGroupTotals: Record<string, number> = {};
+      for (const m of vehiclesMks) {
+        for (const [key, val] of m.entries) {
+          vehiclesGroupTotals[key] = (vehiclesGroupTotals[key] || 0) + val;
         }
-        mechSectionTotals.set(section, sectionTotal);
-        mechSectionCounts.set(section, (mechSectionCounts.get(section) ?? 0) + 1);
       }
-
-      const mechMks: MaterialsTableSectionMk[] = [];
-      for (const [section, total] of mechSectionTotals) {
-        const count = mechSectionCounts.get(section) ?? 0;
-        if (count === 0) continue;
-        mechMks.push({ mk: section, upgradeCount: count, entries: sortMaterialEntries(total) });
-      }
-      const mechUpgradeCount = mechMks.reduce((sum, m) => sum + m.upgradeCount, 0);
-      if (mechUpgradeCount > 0) {
-        const mechGroupTotals: Record<string, number> = {};
-        for (const m of mechMks) {
-          for (const [key, val] of m.entries) {
-            mechGroupTotals[key] = (mechGroupTotals[key] || 0) + val;
-          }
-        }
-        sections.push({ name: 'Mechs', upgradeCount: mechUpgradeCount, entries: [], mks: mechMks, totalEntries: sortMaterialEntries(mechGroupTotals) });
-      }
+      sections.push({ name: 'Vehicles', upgradeCount: vehiclesUpgradeCount, entries: [], mks: vehiclesMks, totalEntries: sortMaterialEntries(vehiclesGroupTotals) });
     }
 
     for (const cat of categories) {
       if (BEHEMOTH_KEYS.has(cat.id)) continue;
       if (MECH_KEYS.has(cat.id)) continue;
+      if (VEHICLES_KEYS.has(cat.id)) continue;
 
       const upgrades = savedStates[cat.id]?.selectedUpgrades ?? [];
       if (upgrades.length === 0) continue;

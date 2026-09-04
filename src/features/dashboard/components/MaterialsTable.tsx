@@ -31,12 +31,20 @@ export interface MaterialsTableSectionMk {
   entries: [string, number][];
 }
 
+export interface MaterialsTableSectionGroup {
+  name: string;
+  upgradeCount: number;
+  mks: MaterialsTableSectionMk[];
+  totalEntries: [string, number][];
+}
+
 export interface MaterialsTableSection {
   name: string;
   upgradeCount: number;
   entries?: [string, number][];
   mks: MaterialsTableSectionMk[];
   totalEntries: [string, number][];
+  groups?: MaterialsTableSectionGroup[];
 }
 
 interface MaterialsTableProps {
@@ -170,7 +178,16 @@ function TableFragment({
                   {section.entries?.map(entry => (
                     <MaterialRow key={entry[0]} entry={entry} backpack={backpack} crateContributions={crateContributions} />
                   ))}
-                  {section.mks.map(mk => (
+                  {section.groups?.map(group => (
+                    <FragmentGroup
+                      key={group.name}
+                      group={group}
+                      colSpan={colSpan}
+                      backpack={backpack}
+                      crateContributions={crateContributions}
+                    />
+                  ))}
+                  {!section.groups && section.mks.map(mk => (
                     <FragmentMk
                       key={mk.mk}
                       mk={mk}
@@ -179,31 +196,31 @@ function TableFragment({
                       crateContributions={crateContributions}
                     />
                   ))}
+                  {section.totalEntries.length > 0 && (
+                    <TableRow>
+                      <TableCell
+                        colSpan={colSpan}
+                        sx={{ fontWeight: 600, color: 'text.secondary' }}
+                      >
+                        Total · {section.name}
+                      </TableCell>
+                    </TableRow>
+                  )}
+                  {section.totalEntries.map(entry => (
+                    <MaterialRow
+                      key={entry[0]}
+                      entry={entry}
+                      backpack={backpack}
+                      crateContributions={crateContributions}
+                      emphasized
+                    />
+                  ))}
                 </TableBody>
               </Table>
             </AccordionDetails>
           </Accordion>
         </TableCell>
       </TableRow>
-      {section.totalEntries.length > 0 && (
-        <TableRow>
-          <TableCell
-            colSpan={colSpan}
-            sx={{ fontWeight: 600, color: 'text.secondary' }}
-          >
-            Total · {section.name}
-          </TableCell>
-        </TableRow>
-      )}
-      {section.totalEntries.map(entry => (
-        <MaterialRow
-          key={entry[0]}
-          entry={entry}
-          backpack={backpack}
-          crateContributions={crateContributions}
-          emphasized
-        />
-      ))}
     </>
   );
 }
@@ -233,5 +250,65 @@ function FragmentMk({
         <MaterialRow key={entry[0]} entry={entry} backpack={backpack} crateContributions={crateContributions} />
       ))}
     </>
+  );
+}
+
+function FragmentGroup({
+  group,
+  colSpan,
+  backpack,
+  crateContributions,
+}: {
+  group: MaterialsTableSectionGroup;
+  colSpan: number;
+  backpack: BackpackData;
+  crateContributions: Record<string, number>;
+}) {
+  return (
+    <TableRow>
+      <TableCell colSpan={colSpan} sx={{ p: 0, borderBottom: 0 }}>
+        <Accordion disableGutters sx={{ boxShadow: 'none', bgcolor: 'transparent' }}>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography sx={{ fontWeight: 600 }}>
+              {group.name} ({group.upgradeCount} upgrade{group.upgradeCount !== 1 ? 's' : ''})
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails sx={{ p: 0 }}>
+            <Table size="small">
+              <TableBody>
+                {group.mks.map(mk => (
+                  <FragmentMk
+                    key={mk.mk}
+                    mk={mk}
+                    colSpan={colSpan}
+                    backpack={backpack}
+                    crateContributions={crateContributions}
+                  />
+                ))}
+                {group.totalEntries.length > 0 && (
+                  <TableRow>
+                    <TableCell
+                      colSpan={colSpan}
+                      sx={{ fontWeight: 600, color: 'text.secondary' }}
+                    >
+                      Total · {group.name}
+                    </TableCell>
+                  </TableRow>
+                )}
+                {group.totalEntries.map(entry => (
+                  <MaterialRow
+                    key={entry[0]}
+                    entry={entry}
+                    backpack={backpack}
+                    crateContributions={crateContributions}
+                    emphasized
+                  />
+                ))}
+              </TableBody>
+            </Table>
+          </AccordionDetails>
+        </Accordion>
+      </TableCell>
+    </TableRow>
   );
 }
