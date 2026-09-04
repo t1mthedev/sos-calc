@@ -57730,42 +57730,6 @@
           ]
         },
         {
-          "name": "Tree 1",
-          "mk": "MK V",
-          "items": [
-            {
-              "id": "tree-1-skill-1",
-              "name": "Skill 1",
-              "maxLevel": 1,
-              "levels": [
-                {
-                  "level": 1,
-                  "costs": {
-                    "Neuronal Medium": 10
-                  },
-                  "bonuses": [],
-                  "benefit": "Placeholder benefit"
-                }
-              ]
-            },
-            {
-              "id": "tree-1-skill-2",
-              "name": "Skill 2",
-              "maxLevel": 1,
-              "levels": [
-                {
-                  "level": 1,
-                  "costs": {
-                    "Neuronal Medium": 15
-                  },
-                  "bonuses": [],
-                  "benefit": "Placeholder benefit"
-                }
-              ]
-            }
-          ]
-        },
-        {
           "name": "Wild Shot",
           "mk": "MK II",
           "items": [
@@ -74840,6 +74804,239 @@
                   },
                   "bonuses": [],
                   "benefit": "Dilutes the intensity of incoming Destructive Ray, reducing the damage of the skill released by enemy Behemoths by 20.00%."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Inferno Salvo",
+          "mk": "MK V",
+          "items": [
+            {
+              "id": "inferno-salvo-inferno-salvo",
+              "name": "Inferno Salvo",
+              "maxLevel": 20,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 5
+                  },
+                  "bonuses": []
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 7
+                  },
+                  "bonuses": []
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 8
+                  },
+                  "bonuses": []
+                },
+                {
+                  "level": 4,
+                  "costs": {
+                    "Neuronal Medium": 9
+                  },
+                  "bonuses": []
+                },
+                {
+                  "level": 5,
+                  "costs": {
+                    "Neuronal Medium": 10
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Inferno Salvo",
+                      "value": 2.06,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 6,
+                  "costs": {
+                    "Neuronal Medium": 12
+                  },
+                  "bonuses": []
+                },
+                {
+                  "level": 7,
+                  "costs": {
+                    "Neuronal Medium": 14
+                  },
+                  "bonuses": []
+                },
+                {
+                  "level": 8,
+                  "costs": {
+                    "Neuronal Medium": 17
+                  },
+                  "bonuses": []
+                },
+                {
+                  "level": 9,
+                  "costs": {
+                    "Neuronal Medium": 20
+                  },
+                  "bonuses": []
+                },
+                {
+                  "level": 10,
+                  "costs": {
+                    "Neuronal Medium": 23
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Inferno Salvo",
+                      "value": 2.06,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 11,
+                  "costs": {
+                    "Neuronal Medium": 27
+                  },
+                  "bonuses": []
+                },
+                {
+                  "level": 12,
+                  "costs": {
+                    "Neuronal Medium": 32
+                  },
+                  "bonuses": []
+                },
+                {
+                  "level": 13,
+                  "costs": {
+                    "Neuronal Medium": 37
+                  },
+                  "bonuses": []
+                },
+                {
+                  "level": 14,
+                  "costs": {
+                    "Neuronal Medium": 44
+                  },
+                  "bonuses": []
+                },
+                {
+                  "level": 15,
+                  "costs": {
+                    "Neuronal Medium": 52
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Inferno Salvo",
+                      "value": 4.12,
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "level": 16,
+                  "costs": {
+                    "Neuronal Medium": 65
+                  },
+                  "bonuses": []
+                },
+                {
+                  "level": 17,
+                  "costs": {
+                    "Neuronal Medium": 69
+                  },
+                  "bonuses": []
+                },
+                {
+                  "level": 18,
+                  "costs": {
+                    "Neuronal Medium": 82
+                  },
+                  "bonuses": []
+                },
+                {
+                  "level": 19,
+                  "costs": {
+                    "Neuronal Medium": 96
+                  },
+                  "bonuses": []
+                },
+                {
+                  "level": 20,
+                  "costs": {
+                    "Neuronal Medium": 110
+                  },
+                  "bonuses": [
+                    {
+                      "type": "Inferno Salvo",
+                      "value": 4.12,
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "inferno-salvo-overheat",
+              "name": "Overheat",
+              "maxLevel": 3,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 44
+                  },
+                  "bonuses": []
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 116
+                  },
+                  "bonuses": []
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 375
+                  },
+                  "bonuses": []
+                }
+              ]
+            },
+            {
+              "id": "inferno-salvo-blaze-pressure",
+              "name": "Blaze Pressure",
+              "maxLevel": 3,
+              "levels": [
+                {
+                  "level": 1,
+                  "costs": {
+                    "Neuronal Medium": 45
+                  },
+                  "bonuses": []
+                },
+                {
+                  "level": 2,
+                  "costs": {
+                    "Neuronal Medium": 118
+                  },
+                  "bonuses": []
+                },
+                {
+                  "level": 3,
+                  "costs": {
+                    "Neuronal Medium": 375
+                  },
+                  "bonuses": []
                 }
               ]
             }
