@@ -756,11 +756,17 @@ function main() {
         groups: parseFormation(wb)
       });
     } else if (isBehemothFile(sheets)) {
-      categories.push({
-        id: 'behemoth-enhancement',
-        name: 'Behemoth Enhancement',
-        items: parseBehemoth(wb)
-      });
+      const items = parseBehemoth(wb);
+      const existing = categories.find(c => c.id === 'behemoth-enhancement');
+      if (existing) {
+        existing.items.push(...items);
+      } else {
+        categories.push({
+          id: 'behemoth-enhancement',
+          name: 'Behemoth Enhancement',
+          items,
+        });
+      }
     } else if (isSpacecraftFile(sheets)) {
       const capsuleItems = parseCapsules(wb);
       if (capsuleItems.length) {

@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-09-03",
+  "lastUpdated": "2026-09-04",
   "categories": [
     {
       "id": "behemoth-enhancement",
@@ -9404,213 +9404,6 @@
           ]
         },
         {
-          "id": "mk-v",
-          "name": "MK V",
-          "maxLevel": 5,
-          "levels": [
-            {
-              "level": 1,
-              "name": "1",
-              "costs": {
-                "MK V Fragment": 15
-              },
-              "bonuses": [
-                {
-                  "type": "Infantry Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Infantry Health",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Rider Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Rider Health",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Hunter Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Hunter Health",
-                  "value": 1,
-                  "unit": "%"
-                }
-              ],
-              "benefit": "Level 1"
-            },
-            {
-              "level": 2,
-              "name": "2",
-              "costs": {
-                "MK V Fragment": 20
-              },
-              "bonuses": [
-                {
-                  "type": "Infantry Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Infantry Health",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Rider Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Rider Health",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Hunter Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Hunter Health",
-                  "value": 1,
-                  "unit": "%"
-                }
-              ],
-              "benefit": "Level 2"
-            },
-            {
-              "level": 3,
-              "name": "3",
-              "costs": {
-                "MK V Fragment": 25
-              },
-              "bonuses": [
-                {
-                  "type": "Infantry Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Infantry Health",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Rider Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Rider Health",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Hunter Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Hunter Health",
-                  "value": 1,
-                  "unit": "%"
-                }
-              ],
-              "benefit": "Level 3"
-            },
-            {
-              "level": 4,
-              "name": "4",
-              "costs": {
-                "MK V Fragment": 30
-              },
-              "bonuses": [
-                {
-                  "type": "Infantry Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Infantry Health",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Rider Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Rider Health",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Hunter Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Hunter Health",
-                  "value": 1,
-                  "unit": "%"
-                }
-              ],
-              "benefit": "Level 4"
-            },
-            {
-              "level": 5,
-              "name": "5",
-              "costs": {
-                "MK V Fragment": 35
-              },
-              "bonuses": [
-                {
-                  "type": "Infantry Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Infantry Health",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Rider Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Rider Health",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Hunter Lethality",
-                  "value": 1,
-                  "unit": "%"
-                },
-                {
-                  "type": "Hunter Health",
-                  "value": 1,
-                  "unit": "%"
-                }
-              ],
-              "benefit": "Level 5"
-            }
-          ]
-        },
-        {
           "id": "mk-0",
           "name": "MK 0",
           "maxLevel": 65,
@@ -14224,6 +14017,1196 @@
               "bonuses": [],
               "skillsUnlocked": [
                 "Ray Dilution"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mk-v",
+          "name": "MK V",
+          "maxLevel": 131,
+          "levels": [
+            {
+              "level": 1,
+              "name": "Bane 1",
+              "costs": {
+                "MK V Fragment": 0
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Inferno Salvo"
+              ]
+            },
+            {
+              "level": 2,
+              "name": "Bane 2",
+              "costs": {
+                "MK V Fragment": 4
+              },
+              "bonuses": []
+            },
+            {
+              "level": 3,
+              "name": "Bane 3",
+              "costs": {
+                "MK V Fragment": 8
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Overheat"
+              ]
+            },
+            {
+              "level": 4,
+              "name": "Bane 4",
+              "costs": {
+                "MK V Fragment": 9
+              },
+              "bonuses": []
+            },
+            {
+              "level": 5,
+              "name": "Bane 5",
+              "costs": {
+                "MK V Fragment": 9
+              },
+              "bonuses": []
+            },
+            {
+              "level": 6,
+              "name": "Bane 6",
+              "costs": {
+                "MK V Fragment": 9
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Blaze Pressure"
+              ]
+            },
+            {
+              "level": 7,
+              "name": "Bane 7",
+              "costs": {
+                "MK V Fragment": 9
+              },
+              "bonuses": []
+            },
+            {
+              "level": 8,
+              "name": "Bane 8",
+              "costs": {
+                "MK V Fragment": 10
+              },
+              "bonuses": []
+            },
+            {
+              "level": 9,
+              "name": "Bane 9",
+              "costs": {
+                "MK V Fragment": 11
+              },
+              "bonuses": []
+            },
+            {
+              "level": 10,
+              "name": "Bane 10",
+              "costs": {
+                "MK V Fragment": 13
+              },
+              "bonuses": []
+            },
+            {
+              "level": 11,
+              "name": "Bane Ultra-Enhance",
+              "costs": {
+                "MK V Fragment": 22
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Searing Breath"
+              ]
+            },
+            {
+              "level": 12,
+              "name": "Havoc I 1",
+              "costs": {
+                "MK V Fragment": 0
+              },
+              "bonuses": []
+            },
+            {
+              "level": 13,
+              "name": "Havoc I 2",
+              "costs": {
+                "MK V Fragment": 15
+              },
+              "bonuses": []
+            },
+            {
+              "level": 14,
+              "name": "Havoc I 3",
+              "costs": {
+                "MK V Fragment": 15
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Ember Resonance - Infantry"
+              ]
+            },
+            {
+              "level": 15,
+              "name": "Havoc I 4",
+              "costs": {
+                "MK V Fragment": 15
+              },
+              "bonuses": []
+            },
+            {
+              "level": 16,
+              "name": "Havoc I 5",
+              "costs": {
+                "MK V Fragment": 15
+              },
+              "bonuses": []
+            },
+            {
+              "level": 17,
+              "name": "Havoc I 6",
+              "costs": {
+                "MK V Fragment": 15
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Ember Resonance - Rider"
+              ]
+            },
+            {
+              "level": 18,
+              "name": "Havoc I 7",
+              "costs": {
+                "MK V Fragment": 16
+              },
+              "bonuses": []
+            },
+            {
+              "level": 19,
+              "name": "Havoc I 8",
+              "costs": {
+                "MK V Fragment": 16
+              },
+              "bonuses": []
+            },
+            {
+              "level": 20,
+              "name": "Havoc I 9",
+              "costs": {
+                "MK V Fragment": 17
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Ember Resonance - Hunter"
+              ]
+            },
+            {
+              "level": 21,
+              "name": "Havoc I 10",
+              "costs": {
+                "MK V Fragment": 17
+              },
+              "bonuses": []
+            },
+            {
+              "level": 22,
+              "name": "Havoc I Ultra-Enhance",
+              "costs": {
+                "MK V Fragment": 18
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Quickburn"
+              ]
+            },
+            {
+              "level": 23,
+              "name": "Havoc II 1",
+              "costs": {
+                "MK V Fragment": 0
+              },
+              "bonuses": []
+            },
+            {
+              "level": 24,
+              "name": "Havoc II 2",
+              "costs": {
+                "MK V Fragment": 18
+              },
+              "bonuses": []
+            },
+            {
+              "level": 25,
+              "name": "Havoc II 3",
+              "costs": {
+                "MK V Fragment": 18
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Sundering Might"
+              ]
+            },
+            {
+              "level": 26,
+              "name": "Havoc II 4",
+              "costs": {
+                "MK V Fragment": 19
+              },
+              "bonuses": []
+            },
+            {
+              "level": 27,
+              "name": "Havoc II 5",
+              "costs": {
+                "MK V Fragment": 19
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Shock Charge"
+              ]
+            },
+            {
+              "level": 28,
+              "name": "Havoc II 6",
+              "costs": {
+                "MK V Fragment": 19
+              },
+              "bonuses": []
+            },
+            {
+              "level": 29,
+              "name": "Havoc II 7",
+              "costs": {
+                "MK V Fragment": 19
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Piercing Heat"
+              ]
+            },
+            {
+              "level": 30,
+              "name": "Havoc II 8",
+              "costs": {
+                "MK V Fragment": 20
+              },
+              "bonuses": []
+            },
+            {
+              "level": 31,
+              "name": "Havoc II 9",
+              "costs": {
+                "MK V Fragment": 20
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Combat Infusion"
+              ]
+            },
+            {
+              "level": 32,
+              "name": "Havoc II 10",
+              "costs": {
+                "MK V Fragment": 21
+              },
+              "bonuses": []
+            },
+            {
+              "level": 33,
+              "name": "Havoc II Ultra-Enhance",
+              "costs": {
+                "MK V Fragment": 35
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Iron Screen"
+              ]
+            },
+            {
+              "level": 34,
+              "name": "Scourge I 1",
+              "costs": {
+                "MK V Fragment": 0
+              },
+              "bonuses": []
+            },
+            {
+              "level": 35,
+              "name": "Scourge I 2",
+              "costs": {
+                "MK V Fragment": 23
+              },
+              "bonuses": []
+            },
+            {
+              "level": 36,
+              "name": "Scourge I 3",
+              "costs": {
+                "MK V Fragment": 23
+              },
+              "bonuses": []
+            },
+            {
+              "level": 37,
+              "name": "Scourge I 4",
+              "costs": {
+                "MK V Fragment": 24
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Guard Matrix - Infantry"
+              ]
+            },
+            {
+              "level": 38,
+              "name": "Scourge I 5",
+              "costs": {
+                "MK V Fragment": 24
+              },
+              "bonuses": []
+            },
+            {
+              "level": 39,
+              "name": "Scourge I 6",
+              "costs": {
+                "MK V Fragment": 24
+              },
+              "bonuses": []
+            },
+            {
+              "level": 40,
+              "name": "Scourge I 7",
+              "costs": {
+                "MK V Fragment": 25
+              },
+              "bonuses": []
+            },
+            {
+              "level": 41,
+              "name": "Scourge I 8",
+              "costs": {
+                "MK V Fragment": 25
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Guard Matrix - Rider"
+              ]
+            },
+            {
+              "level": 42,
+              "name": "Scourge I 9",
+              "costs": {
+                "MK V Fragment": 26
+              },
+              "bonuses": []
+            },
+            {
+              "level": 43,
+              "name": "Scourge I 10",
+              "costs": {
+                "MK V Fragment": 27
+              },
+              "bonuses": []
+            },
+            {
+              "level": 44,
+              "name": "Scourge I Ultra-Enhance",
+              "costs": {
+                "MK V Fragment": 28
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Guard Matrix - Hunter"
+              ]
+            },
+            {
+              "level": 45,
+              "name": "Scourge II 1",
+              "costs": {
+                "MK V Fragment": 0
+              },
+              "bonuses": []
+            },
+            {
+              "level": 46,
+              "name": "Scourge II 2",
+              "costs": {
+                "MK V Fragment": 28
+              },
+              "bonuses": []
+            },
+            {
+              "level": 47,
+              "name": "Scourge II 3",
+              "costs": {
+                "MK V Fragment": 29
+              },
+              "bonuses": []
+            },
+            {
+              "level": 48,
+              "name": "Scourge II 4",
+              "costs": {
+                "MK V Fragment": 29
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Hardened Response"
+              ]
+            },
+            {
+              "level": 49,
+              "name": "Scourge II 5",
+              "costs": {
+                "MK V Fragment": 29
+              },
+              "bonuses": []
+            },
+            {
+              "level": 50,
+              "name": "Scourge II 6",
+              "costs": {
+                "MK V Fragment": 29
+              },
+              "bonuses": []
+            },
+            {
+              "level": 51,
+              "name": "Scourge II 7",
+              "costs": {
+                "MK V Fragment": 30
+              },
+              "bonuses": []
+            },
+            {
+              "level": 52,
+              "name": "Scourge II 8",
+              "costs": {
+                "MK V Fragment": 30
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Frontline Fortify - Infantry"
+              ]
+            },
+            {
+              "level": 53,
+              "name": "Scourge II 9",
+              "costs": {
+                "MK V Fragment": 31
+              },
+              "bonuses": []
+            },
+            {
+              "level": 54,
+              "name": "Scourge II 10",
+              "costs": {
+                "MK V Fragment": 32
+              },
+              "bonuses": []
+            },
+            {
+              "level": 55,
+              "name": "Scourge II Ultra-Enhance",
+              "costs": {
+                "MK V Fragment": 35
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Frontline Fortify - Rider"
+              ]
+            },
+            {
+              "level": 56,
+              "name": "Scourge III 1",
+              "costs": {
+                "MK V Fragment": 0
+              },
+              "bonuses": []
+            },
+            {
+              "level": 57,
+              "name": "Scourge III 2",
+              "costs": {
+                "MK V Fragment": 37
+              },
+              "bonuses": []
+            },
+            {
+              "level": 58,
+              "name": "Scourge III 3",
+              "costs": {
+                "MK V Fragment": 39
+              },
+              "bonuses": []
+            },
+            {
+              "level": 59,
+              "name": "Scourge III 4",
+              "costs": {
+                "MK V Fragment": 41
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Frontline Fortify - Hunter"
+              ]
+            },
+            {
+              "level": 60,
+              "name": "Scourge III 5",
+              "costs": {
+                "MK V Fragment": 44
+              },
+              "bonuses": []
+            },
+            {
+              "level": 61,
+              "name": "Scourge III 6",
+              "costs": {
+                "MK V Fragment": 48
+              },
+              "bonuses": []
+            },
+            {
+              "level": 62,
+              "name": "Scourge III 7",
+              "costs": {
+                "MK V Fragment": 52
+              },
+              "bonuses": []
+            },
+            {
+              "level": 63,
+              "name": "Scourge III 8",
+              "costs": {
+                "MK V Fragment": 57
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Shared Defense"
+              ]
+            },
+            {
+              "level": 64,
+              "name": "Scourge III 9",
+              "costs": {
+                "MK V Fragment": 63
+              },
+              "bonuses": []
+            },
+            {
+              "level": 65,
+              "name": "Scourge III 10",
+              "costs": {
+                "MK V Fragment": 76
+              },
+              "bonuses": []
+            },
+            {
+              "level": 66,
+              "name": "Scourge III Ultra-Enhance",
+              "costs": {
+                "MK V Fragment": 150
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Tri-Link"
+              ]
+            },
+            {
+              "level": 67,
+              "name": "Cataclysm I 1",
+              "costs": {
+                "MK V Fragment": 0
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Tri-Link"
+              ]
+            },
+            {
+              "level": 68,
+              "name": "Cataclysm I 2",
+              "costs": {
+                "MK V Fragment": 80
+              },
+              "bonuses": []
+            },
+            {
+              "level": 69,
+              "name": "Cataclysm I 3",
+              "costs": {
+                "MK V Fragment": 80
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Resonance Drive - Infantry"
+              ]
+            },
+            {
+              "level": 70,
+              "name": "Cataclysm I 4",
+              "costs": {
+                "MK V Fragment": 81
+              },
+              "bonuses": []
+            },
+            {
+              "level": 71,
+              "name": "Cataclysm I 5",
+              "costs": {
+                "MK V Fragment": 82
+              },
+              "bonuses": []
+            },
+            {
+              "level": 72,
+              "name": "Cataclysm I 6",
+              "costs": {
+                "MK V Fragment": 83
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Resonance Drive - Rider"
+              ]
+            },
+            {
+              "level": 73,
+              "name": "Cataclysm I 7",
+              "costs": {
+                "MK V Fragment": 84
+              },
+              "bonuses": []
+            },
+            {
+              "level": 74,
+              "name": "Cataclysm I 8",
+              "costs": {
+                "MK V Fragment": 85
+              },
+              "bonuses": []
+            },
+            {
+              "level": 75,
+              "name": "Cataclysm I 9",
+              "costs": {
+                "MK V Fragment": 87
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Resonance Drive - Hunter"
+              ]
+            },
+            {
+              "level": 76,
+              "name": "Cataclysm I 10",
+              "costs": {
+                "MK V Fragment": 91
+              },
+              "bonuses": []
+            },
+            {
+              "level": 77,
+              "name": "Cataclysm I Ultra-Enhance",
+              "costs": {
+                "MK V Fragment": 96
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Burn Amplifier"
+              ]
+            },
+            {
+              "level": 78,
+              "name": "Cataclysm II 1",
+              "costs": {
+                "MK V Fragment": 0
+              },
+              "bonuses": []
+            },
+            {
+              "level": 79,
+              "name": "Cataclysm II 2",
+              "costs": {
+                "MK V Fragment": 96
+              },
+              "bonuses": []
+            },
+            {
+              "level": 80,
+              "name": "Cataclysm II 3",
+              "costs": {
+                "MK V Fragment": 97
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Harmonic Barrier"
+              ]
+            },
+            {
+              "level": 81,
+              "name": "Cataclysm II 4",
+              "costs": {
+                "MK V Fragment": 98
+              },
+              "bonuses": []
+            },
+            {
+              "level": 82,
+              "name": "Cataclysm II 5",
+              "costs": {
+                "MK V Fragment": 99
+              },
+              "bonuses": []
+            },
+            {
+              "level": 83,
+              "name": "Cataclysm II 6",
+              "costs": {
+                "MK V Fragment": 100
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Shield Link - Infantry"
+              ]
+            },
+            {
+              "level": 84,
+              "name": "Cataclysm II 7",
+              "costs": {
+                "MK V Fragment": 101
+              },
+              "bonuses": []
+            },
+            {
+              "level": 85,
+              "name": "Cataclysm II 8",
+              "costs": {
+                "MK V Fragment": 103
+              },
+              "bonuses": []
+            },
+            {
+              "level": 86,
+              "name": "Cataclysm II 9",
+              "costs": {
+                "MK V Fragment": 105
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Shield Link - Rider"
+              ]
+            },
+            {
+              "level": 87,
+              "name": "Cataclysm II 10",
+              "costs": {
+                "MK V Fragment": 110
+              },
+              "bonuses": []
+            },
+            {
+              "level": 88,
+              "name": "Cataclysm II Ultra-Enhance",
+              "costs": {
+                "MK V Fragment": 120
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Shield Link - Hunter"
+              ]
+            },
+            {
+              "level": 89,
+              "name": "Cataclysm III 1",
+              "costs": {
+                "MK V Fragment": 0
+              },
+              "bonuses": []
+            },
+            {
+              "level": 90,
+              "name": "Cataclysm III 2",
+              "costs": {
+                "MK V Fragment": 125
+              },
+              "bonuses": []
+            },
+            {
+              "level": 91,
+              "name": "Cataclysm III 3",
+              "costs": {
+                "MK V Fragment": 131
+              },
+              "bonuses": []
+            },
+            {
+              "level": 92,
+              "name": "Cataclysm III 4",
+              "costs": {
+                "MK V Fragment": 139
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Firewall"
+              ]
+            },
+            {
+              "level": 93,
+              "name": "Cataclysm III 5",
+              "costs": {
+                "MK V Fragment": 148
+              },
+              "bonuses": []
+            },
+            {
+              "level": 94,
+              "name": "Cataclysm III 6",
+              "costs": {
+                "MK V Fragment": 159
+              },
+              "bonuses": []
+            },
+            {
+              "level": 95,
+              "name": "Cataclysm III 7",
+              "costs": {
+                "MK V Fragment": 173
+              },
+              "bonuses": []
+            },
+            {
+              "level": 96,
+              "name": "Cataclysm III 8",
+              "costs": {
+                "MK V Fragment": 189
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Signal Jam"
+              ]
+            },
+            {
+              "level": 97,
+              "name": "Cataclysm III 9",
+              "costs": {
+                "MK V Fragment": 208
+              },
+              "bonuses": []
+            },
+            {
+              "level": 98,
+              "name": "Cataclysm III 10",
+              "costs": {
+                "MK V Fragment": 250
+              },
+              "bonuses": []
+            },
+            {
+              "level": 99,
+              "name": "Cataclysm III Ultra-Enhance",
+              "costs": {
+                "MK V Fragment": 520
+              },
+              "bonuses": []
+            },
+            {
+              "level": 100,
+              "name": "Abaddon I 1",
+              "costs": {
+                "MK V Fragment": 0
+              },
+              "bonuses": []
+            },
+            {
+              "level": 101,
+              "name": "Abaddon I 2",
+              "costs": {
+                "MK V Fragment": 262
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Trinity Cannon"
+              ]
+            },
+            {
+              "level": 102,
+              "name": "Abaddon I 3",
+              "costs": {
+                "MK V Fragment": 263
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Energy Feed - Infantry"
+              ]
+            },
+            {
+              "level": 103,
+              "name": "Abaddon I 4",
+              "costs": {
+                "MK V Fragment": 264
+              },
+              "bonuses": []
+            },
+            {
+              "level": 104,
+              "name": "Abaddon I 5",
+              "costs": {
+                "MK V Fragment": 266
+              },
+              "bonuses": []
+            },
+            {
+              "level": 105,
+              "name": "Abaddon I 6",
+              "costs": {
+                "MK V Fragment": 268
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Energy Feed - Rider"
+              ]
+            },
+            {
+              "level": 106,
+              "name": "Abaddon I 7",
+              "costs": {
+                "MK V Fragment": 271
+              },
+              "bonuses": []
+            },
+            {
+              "level": 107,
+              "name": "Abaddon I 8",
+              "costs": {
+                "MK V Fragment": 274
+              },
+              "bonuses": []
+            },
+            {
+              "level": 108,
+              "name": "Abaddon I 9",
+              "costs": {
+                "MK V Fragment": 279
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Energy Feed - Hunter"
+              ]
+            },
+            {
+              "level": 109,
+              "name": "Abaddon I 10",
+              "costs": {
+                "MK V Fragment": 286
+              },
+              "bonuses": []
+            },
+            {
+              "level": 110,
+              "name": "Abaddon I Ultra-Enhance",
+              "costs": {
+                "MK V Fragment": 302
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Crossfire"
+              ]
+            },
+            {
+              "level": 111,
+              "name": "Abaddon II 1",
+              "costs": {
+                "MK V Fragment": 0
+              },
+              "bonuses": []
+            },
+            {
+              "level": 112,
+              "name": "Abaddon II 2",
+              "costs": {
+                "MK V Fragment": 303
+              },
+              "bonuses": []
+            },
+            {
+              "level": 113,
+              "name": "Abaddon II 3",
+              "costs": {
+                "MK V Fragment": 304
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Max Output"
+              ]
+            },
+            {
+              "level": 114,
+              "name": "Abaddon II 4",
+              "costs": {
+                "MK V Fragment": 306
+              },
+              "bonuses": []
+            },
+            {
+              "level": 115,
+              "name": "Abaddon II 5",
+              "costs": {
+                "MK V Fragment": 308
+              },
+              "bonuses": []
+            },
+            {
+              "level": 116,
+              "name": "Abaddon II 6",
+              "costs": {
+                "MK V Fragment": 310
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Impact Buffer - Infantry"
+              ]
+            },
+            {
+              "level": 117,
+              "name": "Abaddon II 7",
+              "costs": {
+                "MK V Fragment": 313
+              },
+              "bonuses": []
+            },
+            {
+              "level": 118,
+              "name": "Abaddon II 8",
+              "costs": {
+                "MK V Fragment": 317
+              },
+              "bonuses": []
+            },
+            {
+              "level": 119,
+              "name": "Abaddon II 9",
+              "costs": {
+                "MK V Fragment": 322
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Impact Buffer - Rider"
+              ]
+            },
+            {
+              "level": 120,
+              "name": "Abaddon II 10",
+              "costs": {
+                "MK V Fragment": 331
+              },
+              "bonuses": []
+            },
+            {
+              "level": 121,
+              "name": "Abaddon II Ultra-Enhance",
+              "costs": {
+                "MK V Fragment": 348
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Impact Buffer - Hunter"
+              ]
+            },
+            {
+              "level": 122,
+              "name": "Abaddon III 1",
+              "costs": {
+                "MK V Fragment": 0
+              },
+              "bonuses": []
+            },
+            {
+              "level": 123,
+              "name": "Abaddon III 2",
+              "costs": {
+                "MK V Fragment": 350
+              },
+              "bonuses": []
+            },
+            {
+              "level": 124,
+              "name": "Abaddon III 3",
+              "costs": {
+                "MK V Fragment": 351
+              },
+              "bonuses": []
+            },
+            {
+              "level": 125,
+              "name": "Abaddon III 4",
+              "costs": {
+                "MK V Fragment": 353
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Recovery Loop"
+              ]
+            },
+            {
+              "level": 126,
+              "name": "Abaddon III 5",
+              "costs": {
+                "MK V Fragment": 355
+              },
+              "bonuses": []
+            },
+            {
+              "level": 127,
+              "name": "Abaddon III 6",
+              "costs": {
+                "MK V Fragment": 358
+              },
+              "bonuses": []
+            },
+            {
+              "level": 128,
+              "name": "Abaddon III 7",
+              "costs": {
+                "MK V Fragment": 362
+              },
+              "bonuses": []
+            },
+            {
+              "level": 129,
+              "name": "Abaddon III 8",
+              "costs": {
+                "MK V Fragment": 366
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Suppression Field"
+              ]
+            },
+            {
+              "level": 130,
+              "name": "Abaddon III 9",
+              "costs": {
+                "MK V Fragment": 372
+              },
+              "bonuses": []
+            },
+            {
+              "level": 131,
+              "name": "Abaddon III 10",
+              "costs": {
+                "MK V Fragment": 378
+              },
+              "bonuses": [],
+              "skillsUnlocked": [
+                "Fire Raid"
               ]
             }
           ]

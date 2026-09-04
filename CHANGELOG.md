@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.5.1-beta] - 2026-09-04
+### Added
+- Behemoth MK V enhancement data
+
 ## [0.5.0-beta] - 2026-08-25
 ### Added
 - Hero Appointment upgrade category
