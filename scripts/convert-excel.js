@@ -580,7 +580,7 @@ function parseBehemothLevels(wb) {
         else costKey = mapCostKey('serum');
         entry.costs[costKey] = cost;
       }
-      if (bonuses.length) entry.bonuses = bonuses;
+      entry.bonuses = bonuses;
       return entry;
     });
     if (levels.length) {

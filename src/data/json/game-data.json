@@ -26941,6 +26941,1411 @@
               ]
             }
           ]
+        },
+        {
+          "id": "mk-mk-v",
+          "name": "MK V",
+          "maxLevel": 200,
+          "levels": [
+            {
+              "level": 1,
+              "costs": {},
+              "bonuses": []
+            },
+            {
+              "level": 2,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 3,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 4,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 5,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 6,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 7,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 8,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 9,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 10,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 11,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 12,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 13,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 14,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 15,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 16,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 17,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 18,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 19,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 20,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 21,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 22,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 23,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 24,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 25,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 26,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 27,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 28,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 29,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 30,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 31,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 32,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 33,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 34,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 35,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 36,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 37,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 38,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 39,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 40,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 41,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 42,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 43,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 44,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 45,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 46,
+              "costs": {
+                "Serum": 1
+              },
+              "bonuses": []
+            },
+            {
+              "level": 47,
+              "costs": {
+                "Serum": 2
+              },
+              "bonuses": []
+            },
+            {
+              "level": 48,
+              "costs": {
+                "Serum": 2
+              },
+              "bonuses": []
+            },
+            {
+              "level": 49,
+              "costs": {
+                "Serum": 2
+              },
+              "bonuses": []
+            },
+            {
+              "level": 50,
+              "costs": {
+                "Serum": 2
+              },
+              "bonuses": []
+            },
+            {
+              "level": 51,
+              "costs": {
+                "Serum": 2
+              },
+              "bonuses": []
+            },
+            {
+              "level": 52,
+              "costs": {
+                "Serum": 2
+              },
+              "bonuses": []
+            },
+            {
+              "level": 53,
+              "costs": {
+                "Serum": 2
+              },
+              "bonuses": []
+            },
+            {
+              "level": 54,
+              "costs": {
+                "Serum": 2
+              },
+              "bonuses": []
+            },
+            {
+              "level": 55,
+              "costs": {
+                "Serum": 2
+              },
+              "bonuses": []
+            },
+            {
+              "level": 56,
+              "costs": {
+                "Serum": 2
+              },
+              "bonuses": []
+            },
+            {
+              "level": 57,
+              "costs": {
+                "Serum": 2
+              },
+              "bonuses": []
+            },
+            {
+              "level": 58,
+              "costs": {
+                "Serum": 2
+              },
+              "bonuses": []
+            },
+            {
+              "level": 59,
+              "costs": {
+                "Serum": 2
+              },
+              "bonuses": []
+            },
+            {
+              "level": 60,
+              "costs": {
+                "Serum": 2
+              },
+              "bonuses": []
+            },
+            {
+              "level": 61,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 62,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 63,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 64,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 65,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 66,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 67,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 68,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 69,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 70,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 71,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 72,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 73,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 74,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 75,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 76,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 77,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 78,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 79,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 80,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 81,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 82,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 83,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 84,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 85,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 86,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 87,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 88,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 89,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 90,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 91,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 92,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 93,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 94,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 95,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 96,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 97,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 98,
+              "costs": {
+                "Serum": 3
+              },
+              "bonuses": []
+            },
+            {
+              "level": 99,
+              "costs": {
+                "Serum": 4
+              },
+              "bonuses": []
+            },
+            {
+              "level": 100,
+              "costs": {
+                "Serum": 4
+              },
+              "bonuses": []
+            },
+            {
+              "level": 101,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 102,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 103,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 104,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 105,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 106,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 107,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 108,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 109,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 110,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 111,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 112,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 113,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 114,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 115,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 116,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 117,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 118,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 119,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 120,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 121,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 122,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 123,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 124,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 125,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 126,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 127,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 128,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 129,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 130,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 131,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 132,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 133,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 134,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 135,
+              "costs": {
+                "Serum": 5
+              },
+              "bonuses": []
+            },
+            {
+              "level": 136,
+              "costs": {
+                "Serum": 4
+              },
+              "bonuses": []
+            },
+            {
+              "level": 137,
+              "costs": {
+                "Serum": 6
+              },
+              "bonuses": []
+            },
+            {
+              "level": 138,
+              "costs": {
+                "Serum": 6
+              },
+              "bonuses": []
+            },
+            {
+              "level": 139,
+              "costs": {
+                "Serum": 6
+              },
+              "bonuses": []
+            },
+            {
+              "level": 140,
+              "costs": {
+                "Serum": 6
+              },
+              "bonuses": []
+            },
+            {
+              "level": 141,
+              "costs": {
+                "Serum": 7
+              },
+              "bonuses": []
+            },
+            {
+              "level": 142,
+              "costs": {
+                "Serum": 7
+              },
+              "bonuses": []
+            },
+            {
+              "level": 143,
+              "costs": {
+                "Serum": 7
+              },
+              "bonuses": []
+            },
+            {
+              "level": 144,
+              "costs": {
+                "Serum": 7
+              },
+              "bonuses": []
+            },
+            {
+              "level": 145,
+              "costs": {
+                "Serum": 7
+              },
+              "bonuses": []
+            },
+            {
+              "level": 146,
+              "costs": {
+                "Serum": 7
+              },
+              "bonuses": []
+            },
+            {
+              "level": 147,
+              "costs": {
+                "Serum": 7
+              },
+              "bonuses": []
+            },
+            {
+              "level": 148,
+              "costs": {
+                "Serum": 7
+              },
+              "bonuses": []
+            },
+            {
+              "level": 149,
+              "costs": {
+                "Serum": 7
+              },
+              "bonuses": []
+            },
+            {
+              "level": 150,
+              "costs": {
+                "Serum": 7
+              },
+              "bonuses": []
+            },
+            {
+              "level": 151,
+              "costs": {
+                "Serum": 7
+              },
+              "bonuses": []
+            },
+            {
+              "level": 152,
+              "costs": {
+                "Serum": 7
+              },
+              "bonuses": []
+            },
+            {
+              "level": 153,
+              "costs": {
+                "Serum": 8
+              },
+              "bonuses": []
+            },
+            {
+              "level": 154,
+              "costs": {
+                "Serum": 8
+              },
+              "bonuses": []
+            },
+            {
+              "level": 155,
+              "costs": {
+                "Serum": 8
+              },
+              "bonuses": []
+            },
+            {
+              "level": 156,
+              "costs": {
+                "Serum": 8
+              },
+              "bonuses": []
+            },
+            {
+              "level": 157,
+              "costs": {
+                "Serum": 8
+              },
+              "bonuses": []
+            },
+            {
+              "level": 158,
+              "costs": {
+                "Serum": 8
+              },
+              "bonuses": []
+            },
+            {
+              "level": 159,
+              "costs": {
+                "Serum": 8
+              },
+              "bonuses": []
+            },
+            {
+              "level": 160,
+              "costs": {
+                "Serum": 8
+              },
+              "bonuses": []
+            },
+            {
+              "level": 161,
+              "costs": {
+                "Serum": 8
+              },
+              "bonuses": []
+            },
+            {
+              "level": 162,
+              "costs": {
+                "Serum": 8
+              },
+              "bonuses": []
+            },
+            {
+              "level": 163,
+              "costs": {
+                "Serum": 8
+              },
+              "bonuses": []
+            },
+            {
+              "level": 164,
+              "costs": {
+                "Serum": 8
+              },
+              "bonuses": []
+            },
+            {
+              "level": 165,
+              "costs": {
+                "Serum": 8
+              },
+              "bonuses": []
+            },
+            {
+              "level": 166,
+              "costs": {
+                "Serum": 8
+              },
+              "bonuses": []
+            },
+            {
+              "level": 167,
+              "costs": {
+                "Serum": 8
+              },
+              "bonuses": []
+            },
+            {
+              "level": 168,
+              "costs": {
+                "Serum": 8
+              },
+              "bonuses": []
+            },
+            {
+              "level": 169,
+              "costs": {
+                "Serum": 8
+              },
+              "bonuses": []
+            },
+            {
+              "level": 170,
+              "costs": {
+                "Serum": 8
+              },
+              "bonuses": []
+            },
+            {
+              "level": 171,
+              "costs": {
+                "Serum": 9
+              },
+              "bonuses": []
+            },
+            {
+              "level": 172,
+              "costs": {
+                "Serum": 9
+              },
+              "bonuses": []
+            },
+            {
+              "level": 173,
+              "costs": {
+                "Serum": 9
+              },
+              "bonuses": []
+            },
+            {
+              "level": 174,
+              "costs": {
+                "Serum": 9
+              },
+              "bonuses": []
+            },
+            {
+              "level": 175,
+              "costs": {
+                "Serum": 9
+              },
+              "bonuses": []
+            },
+            {
+              "level": 176,
+              "costs": {
+                "Serum": 9
+              },
+              "bonuses": []
+            },
+            {
+              "level": 177,
+              "costs": {
+                "Serum": 9
+              },
+              "bonuses": []
+            },
+            {
+              "level": 178,
+              "costs": {
+                "Serum": 9
+              },
+              "bonuses": []
+            },
+            {
+              "level": 179,
+              "costs": {
+                "Serum": 9
+              },
+              "bonuses": []
+            },
+            {
+              "level": 180,
+              "costs": {
+                "Serum": 9
+              },
+              "bonuses": []
+            },
+            {
+              "level": 181,
+              "costs": {
+                "Serum": 10
+              },
+              "bonuses": []
+            },
+            {
+              "level": 182,
+              "costs": {
+                "Serum": 11
+              },
+              "bonuses": []
+            },
+            {
+              "level": 183,
+              "costs": {
+                "Serum": 13
+              },
+              "bonuses": []
+            },
+            {
+              "level": 184,
+              "costs": {
+                "Serum": 14
+              },
+              "bonuses": []
+            },
+            {
+              "level": 185,
+              "costs": {
+                "Serum": 18
+              },
+              "bonuses": []
+            },
+            {
+              "level": 186,
+              "costs": {
+                "Serum": 17
+              },
+              "bonuses": []
+            },
+            {
+              "level": 187,
+              "costs": {
+                "Serum": 18
+              },
+              "bonuses": []
+            },
+            {
+              "level": 188,
+              "costs": {
+                "Serum": 20
+              },
+              "bonuses": []
+            },
+            {
+              "level": 189,
+              "costs": {
+                "Serum": 22
+              },
+              "bonuses": []
+            },
+            {
+              "level": 190,
+              "costs": {
+                "Serum": 24
+              },
+              "bonuses": []
+            },
+            {
+              "level": 191,
+              "costs": {
+                "Serum": 27
+              },
+              "bonuses": []
+            },
+            {
+              "level": 192,
+              "costs": {
+                "Serum": 29
+              },
+              "bonuses": []
+            },
+            {
+              "level": 193,
+              "costs": {
+                "Serum": 32
+              },
+              "bonuses": []
+            },
+            {
+              "level": 194,
+              "costs": {
+                "Serum": 35
+              },
+              "bonuses": []
+            },
+            {
+              "level": 195,
+              "costs": {
+                "Serum": 39
+              },
+              "bonuses": []
+            },
+            {
+              "level": 196,
+              "costs": {
+                "Serum": 43
+              },
+              "bonuses": []
+            },
+            {
+              "level": 197,
+              "costs": {
+                "Serum": 48
+              },
+              "bonuses": []
+            },
+            {
+              "level": 198,
+              "costs": {
+                "Serum": 52
+              },
+              "bonuses": []
+            },
+            {
+              "level": 199,
+              "costs": {
+                "Serum": 59
+              },
+              "bonuses": []
+            },
+            {
+              "level": 200,
+              "costs": {
+                "Serum": 64
+              },
+              "bonuses": []
+            }
+          ]
         }
       ]
     },
