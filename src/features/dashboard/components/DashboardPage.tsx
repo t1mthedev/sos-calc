@@ -13,8 +13,8 @@ const MECH_KEYS = new Set(['__mech__', ...MECH_CATEGORY_IDS]);
 const VEHICLES_KEYS = new Set(['vehicles']);
 
 const BEHEMOTH_GROUP_DEFS: { name: string; mks: string[] }[] = [
-  { name: 'Behemoths', mks: ['MK I', 'MK II'] },
-  { name: 'Companion Behemoths', mks: ['MK 0', 'MK III', 'MK IV', 'MK V'] },
+  { name: 'Behemoths', mks: ['MK I', 'MK II', 'MK V'] },
+  { name: 'Companion Behemoths', mks: ['MK 0', 'MK III', 'MK IV'] },
 ];
 
 const BACKPACK_KEY = 'sos-calc-backpack';
