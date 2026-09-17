@@ -1,6 +1,18 @@
 {
   "crates": [
     {
+      "id": "behemoth-mk-v-custom",
+      "name": "Behemoth MK V Custom Crate",
+      "categoryIds": ["behemoth-enhancement", "behemoth-skills", "behemoth-levels"],
+      "options": [
+        { "materialKey": "MK I Fragment", "materialName": "MK I Fragment", "amount": 2 },
+        { "materialKey": "MK II Fragment", "materialName": "MK II Fragment", "amount": 2 },
+        { "materialKey": "MK V Fragment", "materialName": "MK V Fragment", "amount": 2 },
+        { "materialKey": "Serum", "materialName": "Serum", "amount": 16 },
+        { "materialKey": "Biobattery", "materialName": "Biobattery", "amount": 5 }
+      ]
+    },
+    {
       "id": "behemoth-mk-iv-custom",
       "name": "Behemoth MK IV Custom Crate",
       "categoryIds": ["behemoth-enhancement", "behemoth-skills", "behemoth-levels"],
