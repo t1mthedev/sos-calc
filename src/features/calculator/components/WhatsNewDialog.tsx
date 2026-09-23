@@ -1,5 +1,5 @@
 import { Dialog, DialogTitle, DialogContent, DialogActions, Button, Typography } from '@mui/material';
-import changelogText from '../../../../CHANGELOG.md?raw';
+import { APP_VERSION, LATEST_ENTRY } from '../../../version';
 
 const LS_KEY = 'sos-calc-last-version';
 
@@ -11,36 +11,16 @@ function saveSeenVersion(version: string) {
   try { localStorage.setItem(LS_KEY, version); } catch { /* ignore */ }
 }
 
-export function parseLatestEntry(md: string): { version: string; body: string } | null {
-  const lines = md.split('\n');
-  let version = '';
-  let start = -1;
-  for (let i = 0; i < lines.length; i++) {
-    const m = lines[i].match(/^## \[(.+?)\]/);
-    if (m) {
-      version = m[1];
-      start = i + 1;
-      break;
-    }
-  }
-  if (!version || start < 0) return null;
-  let end = lines.length;
-  for (let i = start; i < lines.length; i++) {
-    if (lines[i].startsWith('## ')) { end = i; break; }
-  }
-  return { version, body: lines.slice(start, end).join('\n').trim() };
-}
-
 interface Props {
   open: boolean;
   onClose: () => void;
 }
 
 export function WhatsNewDialog({ open, onClose }: Props) {
-  const entry = parseLatestEntry(changelogText);
+  const entry = LATEST_ENTRY;
 
   const handleGotIt = () => {
-    saveSeenVersion(entry?.version || '');
+    saveSeenVersion(APP_VERSION);
     onClose();
   };
 
