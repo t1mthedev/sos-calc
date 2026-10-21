@@ -47,6 +47,18 @@ export interface MaterialsTableSection {
   groups?: MaterialsTableSectionGroup[];
 }
 
+function MaterialTableColumns() {
+  return (
+    <colgroup>
+      <col style={{ width: 40 }} />
+      <col />
+      <col style={{ width: '16%' }} />
+      <col style={{ width: '16%' }} />
+      <col style={{ width: '16%' }} />
+    </colgroup>
+  );
+}
+
 interface MaterialsTableProps {
   entries?: [string, number][];
   backpack: BackpackData;
@@ -117,7 +129,8 @@ export function MaterialsTable({ entries = [], backpack, crateContributions, sho
   const colSpan = showBackpack ? 5 : 3;
   return (
     <TableContainer component={Paper} variant="outlined">
-      <Table size="small">
+      <Table size="small" sx={{ tableLayout: 'fixed' }}>
+        <MaterialTableColumns />
         <TableHead>
           <TableRow>
             <TableCell sx={{ width: 40 }}>Icon</TableCell>
@@ -173,7 +186,8 @@ function TableFragment({
               </Typography>
             </AccordionSummary>
             <AccordionDetails sx={{ p: 0 }}>
-              <Table size="small">
+              <Table size="small" sx={{ tableLayout: 'fixed' }}>
+                <MaterialTableColumns />
                 <TableBody>
                   {section.entries?.map(entry => (
                     <MaterialRow key={entry[0]} entry={entry} backpack={backpack} crateContributions={crateContributions} />
@@ -274,7 +288,8 @@ function FragmentGroup({
             </Typography>
           </AccordionSummary>
           <AccordionDetails sx={{ p: 0 }}>
-            <Table size="small">
+            <Table size="small" sx={{ tableLayout: 'fixed' }}>
+              <MaterialTableColumns />
               <TableBody>
                 {group.mks.map(mk => (
                   <FragmentMk
